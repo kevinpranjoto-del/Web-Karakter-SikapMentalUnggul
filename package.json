@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server-api.js",
     "dev": "nodemon server-api.js",
-    "test": "jest --passWithNoTests",
+    "test": "jest --passWithNoTests --forceExit",
     "lint": "eslint ."
   },
   "keywords": [
