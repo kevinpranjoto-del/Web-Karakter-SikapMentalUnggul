@@ -1,0 +1,44 @@
+{
+  "name": "kppsm-api",
+  "version": "1.0.0",
+  "description": "KPPSM Testimonial Management API - Express.js Backend",
+  "main": "server-api.js",
+  "scripts": {
+    "start": "node server-api.js",
+    "dev": "nodemon server-api.js",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "kppsm",
+    "testimoni",
+    "api",
+    "express",
+    "mysql",
+    "jwt"
+  ],
+  "author": "KPPSM Tech Team",
+  "license": "Proprietary",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.5",
+    "jsonwebtoken": "^9.0.2",
+    "express-validator": "^7.0.0",
+    "multer": "^1.4.5-lts.1",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.54.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

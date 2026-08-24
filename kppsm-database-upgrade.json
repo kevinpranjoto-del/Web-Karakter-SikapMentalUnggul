@@ -1,0 +1,307 @@
+{
+  "company_profile": {
+    "nama_website": "Karakter-Sikap MentalUnggul.id",
+    "nama_usaha": "KPPSM F.X. Poerwopoespito",
+    "berdiri_sejak": "1992-07-23",
+    "tahun_berdiri": 1992,
+    "pendiri": "Bapak F.X. Oerip",
+    "lokasi_didirikan": "Jakarta",
+    "jenis_usaha": "Jasa Pelatihan, Pengembangan, Riset, Tes dan Konseling untuk masalah Karakter, Sikap Mental dan Perilaku SDM Perusahaan, Institusi, Organisasi dan BUMN.",
+    "deskripsi_singkat": "KPPSM F.X. Poerwopoespito berdiri sejak 23 Juli 1992 di Jakarta dan telah memberikan Pelatihan-Seminar-konsultasi lebih dari 700 kali, meliputi lebih dari 46.000 eksekutif dari lebih dari 220 perusahaan, institusi, organisasi, dan BUMN di Indonesia.",
+    "pengguna_jasa": "+ 215 perusahaan, institusi, organisasi atau BUMN besar dengan + 46.000-an orang eksekutif",
+    "jumlah_pelatihan_seminar_konsultasi": "+700 kali",
+    "jumlah_eksekutif": "+46.000",
+    "jumlah_perusahaan_institusi_organisasi_bumn": "+220",
+    "asal_materi": "Berasal dari renungan, pemikiran, pengamatan & riset kami sendiri selama 36 tahun. Obyek pengamatannya adalah bangsa Indonesia.",
+    "metoda_pelatihan": "Dialog Partisipatif",
+    "metode_tes": "Kombinasi multiple choice, essai, wawancara dan visualisasi",
+    "metode_konseling": "Kombinasi wawancara, pengisian kuesioner, neuroresponse test, problem brakdown, penggunaan RIS motivation machine, group discussion, konsul ahli",
+    "sifat_pelatihan": "Intelektualitatif - Fasilitator sebagai teman diskusi",
+    "keyword_utama": [
+      "pelatihan karakter",
+      "pelatihan sikap mental",
+      "pengembangan SDM",
+      "konseling karyawan",
+      "ToABQ",
+      "revolusi mental"
+    ]
+  },
+  "layanan": [
+    {
+      "nama": "Pelatihan Mengembangkan Karakter Positif dan Kuat melalui Revolusi Mental",
+      "kategori": "Pelatihan Utama",
+      "durasi": "2 hari",
+      "tujuan": "Membantu karyawan mengembangkan pribadi berkarakter positif & kuat yang pada akhirnya dapat meningkatkan produktivitas, kerja sama kelompok, prestasi, dan daya tahan dalam era bisnis krisis global yang semakin turbulens dan kompetitif.",
+      "target": "Karyawan perusahaan, institusi, organisasi dan BUMN",
+      "metode": "Dialog Partisipatif; Intelektualitatif - Fasilitator sebagai teman diskusi",
+      "jenis": "Pelatihan"
+    },
+    {
+      "nama": "Pelatihan RIS (Realistic, Integrated & Scientific) Motivation",
+      "kategori": "Pelatihan Utama",
+      "durasi": "1 hari",
+      "tujuan": "Pelatihan motivasi realistis, menyeluruh dan berdasarkan ilmu pengetahuan yang membantu karyawan termotivasi dengan hebat dalam kondisi apapun.",
+      "target": "Karyawan perusahaan, institusi, organisasi dan BUMN",
+      "metode": "Dialog Partisipatif; Intelektualitatif - Fasilitator sebagai teman diskusi",
+      "jenis": "Pelatihan"
+    },
+    {
+      "nama": "Pelatihan Health Quotient",
+      "kategori": "Pelatihan Utama",
+      "durasi": "1 hari",
+      "tujuan": "Pelatihan Kecerdasan Kesehatan secara holistik untuk karyawan agar terhindar dari 10 gangguan kesehatan berat yang menghancurkan dan memiskinkan.",
+      "target": "Karyawan perusahaan, institusi, organisasi dan BUMN",
+      "metode": "Dialog Partisipatif; Intelektualitatif - Fasilitator sebagai teman diskusi",
+      "jenis": "Pelatihan"
+    },
+    {
+      "nama": "Seminar Karakter",
+      "kategori": "Pelatihan Lain (Tailor Made)",
+      "durasi": "1/2 hari",
+      "tujuan": "Memberikan pemahaman dan penguatan karakter untuk audiens organisasi, lembaga, dan komunitas yang membutuhkan sesi inspiratif dan strategis.",
+      "target": "Organisasi, lembaga, komunitas, dan audiens umum",
+      "metode": "Dialog Partisipatif; Intelektualitatif - Fasilitator sebagai teman diskusi",
+      "jenis": "Seminar"
+    },
+    {
+      "nama": "Pelatihan Manajemen",
+      "kategori": "Pelatihan Lain (Tailor Made)",
+      "durasi": "Disesuaikan kebutuhan",
+      "tujuan": "Mengembangkan kemampuan manajerial dan kinerja organisasi melalui pendekatan karakter, leadership, dan sistem kerja yang efektif.",
+      "target": "Manajer, supervisor, tim kepemimpinan, pelaku bisnis, dan peserta pelatihan khusus",
+      "metode": "Dialog Partisipatif; Intelektualitatif - Fasilitator sebagai teman diskusi",
+      "jenis": "Pelatihan Tailor Made",
+      "program_detail": [
+        "Quality Management System",
+        "Marketing Canvasing System",
+        "Salesmanship",
+        "Supervisory Skill",
+        "Leadership",
+        "Outbound Training",
+        "LDK atau Character Building untuk siswa SMP dan SMA"
+      ]
+    }
+  ],
+  "tes": [
+    {
+      "nama": "ToABQ (Test of Aggregate Behaviour Quotient)",
+      "kategori": "Tes Perilaku",
+      "durasi": "5,5 jam",
+      "tujuan": "Menilai Kematangan Berperilaku menyeluruh, baik untuk Rekrutmen, Seleksi, Promosi, Head Hunter atau untuk kebutuhan HRD khusus lainnya.",
+      "target": "Rekrutmen, Seleksi, Promosi, Head Hunter, kebutuhan HRD khusus lainnya",
+      "metode": "Kombinasi multiple choice, essai, wawancara dan visualisasi",
+      "jenis": "Tes perilaku"
+    }
+  ],
+  "konseling": {
+    "nama": "Mental Health Counselling",
+    "kategori": "Konseling Karakter, Mental dan Perilaku",
+    "durasi": "2 jam/sesi/orang",
+    "frekuensi": "5 x pertemuan atau sesuai kebutuhan",
+    "tujuan": "Membahas problem yang potensial atau sudah ada dalam kehidupan pekerjaan.",
+    "target": "Karyawan, eksekutif, dan individu yang menghadapi persoalan karakter, sikap mental, dan perilaku di tempat kerja",
+    "metode": "Kombinasi wawancara, pengisian kuesioner, neuroresponse test, problem brakdown, penggunaan RIS motivation machine, group discussion, konsul ahli",
+    "format": "Konseling personal atau kelompok sesuai kebutuhan"
+  },
+  "karya_buku": [
+    {
+      "judul": "Menggugah Mentalitas Profesional dan Pengusaha Indonesia",
+      "kategori": "Buku",
+      "penulis": "Tidak disebutkan dalam data client",
+      "penerbit": "Tidak disebutkan dalam data client",
+      "keterangan": "Karya ilmiah/ buku karya KPPSM"
+    },
+    {
+      "judul": "Renungan Sikap Mental Karyawan Perusahaan",
+      "kategori": "Buku",
+      "penulis": "Tidak disebutkan dalam data client",
+      "penerbit": "Tidak disebutkan dalam data client",
+      "keterangan": "Karya ilmiah/ buku karya KPPSM"
+    },
+    {
+      "judul": "Mencegah dan Mengatasi Krisis Anak melalui Pengembangan Sikap Mental Orangtua",
+      "kategori": "Buku",
+      "penulis": "Tidak disebutkan dalam data client",
+      "penerbit": "Tidak disebutkan dalam data client",
+      "keterangan": "Karya ilmiah/ buku karya KPPSM"
+    },
+    {
+      "judul": "Health Quotient untuk Eksekutif",
+      "kategori": "Buku",
+      "penulis": "Tidak disebutkan dalam data client",
+      "penerbit": "Tidak disebutkan dalam data client",
+      "keterangan": "Karya ilmiah/ buku karya KPPSM"
+    },
+    {
+      "judul": "133 Renungan Perilaku Bijak Orangtua dalam Mendidik Anak",
+      "kategori": "Buku",
+      "penulis": "Tidak disebutkan dalam data client",
+      "penerbit": "Tidak disebutkan dalam data client",
+      "keterangan": "Karya ilmiah/ buku karya KPPSM"
+    },
+    {
+      "judul": "Just One Habit",
+      "kategori": "Buku",
+      "penulis": "Tidak disebutkan dalam data client",
+      "penerbit": "Tidak disebutkan dalam data client",
+      "keterangan": "Karya ilmiah/ buku karya KPPSM"
+    }
+  ],
+  "karya_penemuan": [
+    "Materi Pengembangan Sikap Mental pertama di Indonesia",
+    "Tehnik Presentasi Brillian",
+    "Gelar ASM",
+    "RIS Motivation",
+    "Health Quotient",
+    "ToABQ",
+    "ReSSCaP"
+  ],
+  "kasus_sukses": [
+    {
+      "perusahaan": "PT Indah Kiat Pulp and Paper",
+      "hasil": "EBITDA 15%"
+    },
+    {
+      "perusahaan": "PT Meiji Indonesia",
+      "hasil": "Reject 13% menjadi 1,5%"
+    },
+    {
+      "perusahaan": "PT Jakarta Land & PT King Photo Studio",
+      "hasil": "Mencegah Unjuk Rasa"
+    },
+    {
+      "perusahaan": "PT Dunkindo Lestari",
+      "hasil": "Penjualan naik 20%"
+    },
+    {
+      "perusahaan": "PT Bumitama Gunajaya Agro",
+      "hasil": "Hubungan baik karyawan, petani plasma dan Koperasi"
+    },
+    {
+      "perusahaan": "PT Prodia, PT Kalbe Farma, PT Sampoerna Agro Lestari",
+      "hasil": "Hubungan baik SPSI dan Manajemen"
+    },
+    {
+      "perusahaan": "PT Kencana Agri",
+      "hasil": "Bantu capai 980.000 ton CPO dari target 1 juta ton 2025"
+    }
+  ],
+  "testimoni": [
+    {
+      "kutipan": "Materi sangat positif dan me-remind kita kembali kepada fitrah kita sebagai manusia yang pada dasarnya punya Hati, Etika dan Adab",
+      "nama": "Iswandi Ilyas",
+      "jabatan": "Partnership Dept. Head",
+      "perusahaan": "PT Bumitama Gunajaya Agro"
+    },
+    {
+      "kutipan": "Pak Oerip dan pak Tatag telah mengajarkan keduanya dan kemajuan mulai kami rasakan",
+      "nama": "Junus Danie",
+      "jabatan": "Manajer HR",
+      "perusahaan": "PT Lucky Indah Keramik"
+    },
+    {
+      "kutipan": "KPPSM saya nilai adalah yang paling bagus dan ‘OK’, karena materinya padat",
+      "nama": "Iwan Mahatirta",
+      "jabatan": "Direktur Utama",
+      "perusahaan": "PT Maharupa Gatra"
+    },
+    {
+      "kutipan": "KPPSM ‘Menghukum diri sendiri’ ketika terlambat... merupakan sikap teladan",
+      "nama": "Artomo",
+      "jabatan": "Direktur",
+      "perusahaan": "PT Meiji"
+    },
+    {
+      "kutipan": "Sekarang saya berusaha mengerti akan kebijakan perusahaan dan mensyukuri",
+      "nama": "Dirga Wahana",
+      "jabatan": "Store Supervisor",
+      "perusahaan": "Hoka-hoka Bento"
+    },
+    {
+      "kutipan": "Hasilnya cepat dirasakan, terutama berkaitan dengan produktifitas perusahaan",
+      "nama": "Herman Widjaja",
+      "jabatan": "Director",
+      "perusahaan": "PT Enseval"
+    },
+    {
+      "kutipan": "Programnya bukan hanya bermanfaat bagi pribadi, keluarga dan perusahaan, tetapi juga bangsa",
+      "nama": "Djati Adi Wicaksono",
+      "jabatan": "Direktur IT",
+      "perusahaan": "PT Kalla Lines"
+    },
+    {
+      "kutipan": "Orang pandai sejati mampu menyederhanakan yang sulit berbelit menjadi sederhana",
+      "nama": "Ign. Sumarya, SJ",
+      "jabatan": "Kabag PSDM-PU KWI",
+      "perusahaan": "KWI"
+    },
+    {
+      "kutipan": "Dengan Revolusi Mental pada jaman now tentunya lebih berharga daripada harta",
+      "nama": "Rasidi, S.Pd",
+      "jabatan": "Kepala Sekolah",
+      "perusahaan": "SDN Kragilan 06"
+    },
+    {
+      "kutipan": "2-3 tahun setelah test, barulah terlihat kesesuaian hasil test",
+      "nama": "Friyandito",
+      "jabatan": "Direktur",
+      "perusahaan": "PT Best Planter Indonesia"
+    }
+  ],
+  "trainer": [
+    {
+      "nama": "F.X. Oerip S. Poerwopoespito",
+      "gelar": "ASM"
+    },
+    {
+      "nama": "Drg. T.A. Tatag Utomo",
+      "gelar": "MM., ASM"
+    },
+    {
+      "nama": "Diki Permana",
+      "gelar": "SE"
+    },
+    {
+      "nama": "Albertus Widiarto",
+      "gelar": "SE., MM"
+    }
+  ],
+  "kontak": {
+    "alamat": "Wisma KPPSM, Kompleks Cibubur Indah III Blok F-7, RT 05/011, Jakarta Timur 13720.",
+    "telepon": [
+      "0818.874.430",
+      "0813.1521.0388"
+    ],
+    "nama_telepon_penting": "Tatag Utomo",
+    "email": "tatag.kppsm@gmail.com",
+    "wa_primary": "0818.874.430",
+    "wa_secondary": "0813.1521.0388"
+  },
+  "sosmed": [
+    {
+      "platform": "Facebook",
+      "handle": "PengembanganSikapMentalPositif",
+      "label": "FB PengembanganSikapMentalPositif"
+    },
+    {
+      "platform": "TikTok",
+      "handle": "@TatagMotivator SDM",
+      "label": "Tiktok @TatagMotivator SDM"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "Kppsm_revolusimental",
+      "label": "IG Kppsm_revolusimental"
+    },
+    {
+      "platform": "X",
+      "handle": "@tatagkppsm",
+      "label": "X @tatagkppsm"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "Kppsm Video",
+      "label": "Youtube Kppsm Video"
+    }
+  ]
+}
