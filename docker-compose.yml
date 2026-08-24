@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   # ----------------------------------------------------
   # KPPSM Database (MySQL 8.0 with preloaded schema)

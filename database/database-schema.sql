@@ -245,7 +245,7 @@ CREATE TABLE IF NOT EXISTS metrics (
     id INT AUTO_INCREMENT PRIMARY KEY,
     metric_name VARCHAR(100) NOT NULL,
     metric_value INT DEFAULT 0,
-    metric_date DATE DEFAULT CURDATE(),
+    metric_date DATE DEFAULT (CURRENT_DATE),
     metric_type VARCHAR(100) COMMENT 'views, clicks, conversions, dll',
     metadata JSON,
     
@@ -1055,15 +1055,15 @@ GROUP BY u.id;
 
 -- Query: Services ranking by benefits count
 SELECT 
-    nama_service,
-    slug,
+    s.nama_service,
+    s.slug,
     COUNT(sb.id) as total_benefits,
-    urutan
+    s.urutan
 FROM services s
 LEFT JOIN service_benefits sb ON s.id = sb.service_id
 WHERE s.status = 'aktif'
-GROUP BY s.id
-ORDER BY urutan;
+GROUP BY s.id, s.nama_service, s.slug, s.urutan
+ORDER BY s.urutan;
 
 -- =====================================================
 -- INDEXES UNTUK PERFORMA
