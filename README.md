@@ -39,37 +39,41 @@ Website KPPSM adalah platform komprehensif untuk:
 ```
 Web-Karakter-SikapMentalUnggul/
 │
-├── 📄 index.html                    # Main website structure
-├── 📄 styles.css                    # Styling & responsive design
-├── 📄 script.js                     # JavaScript interactivity
+├── 📁 assets/                       # Aset Frontend
+│   ├── 📁 css/
+│   │   └── 📄 styles.css            # Styling & responsive design
+│   ├── 📁 js/
+│   │   └── 📄 script.js             # JavaScript interactivity & API
+│   └── 📁 images/                   # Asset gambar website
 │
-├── 📄 database-schema.sql           # MySQL database schema & sample data
-├── 📄 server-api.js                 # Express.js API backend implementation
+├── 📁 database/                     # Skema Database & Migrasi
+│   ├── 📄 database-schema.sql       # MySQL schema lengkap
+│   └── 📄 kppsm-database-upgrade.json
 │
-├── 📄 API-DOCUMENTATION.md          # Complete API endpoints documentation
-├── 📄 01-COPYWRITING-CONTENT.md     # All website copywriting content
-├── 📄 README.md                     # This file
+├── 📁 docs/                         # Seluruh Dokumentasi & Copywriting
+│   ├── 📄 01-COPYWRITING-CONTENT.md
+│   ├── 📄 API-DOCUMENTATION.md      # Dokumentasi lengkap REST API
+│   ├── 📄 FILE-INDEX.md
+│   ├── 📄 QUICK-START.md
+│   ├── 📄 SETUP-GUIDE.md
+│   ├── 📄 kppsm-cms-ready-content.md
+│   └── 📄 test-final.txt
 │
-├── 📁 images/                       # Folder untuk gambar
-│   ├── tatag-utomo-hero.jpg
-│   ├── tatag-utomo-resmi.jpg
-│   ├── wisma-kppsm.jpg
-│   ├── ruang-pelatihan.jpg
-│   ├── buku-1-mentalitas-profesional.jpg
-│   ├── buku-2-health-quotient.jpg
-│   ├── buku-3-magic-anak.jpg
-│   ├── buku-4-kewenangan.jpg
-│   ├── galeri-wisma.jpg
-│   ├── galeri-ruang-pelatihan.jpg
-│   ├── galeri-seminar.jpg
-│   ├── galeri-revolusi-mental.jpg
-│   ├── galeri-behaviour-test.jpg
-│   └── galeri-polbangtan.jpg
+├── 📁 scripts/                      # Utility Scripts
+│   └── 📄 comprehensive-test.sh
 │
-└── 📁 uploads/                      # Folder untuk upload user (foto testimoni, logo)
-    ├── foto_orang/
-    └── logo_perusahaan/
-
+├── 📁 src/                          # Backend Source Code
+│   └── 📄 server-api.js             # Express.js REST API
+│
+├── 📁 tests/                        # Automated Unit Tests (Jest)
+│   └── 📄 server.test.js
+│
+├── 📄 index.html                    # Main landing page
+├── 📄 package.json                  # NPM packages & scripts
+├── 📄 package-lock.json
+├── 📄 .env.example                  # Environment configuration template
+├── 📄 .gitignore
+└── 📄 README.md                     # Main documentation
 ```
 
 ---

@@ -16,52 +16,20 @@
 
 ### 🖥️ FRONTEND FILES
 
-#### 1. **index.html** (28 KB)
+#### 1. **index.html** (Root)
 - **Type:** HTML5 Markup
 - **Purpose:** Main website structure & content
 - **Sections:** 8 main sections + navigation + footer
-- **Features:**
-  - Semantic HTML5
-  - Responsive structure
-  - Dynamic testimonial container
-  - Embed maps & social links
-  - Meta tags for SEO
-- **Key Elements:**
-  ```
-  ├── Navigation Bar (sticky)
-  ├── Hero Section (with CTA)
-  ├── About KPPSM (vision/mission)
-  ├── About Founder (Tatag Utomo)
-  ├── Services (6 services)
-  ├── Book Gallery (4 books)
-  ├── Activity Gallery (6 photos)
-  ├── Testimonials (dynamic/static)
-  ├── Contact Section (maps + forms)
-  └── Footer
-  ```
-- **How to Edit:** Open in VS Code, search for section, modify content
 
-#### 2. **styles.css** (28 KB)
+#### 2. **assets/css/styles.css**
 - **Type:** CSS3 Stylesheet
 - **Purpose:** Complete styling & responsive design
 - **Features:**
   - CSS Variables for easy customization
   - Mobile-first responsive design
   - Smooth animations & transitions
-  - Gradient backgrounds
-  - Shadow & hover effects
-  - Breakpoints: 768px (tablet), 480px (mobile)
-- **Color Palette:**
-  ```
-  Primary: #2d5f7f (Dark Blue)
-  Secondary: #e8852a (Orange)
-  Accent: #27ae60 (Green)
-  Light BG: #f8f9fa
-  Dark: #1a2332
-  ```
-- **Customization:** Modify `:root` variables for complete restyle
 
-#### 3. **script.js** (16 KB)
+#### 3. **assets/js/script.js**
 - **Type:** JavaScript (Vanilla, no framework)
 - **Purpose:** Interactivity, API integration, animations
 - **Key Features:**
@@ -70,74 +38,42 @@
   - Testimonial carousel/pagination
   - Dynamic API loading (with fallback)
   - Gallery lightbox
-  - Form validation
-  - Scroll reveal animations
-  - WhatsApp integration helper
-- **API Integration:**
-  ```javascript
-  const apiEndpoint = '/api/v1/testimonials';
-  // Automatically loads testimonials from API
-  // Falls back to static if API unavailable
-  ```
-- **Usage Examples:**
-  ```javascript
-  // Open WhatsApp
-  openWhatsApp('0818874430', 'Halo, saya ingin konsultasi');
-  
-  // Format currency
-  formatCurrency(1000000); // "Rp 1.000.000"
-  
-  // Format date
-  formatDate('2024-08-14'); // "14 Agustus 2024"
-  ```
+  - Form validation & contact submission
 
 ---
 
 ### 🗄️ DATABASE FILES
 
-#### 4. **database-schema.sql** (12 KB)
+#### 4. **database/database-schema.sql**
 - **Type:** MySQL SQL Script
 - **Purpose:** Complete database schema with sample data
-- **Contents:**
-  - Table: `testimonial` (9 fields)
-  - Table: `testimonial_category` (optional)
-  - Table: `audit_log` (optional)
-  - 3 Views for data aggregation
-  - 3 Stored Procedures
-  - Sample data: 7 testimonials
-  - Indexes for performance
-- **Tables:**
-  ```sql
-  testimonial
-  ├── id (PRIMARY KEY)
-  ├── nama_perusahaan
-  ├── nama_pemberi_testimoni
-  ├── jabatan
-  ├── isi_testimoni (LONGTEXT)
-  ├── rating (1-5)
-  ├── foto_orang (URL)
-  ├── logo_perusahaan (URL)
-  ├── tanggal_input (DATETIME)
-  ├── status_approve (ENUM: pending, approved, rejected)
-  ├── created_by
-  └── updated_by
-  ```
-- **How to Run:**
-  ```bash
-  mysql -u root -p kppsm_website < database-schema.sql
-  ```
+
+#### 5. **database/kppsm-database-upgrade.json**
+- **Type:** JSON Data Profile
+- **Purpose:** Metadata profil perusahaan, detail layanan & tes
 
 ---
 
 ### 🔌 API & BACKEND FILES
 
-#### 5. **server-api.js** (16 KB)
+#### 6. **src/server-api.js**
 - **Type:** Node.js/Express.js Backend
-- **Purpose:** REST API for testimonial management
-- **Endpoints:** 8 complete CRUD operations
+- **Purpose:** REST API for testimonial & contact management
+- **Endpoints:**
   ```
-  GET    /api/v1/testimonials              (List all)
+  GET    /api/v1/health                    (Health check)
+  POST   /api/v1/auth/login                (Login auth)
+  GET    /api/v1/testimonials              (List all approved)
+  GET    /api/v1/testimonials/stats        (Statistics)
   GET    /api/v1/testimonials/:id          (Get one)
+  POST   /api/v1/testimonials              (Create)
+  PUT    /api/v1/testimonials/:id          (Update)
+  DELETE /api/v1/testimonials/:id          (Delete)
+  PUT    /api/v1/testimonials/:id/approve  (Approve - admin)
+  PUT    /api/v1/testimonials/:id/reject   (Reject - admin)
+  POST   /api/contact                      (Contact inquiry)
+  ```
+
   POST   /api/v1/testimonials              (Create)
   PUT    /api/v1/testimonials/:id          (Update)
   DELETE /api/v1/testimonials/:id          (Delete)

@@ -2,12 +2,17 @@
   "name": "kppsm-api",
   "version": "1.0.0",
   "description": "KPPSM Testimonial Management API - Express.js Backend",
-  "main": "server-api.js",
+  "main": "src/server-api.js",
   "scripts": {
-    "start": "node server-api.js",
-    "dev": "nodemon server-api.js",
+    "start": "node src/server-api.js",
+    "dev": "nodemon src/server-api.js",
     "test": "jest --passWithNoTests --forceExit",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "docker:db:build": "docker build -t kppsm-db -f database/Dockerfile .",
+    "docker:db:up": "docker compose up -d kppsm-db",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f"
   },
   "keywords": [
     "kppsm",

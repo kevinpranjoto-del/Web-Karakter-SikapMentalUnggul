@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  # ----------------------------------------------------
+  # KPPSM Database (MySQL 8.0 with preloaded schema)
+  # ----------------------------------------------------
+  kppsm-db:
+    build:
+      context: .
+      dockerfile: database/Dockerfile
+    container_name: kppsm-mysql-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-rootpassword}
+      MYSQL_DATABASE: ${DB_NAME:-kppsm_website}
+      MYSQL_USER: ${DB_USER:-kppsm_user}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-kppsm_password}
+    ports:
+      - "${DB_PORT:-3306}:3306"
+    volumes:
+      - kppsm_mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u root -p$${MYSQL_ROOT_PASSWORD} || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+      start_period: 10s
+    networks:
+      - kppsm-network
+
+  # ----------------------------------------------------
+  # KPPSM Backend API & Web Application
+  # ----------------------------------------------------
+  kppsm-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kppsm-api-server
+    restart: unless-stopped
+    depends_on:
+      kppsm-db:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      DB_HOST: kppsm-db
+      DB_PORT: 3306
+      DB_USER: ${DB_USER:-kppsm_user}
+      DB_PASSWORD: ${DB_PASSWORD:-kppsm_password}
+      DB_NAME: ${DB_NAME:-kppsm_website}
+      JWT_SECRET: ${JWT_SECRET:-kppsm-secret-jwt-key-2024}
+    ports:
+      - "${PORT:-3000}:3000"
+    networks:
+      - kppsm-network
+
+volumes:
+  kppsm_mysql_data:
+    driver: local
+
+networks:
+  kppsm-network:
+    driver: bridge

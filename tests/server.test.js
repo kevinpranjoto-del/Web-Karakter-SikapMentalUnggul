@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../server-api');
+const app = require('../src/server-api');
 
 describe('KPPSM API Test Suite', () => {
   let adminToken = '';
