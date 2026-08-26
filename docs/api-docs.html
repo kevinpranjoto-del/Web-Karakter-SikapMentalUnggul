@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KPPSM REST API - OpenAPI 3.0 Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0a2540;
+      --accent: #f59e0b;
+      --slate-900: #0f172a;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #fafbfd;
+      color: #1e293b;
+    }
+    .custom-header {
+      background: linear-gradient(135deg, #091a30 0%, #0f2c4f 100%);
+      color: #ffffff;
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+      border-bottom: 2px solid var(--accent);
+    }
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+    .logo-badge {
+      width: 40px;
+      height: 40px;
+      background: #f59e0b;
+      color: #0f172a;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .header-titles h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.35rem;
+      margin: 0;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .header-titles p {
+      font-size: 0.8rem;
+      color: #cbd5e1;
+      margin: 0;
+    }
+    .header-links {
+      display: flex;
+      gap: 12px;
+    }
+    .header-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.825rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .header-btn-yaml {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .header-btn-yaml:hover {
+      background-color: #ffffff;
+      color: #0f172a;
+    }
+    .header-btn-json {
+      background-color: #f59e0b;
+      color: #0f172a;
+    }
+    .header-btn-json:hover {
+      background-color: #d97706;
+    }
+    #swagger-ui {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    .swagger-ui .topbar {
+      display: none;
+    }
+    .swagger-ui .info {
+      margin-bottom: 2rem;
+    }
+    .swagger-ui .info .title {
+      font-family: 'Outfit', sans-serif;
+      color: var(--primary);
+    }
+    .swagger-ui .scheme-container {
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #e2e8f0;
+    }
+    .swagger-ui .opblock {
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="custom-header">
+    <a href="../index.html" class="header-logo">
+      <div class="logo-badge">⚡</div>
+      <div class="header-titles">
+        <h1>KPPSM API Documentation</h1>
+        <p>OpenAPI 3.0.3 Specification Explorer</p>
+      </div>
+    </a>
+    <div class="header-links">
+      <a href="./openapi.yaml" download="openapi.yaml" class="header-btn header-btn-yaml">📄 Download YAML</a>
+      <a href="./openapi.json" download="openapi.json" class="header-btn header-btn-json">📦 Download JSON</a>
+      <a href="../index.html" class="header-btn header-btn-yaml">🏠 Kembali ke Web</a>
+    </div>
+  </header>
+
+  <div id="swagger-ui"></div>
+
+  <script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-bundle.js"></script>
+  <script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-standalone-preset.js"></script>
+  <script>
+    const openApiSpec = {
+      "openapi": "3.0.3",
+      "info": {
+        "title": "KPPSM API - Testimonial & Contact Management",
+        "description": "### Klinik Pengembangan Psikologi Sikap Mental (KPPSM) REST API\nDokumentasi resmi API untuk sistem manajemen testimoni, autentikasi admin, dan permintaan konsultasi pelatihan sikap mental Tatag Utomo.\n\n#### Fitur Utama:\n* **Autentikasi JWT (Bearer Token)**\n* **Manajemen Testimoni CRUD & Moderasi (Approve/Reject)**\n* **Statistik & Distribusi Rating Testimoni**\n* **Inquiry Formulir Kontak & Permintaan Konsultasi**\n* **Pencarian, Filter, Sorting, & Paginasi Terstruktur**",
+        "version": "1.0.0",
+        "contact": {
+          "name": "KPPSM Tech Support & Tatag Utomo",
+          "email": "info@kppsm.com",
+          "url": "https://kppsm.com"
+        },
+        "license": {
+          "name": "Proprietary",
+          "url": "https://kppsm.com/license"
+        }
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000",
+          "description": "Local Development Server"
+        },
+        {
+          "url": "https://api.kppsm.com",
+          "description": "Production API Server"
+        }
+      ],
+      "tags": [
+        { "name": "Health", "description": "Endpoint status kesehatan server dan uptime" },
+        { "name": "Auth", "description": "Autentikasi dan penerbitan JSON Web Token (JWT)" },
+        { "name": "Testimonials Public", "description": "Endpoint publik untuk membaca testimoni yang telah disetujui (Approved)" },
+        { "name": "Testimonials Admin & Management", "description": "Endpoint terproteksi untuk mengelola, menambah, mengubah, menghapus, dan memoderasi testimoni" },
+        { "name": "Contact", "description": "Endpoint penerimaan pesan formulir kontak dan permintaan konsultasi" }
+      ],
+      "paths": {
+        "/api/v1/health": {
+          "get": {
+            "tags": ["Health"],
+            "summary": "Pemeriksaan Kesehatan API",
+            "description": "Mengembalikan status kesehatan server dan timestamp UTC saat ini.",
+            "operationId": "getHealthStatus",
+            "responses": {
+              "200": {
+                "description": "Server berjalan normal",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "status": { "type": "string", "example": "success" },
+                        "code": { "type": "integer", "example": 200 },
+                        "message": { "type": "string", "example": "API is healthy" },
+                        "data": {
+                          "type": "object",
+                          "properties": {
+                            "status": { "type": "string", "example": "ok" },
+                            "timestamp": { "type": "string", "format": "date-time", "example": "2026-08-26T06:45:00.000Z" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/api/v1/auth/login": {
+          "post": {
+            "tags": ["Auth"],
+            "summary": "Login Admin & Dapatkan Bearer Token",
+            "description": "Mengautentikasi kredensial admin dan mengembalikan JWT access token dengan masa berlaku 24 jam.",
+            "operationId": "loginAdmin",
+            "requestBody": {
+              "required": true,
+              "content": {
+                "application/json": {
+                  "schema": { "$ref": "#/components/schemas/LoginRequest" }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "Login berhasil",
+                "content": {
+                  "application/json": { "schema": { "$ref": "#/components/schemas/LoginResponse" } }
+                }
+              },
+              "401": {
+                "description": "Kredensial tidak valid",
+                "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } }
+              },
+              "422": {
+                "description": "Validasi input gagal",
+                "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ValidationErrorResponse" } } }
+              }
+            }
+          }
+        },
+        "/api/v1/testimonials": {
+          "get": {
+            "tags": ["Testimonials Public"],
+            "summary": "Dapatkan Daftar Testimoni Approved (Publik)",
+            "description": "Mengambil daftar testimoni klien yang telah disetujui dengan dukungan pencarian, filter rating, sorting, dan paginasi.",
+            "operationId": "getApprovedTestimonials",
+            "parameters": [
+              { "name": "page", "in": "query", "description": "Nomor halaman", "schema": { "type": "integer", "default": 1, "minimum": 1 } },
+              { "name": "per_page", "in": "query", "description": "Jumlah item per halaman (maks 100)", "schema": { "type": "integer", "default": 10, "minimum": 1, "maximum": 100 } },
+              { "name": "rating", "in": "query", "description": "Filter berdasarkan rating bintang (1-5)", "schema": { "type": "integer", "minimum": 1, "maximum": 5 } },
+              { "name": "search", "in": "query", "description": "Kata kunci nama perusahaan atau pemberi testimoni", "schema": { "type": "string" } },
+              { "name": "sort", "in": "query", "description": "Urutan data", "schema": { "type": "string", "enum": ["date_newest", "date_oldest", "rating_desc", "rating_asc"], "default": "date_newest" } }
+            ],
+            "responses": {
+              "200": {
+                "description": "Daftar testimoni berhasil diambil",
+                "content": { "application/json": { "schema": { "$ref": "#/components/schemas/TestimonialListResponse" } } }
+              },
+              "422": {
+                "description": "Parameter query tidak valid",
+                "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ValidationErrorResponse" } } }
+              }
+            }
+          },
+          "post": {
+            "tags": ["Testimonials Admin & Management"],
+            "summary": "Buat Testimoni Baru",
+            "description": "Menambahkan testimoni baru ke sistem dengan status awal 'pending'.",
+            "operationId": "createTestimonial",
+            "security": [{ "BearerAuth": [] }],
+            "requestBody": {
+              "required": true,
+              "content": { "application/json": { "schema": { "$ref": "#/components/schemas/CreateTestimonialRequest" } } }
+            },
+            "responses": {
+              "201": {
+                "description": "Testimoni berhasil dibuat",
+                "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SingleTestimonialResponse" } } }
+              },
+              "401": { "description": "Unauthorized", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } },
+              "422": { "description": "Validasi data gagal", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ValidationErrorResponse" } } } }
+            }
+          }
+        },
+        "/api/v1/testimonials/stats": {
+          "get": {
+            "tags": ["Testimonials Admin & Management"],
+            "summary": "Dapatkan Statistik & Distribusi Rating",
+            "description": "Mengambil metrik agregat seperti total testimoni, jumlah status (approved, pending, rejected), rata-rata rating, dan distribusi bintang.",
+            "operationId": "getTestimonialStats",
+            "security": [{ "BearerAuth": [] }],
+            "responses": {
+              "200": {
+                "description": "Statistik berhasil diambil",
+                "content": { "application/json": { "schema": { "$ref": "#/components/schemas/TestimonialStatsResponse" } } }
+              },
+              "401": { "description": "Unauthorized", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } }
+            }
+          }
+        },
+        "/api/v1/testimonials/{id}": {
+          "get": {
+            "tags": ["Testimonials Admin & Management"],
+            "summary": "Dapatkan Detail Testimoni Tunggal",
+            "description": "Mengambil satu objek testimoni berdasarkan ID integer.",
+            "operationId": "getTestimonialById",
+            "security": [{ "BearerAuth": [] }],
+            "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer", "example": 1 } }],
+            "responses": {
+              "200": { "description": "Testimoni ditemukan", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SingleTestimonialResponse" } } } },
+              "401": { "description": "Unauthorized", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } },
+              "404": { "description": "Testimoni tidak ditemukan", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } }
+            }
+          },
+          "put": {
+            "tags": ["Testimonials Admin & Management"],
+            "summary": "Perbarui Testimoni",
+            "description": "Memperbarui isi, data perusahaan, jabatan, atau rating dari testimoni yang ada.",
+            "operationId": "updateTestimonial",
+            "security": [{ "BearerAuth": [] }],
+            "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer", "example": 1 } }],
+            "requestBody": {
+              "required": true,
+              "content": { "application/json": { "schema": { "$ref": "#/components/schemas/CreateTestimonialRequest" } } }
+            },
+            "responses": {
+              "200": { "description": "Testimoni berhasil diperbarui", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SingleTestimonialResponse" } } } },
+              "401": { "description": "Unauthorized", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } },
+              "404": { "description": "Testimoni tidak ditemukan", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } },
+              "422": { "description": "Validasi data gagal", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ValidationErrorResponse" } } } }
+            }
+          },
+          "delete": {
+            "tags": ["Testimonials Admin & Management"],
+            "summary": "Hapus Testimoni",
+            "description": "Menghapus data testimoni secara permanen berdasarkan ID.",
+            "operationId": "deleteTestimonial",
+            "security": [{ "BearerAuth": [] }],
+            "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer", "example": 1 } }],
+            "responses": {
+              "200": {
+                "description": "Testimoni berhasil dihapus",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "status": { "type": "string", "example": "success" },
+                        "code": { "type": "integer", "example": 200 },
+                        "message": { "type": "string", "example": "Testimonial deleted successfully" },
+                        "data": {
+                          "type": "object",
+                          "properties": {
+                            "id": { "type": "integer", "example": 1 },
+                            "deleted_at": { "type": "string", "format": "date-time" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "401": { "description": "Unauthorized", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } },
+              "404": { "description": "Testimoni tidak ditemukan", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } }
+            }
+          }
+        },
+        "/api/v1/testimonials/{id}/approve": {
+          "put": {
+            "tags": ["Testimonials Admin & Management"],
+            "summary": "Setujui (Approve) Testimoni",
+            "description": "Mengubah status testimoni menjadi 'approved' agar tampil di website publik. Memerlukan hak akses role 'admin'.",
+            "operationId": "approveTestimonial",
+            "security": [{ "BearerAuth": [] }],
+            "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer", "example": 1 } }],
+            "requestBody": {
+              "required": false,
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": { "notes": { "type": "string", "example": "Testimoni berkualitas dan terverifikasi" } }
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "Testimoni berhasil disetujui",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "status": { "type": "string", "example": "success" },
+                        "code": { "type": "integer", "example": 200 },
+                        "message": { "type": "string", "example": "Testimonial approved successfully" },
+                        "data": {
+                          "type": "object",
+                          "properties": {
+                            "id": { "type": "integer", "example": 1 },
+                            "status_approve": { "type": "string", "example": "approved" },
+                            "approved_at": { "type": "string", "format": "date-time" },
+                            "approved_by": { "type": "string", "example": "admin@kppsm.com" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "401": { "description": "Unauthorized", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } },
+              "403": { "description": "Forbidden", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } },
+              "404": { "description": "Testimoni tidak ditemukan", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } }
+            }
+          }
+        },
+        "/api/v1/testimonials/{id}/reject": {
+          "put": {
+            "tags": ["Testimonials Admin & Management"],
+            "summary": "Tolak (Reject) Testimoni",
+            "description": "Mengubah status testimoni menjadi 'rejected' dan mencatat alasan penolakan. Memerlukan hak akses role 'admin'.",
+            "operationId": "rejectTestimonial",
+            "security": [{ "BearerAuth": [] }],
+            "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer", "example": 1 } }],
+            "requestBody": {
+              "required": false,
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": { "reason": { "type": "string", "example": "Format atau konten tidak sesuai standar" } }
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "Testimoni berhasil ditolak",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "status": { "type": "string", "example": "success" },
+                        "code": { "type": "integer", "example": 200 },
+                        "message": { "type": "string", "example": "Testimonial rejected successfully" },
+                        "data": {
+                          "type": "object",
+                          "properties": {
+                            "id": { "type": "integer", "example": 1 },
+                            "status_approve": { "type": "string", "example": "rejected" },
+                            "rejected_at": { "type": "string", "format": "date-time" },
+                            "rejected_by": { "type": "string", "example": "admin@kppsm.com" },
+                            "rejection_reason": { "type": "string", "example": "Format tidak sesuai" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "401": { "description": "Unauthorized", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } },
+              "403": { "description": "Forbidden", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } },
+              "404": { "description": "Testimoni tidak ditemukan", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ErrorResponse" } } } }
+            }
+          }
+        },
+        "/api/contact": {
+          "post": {
+            "tags": ["Contact"],
+            "summary": "Kirim Formulir Konsultasi",
+            "description": "Menerima pesan dan permintaan konsultasi pelatihan sikap mental dari pengunjung website publik.",
+            "operationId": "submitContactInquiry",
+            "requestBody": {
+              "required": true,
+              "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ContactInquiryRequest" } } }
+            },
+            "responses": {
+              "200": {
+                "description": "Pesan berhasil diterima",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "status": { "type": "string", "example": "success" },
+                        "code": { "type": "integer", "example": 200 },
+                        "message": { "type": "string", "example": "Terima kasih! Pesan Anda telah kami terima." },
+                        "data": {
+                          "type": "object",
+                          "properties": {
+                            "nama": { "type": "string", "example": "Budi Pratama, S.E." },
+                            "email": { "type": "string", "example": "budi@kaji.co.id" },
+                            "created_at": { "type": "string", "format": "date-time" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "422": { "description": "Validasi form gagal", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ValidationErrorResponse" } } } }
+            }
+          }
+        }
+      },
+      "components": {
+        "securitySchemes": {
+          "BearerAuth": {
+            "type": "http",
+            "scheme": "bearer",
+            "bearerFormat": "JWT",
+            "description": "Masukkan JWT Token dari endpoint `/api/v1/auth/login`."
+          }
+        },
+        "schemas": {
+          "LoginRequest": {
+            "type": "object",
+            "required": ["email", "password"],
+            "properties": {
+              "email": { "type": "string", "format": "email", "example": "admin@kppsm.com" },
+              "password": { "type": "string", "format": "password", "example": "admin123" }
+            }
+          },
+          "LoginResponse": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "string", "example": "success" },
+              "code": { "type": "integer", "example": 200 },
+              "message": { "type": "string", "example": "Login successful" },
+              "data": {
+                "type": "object",
+                "properties": {
+                  "access_token": { "type": "string", "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." },
+                  "token_type": { "type": "string", "example": "Bearer" },
+                  "expires_in": { "type": "integer", "example": 86400 },
+                  "user": {
+                    "type": "object",
+                    "properties": {
+                      "id": { "type": "integer", "example": 1 },
+                      "email": { "type": "string", "example": "admin@kppsm.com" },
+                      "name": { "type": "string", "example": "Admin KPPSM" },
+                      "role": { "type": "string", "example": "admin" }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "TestimonialItem": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "integer", "example": 1 },
+              "nama_perusahaan": { "type": "string", "example": "PT Kaji" },
+              "nama_pemberi_testimoni": { "type": "string", "example": "Eka Wijaya" },
+              "jabatan": { "type": "string", "example": "HRD Director" },
+              "isi_testimoni": { "type": "string", "example": "Pelatihan dari KPPSM benar-benar mengubah cara saya memimpin tim..." },
+              "rating": { "type": "integer", "minimum": 1, "maximum": 5, "example": 5 },
+              "foto_orang": { "type": "string", "nullable": true, "example": "https://api.kppsm.com/uploads/eka.jpg" },
+              "logo_perusahaan": { "type": "string", "nullable": true, "example": "https://api.kppsm.com/uploads/kaji-logo.png" },
+              "kategori": { "type": "string", "example": "Corporate" },
+              "status_approve": { "type": "string", "enum": ["approved", "pending", "rejected"], "example": "approved" },
+              "tanggal_input": { "type": "string", "format": "date-time", "example": "2024-08-10T10:00:00.000Z" },
+              "created_by": { "type": "string", "example": "admin@kppsm.com" }
+            }
+          },
+          "TestimonialListResponse": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "string", "example": "success" },
+              "code": { "type": "integer", "example": 200 },
+              "message": { "type": "string", "example": "Testimonials retrieved successfully" },
+              "data": { "type": "array", "items": { "$ref": "#/components/schemas/TestimonialItem" } },
+              "meta": {
+                "type": "object",
+                "properties": {
+                  "page": { "type": "integer", "example": 1 },
+                  "per_page": { "type": "integer", "example": 10 },
+                  "total": { "type": "integer", "example": 4 },
+                  "total_pages": { "type": "integer", "example": 1 }
+                }
+              }
+            }
+          },
+          "SingleTestimonialResponse": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "string", "example": "success" },
+              "code": { "type": "integer", "example": 200 },
+              "message": { "type": "string", "example": "Testimonial retrieved successfully" },
+              "data": { "$ref": "#/components/schemas/TestimonialItem" }
+            }
+          },
+          "CreateTestimonialRequest": {
+            "type": "object",
+            "required": ["nama_perusahaan", "nama_pemberi_testimoni", "jabatan", "isi_testimoni", "rating"],
+            "properties": {
+              "nama_perusahaan": { "type": "string", "maxLength": 255, "example": "PT Kaji" },
+              "nama_pemberi_testimoni": { "type": "string", "maxLength": 255, "example": "Eka Wijaya" },
+              "jabatan": { "type": "string", "maxLength": 255, "example": "HRD Director" },
+              "isi_testimoni": { "type": "string", "minLength": 20, "maxLength": 5000, "example": "Pelatihan dari KPPSM benar-benar mengubah cara saya memimpin tim." },
+              "rating": { "type": "integer", "minimum": 1, "maximum": 5, "example": 5 },
+              "foto_orang": { "type": "string", "format": "uri", "nullable": true, "example": "https://api.kppsm.com/uploads/avatar.jpg" },
+              "logo_perusahaan": { "type": "string", "format": "uri", "nullable": true, "example": "https://api.kppsm.com/uploads/logo.png" }
+            }
+          },
+          "TestimonialStatsResponse": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "string", "example": "success" },
+              "code": { "type": "integer", "example": 200 },
+              "message": { "type": "string", "example": "Statistics retrieved successfully" },
+              "data": {
+                "type": "object",
+                "properties": {
+                  "total_testimoni": { "type": "integer", "example": 4 },
+                  "approved": { "type": "integer", "example": 4 },
+                  "pending": { "type": "integer", "example": 0 },
+                  "rejected": { "type": "integer", "example": 0 },
+                  "average_rating": { "type": "number", "format": "float", "example": 5.0 },
+                  "unique_companies": { "type": "integer", "example": 4 },
+                  "rating_distribution": {
+                    "type": "object",
+                    "properties": {
+                      "5_stars": { "type": "integer", "example": 4 },
+                      "4_stars": { "type": "integer", "example": 0 },
+                      "3_stars": { "type": "integer", "example": 0 },
+                      "2_stars": { "type": "integer", "example": 0 },
+                      "1_star": { "type": "integer", "example": 0 }
+                    }
+                  },
+                  "last_update": { "type": "string", "format": "date-time" }
+                }
+              }
+            }
+          },
+          "ContactInquiryRequest": {
+            "type": "object",
+            "required": ["nama", "email", "pesan"],
+            "properties": {
+              "nama": { "type": "string", "example": "Budi Pratama, S.E." },
+              "email": { "type": "string", "format": "email", "example": "budi@kaji.co.id" },
+              "telepon": { "type": "string", "nullable": true, "example": "081234567890" },
+              "perusahaan": { "type": "string", "nullable": true, "example": "PT Kaji" },
+              "pesan": { "type": "string", "example": "Kami membutuhkan sesi pelatihan transformasi motivasi tim sales untuk 50 peserta." }
+            }
+          },
+          "ErrorResponse": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "string", "example": "error" },
+              "code": { "type": "integer", "example": 400 },
+              "message": { "type": "string", "example": "Bad Request" },
+              "error": { "type": "string", "example": "Deskripsi pesan error" }
+            }
+          },
+          "ValidationErrorResponse": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "string", "example": "error" },
+              "code": { "type": "integer", "example": 422 },
+              "message": { "type": "string", "example": "Validation failed" },
+              "errors": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "field": { "type": "string", "example": "email" },
+                    "message": { "type": "string", "example": "Email tidak valid" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    };
+
+    window.onload = function() {
+      window.ui = SwaggerUIBundle({
+        spec: openApiSpec,
+        dom_id: '#swagger-ui',
+        deepLinking: true,
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset
+        ],
+        layout: "BaseLayout",
+        defaultModelsExpandDepth: 2,
+        defaultModelExpandDepth: 2,
+        displayRequestDuration: true,
+        docExpansion: "list",
+        filter: true,
+        showExtensions: true,
+        showCommonExtensions: true
+      });
+    };
+  </script>
+</body>
+</html>

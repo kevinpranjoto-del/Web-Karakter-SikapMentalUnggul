@@ -46,9 +46,20 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static assets
+// Serve static assets and API documentation
 app.use('/assets', express.static(path.join(__dirname, '../assets')));
+app.use('/docs', express.static(path.join(__dirname, '../docs')));
+app.get('/api-docs', (req, res) => {
+    res.sendFile(path.join(__dirname, '../docs/api-docs.html'));
+});
+app.get('/api/docs/openapi.json', (req, res) => {
+    res.sendFile(path.join(__dirname, '../docs/openapi.json'));
+});
+app.get('/api/docs/openapi.yaml', (req, res) => {
+    res.sendFile(path.join(__dirname, '../docs/openapi.yaml'));
+});
 app.use(express.static(path.join(__dirname, '..')));
+
 
 
 // =====================================================
