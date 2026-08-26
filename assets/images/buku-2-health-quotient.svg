@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bookBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="50%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="emeraldGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="shadow3D2">
+      <feDropShadow dx="15" dy="20" stdDeviation="15" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow3D2)">
+    <rect x="50" y="30" width="500" height="780" rx="16" fill="url(#bookBg2)"/>
+    <!-- Spine Accent -->
+    <rect x="50" y="30" width="25" height="780" rx="4" fill="rgba(0,0,0,0.3)"/>
+    <line x1="75" y1="30" x2="75" y2="810" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+    
+    <rect x="90" y="70" width="420" height="6" fill="url(#emeraldGold)"/>
+
+    <!-- Publisher Tag -->
+    <g transform="translate(90, 95)">
+      <rect width="150" height="28" rx="4" fill="rgba(255,255,255,0.1)"/>
+      <text x="75" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#a7f3d0" text-anchor="middle" letter-spacing="1">PT. GRASSINDO</text>
+    </g>
+
+    <!-- Category Pill -->
+    <g transform="translate(90, 150)">
+      <rect width="240" height="32" rx="16" fill="#10b981"/>
+      <text x="120" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle">EXECUTIVE HEALTH &amp; WELLNESS</text>
+    </g>
+
+    <!-- Title -->
+    <text x="90" y="240" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="-0.5">HEALTH</text>
+    <text x="90" y="295" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="900" fill="#34d399" letter-spacing="-0.5">QUOTIENT</text>
+    <text x="90" y="348" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-size="32" font-weight="800" fill="#ffffff">UNTUK EKSEKUTIF</text>
+
+    <!-- Graphic Motif (Balanced Triangle: Physical, Mental, Spiritual) -->
+    <g transform="translate(90, 420)">
+      <circle cx="210" cy="110" r="100" fill="none" stroke="rgba(52, 211, 153, 0.3)" stroke-width="2"/>
+      <polygon points="210,30 300,170 120,170" fill="none" stroke="#fbbf24" stroke-width="3"/>
+      <circle cx="210" cy="30" r="16" fill="#34d399"/>
+      <text x="210" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" fill="#064e3b" text-anchor="middle">BODY</text>
+      <circle cx="300" cy="170" r="16" fill="#34d399"/>
+      <text x="300" y="174" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" fill="#064e3b" text-anchor="middle">MIND</text>
+      <circle cx="120" cy="170" r="16" fill="#34d399"/>
+      <text x="120" y="174" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" fill="#064e3b" text-anchor="middle">SOUL</text>
+      <!-- Heart Pulse in Center -->
+      <path d="M170 115 L195 115 L205 90 L215 140 L225 105 L235 115 L250 115" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <text x="300" y="690" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" fill="#d1fae5" text-anchor="middle" font-weight="500">Keseimbangan Fisik, Mental, dan Spiritual Pemimpin</text>
+
+    <rect x="90" y="720" width="420" height="55" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(52, 211, 153, 0.4)" stroke-width="1.5"/>
+    <text x="300" y="754" font-family="'Outfit', sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="middle">Tatag Utomo, M.M., M.Si.</text>
+  </g>
+</svg>

@@ -1,271 +1,99 @@
-/* =====================================
+/* ==========================================================================
    KPPSM WEBSITE - MAIN JAVASCRIPT
-   Interactive Features & API Integration
-   ===================================== */
+   Interactive Features, Navigation, Lightbox & Contact Form Handlers
+   ========================================================================== */
 
-// =====================================
-// 1. HAMBURGER MENU FUNCTIONALITY
-// =====================================
+document.addEventListener('DOMContentLoaded', () => {
+    // --- 1. MOBILE NAVIGATION & DRAWER ---
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    const navOverlay = document.getElementById('nav-overlay');
+    const navLinks = document.querySelectorAll('.nav-link');
 
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
-const navLinks = document.querySelectorAll('.nav-link');
-
-if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
+    function toggleMenu() {
+        const isActive = navMenu.classList.toggle('active');
         hamburger.classList.toggle('active');
-    });
+        if (navOverlay) navOverlay.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        document.body.style.overflow = isActive ? 'hidden' : '';
+    }
 
-    // Close menu when link is clicked
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
+    function closeMenu() {
+        navMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+        if (navOverlay) navOverlay.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    }
+
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', toggleMenu);
+        if (navOverlay) navOverlay.addEventListener('click', closeMenu);
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
         });
-    });
-}
+    }
 
-// =====================================
-// 2. SMOOTH SCROLL & ACTIVE NAVIGATION
-// =====================================
-
-window.addEventListener('scroll', () => {
-    let current = '';
-    const sections = document.querySelectorAll('section, header');
-    const scrollY = window.scrollY || window.pageYOffset;
+    // --- 2. SMOOTH SCROLL & ACTIVE SCROLLSPY ---
+    const sections = document.querySelectorAll('section[id], header[id]');
     
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (scrollY >= sectionTop - 200) {
-            current = section.getAttribute('id') || '';
-        }
-    });
+    function updateScrollSpy() {
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        const navbar = document.getElementById('navbar');
 
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        const href = link.getAttribute('href');
-        if (href && href.startsWith('#') && href.slice(1) === current) {
-            link.classList.add('active');
-        }
-    });
-});
-
-// =====================================
-// 3. NAVBAR STICKY EFFECT
-// =====================================
-
-const navbar = document.getElementById('navbar');
-
-if (navbar) {
-    window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY || window.pageYOffset;
-        if (scrollY > 100) {
-            navbar.style.boxShadow = 'var(--shadow-md)';
-        } else {
-            navbar.style.boxShadow = 'var(--shadow-sm)';
-        }
-    });
-}
-
-// =====================================
-// 4. TESTIMONIAL LOADING & CAROUSEL
-// =====================================
-
-class TestimonialManager {
-    constructor() {
-        this.container = document.getElementById('testimoni-container');
-        this.staticContainer = document.getElementById('static-testimonials');
-        this.controls = document.getElementById('testimoni-controls');
-        this.currentIndex = 0;
-        this.testimonials = [];
-        this.apiEndpoint = window.location.protocol === 'file:'
-            ? 'http://localhost:3000/api/v1/testimonials'
-            : '/api/v1/testimonials';
-
-        if (!this.container) {
-            console.warn('Testimonial container not found');
-            return;
-        }
-
-        this.init();
-    }
-
-    async init() {
-        try {
-            await this.fetchTestimonials();
-            if (this.testimonials.length > 0) {
-                this.displayTestimonials();
-                this.attachEventListeners();
-                if (this.staticContainer) {
-                    this.staticContainer.style.display = 'none';
-                }
-                if (this.controls) {
-                    this.controls.style.display = 'flex';
-                }
+        // Sticky Navbar shadow effect
+        if (navbar) {
+            if (scrollY > 60) {
+                navbar.classList.add('scrolled');
             } else {
-                this.handleError();
-            }
-        } catch (error) {
-            console.error('Error loading testimonials:', error);
-            this.handleError();
-        }
-    }
-
-    async fetchTestimonials() {
-        try {
-            const response = await fetch(`${this.apiEndpoint}?page=1&per_page=10&sort=date_newest`);
-            if (!response.ok) throw new Error('Network response failed');
-            
-            const data = await response.json();
-            this.testimonials = data.data || [];
-            
-            if (this.testimonials.length === 0) {
-                console.warn('No testimonials found from API, using static fallback');
-                this.handleError();
-            }
-        } catch (error) {
-            console.warn('API unavailable, falling back to static testimonials:', error.message);
-            this.handleError();
-        }
-    }
-
-    displayTestimonials() {
-        if (this.testimonials.length === 0) return;
-
-        this.container.innerHTML = '';
-
-        // Display up to 3 testimonials at a time
-        const itemsPerPage = 3;
-        const total = this.testimonials.length;
-        const count = Math.min(itemsPerPage, total);
-        const startIndex = this.currentIndex % total;
-        
-        for (let i = 0; i < count; i++) {
-            const index = (startIndex + i) % total;
-            const testimonial = this.testimonials[index];
-            this.container.appendChild(this.createCard(testimonial));
-        }
-    }
-
-    createCard(testimonial) {
-        const card = document.createElement('div');
-        card.className = 'testimoni-card';
-
-        // Create stars
-        const starsHTML = this.createStars(testimonial.rating);
-
-        // Escape HTML to prevent XSS
-        const sanitize = (str) => {
-            const div = document.createElement('div');
-            div.textContent = str || '';
-            return div.innerHTML;
-        };
-
-        const companyLogo = testimonial.logo_perusahaan 
-            ? `<img src="${sanitize(testimonial.logo_perusahaan)}" alt="${sanitize(testimonial.nama_perusahaan)}" style="width: 30px; height: auto; margin-top: 5px;" onerror="this.style.display='none'">` 
-            : '';
-
-        const authorPhoto = testimonial.foto_orang 
-            ? `<img src="${sanitize(testimonial.foto_orang)}" alt="${sanitize(testimonial.nama_pemberi_testimoni)}" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" onerror="this.style.display='none'">` 
-            : '';
-
-        card.innerHTML = `
-            <div class="testimoni-stars">
-                ${starsHTML}
-            </div>
-            <p class="testimoni-text">
-                "${sanitize(testimonial.isi_testimoni)}"
-            </p>
-            <div class="testimoni-author">
-                ${authorPhoto}
-                <div class="author-info">
-                    <h4>${sanitize(testimonial.nama_pemberi_testimoni)}</h4>
-                    <p>${sanitize(testimonial.jabatan)}, ${sanitize(testimonial.nama_perusahaan)}</p>
-                    ${companyLogo}
-                </div>
-            </div>
-        `;
-
-        return card;
-    }
-
-    createStars(rating) {
-        let starsHTML = '';
-        const numRating = parseInt(rating, 10) || 5;
-        for (let i = 0; i < 5; i++) {
-            if (i < numRating) {
-                starsHTML += '<i class="fas fa-star"></i>';
-            } else {
-                starsHTML += '<i class="far fa-star"></i>';
+                navbar.classList.remove('scrolled');
             }
         }
-        return starsHTML;
-    }
 
-    attachEventListeners() {
-        const prevBtn = document.getElementById('prev-testimoni');
-        const nextBtn = document.getElementById('next-testimoni');
+        // Active link tracking
+        sections.forEach(current => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 120;
+            const sectionId = current.getAttribute('id');
 
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => this.previousPage());
-        }
-
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => this.nextPage());
-        }
-    }
-
-    nextPage() {
-        if (this.testimonials.length === 0) return;
-        this.currentIndex = (this.currentIndex + 1) % this.testimonials.length;
-        this.displayTestimonials();
-    }
-
-    previousPage() {
-        if (this.testimonials.length === 0) return;
-        this.currentIndex = (this.currentIndex - 1 + this.testimonials.length) % this.testimonials.length;
-        this.displayTestimonials();
-    }
-
-    handleError() {
-        if (this.container) {
-            this.container.style.display = 'none';
-        }
-        if (this.controls) {
-            this.controls.style.display = 'none';
-        }
-        if (this.staticContainer) {
-            this.staticContainer.style.display = 'grid';
-        }
-    }
-}
-
-// =====================================
-// 5. GALLERY LIGHTBOX
-// =====================================
-
-class GalleryLightbox {
-    constructor() {
-        this.galleryItems = document.querySelectorAll('.gallery-item');
-        if (this.galleryItems.length > 0) {
-            this.init();
-        }
-    }
-
-    init() {
-        this.galleryItems.forEach(item => {
-            item.addEventListener('click', () => {
-                const img = item.querySelector('img');
-                if (img && img.src && !img.classList.contains('img-fallback')) {
-                    this.openLightbox(img.src);
-                }
-            });
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
         });
     }
 
-    openLightbox(src) {
-        // Remove existing lightbox if any
+    window.addEventListener('scroll', updateScrollSpy, { passive: true });
+    updateScrollSpy();
+
+    // Smooth Scroll with Header Offset
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId && targetId !== '#' && document.querySelector(targetId)) {
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                const headerOffset = 80;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // --- 3. GALLERY LIGHTBOX ---
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    function openLightbox(imgSrc, title) {
         const existing = document.querySelector('.lightbox');
         if (existing) existing.remove();
 
@@ -273,8 +101,8 @@ class GalleryLightbox {
         lightbox.className = 'lightbox';
         lightbox.innerHTML = `
             <div class="lightbox-content">
-                <img src="${src}" alt="Gallery Preview" onerror="this.parentElement.innerHTML='<p style=\\'color:white;padding:2rem\\'>Gambar belum tersedia</p>'">
-                <button class="lightbox-close" aria-label="Tutup">&times;</button>
+                <img src="${imgSrc}" alt="${title || 'Dokumentasi KPPSM'}">
+                <button class="lightbox-close" aria-label="Tutup Preview">&times;</button>
             </div>
         `;
 
@@ -292,281 +120,221 @@ class GalleryLightbox {
             }
         });
 
-        // Close on ESC key
-        const handleKeyDown = (e) => {
+        const handleEscape = (e) => {
             if (e.key === 'Escape') {
                 lightbox.remove();
-                document.removeEventListener('keydown', handleKeyDown);
+                document.removeEventListener('keydown', handleEscape);
             }
         };
-        document.addEventListener('keydown', handleKeyDown);
-    }
-}
-
-// =====================================
-// 6. FORM HANDLING & VALIDATION
-// =====================================
-
-class FormHandler {
-    constructor(formSelector) {
-        this.form = document.querySelector(formSelector);
-        if (this.form) {
-            this.init();
-        }
+        document.addEventListener('keydown', handleEscape);
     }
 
-    init() {
-        this.form.addEventListener('submit', (e) => this.handleSubmit(e));
-    }
-
-    handleSubmit(e) {
-        e.preventDefault();
-        
-        if (!this.validateForm()) {
-            alert('Harap isi semua field wajib dengan benar.');
-            return;
-        }
-
-        const formData = new FormData(this.form);
-        const data = Object.fromEntries(formData.entries());
-        this.submitForm(data);
-    }
-
-    validateForm() {
-        let isValid = true;
-        const inputs = this.form.querySelectorAll('input, textarea');
-        for (let input of inputs) {
-            if (input.required && !input.value.trim()) {
-                input.classList.add('error');
-                isValid = false;
-            } else if (input.type === 'email' && input.value.trim() && !input.value.includes('@')) {
-                input.classList.add('error');
-                isValid = false;
-            } else {
-                input.classList.remove('error');
-            }
-        }
-        return isValid;
-    }
-
-    async submitForm(data) {
-        const submitBtn = this.form.querySelector('button[type="submit"]');
-        const originalText = submitBtn ? submitBtn.innerHTML : '';
-        if (submitBtn) {
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengirim Pesan...';
-        }
-
-        try {
-            const apiBase = window.location.protocol === 'file:' ? 'http://localhost:3000' : '';
-            const response = await fetch(`${apiBase}/api/contact`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            });
-
-            const resData = await response.json().catch(() => ({}));
-
-            if (response.ok) {
-                alert(resData.message || 'Terima kasih! Pesan Anda telah kami terima. Tim KPPSM akan segera menghubungi Anda.');
-                this.form.reset();
-            } else {
-                alert(resData.error || resData.message || 'Terjadi kesalahan saat mengirim pesan. Silakan hubungi kami via WhatsApp.');
-            }
-        } catch (error) {
-            console.error('Form submission network error:', error);
-            // Fallback direct WhatsApp inquiry
-            const msg = `Halo Pak Tatag / KPPSM, saya ${data.nama || ''} ingin berkonsultasi mengenai: ${data.pesan || ''}`;
-            if (confirm('Pesan tersimpan. Ingin melanjutkan konsultasi langsung via WhatsApp?')) {
-                window.open(`https://wa.me/62818874430?text=${encodeURIComponent(msg)}`, '_blank');
-            }
-            this.form.reset();
-        } finally {
-            if (submitBtn) {
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalText;
-            }
-        }
-    }
-}
-
-// =====================================
-// 7. SCROLL REVEAL ANIMATION
-// =====================================
-
-class ScrollReveal {
-    constructor() {
-        this.elements = document.querySelectorAll('.service-card, .buku-card, .value-card, .gallery-item');
-        if (this.elements.length > 0 && 'IntersectionObserver' in window) {
-            this.init();
-        }
-    }
-
-    init() {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animation = 'fadeIn 0.6s ease forwards';
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        });
-
-        this.elements.forEach(el => {
-            el.style.opacity = '0';
-            observer.observe(el);
-        });
-    }
-}
-
-// =====================================
-// 8. WHATSAPP INTEGRATION HELPER
-// =====================================
-
-class WhatsAppHelper {
-    static openChat(phoneNumber, message = '') {
-        const cleanPhone = phoneNumber.replace(/\D/g, '');
-        const url = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`;
-        window.open(url, '_blank');
-    }
-
-    static addToWindow() {
-        window.openWhatsApp = (phone, msg) => this.openChat(phone, msg);
-    }
-}
-
-WhatsAppHelper.addToWindow();
-
-// =====================================
-// 9. UTILITY FUNCTIONS
-// =====================================
-
-function formatCurrency(amount) {
-    return new Intl.NumberFormat('id-ID', {
-        style: 'currency',
-        currency: 'IDR',
-        minimumFractionDigits: 0
-    }).format(amount);
-}
-
-function formatDate(date) {
-    return new Intl.DateTimeFormat('id-ID', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    }).format(new Date(date));
-}
-
-// =====================================
-// 10. CUSTOM STYLES FOR LIGHTBOX
-// =====================================
-
-const lightboxStyles = `
-    .lightbox {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.85);
-        z-index: 9999;
-        align-items: center;
-        justify-content: center;
-        animation: fadeIn 0.3s ease;
-    }
-
-    .lightbox-content {
-        position: relative;
-        max-width: 90%;
-        max-height: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .lightbox-content img {
-        max-width: 100%;
-        max-height: 85vh;
-        object-fit: contain;
-        border-radius: 8px;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-    }
-
-    .lightbox-close {
-        position: absolute;
-        top: -40px;
-        right: 0;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 36px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        line-height: 1;
-    }
-
-    .lightbox-close:hover {
-        color: #e8852a;
-        transform: scale(1.2);
-    }
-
-    @media (max-width: 768px) {
-        .lightbox-close {
-            top: -35px;
-            right: 5px;
-            font-size: 30px;
-        }
-    }
-`;
-
-if (!document.getElementById('lightbox-injected-styles')) {
-    const styleSheet = document.createElement('style');
-    styleSheet.id = 'lightbox-injected-styles';
-    styleSheet.textContent = lightboxStyles;
-    document.head.appendChild(styleSheet);
-}
-
-// =====================================
-// 11. INITIALIZATION ON DOM READY
-// =====================================
-
-document.addEventListener('DOMContentLoaded', () => {
-    // 1. Initialize Testimonials
-    new TestimonialManager();
-
-    // 2. Initialize Lightbox
-    new GalleryLightbox();
-
-    // 3. Initialize Contact Form Handler
-    new FormHandler('#kontak-form');
-
-    // 4. Initialize Scroll Reveal
-    new ScrollReveal();
-
-    // 5. Smooth scroll for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            const href = this.getAttribute('href');
-            if (href && href !== '#' && document.querySelector(href)) {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                const headerOffset = 80;
-                const elementPosition = target.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + (window.scrollY || window.pageYOffset) - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const img = item.querySelector('img');
+            const title = item.getAttribute('data-title') || '';
+            if (img && img.src) {
+                openLightbox(img.src, title);
             }
         });
     });
 
-    console.log('KPPSM Website initialized successfully');
+    // --- 4. TESTIMONIAL CAROUSEL & API HANDLER ---
+    class TestimonialSlider {
+        constructor() {
+            this.container = document.getElementById('testimoni-container');
+            this.staticContainer = document.getElementById('static-testimonials');
+            this.controls = document.getElementById('testimoni-controls');
+            this.prevBtn = document.getElementById('prev-testimoni');
+            this.nextBtn = document.getElementById('next-testimoni');
+            this.testimonials = [];
+            this.currentIndex = 0;
+            this.apiEndpoint = window.location.protocol === 'file:' 
+                ? 'http://localhost:3000/api/v1/testimonials' 
+                : '/api/v1/testimonials';
+
+            this.init();
+        }
+
+        async init() {
+            try {
+                const response = await fetch(`${this.apiEndpoint}?page=1&per_page=9&sort=date_newest`, {
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (!response.ok) throw new Error('API Unavailable');
+                const result = await response.json();
+                
+                if (result && result.data && result.data.length > 0) {
+                    this.testimonials = result.data;
+                    this.renderCards();
+                    this.attachEvents();
+                    if (this.staticContainer) this.staticContainer.style.display = 'none';
+                    if (this.controls) this.controls.style.display = 'flex';
+                } else {
+                    this.fallback();
+                }
+            } catch (err) {
+                this.fallback();
+            }
+        }
+
+        fallback() {
+            if (this.container) this.container.style.display = 'none';
+            if (this.controls) this.controls.style.display = 'none';
+            if (this.staticContainer) this.staticContainer.style.display = 'grid';
+        }
+
+        renderCards() {
+            if (!this.container || this.testimonials.length === 0) return;
+            this.container.innerHTML = '';
+
+            const itemsCount = window.innerWidth <= 768 ? 1 : (window.innerWidth <= 1024 ? 2 : 3);
+            const total = this.testimonials.length;
+
+            for (let i = 0; i < itemsCount; i++) {
+                const index = (this.currentIndex + i) % total;
+                const t = this.testimonials[index];
+                this.container.appendChild(this.createCard(t));
+            }
+        }
+
+        createCard(t) {
+            const card = document.createElement('div');
+            card.className = 'testimoni-card';
+
+            const rating = parseInt(t.rating, 10) || 5;
+            let stars = '';
+            for (let s = 0; s < 5; s++) {
+                stars += s < rating ? '<i class="fas fa-star"></i>' : '<i class="far fa-star"></i>';
+            }
+
+            const sanitize = (str) => {
+                const div = document.createElement('div');
+                div.textContent = str || '';
+                return div.innerHTML;
+            };
+
+            const initials = (t.nama_pemberi_testimoni || 'K')
+                .split(' ')
+                .map(n => n[0])
+                .slice(0, 2)
+                .join('')
+                .toUpperCase();
+
+            card.innerHTML = `
+                <div class="testimoni-top">
+                    <div class="testimoni-stars">${stars}</div>
+                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                </div>
+                <p class="testimoni-text">"${sanitize(t.isi_testimoni)}"</p>
+                <div class="testimoni-author">
+                    <div class="author-avatar">${initials}</div>
+                    <div class="author-info">
+                        <h4>${sanitize(t.nama_pemberi_testimoni)}</h4>
+                        <p>${sanitize(t.jabatan)}, ${sanitize(t.nama_perusahaan)}</p>
+                    </div>
+                </div>
+            `;
+            return card;
+        }
+
+        attachEvents() {
+            if (this.prevBtn) {
+                this.prevBtn.addEventListener('click', () => {
+                    this.currentIndex = (this.currentIndex - 1 + this.testimonials.length) % this.testimonials.length;
+                    this.renderCards();
+                });
+            }
+            if (this.nextBtn) {
+                this.nextBtn.addEventListener('click', () => {
+                    this.currentIndex = (this.currentIndex + 1) % this.testimonials.length;
+                    this.renderCards();
+                });
+            }
+            window.addEventListener('resize', () => this.renderCards());
+        }
+    }
+
+    new TestimonialSlider();
+
+    // --- 5. INTERACTIVE CONTACT FORM ---
+    const contactForm = document.getElementById('kontak-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const namaInput = contactForm.querySelector('#nama');
+            const emailInput = contactForm.querySelector('#email');
+            const teleponInput = contactForm.querySelector('#telepon');
+            const perusahaanInput = contactForm.querySelector('#perusahaan');
+            const pesanInput = contactForm.querySelector('#pesan');
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+            let isValid = true;
+            [namaInput, emailInput, teleponInput, pesanInput].forEach(input => {
+                if (!input || !input.value.trim()) {
+                    if (input) input.classList.add('error');
+                    isValid = false;
+                } else {
+                    input.classList.remove('error');
+                }
+            });
+
+            if (emailInput && emailInput.value.trim() && !emailInput.value.includes('@')) {
+                emailInput.classList.add('error');
+                isValid = false;
+            }
+
+            if (!isValid) {
+                alert('Mohon lengkapi semua kolom wajib dengan benar.');
+                return;
+            }
+
+            const formData = {
+                nama: namaInput.value.trim(),
+                email: emailInput.value.trim(),
+                telepon: teleponInput.value.trim(),
+                perusahaan: perusahaanInput ? perusahaanInput.value.trim() : '',
+                pesan: pesanInput.value.trim()
+            };
+
+            const originalBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengirim Permintaan...';
+            }
+
+            try {
+                const apiBase = window.location.protocol === 'file:' ? 'http://localhost:3000' : '';
+                const response = await fetch(`${apiBase}/api/contact`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                if (response.ok) {
+                    alert('Terima kasih! Permintaan konsultasi Anda telah berhasil dikirim. Tim Pak Tatag Utomo akan segera menghubungi Anda.');
+                    contactForm.reset();
+                } else {
+                    throw new Error('Fallback WA');
+                }
+            } catch (err) {
+                // Fallback direct WhatsApp integration
+                const waMessage = `Halo Pak Tatag Utomo / KPPSM,%0A%0ASaya: *${encodeURIComponent(formData.nama)}*%0APerusahaan: *${encodeURIComponent(formData.perusahaan || '-')}*%0ANo. Kontak: *${encodeURIComponent(formData.telepon)}*%0AEmail: *${encodeURIComponent(formData.email)}*%0A%0AKebutuhan Pelatihan:%0A${encodeURIComponent(formData.pesan)}`;
+                
+                const proceedWA = confirm('Permintaan Anda tercatat. Ingin terhubung langsung via WhatsApp sekarang?');
+                if (proceedWA) {
+                    window.open(`https://wa.me/62818874430?text=${waMessage}`, '_blank');
+                }
+                contactForm.reset();
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnHtml;
+                }
+            }
+        });
+    }
+
+    console.log('KPPSM Executive Portal Loaded Successfully.');
 });

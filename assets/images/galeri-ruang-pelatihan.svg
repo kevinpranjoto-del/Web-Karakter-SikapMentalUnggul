@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="galRoomBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#galRoomBg)"/>
+  
+  <!-- Presentation Screen & Training Room Graphic -->
+  <g transform="translate(200, 80)">
+    <!-- Screen -->
+    <rect x="50" y="20" width="300" height="170" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="4"/>
+    <rect x="65" y="35" width="270" height="140" fill="#0f172a" rx="4"/>
+    <text x="200" y="90" font-family="'Outfit', sans-serif" font-size="20" font-weight="900" fill="#34d399" text-anchor="middle">TRANSFORMASI MENTAL</text>
+    <path d="M90 140 Q150 110 200 130 T310 80" fill="none" stroke="#f59e0b" stroke-width="4"/>
+    <line x1="200" y1="190" x2="200" y2="240" stroke="#94a3b8" stroke-width="6"/>
+    <line x1="140" y1="240" x2="260" y2="240" stroke="#94a3b8" stroke-width="6"/>
+    <!-- Chairs / Desks -->
+    <circle cx="100" cy="270" r="22" fill="#34d399"/>
+    <circle cx="200" cy="270" r="22" fill="#34d399"/>
+    <circle cx="300" cy="270" r="22" fill="#34d399"/>
+  </g>
+
+  <!-- Title & Details Overlay -->
+  <rect x="40" y="440" width="720" height="120" rx="16" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+  <text x="70" y="485" font-family="'Outfit', sans-serif" font-size="26" font-weight="800" fill="#ffffff">Ruang Pelatihan Modern</text>
+  <text x="70" y="520" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" fill="#94a3b8">Dilengkapi teknologi multimedia, AC, sound system audio-visual berkualitas tinggi</text>
+  <g transform="translate(620, 470)">
+    <rect width="110" height="34" rx="17" fill="#10b981"/>
+    <text x="55" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle">RUANG KELAS</text>
+  </g>
+</svg>

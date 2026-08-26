@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2b48"/>
+      <stop offset="60%" stop-color="#19376d"/>
+      <stop offset="100%" stop-color="#0b1325"/>
+    </linearGradient>
+    <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="suitGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="skinGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f1c27d"/>
+      <stop offset="100%" stop-color="#e0ac69"/>
+    </linearGradient>
+    <filter id="cardShadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="900" fill="url(#bgGrad2)"/>
+  
+  <!-- Subtle decorative rings & crest -->
+  <circle cx="400" cy="380" r="300" fill="none" stroke="rgba(245, 158, 11, 0.2)" stroke-width="1.5"/>
+  <circle cx="400" cy="380" r="220" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+  
+  <!-- Executive Figure -->
+  <path d="M160 900 C190 660, 250 580, 400 580 C550 580, 610 660, 640 900 Z" fill="url(#suitGrad2)"/>
+  <polygon points="350,580 450,580 400,710" fill="#ffffff"/>
+  <polygon points="385,610 415,610 422,810 400,850 378,810" fill="url(#goldGrad2)"/>
+  <path d="M280 610 L360 760 L350 900 L240 900 Z" fill="#0f172a"/>
+  <path d="M520 610 L440 760 L450 900 L560 900 Z" fill="#0f172a"/>
+
+  <!-- Neck -->
+  <rect x="360" y="460" width="80" height="140" fill="url(#skinGrad2)" rx="10"/>
+
+  <!-- Head / Face -->
+  <ellipse cx="400" cy="360" rx="100" ry="120" fill="url(#skinGrad2)"/>
+
+  <!-- Hair -->
+  <path d="M300 340 C300 240, 350 220, 400 220 C450 220, 500 240, 500 340 C480 300, 460 280, 400 280 C340 280, 320 300, 300 340 Z" fill="#1c1917"/>
+
+  <!-- Glasses -->
+  <rect x="325" y="340" width="60" height="40" rx="8" fill="none" stroke="#f59e0b" stroke-width="4.5"/>
+  <rect x="415" y="340" width="60" height="40" rx="8" fill="none" stroke="#f59e0b" stroke-width="4.5"/>
+  <line x1="385" y1="360" x2="415" y2="360" stroke="#f59e0b" stroke-width="4.5"/>
+
+  <!-- Eyes & Warm Expression -->
+  <circle cx="355" cy="360" r="6" fill="#1e293b"/>
+  <circle cx="445" cy="360" r="6" fill="#1e293b"/>
+  <path d="M368 415 Q400 445 432 415" fill="none" stroke="#78350f" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Official Card Badge -->
+  <g transform="translate(60, 720)" filter="url(#cardShadow2)">
+    <rect width="680" height="140" rx="18" fill="#0f172a" stroke="rgba(245, 158, 11, 0.5)" stroke-width="2"/>
+    <circle cx="70" cy="70" r="35" fill="url(#goldGrad2)"/>
+    <text x="70" y="78" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="900" fill="#0f172a" text-anchor="middle">TU</text>
+    
+    <text x="130" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800" fill="#ffffff">Tatag Utomo, M.M., M.Si.</text>
+    <text x="130" y="85" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="600" fill="#f59e0b">Pioneer Revolusi Mental &amp; Executive Coach</text>
+    <text x="130" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#94a3b8">Konsultan SDM BUMN &amp; Korporat Terkemuka Indonesia</text>
+  </g>
+</svg>

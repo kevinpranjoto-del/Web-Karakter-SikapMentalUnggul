@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KPPSM - Lembaga Pengembangan Sikap Mental Positif dengan 20+ tahun pengalaman membantu ribuan profesional mencapai potensi mental maksimal.">
-    <meta name="keywords" content="pelatihan mental, sikap positif, SDM, leadership, executive coaching">
+    <meta name="description" content="KPPSM - Lembaga Pengembangan Sikap Mental Positif dengan 20+ tahun pengalaman membimbing ribuan profesional, eksekutif, dan korporat ternama Indonesia.">
+    <meta name="keywords" content="pelatihan mental, sikap mental positif, Tatag Utomo, revolusi mental, SDM corporate, leadership training, executive coaching, kppsm">
     <meta name="author" content="Tatag Utomo, M.M., M.Si.">
+    <meta name="theme-color" content="#0a2540">
     
     <title>KPPSM - Pengembangan Sikap Mental Positif | Tatag Utomo</title>
     
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit for ultra-crisp modern executive typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- NAVIGATION BAR -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <h3>KPPSM</h3>
-                <p class="logo-subtitle">Sikap Mental Positif</p>
-            </div>
+            <a href="#hero" class="logo" aria-label="KPPSM Beranda">
+                <div class="logo-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">KPPSM</span>
+                    <span class="logo-subtitle">Sikap Mental Positif</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#hero" class="nav-link">Beranda</a></li>
+                <li><a href="#hero" class="nav-link active">Beranda</a></li>
                 <li><a href="#tentang-kppsm" class="nav-link">Tentang KPPSM</a></li>
                 <li><a href="#tentang-pendiri" class="nav-link">Tentang Pendiri</a></li>
                 <li><a href="#layanan" class="nav-link">Layanan</a></li>
@@ -31,44 +46,89 @@
                 <li><a href="#testimoni" class="nav-link">Testimoni</a></li>
                 <li><a href="#kontak" class="nav-link">Kontak</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <!-- Header CTA Button -->
+            <div class="nav-actions">
+                <a href="https://wa.me/62818874430?text=Halo%20Pak%20Tatag%2C%20saya%20ingin%20konsultasi%20pelatihan%20sikap%20mental%20KPPSM" target="_blank" class="btn btn-nav-cta">
+                    <i class="fab fa-whatsapp"></i> <span>Konsultasi</span>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Buka Menu Navigasi" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
+    <!-- Mobile Drawer Overlay -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+
     <!-- HERO SECTION -->
     <header class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
         <div class="container hero-content">
             <div class="hero-text">
-                <h1 class="hero-title">Ubah Mentalitas. Raih Kesuksesan.</h1>
-                <p class="hero-subtitle">20+ Tahun Membimbing Ribuan Profesional & Eksekutif Mencapai Potensi Mental Maksimal</p>
-                <p class="hero-description">Dari security WTC Jakarta, executive depresi, hingga tim sales terkasar—kami buktikan transformasi mental nyata terjadi dengan metode yang tepat.</p>
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Pioneer Transformasi Sikap Mental Indonesia</span>
+                </div>
+                <h1 class="hero-title">
+                    Ubah Mentalitas. <br>
+                    <span class="gradient-text">Raih Kesuksesan.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    20+ Tahun Membimbing Ribuan Profesional &amp; Eksekutif Mencapai Potensi Mental Maksimal
+                </p>
+                <p class="hero-description">
+                    Dari pengamanan security WTC Jakarta, pemulihan eksekutif dari krisis depresi, hingga peningkatan drastis performa tim sales korporat—kami membuktikan bahwa transformasi sikap mental nyata selalu menghasilkan lonjakan kinerja yang berkelanjutan.
+                </p>
                 <div class="hero-cta">
-                    <a href="https://wa.me/62818874430" target="_blank" class="btn btn-primary">
+                    <a href="https://wa.me/62818874430?text=Halo%20Pak%20Tatag%2C%20saya%20ingin%20konsultasi%20pelatihan%20sikap%20mental" target="_blank" class="btn btn-primary btn-glow">
                         <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp
                     </a>
-                    <a href="#kontak" class="btn btn-secondary">Hubungi Kami</a>
+                    <a href="#layanan" class="btn btn-secondary">
+                        <i class="fas fa-compass"></i> Jelajahi Layanan
+                    </a>
                 </div>
                 <div class="hero-stats">
-                    <div class="stat">
-                        <h3>20+</h3>
-                        <p>Tahun Pengalaman</p>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-award"></i></div>
+                        <div class="stat-info">
+                            <h3>20+</h3>
+                            <p>Tahun Pengalaman</p>
+                        </div>
                     </div>
-                    <div class="stat">
-                        <h3>1000+</h3>
-                        <p>Peserta Terlatih</p>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-user-graduate"></i></div>
+                        <div class="stat-info">
+                            <h3>10,000+</h3>
+                            <p>Peserta Terlatih</p>
+                        </div>
                     </div>
-                    <div class="stat">
-                        <h3>50+</h3>
-                        <p>Klien Korporat</p>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-building"></i></div>
+                        <div class="stat-info">
+                            <h3>50+</h3>
+                            <p>Klien Korporat &amp; BUMN</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="assets/images/tatag-utomo-hero.jpg" alt="Tatag Utomo, M.M., M.Si." class="hero-img" onerror="this.classList.add('img-fallback')">
+                <div class="hero-image-frame">
+                    <img src="assets/images/tatag-utomo-hero.svg" alt="Tatag Utomo, M.M., M.Si. - Founder KPPSM" class="hero-img" loading="eager">
+                    <div class="hero-floating-card">
+                        <div class="floating-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="floating-text">
+                            <strong>Metode Psikologi Teruji</strong>
+                            <span>Berbasis Behavioral Science</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -77,61 +137,92 @@
     <section class="tentang-kppsm" id="tentang-kppsm">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">Profil Lembaga</span>
                 <h2>Siapa KPPSM?</h2>
-                <p class="section-subtitle">Lembaga yang Memahami Tantangan Mental Anda</p>
+                <p class="section-subtitle">Lembaga Terpercaya yang Memahami Akar Tantangan Mentalitas &amp; Produktivitas Anda</p>
             </div>
 
             <div class="tentang-content">
                 <div class="tentang-text">
                     <p class="intro-text">
-                        KPPSM (Klinik Pengembangan Psikologi Sikap Mental) adalah lembaga pelatihan dan konsultasi SDM yang khusus fokus pada transformasi mentalitas profesional, manajemen, dan entrepreneur. Dengan pengalaman lebih dari 20 tahun, kami telah membantu ribuan individu dan puluhan perusahaan besar—dari BUMN hingga swasta—mengatasi krisis mental, meningkatkan produktivitas, dan membangun tim yang solid.
+                        <strong>KPPSM</strong> (<em>Klinik Pengembangan Psikologi Sikap Mental</em>) adalah lembaga pelatihan dan konsultasi SDM yang berfokus mendalam pada transformasi mentalitas profesional, jajaran manajemen, serta pimpinan organisasi.
+                    </p>
+                    <p class="body-text">
+                        Dengan pengalaman lebih dari dua dekade, kami telah mendampingi ribuan individu dan puluhan entitas bisnis terkemuka—mulai dari BUMN, korporasi swasta multinasional, hingga koperasi mitra—dalam menyelesaikan konflik internal, mengatasi burnout, dan mencetak budaya kerja berkinerja tinggi.
                     </p>
 
-                    <div class="vision-mission">
-                        <div class="vision">
-                            <h3><i class="fas fa-eye"></i> Visi Kami</h3>
-                            <p>Menjadi lembaga terdepan dalam pengembangan sikap mental positif yang menciptakan generasi profesional Indonesia bermental juara, produktif, dan sejahtera.</p>
+                    <div class="vision-mission-grid">
+                        <div class="vm-card vision">
+                            <div class="vm-header">
+                                <div class="vm-icon"><i class="fas fa-eye"></i></div>
+                                <h3>Visi Kami</h3>
+                            </div>
+                            <p>Menjadi lembaga terdepan dalam pengembangan sikap mental positif yang melahirkan generasi profesional Indonesia bermental juara, tangguh, berintegritas, dan sejahtera.</p>
                         </div>
 
-                        <div class="mission">
-                            <h3><i class="fas fa-bullseye"></i> Misi Kami</h3>
-                            <ul>
-                                <li>Memberdayakan individu dan organisasi melalui pelatihan mental yang efektif dan terukur</li>
-                                <li>Menciptakan budaya kerja sehat yang mengurangi stress, depresi, dan burnout</li>
-                                <li>Mengembangkan kepemimpinan yang humanis dan sustainable</li>
-                                <li>Mendampingi pertumbuhan bisnis melalui SDM berkualitas mental tinggi</li>
+                        <div class="vm-card mission">
+                            <div class="vm-header">
+                                <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
+                                <h3>Misi Kami</h3>
+                            </div>
+                            <ul class="mission-list">
+                                <li><i class="fas fa-check"></i> Memberdayakan SDM melalui pelatihan mental yang terukur dan aplikatif</li>
+                                <li><i class="fas fa-check"></i> Mengikis budaya kerja toksik, menurunkan tingkat stres dan burnout</li>
+                                <li><i class="fas fa-check"></i> Membangun kepemimpinan yang humanis, empatik, dan berwibawa</li>
+                                <li><i class="fas fa-check"></i> Menjadi mitra strategis pertumbuhan bisnis jangka panjang</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="tentang-image">
-                    <img src="assets/images/wisma-kppsm.jpg" alt="Wisma KPPSM - Lokasi Pelatihan" class="tentang-img" onerror="this.classList.add('img-fallback')">
+                    <div class="image-showcase">
+                        <img src="assets/images/wisma-kppsm.svg" alt="Wisma KPPSM Cibubur Indah - Pusat Pelatihan" class="tentang-img" loading="lazy">
+                        <div class="image-caption">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Wisma KPPSM</h4>
+                                <p>Komp. Cibubur Indah 3 Blok F-7, Jakarta Timur</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <!-- Nilai-Nilai Inti -->
             <div class="core-values">
-                <h3>Nilai-Nilai Inti KPPSM</h3>
+                <div class="values-header">
+                    <h3>4 Pilar Nilai Inti KPPSM</h3>
+                    <p>Fondasi utama dalam setiap modul pembinaan dan intervensi psikologis kami</p>
+                </div>
                 <div class="values-grid">
                     <div class="value-card">
-                        <div class="value-icon"><i class="fas fa-heart"></i></div>
+                        <div class="value-icon-box humanis">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
                         <h4>Humanis</h4>
-                        <p>Memahami setiap individu dengan pendekatan yang penuh empati dan menghargai perbedaan</p>
+                        <p>Menyentuh sisi kemanusiaan terdalam dengan pendekatan empati, memahami latar belakang dan menghargai keunikan tiap individu.</p>
                     </div>
                     <div class="value-card">
-                        <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                        <div class="value-icon-box inovatif">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
                         <h4>Inovatif</h4>
-                        <p>Menggunakan metode terkini berbasis psikologi dan behavioral science</p>
+                        <p>Mengadopsi riset psikologi perilaku modern, neuro-leadership, dan studi kasus mutakhir yang aplikatif di dunia kerja nyata.</p>
                     </div>
                     <div class="value-card">
-                        <div class="value-icon"><i class="fas fa-check-circle"></i></div>
-                        <h4>Terbukti</h4>
-                        <p>Semua program didukung data, case studies real, dan hasil terukur</p>
+                        <div class="value-icon-box terbukti">
+                            <i class="fas fa-shield-check"></i>
+                        </div>
+                        <h4>Terbukti &amp; Terukur</h4>
+                        <p>Setiap program dirancang berdasarkan data riil, evaluasi pre-post test objektif, dan rekam jejak keberhasilan 20+ tahun.</p>
                     </div>
                     <div class="value-card">
-                        <div class="value-icon"><i class="fas fa-users"></i></div>
+                        <div class="value-icon-box kolaboratif">
+                            <i class="fas fa-users-gear"></i>
+                        </div>
                         <h4>Kolaboratif</h4>
-                        <p>Bekerja sama dengan klien untuk menciptakan solusi yang sustainable</p>
+                        <p>Bekerja berdampingan dengan manajemen dan serikat pekerja untuk menciptakan ekosistem kerja harmonis dan berkelanjutan.</p>
                     </div>
                 </div>
             </div>
@@ -142,66 +233,81 @@
     <section class="tentang-pendiri" id="tentang-pendiri">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">Profil Tokoh</span>
                 <h2>Tentang Pendiri</h2>
-                <p class="section-subtitle">Tatag Utomo, M.M., M.Si. — Pioneer Revolusi Mental Indonesia</p>
+                <p class="section-subtitle">Tatag Utomo, M.M., M.Si. — Praktisi &amp; Pioneer Revolusi Mental Indonesia</p>
             </div>
 
             <div class="pendiri-content">
-                <div class="pendiri-image">
-                    <img src="assets/images/tatag-utomo-resmi.jpg" alt="Tatag Utomo, M.M., M.Si." class="pendiri-img" onerror="this.classList.add('img-fallback')">
-                    <div class="pendiri-badge">
-                        <p>Founder & Expert KPPSM</p>
-                        <p>20+ Tahun Pengalaman</p>
+                <div class="pendiri-image-wrapper">
+                    <div class="pendiri-card-frame">
+                        <img src="assets/images/tatag-utomo-resmi.svg" alt="Tatag Utomo, M.M., M.Si." class="pendiri-img" loading="lazy">
                     </div>
                 </div>
 
                 <div class="pendiri-text">
-                    <h3>Perjalanan & Kredibilitas</h3>
+                    <div class="pendiri-header-badge">
+                        <i class="fas fa-certificate"></i> Master Trainer &amp; Behavioral Consultant
+                    </div>
+                    <h3 class="pendiri-heading">Dedikasi Dua Dekade Membangun Karakter Bangsa</h3>
+                    
                     <p class="pendiri-bio">
-                        Tatag Utomo adalah founder dan expert utama KPPSM dengan latar belakang pendidikan Magister Manajemen dan Magister Sains. Selama lebih dari dua dekade, beliau telah menjadi trusted advisor bagi ratusan perusahaan multinasional, BUMN, dan koperasi dalam mengembangkan SDM berkualitas tinggi.
+                        <strong>Tatag Utomo</strong> adalah pendiri dan pakar utama KPPSM dengan latar belakang pendidikan ganda: <em>Magister Manajemen (M.M.)</em> dan <em>Magister Sains Psikologi (M.Si.)</em>. Kombinasi keilmuan bisnis dan psikologi ini memberikan perspektif unik yang sangat tajam dalam menyelesaikan disfungsi organisasi.
                     </p>
 
                     <p class="pendiri-bio">
-                        Dengan pendekatan yang humanis dan berbasis psikologi industri, Pak Tatag telah membantu mencegah crisis komunikasi, menyelamatkan eksekutif dari depresi, meningkatkan team cohesion, dan bahkan berkontribusi pada pencapaian target produksi yang signifikan bagi klien-kliennya.
+                        Selama lebih dari 20 tahun, beliau telah dipercaya menjadi penasihat strategis oleh jajaran direksi BUMN, konglomerasi nasional, dan organisasi serikat buruh dalam mengelola tensi kerja, memulihkan motivasi karyawan, dan menyelaraskan target bisnis dengan kesejahteraan mental pekerja.
                     </p>
 
-                    <h4 class="expertise-title">Area Keahlian</h4>
+                    <!-- Area Keahlian Grid -->
+                    <h4 class="sub-section-title"><i class="fas fa-star text-gold"></i> Area Keahlian Utama</h4>
                     <div class="expertise-grid">
                         <div class="expertise-item">
-                            <i class="fas fa-brain"></i>
-                            <p>Pengembangan Sikap Mental Positif</p>
+                            <div class="exp-icon"><i class="fas fa-brain"></i></div>
+                            <span>Pengembangan Sikap Mental Positif</span>
                         </div>
                         <div class="expertise-item">
-                            <i class="fas fa-chart-line"></i>
-                            <p>Behavioral Training & Assessment</p>
+                            <div class="exp-icon"><i class="fas fa-chart-line"></i></div>
+                            <span>Behavioral Assessment &amp; Profiling</span>
                         </div>
                         <div class="expertise-item">
-                            <i class="fas fa-heart-pulse"></i>
-                            <p>Manajemen Stress & Burnout Prevention</p>
+                            <div class="exp-icon"><i class="fas fa-heart-pulse"></i></div>
+                            <span>Manajemen Stres &amp; Burnout Prevention</span>
                         </div>
                         <div class="expertise-item">
-                            <i class="fas fa-crown"></i>
-                            <p>Leadership Development</p>
+                            <div class="exp-icon"><i class="fas fa-crown"></i></div>
+                            <span>Executive Leadership Development</span>
                         </div>
                         <div class="expertise-item">
-                            <i class="fas fa-handshake"></i>
-                            <p>Team Building & Cohesion</p>
+                            <div class="exp-icon"><i class="fas fa-handshake"></i></div>
+                            <span>Resolusi Konflik &amp; Team Cohesion</span>
                         </div>
                         <div class="expertise-item">
-                            <i class="fas fa-shield"></i>
-                            <p>Crisis Mental & Intervensi Psikologis</p>
+                            <div class="exp-icon"><i class="fas fa-shield-alt"></i></div>
+                            <span>Intervensi Krisis Mental Organisasi</span>
                         </div>
                     </div>
 
-                    <h4 class="pengalaman-title">Pengalaman dengan Klien Korporat</h4>
-                    <ul class="pengalaman-list">
-                        <li><strong>PT Kaji:</strong> Memperbaiki hubungan team sales & manajemen</li>
-                        <li><strong>WTC Jakarta:</strong> Mencegah demonstrasi & krisis security</li>
-                        <li><strong>PT Bumitama Gunajaya Agro:</strong> Pembinaan koperasi mitra</li>
-                        <li><strong>PT Prodia & Kalbe Farma:</strong> Membangun hubungan baik dengan SPSI</li>
-                        <li><strong>Executive Crisis:</strong> Intervensi pencegahan bunuh diri</li>
-                        <li><strong>PT Kencana Agro:</strong> Membantu capai target 1 juta ton CPO</li>
-                    </ul>
+                    <!-- Kredibilitas & Pengalaman Klien Korporat -->
+                    <h4 class="sub-section-title"><i class="fas fa-landmark text-gold"></i> Rekam Jejak Solusi Nyata</h4>
+                    <div class="client-case-grid">
+                        <div class="client-case-card">
+                            <div class="case-badge">WTC Jakarta</div>
+                            <p>Mencegah eskalasi demonstrasi personel keamanan melalui komunikasi humanis &amp; de-eskalasi tepat sasaran.</p>
+                        </div>
+                        <div class="client-case-card">
+                            <div class="case-badge">PT Bumitama Gunajaya Agro</div>
+                            <p>Program pemberdayaan etika bisnis dan peningkatan kapasitas SDM ribuan anggota koperasi mitra.</p>
+                        </div>
+                        <div class="client-case-card">
+                            <div class="case-badge">PT Prodia &amp; Kalbe Farma</div>
+                            <p>Membangun jembatan komunikasi harmonis dan hubungan industrial damai berkelanjutan dengan SPSI.</p>
+                        </div>
+                        <div class="client-case-card">
+                            <div class="case-badge">PT Kencana Agro</div>
+                            <p>Menumbuhkan *growth mindset* dan motivasi kerja hingga berhasil mencapai target produksi 1 Juta Ton CPO.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -211,113 +317,142 @@
     <section class="layanan" id="layanan">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">Solusi Korporat</span>
                 <h2>Layanan Unggulan</h2>
-                <p class="section-subtitle">Solusi Komprehensif untuk Transformasi Mentalitas Organisasi Anda</p>
+                <p class="section-subtitle">Program Terstruktur &amp; Terintegrasi untuk Transformasi Kinerja SDM Perusahaan Anda</p>
             </div>
 
             <div class="services-grid">
                 <!-- Service 1 -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-comments"></i>
+                    <div class="service-card-top">
+                        <span class="service-category">Sales &amp; Management</span>
+                        <div class="service-icon"><i class="fas fa-comments"></i></div>
                     </div>
-                    <h3>Transformasi Tim Sales & Manajemen</h3>
-                    <p class="service-tagline">"Saat Komunikasi Rusak, Produksi Jatuh"</p>
+                    <h3>Transformasi Tim Sales &amp; Manajemen</h3>
+                    <p class="service-tagline">"Saat Komunikasi Tersumbat, Target Bisnis Melorot"</p>
                     <p class="service-description">
-                        Kami berhasil memulihkan hubungan team sales dengan manajemen di PT Kaji yang sempat tegang karena miscommunication dan burnout. Hasilnya: team harmony meningkat 70%, sales target tercapai, dan turnover menurun drastis.
+                        Memulihkan sinergi antara divisi sales garis depan dengan jajaran manajemen. Menghilangkan friksi, menurunkan turnover, dan mendongkrak pencapaian kuota penjualan secara konsisten.
                     </p>
+                    <div class="service-divider"></div>
                     <ul class="service-benefits">
-                        <li>Team conflict resolution yang efektif</li>
-                        <li>Komunikasi manajemen yang lebih humanis</li>
-                        <li>Peningkatan produktivitas & loyalitas karyawan</li>
+                        <li><i class="fas fa-check-circle"></i> Resolusi konflik horizontal &amp; vertikal</li>
+                        <li><i class="fas fa-check-circle"></i> Komunikasi manajerial yang empatik &amp; tegas</li>
+                        <li><i class="fas fa-check-circle"></i> Peningkatan loyalitas &amp; rasa memiliki tim</li>
                     </ul>
+                    <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20Layanan%20Transformasi%20Tim%20Sales%20%26%20Manajemen" target="_blank" class="service-action">
+                        Konsultasikan Layanan Ini <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
                 <!-- Service 2 -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-alt"></i>
+                    <div class="service-card-top">
+                        <span class="service-category">Crisis &amp; Security</span>
+                        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
                     </div>
-                    <h3>Krisis Management & Conflict Prevention</h3>
-                    <p class="service-tagline">"Cegah Demonstrasi Sebelum Eskalasi"</p>
+                    <h3>Krisis Management &amp; Conflict Prevention</h3>
+                    <p class="service-tagline">"Redam Letupan Sebelum Menjadi Krisis Terbuka"</p>
                     <p class="service-description">
-                        Pengalaman kami mencegah demonstrasi security di WTC Jakarta membuktikan bahwa intervensi mental dan komunikasi tepat waktu bisa menyelamatkan reputasi perusahaan.
+                        Metode intervensi dini untuk memitigasi potensi aksi mogok kerja, sabotase, atau demonstrasi karyawan melalui dialog psikologis konstruktif dan pemetaan akar kekecewaan.
                     </p>
+                    <div class="service-divider"></div>
                     <ul class="service-benefits">
-                        <li>Identifikasi early warning signs konflik</li>
-                        <li>Strategi de-escalation yang terbukti</li>
-                        <li>Membangun dialog rutin yang produktif</li>
+                        <li><i class="fas fa-check-circle"></i> Deteksi dini tanda-tanda ketidakpuasan</li>
+                        <li><i class="fas fa-check-circle"></i> Protokol de-eskalasi tensi kerja</li>
+                        <li><i class="fas fa-check-circle"></i> Membangun saluran aspirasi yang dipercaya</li>
                     </ul>
+                    <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20Layanan%20Krisis%20Management%20%26%20Conflict%20Prevention" target="_blank" class="service-action">
+                        Konsultasikan Layanan Ini <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
                 <!-- Service 3 -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-handshake"></i>
+                    <div class="service-card-top">
+                        <span class="service-category">Community Empowerment</span>
+                        <div class="service-icon"><i class="fas fa-handshake-angle"></i></div>
                     </div>
-                    <h3>Pembinaan & Empowerment Koperasi Mitra</h3>
-                    <p class="service-tagline">"Koperasi Sehat = Bisnis Sehat"</p>
+                    <h3>Pembinaan &amp; Empowerment Koperasi Mitra</h3>
+                    <p class="service-tagline">"Koperasi Mitra yang Sehat Fondasi Rantai Pasok Kuat"</p>
                     <p class="service-description">
-                        PT Bumitama Gunajaya Agro mempercayai kami untuk pembinaan koperasi mitra. Melalui pelatihan sikap mental positif, etika bisnis, dan financial literacy.
+                        Program edukasi sikap mental mandiri, literasi finansial, etika bisnis, dan tata kelola profesional bagi koperasi mitra perkebunan, manufaktur, maupun logistik korporat.
                     </p>
+                    <div class="service-divider"></div>
                     <ul class="service-benefits">
-                        <li>Peningkatan kapasitas SDM koperasi</li>
-                        <li>Budaya bisnis yang etis & berkelanjutan</li>
-                        <li>Partnership yang lebih solid & menguntungkan</li>
+                        <li><i class="fas fa-check-circle"></i> Peningkatan kapasitas kepemimpinan pengurus</li>
+                        <li><i class="fas fa-check-circle"></i> Budaya transparansi &amp; tanggung jawab</li>
+                        <li><i class="fas fa-check-circle"></i> Kemitraan jangka panjang saling menguntungkan</li>
                     </ul>
+                    <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20Layanan%20Pembinaan%20Koperasi%20Mitra" target="_blank" class="service-action">
+                        Konsultasikan Layanan Ini <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
                 <!-- Service 4 -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-users"></i>
+                    <div class="service-card-top">
+                        <span class="service-category">Industrial Relations</span>
+                        <div class="service-icon"><i class="fas fa-users-viewfinder"></i></div>
                     </div>
-                    <h3>Union Relations & Industrial Peace</h3>
-                    <p class="service-tagline">"Hubungan Kerja Harmonis = Stabilitas Bisnis"</p>
+                    <h3>Union Relations &amp; Industrial Peace</h3>
+                    <p class="service-tagline">"Harmoni Kerja Kunci Utama Kelancaran Operasional"</p>
                     <p class="service-description">
-                        Kami berhasil membangun hubungan baik antara SPSI dengan perusahaan multinasional seperti PT Prodia dan Kalbe Farma melalui program understanding mutual benefit.
+                        Menjembatani kepentingan pimpinan perusahaan dengan serikat buruh (SPSI/organisasi buruh) melalui sudut pandang *mutual benefit*, menjaga iklim investasi dan kenyamanan berkarya.
                     </p>
+                    <div class="service-divider"></div>
                     <ul class="service-benefits">
-                        <li>Pemahaman mutual antara labor & management</li>
-                        <li>Pengurangan strike & demonstrasi</li>
-                        <li>Industrial peace yang sustainable</li>
+                        <li><i class="fas fa-check-circle"></i> Perjanjian kerja bersama (PKB) yang kondusif</li>
+                        <li><i class="fas fa-check-circle"></i> Menghilangkan polarisasi manajemen vs buruh</li>
+                        <li><i class="fas fa-check-circle"></i> Stabilitas produktivitas pabrik &amp; fasilitas</li>
                     </ul>
+                    <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20Layanan%20Union%20Relations%20%26%20Industrial%20Peace" target="_blank" class="service-action">
+                        Konsultasikan Layanan Ini <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
                 <!-- Service 5 -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-heart-pulse"></i>
+                    <div class="service-card-top">
+                        <span class="service-category">Executive Well-being</span>
+                        <div class="service-icon"><i class="fas fa-heart-pulse"></i></div>
                     </div>
                     <h3>Mental Health Crisis Intervention</h3>
-                    <p class="service-tagline">"Selamatkan Eksekutif Dari Depresi"</p>
+                    <p class="service-tagline">"Pulihkan Pimpinan Eksekutif dari Tekanan Berat"</p>
                     <p class="service-description">
-                        Melalui program counseling, coaching, dan behavioral therapy, kami telah membantu puluhan eksekutif depresi kembali produktif.
+                        Konseling privat dan *behavioral therapy coaching* khusus bagi level C-suite, direktur, dan manajer senior yang mengalami sindrom depresi, kecemasan akut, atau sindrom kelelahan mental (*burnout*).
                     </p>
+                    <div class="service-divider"></div>
                     <ul class="service-benefits">
-                        <li>Screening mental health executive</li>
-                        <li>Individual coaching & therapy</li>
-                        <li>Support system yang sustainable</li>
-                        <li>Prevention suicide & burnout</li>
+                        <li><i class="fas fa-check-circle"></i> Kerahasiaan 100% terjamin (*confidential*)</li>
+                        <li><i class="fas fa-check-circle"></i> Pendampingan terapi psikologis aplikatif</li>
+                        <li><i class="fas fa-check-circle"></i> Pencegahan risiko fatal &amp; penurunan fokus</li>
                     </ul>
+                    <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20Layanan%20Executive%20Mental%20Health%20Intervention" target="_blank" class="service-action">
+                        Konsultasikan Layanan Ini <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
                 <!-- Service 6 -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-rocket"></i>
+                    <div class="service-card-top">
+                        <span class="service-category">Performance Culture</span>
+                        <div class="service-icon"><i class="fas fa-rocket"></i></div>
                     </div>
-                    <h3>Performance Optimization & Target Achievement</h3>
-                    <p class="service-tagline">"Dari Target Mustahil Jadi Nyata"</p>
+                    <h3>Performance Optimization &amp; Target Achievement</h3>
+                    <p class="service-tagline">"Dobrak Mental Block untuk Menggapai Target Ambisius"</p>
                     <p class="service-description">
-                        PT Kencana Agro berhasil capai target 1 juta ton CPO dengan bantuan kami melalui program team motivation dan continuous improvement culture.
+                        Membangun etos kerja bermental juara dan pantang menyerah. Membantu perusahaan melampaui rekor target produksi melalui rekayasa sikap mental terstruktur dan antusiasme kolektif.
                     </p>
+                    <div class="service-divider"></div>
                     <ul class="service-benefits">
-                        <li>Mindset shift dari fixed → growth</li>
-                        <li>Performance optimization strategy</li>
-                        <li>Sustainable goal achievement</li>
-                        <li>Team motivation & persistence</li>
+                        <li><i class="fas fa-check-circle"></i> Pergeseran mindset: *fixed* ke *growth*</li>
+                        <li><i class="fas fa-check-circle"></i> Budaya *continuous improvement*</li>
+                        <li><i class="fas fa-check-circle"></i> Pencapaian target ambisius terukur</li>
                     </ul>
+                    <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20Layanan%20Performance%20Optimization" target="_blank" class="service-action">
+                        Konsultasikan Layanan Ini <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -327,76 +462,93 @@
     <section class="buku-karya" id="buku">
         <div class="container">
             <div class="section-header">
-                <h2>Buku Karya Pak Tatag Utomo</h2>
-                <p class="section-subtitle">Panduan Transformasi Mental dari Praktisi Berpengalaman</p>
+                <span class="section-tag">Literasi Karakter</span>
+                <h2>Buku Karya Tatag Utomo</h2>
+                <p class="section-subtitle">Kumpulan Panduan Transformasi Mentalitas yang Diterbitkan Resmi oleh PT. Grassindo (Kompas Gramedia Group)</p>
             </div>
 
             <p class="buku-intro">
-                Pak Tatag Utomo telah menerbitkan 4 buku melalui PT. Grassindo yang menjadi referensi utama dalam pengembangan SDM Indonesia. Buku-buku ini menggabungkan teori, pengalaman praktis, dan case studies real dari ribuan klien yang kami dampingi.
+                Keempat buku ini lahir dari sari pati riset psikologi terapan dan pengalaman nyata Pak Tatag Utomo mendampingi puluhan ribu profesional. Menjadi referensi wajib bagi para pimpinan perusahaan, praktisi HRD, akademisi, dan orang tua.
             </p>
 
             <div class="buku-grid">
                 <!-- Buku 1 -->
                 <div class="buku-card">
-                    <div class="buku-cover">
-                        <img src="assets/images/buku-1-mentalitas-profesional.jpg" alt="Menggugah Mentalitas Profesional & Pengusaha Indonesia" onerror="this.classList.add('img-fallback')">
+                    <div class="buku-cover-container">
+                        <img src="assets/images/buku-1-mentalitas-profesional.svg" alt="Buku Menggugah Mentalitas Profesional & Pengusaha Indonesia" class="buku-img" loading="lazy">
                     </div>
                     <div class="buku-info">
-                        <h3>Menggugah Mentalitas Profesional & Pengusaha Indonesia</h3>
+                        <div class="buku-badge">Buku #1 - Best Seller</div>
+                        <h3>Menggugah Mentalitas Profesional &amp; Pengusaha Indonesia</h3>
                         <p class="buku-deskripsi">
-                            Panduan komprehensif mengubah mindset dari worker mentalitas menjadi entrepreneur mentalitas. Cocok untuk manager, entrepreneur, dan setiap orang yang ingin berkembang.
+                            Panduan komprehensif mengubah pola pikir dari sekadar mentalitas pekerja biasa menjadi mentalitas pengusaha berkarakter unggul, berinisiatif tinggi, dan tangguh menghadapi badai perubahan bisnis.
                         </p>
-                        <p class="buku-penerbit">
-                            <i class="fas fa-book"></i> PT. Grassindo
-                        </p>
+                        <div class="buku-footer">
+                            <span class="buku-penerbit"><i class="fas fa-book-open"></i> PT. Grassindo</span>
+                            <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20memesan%20buku%20Menggugah%20Mentalitas%20Profesional" target="_blank" class="btn-book-action">
+                                <i class="fab fa-whatsapp"></i> Pesan Buku
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Buku 2 -->
                 <div class="buku-card">
-                    <div class="buku-cover">
-                        <img src="assets/images/buku-2-health-quotient.jpg" alt="Health Quotient untuk Eksekutif" onerror="this.classList.add('img-fallback')">
+                    <div class="buku-cover-container">
+                        <img src="assets/images/buku-2-health-quotient.svg" alt="Buku Health Quotient untuk Eksekutif" class="buku-img" loading="lazy">
                     </div>
                     <div class="buku-info">
+                        <div class="buku-badge">Buku #2 - Executive Guide</div>
                         <h3>Health Quotient untuk Eksekutif</h3>
                         <p class="buku-deskripsi">
-                            Buku khusus untuk executive yang sibuk. Menggabungkan physical health, mental health, dan spiritual health dalam balanced lifestyle approach.
+                            Karya esensial bagi eksekutif berjam kerja padat. Mengintegrasikan kesehatan fisik (*body*), ketangguhan psikologis (*mind*), dan kedamaian batin (*soul*) dalam prinsip *holistic executive wellness*.
                         </p>
-                        <p class="buku-penerbit">
-                            <i class="fas fa-book"></i> PT. Grassindo
-                        </p>
+                        <div class="buku-footer">
+                            <span class="buku-penerbit"><i class="fas fa-book-open"></i> PT. Grassindo</span>
+                            <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20memesan%20buku%20Health%20Quotient%20untuk%20Eksekutif" target="_blank" class="btn-book-action">
+                                <i class="fab fa-whatsapp"></i> Pesan Buku
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Buku 3 -->
                 <div class="buku-card">
-                    <div class="buku-cover">
-                        <img src="assets/images/buku-3-magic-anak.jpg" alt="Menanam & Mengasah Magic Anak" onerror="this.classList.add('img-fallback')">
+                    <div class="buku-cover-container">
+                        <img src="assets/images/buku-3-magic-anak.svg" alt="Buku Menanam & Mengasah Magic Anak" class="buku-img" loading="lazy">
                     </div>
                     <div class="buku-info">
-                        <h3>Menanam & Mengasah Magic Anak</h3>
+                        <div class="buku-badge">Buku #3 - Parenting & Education</div>
+                        <h3>Menanam &amp; Mengasah Magic Anak</h3>
                         <p class="buku-deskripsi">
-                            Untuk orang tua & pendidik yang ingin mengembangkan potensi mental positif sejak dini. Metode praktis mendidik anak dengan emotional intelligence tinggi.
+                            Panduan berharga bagi orang tua dan tenaga pendidik untuk mendeteksi bakat terpendam anak, melatih kematangan kecerdasan emosional (EQ), serta membangun mental tangguh sejak usia dini.
                         </p>
-                        <p class="buku-penerbit">
-                            <i class="fas fa-book"></i> PT. Grassindo
-                        </p>
+                        <div class="buku-footer">
+                            <span class="buku-penerbit"><i class="fas fa-book-open"></i> PT. Grassindo</span>
+                            <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20memesan%20buku%20Menanam%20%26%20Mengasah%20Magic%20Anak" target="_blank" class="btn-book-action">
+                                <i class="fab fa-whatsapp"></i> Pesan Buku
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Buku 4 -->
                 <div class="buku-card">
-                    <div class="buku-cover">
-                        <img src="assets/images/buku-4-kewenangan.jpg" alt="Kewenangan Berpikir, Berucap, Berbuat Perusahaan" onerror="this.classList.add('img-fallback')">
+                    <div class="buku-cover-container">
+                        <img src="assets/images/buku-4-kewenangan.svg" alt="Buku Kewenangan Berpikir, Berucap, Berbuat Perusahaan" class="buku-img" loading="lazy">
                     </div>
                     <div class="buku-info">
+                        <div class="buku-badge">Buku #4 - Corporate Culture</div>
                         <h3>Kewenangan Berpikir, Berucap, Berbuat Perusahaan</h3>
                         <p class="buku-deskripsi">
-                            Deep dive tentang culture, authority, dan responsibility dalam organisasi modern. Wajib baca untuk setiap leader & manajemen.
+                            Ulasan filosofis dan praktis mengenai batas etika, tanggung jawab moral, dan sinkronisasi antara ucapan dan tindakan di seluruh lini hierarki organisasi modern.
                         </p>
-                        <p class="buku-penerbit">
-                            <i class="fas fa-book"></i> PT. Grassindo
-                        </p>
+                        <div class="buku-footer">
+                            <span class="buku-penerbit"><i class="fas fa-book-open"></i> PT. Grassindo</span>
+                            <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20memesan%20buku%20Kewenangan%20Berpikir%20Berucap%20Berbuat" target="_blank" class="btn-book-action">
+                                <i class="fab fa-whatsapp"></i> Pesan Buku
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -407,56 +559,70 @@
     <section class="galeri" id="galeri">
         <div class="container">
             <div class="section-header">
-                <h2>Galeri Kegiatan</h2>
-                <p class="section-subtitle">Pelatihan & Kegiatan KPPSM</p>
+                <span class="section-tag">Dokumentasi</span>
+                <h2>Galeri Fasilitas &amp; Pelatihan</h2>
+                <p class="section-subtitle">Melihat Suasana Pelatihan, Fasilitas Wisma, dan Momen Transformasi Bersama Klien Kami</p>
             </div>
 
-            <p class="galeri-intro">
-                Lihat sendiri suasana pelatihan, fasilitas, dan komunitas yang kami bangun bersama klien. Dari wisma modern, ruang pelatihan nyaman, hingga kegiatan outdoor—semua dirancang untuk mendukung transformasi mental yang optimal.
-            </p>
-
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="assets/images/galeri-wisma.jpg" alt="Wisma KPPSM" onerror="this.classList.add('img-fallback')">
-                    <div class="gallery-overlay">
+                <!-- Gallery 1 -->
+                <div class="gallery-item" data-title="Wisma KPPSM Cibubur Indah">
+                    <img src="assets/images/galeri-wisma.svg" alt="Fasilitas Wisma KPPSM" loading="lazy">
+                    <div class="gallery-info-bar">
                         <h4>Wisma KPPSM</h4>
                         <p>Lokasi strategis di Cibubur Indah</p>
                     </div>
+                    <div class="gallery-hover-btn"><i class="fas fa-magnifying-glass-plus"></i></div>
                 </div>
-                <div class="gallery-item">
-                    <img src="assets/images/galeri-ruang-pelatihan.jpg" alt="Ruang Pelatihan" onerror="this.classList.add('img-fallback')">
-                    <div class="gallery-overlay">
-                        <h4>Ruang Pelatihan</h4>
-                        <p>Modern, nyaman, teknologi lengkap</p>
+
+                <!-- Gallery 2 -->
+                <div class="gallery-item" data-title="Ruang Pelatihan Modern">
+                    <img src="assets/images/galeri-ruang-pelatihan.svg" alt="Ruang Pelatihan Nyaman" loading="lazy">
+                    <div class="gallery-info-bar">
+                        <h4>Ruang Pelatihan Modern</h4>
+                        <p>Kondusif, multimedia &amp; audio visual lengkap</p>
                     </div>
+                    <div class="gallery-hover-btn"><i class="fas fa-magnifying-glass-plus"></i></div>
                 </div>
-                <div class="gallery-item">
-                    <img src="assets/images/galeri-seminar.jpg" alt="Seminar" onerror="this.classList.add('img-fallback')">
-                    <div class="gallery-overlay">
-                        <h4>Foto Seminar</h4>
-                        <p>Ratusan peserta dari berbagai industri</p>
+
+                <!-- Gallery 3 -->
+                <div class="gallery-item" data-title="Seminar Motivasi & Leadership">
+                    <img src="assets/images/galeri-seminar.svg" alt="Seminar Tatag Utomo" loading="lazy">
+                    <div class="gallery-info-bar">
+                        <h4>Seminar Motivasi &amp; Leadership</h4>
+                        <p>Ratusan peserta eksekutif dari berbagai sektor</p>
                     </div>
+                    <div class="gallery-hover-btn"><i class="fas fa-magnifying-glass-plus"></i></div>
                 </div>
-                <div class="gallery-item">
-                    <img src="assets/images/galeri-revolusi-mental.jpg" alt="Pelatihan Revolusi Mental" onerror="this.classList.add('img-fallback')">
-                    <div class="gallery-overlay">
-                        <h4>Pelatihan Revolusi Mental</h4>
-                        <p>Flagship program intensive</p>
+
+                <!-- Gallery 4 -->
+                <div class="gallery-item" data-title="Workshop Revolusi Mental">
+                    <img src="assets/images/galeri-revolusi-mental.svg" alt="Pelatihan Revolusi Mental" loading="lazy">
+                    <div class="gallery-info-bar">
+                        <h4>Workshop Revolusi Mental</h4>
+                        <p>Program intensif pembentukan karakter juara</p>
                     </div>
+                    <div class="gallery-hover-btn"><i class="fas fa-magnifying-glass-plus"></i></div>
                 </div>
-                <div class="gallery-item">
-                    <img src="assets/images/galeri-behaviour-test.jpg" alt="Behaviour Test" onerror="this.classList.add('img-fallback')">
-                    <div class="gallery-overlay">
-                        <h4>Behaviour Test</h4>
-                        <p>Assessment & psychometric testing</p>
+
+                <!-- Gallery 5 -->
+                <div class="gallery-item" data-title="Assessment & Behaviour Test">
+                    <img src="assets/images/galeri-behaviour-test.svg" alt="Uji Psikometri KPPSM" loading="lazy">
+                    <div class="gallery-info-bar">
+                        <h4>Assessment &amp; Behaviour Test</h4>
+                        <p>Uji psikometri &amp; pemetaan profil sikap mental</p>
                     </div>
+                    <div class="gallery-hover-btn"><i class="fas fa-magnifying-glass-plus"></i></div>
                 </div>
-                <div class="gallery-item">
-                    <img src="assets/images/galeri-polbangtan.jpg" alt="Kegiatan Polbangtan Malang" onerror="this.classList.add('img-fallback')">
-                    <div class="gallery-overlay">
-                        <h4>Kegiatan Polbangtan</h4>
-                        <p>Partnership dengan institusi pendidikan</p>
+
+                <!-- Gallery 6 -->
+                <div class="gallery-item" data-title="Kerjasama Polbangtan Malang & Institusi">
+                    <img src="assets/images/galeri-polbangtan.svg" alt="Kerjasama Polbangtan" loading="lazy">
+                    <div class="gallery-info-bar">
+                        <h4>Kegiatan Polbangtan &amp; Kampus</h4>
+                        <p>Kemitraan pelatihan karakter dengan institusi</p>
                     </div>
+                    <div class="gallery-hover-btn"><i class="fas fa-magnifying-glass-plus"></i></div>
                 </div>
             </div>
         </div>
@@ -466,36 +632,48 @@
     <section class="testimoni" id="testimoni">
         <div class="container">
             <div class="section-header">
-                <h2>Cerita Transformasi Klien Kami</h2>
-                <p class="section-subtitle">Dengarkan sendiri bagaimana KPPSM mengubah mindset dan meningkatkan performance</p>
+                <span class="section-tag">Bukti Keberhasilan</span>
+                <h2>Cerita Transformasi Klien</h2>
+                <p class="section-subtitle">Dengarkan Pengalaman Nyata Para Pimpinan Perusahaan yang Telah Merasakan Dampak Positif Pendampingan KPPSM</p>
             </div>
 
+            <!-- Dynamic API Testimonial Container -->
             <div class="testimoni-container" id="testimoni-container">
-                <!-- Testimoni akan di-load dinamis dari API -->
                 <div class="loading">
-                    <p><i class="fas fa-spinner fa-spin"></i> Memuat testimoni...</p>
+                    <i class="fas fa-circle-notch fa-spin"></i>
+                    <p>Memuat ulasan testimoni...</p>
                 </div>
             </div>
 
+            <!-- Carousel Controls -->
             <div class="testimoni-controls" id="testimoni-controls">
-                <button class="btn btn-secondary" id="prev-testimoni">← Sebelumnya</button>
-                <button class="btn btn-secondary" id="next-testimoni">Selanjutnya →</button>
+                <button class="btn btn-control" id="prev-testimoni" aria-label="Testimoni Sebelumnya">
+                    <i class="fas fa-chevron-left"></i> Sebelumnya
+                </button>
+                <button class="btn btn-control" id="next-testimoni" aria-label="Testimoni Selanjutnya">
+                    Selanjutnya <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
 
-            <!-- Fallback Static Testimoni -->
+            <!-- Fallback Static Testimonial Cards -->
             <div class="static-testimonials" id="static-testimonials">
+                <!-- Card 1 -->
                 <div class="testimoni-card">
-                    <div class="testimoni-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="testimoni-top">
+                        <div class="testimoni-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
                     </div>
                     <p class="testimoni-text">
-                        "Pelatihan dari KPPSM benar-benar mengubah cara saya memimpin tim. Dari yang tadinya authoritarian, sekarang saya lebih humanis namun tetap achieve target. Tim jadi lebih engaged dan produktif."
+                        "Pelatihan dari KPPSM benar-benar mengubah cara saya memimpin tim. Dari yang tadinya authoritarian, sekarang saya lebih humanis namun tetap achieve target. Tim jadi jauh lebih solid dan produktif."
                     </p>
                     <div class="testimoni-author">
+                        <div class="author-avatar">EW</div>
                         <div class="author-info">
                             <h4>Eka Wijaya</h4>
                             <p>HRD Director, PT Kaji</p>
@@ -503,18 +681,23 @@
                     </div>
                 </div>
 
+                <!-- Card 2 -->
                 <div class="testimoni-card">
-                    <div class="testimoni-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="testimoni-top">
+                        <div class="testimoni-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
                     </div>
                     <p class="testimoni-text">
-                        "Pak Tatag membantu saya keluar dari depresi yang dalam. Tidak hanya terapi, tapi juga mindset coaching yang practical dan bisa langsung saya terapkan. Hidup jadi lebih berwarna."
+                        "Pak Tatag membantu saya keluar dari depresi dan tekanan kerja berat. Tidak hanya teori, terapi dan mindset coaching-nya sangat praktikal dan langsung memulihkan stabilitas emosional saya."
                     </p>
                     <div class="testimoni-author">
+                        <div class="author-avatar">BS</div>
                         <div class="author-info">
                             <h4>Budi Santoso</h4>
                             <p>General Manager, PT Prodia</p>
@@ -522,18 +705,23 @@
                     </div>
                 </div>
 
+                <!-- Card 3 -->
                 <div class="testimoni-card">
-                    <div class="testimoni-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="testimoni-top">
+                        <div class="testimoni-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
                     </div>
                     <p class="testimoni-text">
-                        "Program KPPSM untuk tim sales kami menghasilkan peningkatan performance 85% dalam 3 bulan. Yang paling bagus adalah mindset mereka berubah dari 'bekerja karena terpaksa' menjadi 'bekerja dengan passion'."
+                        "Program KPPSM untuk tim sales kami menghasilkan lonjakan performa 85% dalam 3 bulan. Mindset tim berubah dari yang tadinya terbebani target menjadi antusias dan bermental juara."
                     </p>
                     <div class="testimoni-author">
+                        <div class="author-avatar">SH</div>
                         <div class="author-info">
                             <h4>Sri Handayani</h4>
                             <p>Sales Manager, PT Bumitama Gunajaya</p>
@@ -544,134 +732,139 @@
         </div>
     </section>
 
-    <!-- KONTAK -->
+    <!-- KONTAK & KONSULTASI -->
     <section class="kontak" id="kontak">
         <div class="container">
             <div class="section-header">
-                <h2>Siap untuk Transformasi?</h2>
-                <p class="section-subtitle">Hubungi Kami Sekarang</p>
+                <span class="section-tag light-tag">Hubungi Kami</span>
+                <h2>Siap untuk Transformasi Mentalitas?</h2>
+                <p class="section-subtitle">Konsultasi Awal Bebas Biaya. Pak Tatag Utomo &amp; Tim Siap Mendiskusikan Kebutuhan Spesifik Organisasi Anda.</p>
             </div>
 
-            <p class="kontak-intro">
-                Konsultasi pertama gratis. Pak Tatag & tim siap mendengarkan tantangan Anda dan merancang solusi yang tepat.
-            </p>
-
             <div class="kontak-content">
-                <!-- Kontak Info -->
-                <div class="kontak-info">
-                    <h3>Hubungi Kami</h3>
+                <!-- Kontak Info Column -->
+                <div class="kontak-info-card">
+                    <h3>Saluran Komunikasi Resmi</h3>
+                    <p class="kontak-desc">Silakan hubungi kami melalui saluran berikut untuk respon cepat dari staf representatif kami:</p>
 
                     <div class="kontak-item">
-                        <div class="kontak-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
+                        <div class="kontak-icon"><i class="fas fa-location-dot"></i></div>
                         <div class="kontak-details">
-                            <h4>Lokasi</h4>
-                            <p>Wisma KPPSM<br>Komp. Cibubur Indah 3 Blok F-7<br>Jakarta Timur</p>
+                            <h4>Alamat Wisma KPPSM</h4>
+                            <p>Wisma KPPSM, Komp. Cibubur Indah 3 Blok F-7, Jakarta Timur, DKI Jakarta</p>
                         </div>
                     </div>
 
                     <div class="kontak-item">
-                        <div class="kontak-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
+                        <div class="kontak-icon"><i class="fab fa-whatsapp"></i></div>
                         <div class="kontak-details">
-                            <h4>WhatsApp</h4>
-                            <p>
-                                <a href="https://wa.me/62818874430" target="_blank">0818.874.430</a><br>
-                                <a href="https://wa.me/6281315210388" target="_blank">0813.1521.0388</a>
-                            </p>
+                            <h4>WhatsApp Langsung</h4>
+                            <div class="wa-links">
+                                <a href="https://wa.me/62818874430" target="_blank" class="contact-action-link">
+                                    <i class="fab fa-whatsapp"></i> 0818.874.430 (Pak Tatag)
+                                </a>
+                                <a href="https://wa.me/6281315210388" target="_blank" class="contact-action-link">
+                                    <i class="fab fa-whatsapp"></i> 0813.1521.0388 (Admin KPPSM)
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="kontak-item">
-                        <div class="kontak-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
+                        <div class="kontak-icon"><i class="fas fa-envelope"></i></div>
                         <div class="kontak-details">
-                            <h4>Email</h4>
-                            <p>
-                                <a href="mailto:tatag@kppsm.com">tatag@kppsm.com</a><br>
-                                <a href="mailto:info@kppsm.com">info@kppsm.com</a>
-                            </p>
+                            <h4>Email Korespondensi</h4>
+                            <div class="email-links">
+                                <a href="mailto:tatag@kppsm.com" class="contact-action-link">tatag@kppsm.com</a>
+                                <a href="mailto:info@kppsm.com" class="contact-action-link">info@kppsm.com</a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="kontak-social">
-                        <h4>Media Sosial</h4>
+                        <h4>Media Sosial Resmi</h4>
                         <div class="social-links">
-                            <a href="https://facebook.com/TatagMotivator" target="_blank" title="Facebook">
-                                <i class="fab fa-facebook"></i>
+                            <a href="https://facebook.com/TatagMotivator" target="_blank" aria-label="Facebook Tatag Motivator" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="https://tiktok.com/@TatagMotivator" target="_blank" title="TikTok">
-                                <i class="fab fa-tiktok"></i>
-                            </a>
-                            <a href="https://instagram.com/kppsm_revolusimental" target="_blank" title="Instagram">
+                            <a href="https://instagram.com/kppsm_revolusimental" target="_blank" aria-label="Instagram KPPSM" title="Instagram">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="https://twitter.com/tatagkppsm" target="_blank" title="Twitter/X">
+                            <a href="https://tiktok.com/@TatagMotivator" target="_blank" aria-label="TikTok Tatag Motivator" title="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://twitter.com/tatagkppsm" target="_blank" aria-label="Twitter X Tatag KPPSM" title="Twitter / X">
                                 <i class="fab fa-x-twitter"></i>
                             </a>
-                            <a href="https://youtube.com/@kppsm" target="_blank" title="YouTube">
+                            <a href="https://youtube.com/@kppsm" target="_blank" aria-label="YouTube KPPSM" title="YouTube">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Formulir Kontak Interaktif -->
+                <!-- Interactive Contact Form -->
                 <div class="kontak-form-wrapper">
-                    <h3>Kirim Pesan / Permintaan Konsultasi</h3>
-                    <form id="kontak-form" class="kontak-form">
+                    <h3>Kirim Formulir Permintaan Konsultasi</h3>
+                    <p class="form-subtext">Isi formulir singkat ini dan kami akan menyiapkan rekomendasi solusi awal:</p>
+                    
+                    <form id="kontak-form" class="kontak-form" novalidate>
                         <div class="form-group">
-                            <label for="nama">Nama Lengkap *</label>
-                            <input type="text" id="nama" name="nama" required placeholder="Masukkan nama Anda">
+                            <label for="nama">Nama Lengkap <span class="req-star">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="nama" name="nama" required placeholder="Contoh: Budi Pratama, S.E.">
+                            </div>
                         </div>
+
                         <div class="form-group">
-                            <label for="email">Alamat Email *</label>
-                            <input type="email" id="email" name="email" required placeholder="nama@perusahaan.com">
+                            <label for="email">Alamat Email Kerja <span class="req-star">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" required placeholder="nama@perusahaan.com">
+                            </div>
                         </div>
+
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="telepon">No. Telepon / WhatsApp</label>
-                                <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+                                <label for="telepon">No. Telepon / WhatsApp <span class="req-star">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <input type="tel" id="telepon" name="telepon" required placeholder="08xxxxxxxxxx">
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="perusahaan">Nama Perusahaan / Organisasi</label>
-                                <input type="text" id="perusahaan" name="perusahaan" placeholder="PT / Instansi">
+                                <div class="input-with-icon">
+                                    <i class="fas fa-building"></i>
+                                    <input type="text" id="perusahaan" name="perusahaan" placeholder="PT / Instansi / Koperasi">
+                                </div>
                             </div>
                         </div>
+
                         <div class="form-group">
-                            <label for="pesan">Pesan / Kebutuhan Pelatihan *</label>
-                            <textarea id="pesan" name="pesan" rows="4" required placeholder="Ceritakan tantangan tim atau kebutuhan konsultasi Anda..."></textarea>
+                            <label for="pesan">Tantangan SDM / Topik Pelatihan yang Dibutuhkan <span class="req-star">*</span></label>
+                            <textarea id="pesan" name="pesan" rows="4" required placeholder="Ceritakan situasi tim, kendala komunikasi, atau target yang ingin dicapai..."></textarea>
                         </div>
+
                         <button type="submit" class="btn btn-primary btn-submit">
-                            <i class="fas fa-paper-plane"></i> Kirim Pesan Sekarang
+                            <i class="fas fa-paper-plane"></i> Kirim Permintaan Sekarang
                         </button>
                     </form>
                 </div>
             </div>
 
-            <!-- Google Maps Embed -->
-            <div class="kontak-map-container">
+            <!-- Google Maps Embed Container -->
+            <div class="kontak-map-card">
+                <div class="map-header">
+                    <i class="fas fa-map-location-dot"></i>
+                    <span>Lokasi Wisma Pelatihan KPPSM</span>
+                </div>
                 <div class="kontak-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7498267896563!2d106.91!3d-6.38!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0f0f0f0f0f1%3A0xf0f0f0f0f0f0f0f0!2sCibubur%20Indah!5e0!3m2!1sid!2sid!4v1234567890" 
-                            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.1763784918237!2d106.90150247587002!3d-6.371239962322359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec3d5b0d625b%3A0xc3cf9700dc6b2b73!2sCibubur%20Indah%203!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                            width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Peta Lokasi Wisma KPPSM">
                     </iframe>
                 </div>
-            </div>
-
-            <!-- CTA Buttons -->
-            <div class="kontak-cta">
-                <a href="https://wa.me/62818874430" class="btn btn-primary" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Chat via WhatsApp (0818.874.430)
-                </a>
-                <a href="https://wa.me/6281315210388" class="btn btn-secondary" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Chat via WhatsApp (0813.1521.0388)
-                </a>
-                <a href="mailto:tatag@kppsm.com" class="btn btn-secondary">
-                    <i class="fas fa-envelope"></i> Kirim Email
-                </a>
             </div>
         </div>
     </section>
@@ -680,44 +873,71 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>KPPSM</h4>
-                    <p>Pengembangan Sikap Mental Positif untuk Perubahan Berkelanjutan</p>
+                <div class="footer-section brand-col">
+                    <div class="footer-logo">
+                        <div class="footer-icon"><i class="fas fa-brain"></i></div>
+                        <h3>KPPSM</h3>
+                    </div>
+                    <p class="footer-bio">
+                        Lembaga Pengembangan Psikologi Sikap Mental terdepan di Indonesia. Didedikasikan untuk membentuk karakter tangguh, kepemimpinan humanis, dan produktivitas SDM berkelanjutan.
+                    </p>
+                    <div class="footer-social-links">
+                        <a href="https://facebook.com/TatagMotivator" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/kppsm_revolusimental" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@TatagMotivator" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@kppsm" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
+
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#hero">Beranda</a></li>
-                        <li><a href="#tentang-kppsm">Tentang KPPSM</a></li>
-                        <li><a href="#layanan">Layanan</a></li>
-                        <li><a href="#testimoni">Testimoni</a></li>
+                    <h4>Navigasi Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero"><i class="fas fa-chevron-right"></i> Beranda</a></li>
+                        <li><a href="#tentang-kppsm"><i class="fas fa-chevron-right"></i> Tentang KPPSM</a></li>
+                        <li><a href="#tentang-pendiri"><i class="fas fa-chevron-right"></i> Profil Pendiri</a></li>
+                        <li><a href="#layanan"><i class="fas fa-chevron-right"></i> Layanan Unggulan</a></li>
+                        <li><a href="#buku"><i class="fas fa-chevron-right"></i> Buku Karya</a></li>
+                        <li><a href="#galeri"><i class="fas fa-chevron-right"></i> Galeri Kegiatan</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
-                    <h4>Kontak</h4>
-                    <p>WA: <a href="https://wa.me/62818874430" target="_blank">0818.874.430</a></p>
-                    <p>WA: <a href="https://wa.me/6281315210388" target="_blank">0813.1521.0388</a></p>
-                    <p>Email: <a href="mailto:tatag@kppsm.com">tatag@kppsm.com</a></p>
+                    <h4>Layanan Populer</h4>
+                    <ul class="footer-links">
+                        <li><a href="#layanan"><i class="fas fa-chevron-right"></i> Transformasi Tim Sales</a></li>
+                        <li><a href="#layanan"><i class="fas fa-chevron-right"></i> Resolusi Krisis &amp; Demo</a></li>
+                        <li><a href="#layanan"><i class="fas fa-chevron-right"></i> Pembinaan Koperasi Mitra</a></li>
+                        <li><a href="#layanan"><i class="fas fa-chevron-right"></i> Industrial Peace (SPSI)</a></li>
+                        <li><a href="#layanan"><i class="fas fa-chevron-right"></i> Konseling Eksekutif</a></li>
+                    </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Follow Kami</h4>
-                    <div class="social-links">
-                        <a href="https://facebook.com/TatagMotivator" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="https://instagram.com/kppsm_revolusimental" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://tiktok.com/@TatagMotivator" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://youtube.com/@kppsm" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
+
+                <div class="footer-section contact-col">
+                    <h4>Kontak Cepat</h4>
+                    <p><i class="fas fa-location-dot"></i> Komp. Cibubur Indah 3 Blok F-7, Jakarta Timur</p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/62818874430" target="_blank">0818.874.430 (Pak Tatag)</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6281315210388" target="_blank">0813.1521.0388 (Admin)</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:tatag@kppsm.com">tatag@kppsm.com</a></p>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 KPPSM - Pengembangan Sikap Mental Positif. All rights reserved. | Developed by <a href="#">Tech Team</a></p>
+                <p>&copy; 2024 KPPSM - Klinik Pengembangan Psikologi Sikap Mental. Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
             </div>
         </div>
     </footer>
 
-    <!-- SCRIPTS -->
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/62818874430?text=Halo%20Pak%20Tatag%2C%20saya%20ingin%20konsultasi%20pelatihan%20sikap%20mental%20KPPSM" 
+       target="_blank" 
+       class="floating-wa" 
+       id="floating-wa"
+       aria-label="Konsultasi Langsung via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="floating-wa-badge">Konsultasi Gratis</span>
+    </a>
+
+    <!-- JAVASCRIPT -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
-
