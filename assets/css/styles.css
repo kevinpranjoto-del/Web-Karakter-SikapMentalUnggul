@@ -148,9 +148,9 @@ body {
 
 .nav-link-item {
   white-space: nowrap;
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 500;
-  padding: 8px 12px;
+  padding: 7px 10px;
   border-radius: 8px;
   transition: color var(--transition-fast), background-color var(--transition-fast);
 }
@@ -285,7 +285,40 @@ body {
   animation: fadeInTab 0.4s ease;
 }
 
-/* --- 10. FLOATING WHATSAPP BUTTON --- */
+/* --- 10. TESTIMONIALS SECTION --- */
+.testi-filter-btn {
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.testi-filter-btn.active {
+  background-color: var(--color-emas);
+  color: var(--color-navy);
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.3);
+}
+
+.testi-filter-btn:not(.active) {
+  background-color: #ffffff;
+  color: var(--color-navy);
+  border: 1px solid #E2E8F0;
+}
+
+.testi-filter-btn:not(.active):hover {
+  background-color: var(--color-hijau-light);
+  color: var(--color-hijau);
+}
+
+.testi-card {
+  transition: all var(--transition-normal);
+}
+
+.testi-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-emas);
+}
+
+/* --- 11. FLOATING WHATSAPP BUTTON --- */
 .floating-wa-btn {
   animation: pulseGlow 2s infinite;
 }

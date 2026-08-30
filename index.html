@@ -112,6 +112,7 @@
         <a href="#buku" class="nav-link-item">Karya &amp; Buku</a>
         <a href="#keunggulan" class="nav-link-item">Keunggulan</a>
         <a href="#galeri" class="nav-link-item">Galeri</a>
+        <a href="#testimoni" class="nav-link-item">Testimoni</a>
         <a href="#pengguna" class="nav-link-item">Pengguna Jasa</a>
         <a href="#kontak" class="nav-link-item">Kontak</a>
       </div>
@@ -163,6 +164,7 @@
         <a href="#buku" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Karya &amp; Buku</a>
         <a href="#keunggulan" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Keunggulan Kami</a>
         <a href="#galeri" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Galeri Foto</a>
+        <a href="#testimoni" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Testimoni Klien</a>
         <a href="#pengguna" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Pengguna Jasa</a>
         <a href="#kontak" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Kontak</a>
         
@@ -941,7 +943,244 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 11. PROFIL PENDIRI SECTION -->
+  <!-- 11. TESTIMONI KLIEN & EKSEKUTIF SECTION -->
+  <!-- ========================================================================= -->
+  <section id="testimoni" class="py-24 px-5 sm:px-8 bg-white border-t border-gray-200/80 scroll-mt-20">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-in text-center mb-12">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Kata Mereka Tentang Kami</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Testimoni Klien &amp; Eksekutif</h2>
+        <div class="divider-emas mx-auto mb-4"></div>
+        <p class="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
+          Pengalaman nyata para direktur, pimpinan divisi HR, manajer, dan kepala institusi setelah mengikuti program pelatihan dan revolusi mental KPPSM.
+        </p>
+      </div>
+
+      <!-- Testimonials Filter Category Pills -->
+      <div class="fade-in flex flex-wrap items-center justify-center gap-2.5 mb-12">
+        <button class="testi-filter-btn active font-bold text-xs sm:text-sm px-5 py-2 rounded-full shadow-sm" data-category="all" onclick="filterTesti('all')">
+          Semua (8)
+        </button>
+        <button class="testi-filter-btn font-bold text-xs sm:text-sm px-5 py-2 rounded-full shadow-sm" data-category="Executive" onclick="filterTesti('Executive')">
+          Direksi &amp; Eksekutif
+        </button>
+        <button class="testi-filter-btn font-bold text-xs sm:text-sm px-5 py-2 rounded-full shadow-sm" data-category="Corporate" onclick="filterTesti('Corporate')">
+          HR &amp; Corporate
+        </button>
+        <button class="testi-filter-btn font-bold text-xs sm:text-sm px-5 py-2 rounded-full shadow-sm" data-category="Partner" onclick="filterTesti('Partner')">
+          Institusi &amp; Tim
+        </button>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- Testimoni 1: PT Maharupa Gatra -->
+        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Executive">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-emas text-xs gap-1">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+              &ldquo;Selama hidup sudah ratusan pelatihan dan seminar yang saya ikuti, termasuk dari luar negeri. Namun KPPSM saya nilai adalah yang paling bagus dan OK, karena materinya padat, penceramahnya berpengalaman, gayanya hidup dan tidak membosankan.&rdquo;
+            </p>
+          </div>
+          <div class="pt-4 border-t border-gray-200 flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-navy text-emas font-bold flex items-center justify-center shrink-0 text-sm">
+              IM
+            </div>
+            <div>
+              <h4 class="text-navy font-bold text-sm leading-tight">Iwan Mahatirta</h4>
+              <p class="text-gray-500 text-xs mt-0.5">Direktur Utama</p>
+              <p class="text-hijau font-semibold text-xs">PT Maharupa Gatra (MG Sports &amp; Music)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimoni 2: PT Meiji Indonesian Pharmaceutical -->
+        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Executive">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-emas text-xs gap-1">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+              &ldquo;KPPSM memang luar biasa, dengan memberi contoh kecil tetapi bernilai besar yang membedakan dengan lembaga lain. Sikap teladan, disiplin dan profesional itu bukan basa-basi.&rdquo;
+            </p>
+          </div>
+          <div class="pt-4 border-t border-gray-200 flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-navy text-emas font-bold flex items-center justify-center shrink-0 text-sm">
+              AR
+            </div>
+            <div>
+              <h4 class="text-navy font-bold text-sm leading-tight">Artomo</h4>
+              <p class="text-gray-500 text-xs mt-0.5">Direktur</p>
+              <p class="text-hijau font-semibold text-xs">PT Meiji Indonesian Pharmaceutical</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimoni 3: PT Enseval Putra Megatrading Tbk -->
+        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Executive">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-emas text-xs gap-1">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+              &ldquo;KPPSM tampil beda dari pelatihan lain: materinya sangat sederhana, membumi, mudah dicerna, mudah diterapkan, sesuai kebutuhan karyawan Indonesia dan hasilnya cepat dirasakan, terutama berkaitan dengan produktivitas perusahaan.&rdquo;
+            </p>
+          </div>
+          <div class="pt-4 border-t border-gray-200 flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-navy text-emas font-bold flex items-center justify-center shrink-0 text-sm">
+              HW
+            </div>
+            <div>
+              <h4 class="text-navy font-bold text-sm leading-tight">Herman Widjaja</h4>
+              <p class="text-gray-500 text-xs mt-0.5">Director in Charge MDD &amp; EC</p>
+              <p class="text-hijau font-semibold text-xs">PT Enseval Putra Megatrading, Tbk</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimoni 4: PT Bumitama Gunajaya Agro -->
+        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Corporate">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-emas text-xs gap-1">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+              &ldquo;Materi sangat positif dan me-remind kita kembali kepada fitrah kita sebagai manusia yang pada dasarnya punya hati, etika dan adab. KPPSM hadir dan tepat sekali pada saat negara kita krisis moral dan mental.&rdquo;
+            </p>
+          </div>
+          <div class="pt-4 border-t border-gray-200 flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-hijau text-white font-bold flex items-center justify-center shrink-0 text-sm">
+              II
+            </div>
+            <div>
+              <h4 class="text-navy font-bold text-sm leading-tight">Iswandi Ilyas</h4>
+              <p class="text-gray-500 text-xs mt-0.5">Partnership Dept. Head</p>
+              <p class="text-hijau font-semibold text-xs">PT Bumitama Gunajaya Agro</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimoni 5: PT Lucky Indah Keramik -->
+        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Corporate">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-emas text-xs gap-1">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+              &ldquo;Ilmu adalah milik orang yang mau belajar. Kemajuan adalah milik orang yang mau berubah. Pak Oerip dan Pak Tatag telah mengajarkan keduanya dan kemajuan mulai kami rasakan di PT Lucky Indah Keramik.&rdquo;
+            </p>
+          </div>
+          <div class="pt-4 border-t border-gray-200 flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-hijau text-white font-bold flex items-center justify-center shrink-0 text-sm">
+              JD
+            </div>
+            <div>
+              <h4 class="text-navy font-bold text-sm leading-tight">Junus Danie</h4>
+              <p class="text-gray-500 text-xs mt-0.5">Manajer HR, GA dan Perijinan</p>
+              <p class="text-hijau font-semibold text-xs">PT Lucky Indah Keramik</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimoni 6: PT Kalla Lines -->
+        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Executive">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-emas text-xs gap-1">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+              &ldquo;KPPSM beda. Programnya bukan hanya bermanfaat bagi pribadi, keluarga dan perusahaan, tetapi juga bangsa. Langkah kecil KPPSM ini akan saya ikuti dan saya yakin 1000 langkah kecil akan membuat langkah besar.&rdquo;
+            </p>
+          </div>
+          <div class="pt-4 border-t border-gray-200 flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-navy text-emas font-bold flex items-center justify-center shrink-0 text-sm">
+              DW
+            </div>
+            <div>
+              <h4 class="text-navy font-bold text-sm leading-tight">Djati Adi Wicaksono</h4>
+              <p class="text-gray-500 text-xs mt-0.5">Direktur IT Business Unit</p>
+              <p class="text-hijau font-semibold text-xs">PT Kalla Lines</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimoni 7: Hoka-hoka Bento Wisma BRI II -->
+        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Partner">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-emas text-xs gap-1">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+              &ldquo;Setelah mengikuti Pelatihan Pengembangan Sikap Mental dari KPPSM serta menyelenggarakan renungan seminggu sekali, sikap saya berubah. Sekarang saya berusaha mengerti kebijakan perusahaan dan meningkatkan omset perusahaan.&rdquo;
+            </p>
+          </div>
+          <div class="pt-4 border-t border-gray-200 flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-emas text-navy font-bold flex items-center justify-center shrink-0 text-sm">
+              DW
+            </div>
+            <div>
+              <h4 class="text-navy font-bold text-sm leading-tight">Dirga Wahana</h4>
+              <p class="text-gray-500 text-xs mt-0.5">Store Supervisor</p>
+              <p class="text-hijau font-semibold text-xs">Hoka-hoka Bento Wisma BRI II</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimoni 8: SDN Kragilan 06 Serang -->
+        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Partner">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-emas text-xs gap-1">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+              &ldquo;Pelatihan Revolusi Mental sangat bermanfaat bukan hanya buat saya sebagai pendidik, namun juga buat anak didik. Di dunia pendidikan, karakter seorang guru adalah pondasi untuk dicontoh dan ditiru oleh peserta didik.&rdquo;
+            </p>
+          </div>
+          <div class="pt-4 border-t border-gray-200 flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-hijau text-white font-bold flex items-center justify-center shrink-0 text-sm">
+              RS
+            </div>
+            <div>
+              <h4 class="text-navy font-bold text-sm leading-tight">Rasidi, S.Pd</h4>
+              <p class="text-gray-500 text-xs mt-0.5">Kepala Sekolah</p>
+              <p class="text-hijau font-semibold text-xs">SDN Kragilan 06 Serang</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 12. PROFIL PENDIRI SECTION -->
   <!-- ========================================================================= -->
   <section id="pendiri" class="py-24 px-5 sm:px-8 bg-white scroll-mt-20">
     <div class="max-w-4xl mx-auto text-center">
@@ -974,7 +1213,7 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 12. RISET 36 TAHUN SECTION -->
+  <!-- 13. RISET 36 TAHUN SECTION -->
   <!-- ========================================================================= -->
   <section id="riset" class="py-24 px-5 sm:px-8 bg-navy text-white scroll-mt-20 relative overflow-hidden">
     <div class="max-w-4xl mx-auto text-center relative z-10">
@@ -1011,7 +1250,7 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 13. PENGGUNA JASA SECTION -->
+  <!-- 14. PENGGUNA JASA SECTION -->
   <!-- ========================================================================= -->
   <section id="pengguna" class="py-24 px-6 sm:px-10 bg-gradient-to-r from-hijaugelap via-hijau to-hijaugelap text-white relative">
     <div class="max-w-4xl mx-auto text-center relative z-10">
@@ -1045,7 +1284,7 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 14. KONTAK & HUBUNGI KAMI SECTION -->
+  <!-- 15. KONTAK & HUBUNGI KAMI SECTION -->
   <!-- ========================================================================= -->
   <section id="kontak" class="py-24 px-5 sm:px-8 bg-navy text-white relative">
     <div class="max-w-4xl mx-auto text-center">
@@ -1109,7 +1348,7 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 15. FOOTER -->
+  <!-- 16. FOOTER -->
   <!-- ========================================================================= -->
   <footer class="bg-hitam text-gray-400 py-10 px-5 sm:px-8 border-t border-white/10 text-center">
     <div class="max-w-4xl mx-auto flex flex-col items-center justify-center gap-4">
@@ -1126,7 +1365,7 @@
   </footer>
 
   <!-- ========================================================================= -->
-  <!-- 16. FLOATING WHATSAPP BUTTON -->
+  <!-- 17. FLOATING WHATSAPP BUTTON -->
   <!-- ========================================================================= -->
   <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20konsultasi%20pelatihan%20sikap%20mental%20unggul" target="_blank" rel="noopener" aria-label="WhatsApp Konsultasi Cepat"
      class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition transform floating-wa-btn">

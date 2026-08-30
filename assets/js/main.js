@@ -1,7 +1,7 @@
 /**
  * ============================================================================
  * KPPSM F.X. POERWOPOESPITO - MAIN JAVASCRIPT
- * Module: Navbar, Mobile Drawer, Accordions, Tabs, and Scroll Animations
+ * Module: Navbar, Mobile Drawer, Accordions, Tabs, Testimonials, and Animations
  * ============================================================================
  */
 
@@ -15,6 +15,7 @@
     initMobileNavigation();
     initAccordions();
     initTabs();
+    initTestimonials();
   });
 
   // --- 2. SCROLL REVEAL ANIMATION (INTERSECTION OBSERVER) ---
@@ -153,6 +154,27 @@
       if (select && select.value !== tabName) {
         select.value = tabName;
       }
+    };
+  }
+
+  // --- 7. TESTIMONIAL FILTER SWITCHER ---
+  function initTestimonials() {
+    window.filterTesti = function (category) {
+      // 1. Update filter buttons state
+      document.querySelectorAll('.testi-filter-btn').forEach((btn) => {
+        btn.classList.toggle('active', btn.dataset.category === category);
+      });
+
+      // 2. Filter testimonial cards
+      const cards = document.querySelectorAll('.testi-card');
+      cards.forEach((card) => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+          card.classList.add('fade-in', 'show');
+        } else {
+          card.style.display = 'none';
+        }
+      });
     };
   }
 })();

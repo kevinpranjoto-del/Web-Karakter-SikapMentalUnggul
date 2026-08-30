@@ -15,6 +15,9 @@ describe('KPPSM Website & Media Assets Test Suite', () => {
     expect(res.text).toContain('ToABQ');
     expect(res.text).toContain('0818.874.430');
     expect(res.text).toContain('Wisma KPPSM');
+    expect(res.text).toContain('Testimoni Klien');
+    expect(res.text).toContain('Iwan Mahatirta');
+    expect(res.text).toContain('PT Meiji Indonesian Pharmaceutical');
   });
 
   test('GET /index.html returns 200 and valid content', async () => {
