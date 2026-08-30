@@ -11,7 +11,7 @@
   <meta name="author" content="KPPSM F.X. Poerwopoespito">
   <meta name="theme-color" content="#0A2540">
 
-  <!-- Open Graph / Social Media -->
+  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Karakter-SikapMentalUnggul.id | KPPSM F.X. Poerwopoespito">
   <meta property="og:description" content="Revolusi Mental sejak 1992. Pelatihan Karakter, Sikap Mental Unggul, ToABQ, & Konseling SDM Indonesia.">
   <meta property="og:image" content="assets/images/foto-seminar.jpg">
@@ -51,10 +51,10 @@
     }
   </script>
 
-  <!-- Modular Custom Stylesheet -->
+  <!-- Modular Stylesheet -->
   <link rel="stylesheet" href="assets/css/styles.css">
 
-  <!-- Modular JavaScript (Deferred) -->
+  <!-- Modular JavaScript Controller -->
   <script src="assets/js/main.js" defer></script>
 </head>
 <body class="font-poppins text-hitam bg-white antialiased selection:bg-emas selection:text-navy">
@@ -62,134 +62,112 @@
   <!-- ========================================================================= -->
   <!-- 1. NAVBAR SECTION -->
   <!-- ========================================================================= -->
-  <nav class="fixed top-0 left-0 w-full z-50 bg-navy/95 backdrop-blur-md shadow-lg border-b border-white/10 transition-all duration-300" id="mainNav">
-    <div class="max-w-7xl mx-auto h-[66px] sm:h-[74px] px-4 sm:px-6 flex items-center justify-between gap-4">
+  <nav class="fixed top-0 left-0 w-full z-50 bg-navy/95 backdrop-blur-md shadow-md border-b border-white/10" id="mainNav">
+    <div class="max-w-7xl mx-auto h-[64px] sm:h-[72px] px-4 sm:px-6 flex items-center justify-between gap-3">
       
       <!-- Brand Logo -->
       <a href="#hero" class="flex items-center gap-2.5 shrink-0 group">
-        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-hijau to-emas flex items-center justify-center text-white shadow-md group-hover:scale-105 transition transform">
-          <i class="fas fa-brain text-lg sm:text-xl text-white drop-shadow"></i>
+        <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-gradient-to-tr from-hijau to-emas flex items-center justify-center text-white shadow group-hover:scale-105 transition transform">
+          <i class="fas fa-brain text-sm sm:text-base text-white"></i>
         </div>
         <div class="flex flex-col">
-          <span class="text-white font-extrabold text-sm sm:text-base leading-none tracking-wide whitespace-nowrap">
+          <span class="text-white font-extrabold text-[13px] sm:text-sm md:text-base leading-none tracking-tight whitespace-nowrap">
             Karakter-<span class="text-emas">SikapMentalUnggul</span><span class="text-gray-300 font-normal text-xs">.id</span>
           </span>
-          <span class="text-[10px] text-gray-300 font-medium tracking-wider uppercase mt-0.5">KPPSM F.X. Poerwopoespito</span>
+          <span class="text-[9.5px] text-gray-300 font-medium tracking-wider uppercase mt-0.5 whitespace-nowrap">KPPSM F.X. Poerwopoespito</span>
         </div>
       </a>
 
-      <!-- Desktop Navigation Menu -->
-      <div class="hidden xl:flex items-center gap-1 text-white text-[13.5px] font-medium tracking-wide flex-1 justify-center">
-        <a href="#hero" class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition">Beranda</a>
+      <!-- Desktop Navigation Menu (Crisp & Non-Wrapping) -->
+      <div class="hidden lg:flex items-center gap-0.5 xl:gap-1 text-white text-xs xl:text-[13px] font-medium tracking-wide flex-1 justify-center">
+        <a href="#hero" class="nav-link-item">Beranda</a>
 
         <!-- Dropdown: Tentang Kami -->
         <div class="nav-item">
-          <button class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition flex items-center gap-1.5 focus:outline-none" aria-haspopup="true">
-            Tentang Kami
-            <svg class="w-3.5 h-3.5 shrink-0 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          <button class="nav-link-item flex items-center gap-1 focus:outline-none" aria-haspopup="true">
+            <span>Tentang Kami</span>
+            <svg class="w-3 h-3 shrink-0 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="nav-dropdown">
-            <a href="#asal-materi"><i class="fas fa-microscope w-5 text-hijau text-xs"></i> Asal Materi</a>
-            <a href="#pendiri"><i class="fas fa-user-tie w-5 text-hijau text-xs"></i> Profil Pendiri</a>
-            <a href="#riset"><i class="fas fa-chart-line w-5 text-hijau text-xs"></i> Riset 36 Tahun</a>
+            <a href="#asal-materi"><i class="fas fa-microscope w-4 text-hijau text-xs"></i> Asal Materi</a>
+            <a href="#pendiri"><i class="fas fa-user-tie w-4 text-hijau text-xs"></i> Profil Pendiri</a>
+            <a href="#riset"><i class="fas fa-chart-line w-4 text-hijau text-xs"></i> Riset 36 Tahun</a>
           </div>
         </div>
 
-        <!-- Dropdown: Metode Pelatihan -->
+        <!-- Dropdown: Program & Layanan -->
         <div class="nav-item">
-          <button class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition flex items-center gap-1.5 focus:outline-none" aria-haspopup="true">
-            Metode Pelatihan
-            <svg class="w-3.5 h-3.5 shrink-0 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          <button class="nav-link-item flex items-center gap-1 focus:outline-none" aria-haspopup="true">
+            <span>Pelatihan &amp; Layanan</span>
+            <svg class="w-3 h-3 shrink-0 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="nav-dropdown">
-            <a href="#metode-dialog"><i class="fas fa-comments w-5 text-hijau text-xs"></i> Dialog Partisipatif</a>
-            <a href="#metode-tes"><i class="fas fa-clipboard-check w-5 text-hijau text-xs"></i> Metode Tes (ToABQ)</a>
-            <a href="#metode-konseling"><i class="fas fa-hands-helping w-5 text-hijau text-xs"></i> Metode Konseling</a>
+            <a href="#layanan"><i class="fas fa-star w-4 text-hijau text-xs"></i> Layanan Utama (A-D)</a>
+            <a href="#metode"><i class="fas fa-comments w-4 text-hijau text-xs"></i> Metode Pelatihan</a>
+            <a href="#sifat"><i class="fas fa-lightbulb w-4 text-hijau text-xs"></i> Sifat Pelatihan</a>
+            <a href="#manajemen"><i class="fas fa-briefcase w-4 text-hijau text-xs"></i> Pelatihan Manajemen</a>
           </div>
         </div>
 
-        <!-- Dropdown: Sifat Pelatihan -->
-        <div class="nav-item">
-          <button class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition flex items-center gap-1.5 focus:outline-none" aria-haspopup="true">
-            Sifat Pelatihan
-            <svg class="w-3.5 h-3.5 shrink-0 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div class="nav-dropdown">
-            <a href="#sifat-intelektualitatif"><i class="fas fa-lightbulb w-5 text-hijau text-xs"></i> Intelektualitatif</a>
-            <a href="#sifat-tes"><i class="fas fa-tasks w-5 text-hijau text-xs"></i> Sifat Tes Terstandar</a>
-          </div>
-        </div>
-
-        <a href="#manajemen" class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition">Pelatihan Manajemen</a>
-        <a href="#buku" class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition">Karya Ilmiah &amp; Buku</a>
-        <a href="#keunggulan" class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition">Keunggulan Kami</a>
-        <a href="#galeri" class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition">Galeri</a>
-        <a href="#kontak" class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition">Kontak</a>
+        <a href="#buku" class="nav-link-item">Karya &amp; Buku</a>
+        <a href="#keunggulan" class="nav-link-item">Keunggulan</a>
+        <a href="#galeri" class="nav-link-item">Galeri</a>
+        <a href="#pengguna" class="nav-link-item">Pengguna Jasa</a>
+        <a href="#kontak" class="nav-link-item">Kontak</a>
       </div>
 
-      <!-- Action Button & Mobile Toggle -->
-      <div class="flex items-center gap-3 shrink-0">
+      <!-- Action Button & Hamburger Toggle -->
+      <div class="flex items-center gap-2.5 shrink-0">
         <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20program%20pelatihan%20karakter%20dan%20sikap%20mental%20unggul" target="_blank" rel="noopener"
-           class="hidden sm:inline-flex items-center gap-2 btn-emas font-bold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-md whitespace-nowrap">
-          <i class="fab fa-whatsapp text-base"></i>
+           class="hidden sm:inline-flex items-center gap-1.5 btn-emas text-xs sm:text-sm px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow whitespace-nowrap">
+          <i class="fab fa-whatsapp text-sm sm:text-base"></i>
           <span>WA Kami</span>
         </a>
         
         <!-- Mobile Menu Toggle Button -->
-        <button id="hamburgerBtn" class="xl:hidden text-white p-2 rounded-lg hover:bg-white/10 transition focus:outline-none" aria-label="Buka navigasi menu" aria-expanded="false">
-          <svg id="iconOpen" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-          <svg id="iconClose" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        <button id="hamburgerBtn" class="lg:hidden text-white p-2 rounded-lg hover:bg-white/10 transition focus:outline-none" aria-label="Buka navigasi menu" aria-expanded="false">
+          <svg id="iconOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="iconClose" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
       </div>
     </div>
 
-    <!-- Mobile Drawer Accordion Menu -->
-    <div id="mobileMenu" class="xl:hidden max-h-0 bg-navy/98 border-t border-white/10 backdrop-blur-lg">
-      <div class="px-5 py-4 flex flex-col text-white text-sm max-h-[80vh] overflow-y-auto">
-        <a href="#hero" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Beranda</a>
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="lg:hidden bg-navy border-t border-white/10">
+      <div class="px-5 py-3 flex flex-col text-white text-sm max-h-[80vh] overflow-y-auto">
+        <a href="#hero" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Beranda</a>
 
         <!-- Mobile Submenu: Tentang Kami -->
-        <button class="mobile-toggle py-3 border-b border-white/10 flex items-center justify-between w-full text-left font-medium hover:text-emas transition" data-target="sub-tentang">
+        <button class="mobile-toggle py-2.5 border-b border-white/10 flex items-center justify-between w-full text-left font-medium hover:text-emas transition" data-target="sub-tentang">
           <span>Tentang Kami</span>
           <svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
-        <div id="sub-tentang" class="mobile-sub pl-4 flex flex-col text-gray-300 text-xs sm:text-sm">
-          <a href="#asal-materi" class="py-2.5 hover:text-emas transition">&bull; Asal Materi</a>
-          <a href="#pendiri" class="py-2.5 hover:text-emas transition">&bull; Profil Pendiri</a>
-          <a href="#riset" class="py-2.5 hover:text-emas transition">&bull; Riset 36 Tahun</a>
+        <div id="sub-tentang" class="mobile-sub py-1 space-y-1 text-gray-300 text-xs sm:text-sm">
+          <a href="#asal-materi" class="py-1.5 hover:text-emas transition">&bull; Asal Materi</a>
+          <a href="#pendiri" class="py-1.5 hover:text-emas transition">&bull; Profil Pendiri</a>
+          <a href="#riset" class="py-1.5 hover:text-emas transition">&bull; Riset 36 Tahun</a>
         </div>
 
-        <!-- Mobile Submenu: Metode Pelatihan -->
-        <button class="mobile-toggle py-3 border-b border-white/10 flex items-center justify-between w-full text-left font-medium hover:text-emas transition" data-target="sub-metode">
-          <span>Metode Pelatihan</span>
+        <!-- Mobile Submenu: Pelatihan & Layanan -->
+        <button class="mobile-toggle py-2.5 border-b border-white/10 flex items-center justify-between w-full text-left font-medium hover:text-emas transition" data-target="sub-pelatihan">
+          <span>Pelatihan &amp; Layanan</span>
           <svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
-        <div id="sub-metode" class="mobile-sub pl-4 flex flex-col text-gray-300 text-xs sm:text-sm">
-          <a href="#metode-dialog" class="py-2.5 hover:text-emas transition">&bull; Dialog Partisipatif</a>
-          <a href="#metode-tes" class="py-2.5 hover:text-emas transition">&bull; Metode Tes (ToABQ)</a>
-          <a href="#metode-konseling" class="py-2.5 hover:text-emas transition">&bull; Metode Konseling</a>
+        <div id="sub-pelatihan" class="mobile-sub py-1 space-y-1 text-gray-300 text-xs sm:text-sm">
+          <a href="#layanan" class="py-1.5 hover:text-emas transition">&bull; Layanan Utama (A-D)</a>
+          <a href="#metode" class="py-1.5 hover:text-emas transition">&bull; Metode Pelatihan</a>
+          <a href="#sifat" class="py-1.5 hover:text-emas transition">&bull; Sifat Pelatihan</a>
+          <a href="#manajemen" class="py-1.5 hover:text-emas transition">&bull; Pelatihan Manajemen</a>
         </div>
 
-        <!-- Mobile Submenu: Sifat Pelatihan -->
-        <button class="mobile-toggle py-3 border-b border-white/10 flex items-center justify-between w-full text-left font-medium hover:text-emas transition" data-target="sub-sifat">
-          <span>Sifat Pelatihan</span>
-          <svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-        </button>
-        <div id="sub-sifat" class="mobile-sub pl-4 flex flex-col text-gray-300 text-xs sm:text-sm">
-          <a href="#sifat-intelektualitatif" class="py-2.5 hover:text-emas transition">&bull; Intelektualitatif</a>
-          <a href="#sifat-tes" class="py-2.5 hover:text-emas transition">&bull; Sifat Tes</a>
-        </div>
-
-        <a href="#manajemen" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Pelatihan Manajemen</a>
-        <a href="#layanan" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Layanan Utama</a>
-        <a href="#buku" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Karya Ilmiah &amp; Buku</a>
-        <a href="#keunggulan" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Keunggulan Kami</a>
-        <a href="#galeri" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Galeri Foto</a>
-        <a href="#pengguna" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Pengguna Jasa</a>
-        <a href="#kontak" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Kontak</a>
+        <a href="#buku" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Karya &amp; Buku</a>
+        <a href="#keunggulan" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Keunggulan Kami</a>
+        <a href="#galeri" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Galeri Foto</a>
+        <a href="#pengguna" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Pengguna Jasa</a>
+        <a href="#kontak" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Kontak</a>
         
-        <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20konsultasi%20pelatihan%20karakter" target="_blank" rel="noopener" class="btn-emas text-center font-bold text-sm px-4 py-3 rounded-full shadow-lg my-4 flex items-center justify-center gap-2">
-          <i class="fab fa-whatsapp text-lg"></i>
+        <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20konsultasi%20pelatihan%20karakter" target="_blank" rel="noopener" class="btn-emas text-center font-bold text-xs sm:text-sm px-4 py-2.5 rounded-full shadow my-3 flex items-center justify-center gap-2">
+          <i class="fab fa-whatsapp text-base"></i>
           <span>Hubungi via WhatsApp</span>
         </a>
       </div>
@@ -232,12 +210,12 @@
       <!-- Hero Action Buttons -->
       <div class="fade-in flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20konsultasi%20pelatihan%20sikap%20mental%20unggul" target="_blank" rel="noopener"
-           class="btn-emas font-bold px-9 py-4 rounded-full text-sm sm:text-base w-full sm:w-auto text-center shadow-xl flex items-center justify-center gap-2">
+           class="btn-emas font-bold px-8 sm:px-9 py-3.5 sm:py-4 rounded-full text-sm sm:text-base w-full sm:w-auto text-center shadow-xl flex items-center justify-center gap-2">
           <i class="fab fa-whatsapp text-lg"></i>
           <span>Konsultasi WhatsApp</span>
         </a>
         <a href="#keunggulan"
-           class="btn-outline-emas font-bold px-9 py-4 rounded-full text-sm sm:text-base w-full sm:w-auto text-center backdrop-blur-sm bg-navy/40">
+           class="btn-outline-emas font-bold px-8 sm:px-9 py-3.5 sm:py-4 rounded-full text-sm sm:text-base w-full sm:w-auto text-center backdrop-blur-sm bg-navy/40">
           Lihat Keunggulan Kami
         </a>
       </div>

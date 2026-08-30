@@ -50,7 +50,7 @@
     if (!nav) return;
 
     const handleScroll = () => {
-      if (window.scrollY > 40) {
+      if (window.scrollY > 30) {
         nav.classList.add('shadow-xl', 'bg-navy');
         nav.classList.remove('bg-navy/95');
       } else {
@@ -84,7 +84,7 @@
       hamburgerBtn.setAttribute('aria-expanded', isMenuOpen ? 'true' : 'false');
     });
 
-    // Close menu when clicking nav links
+    // Close menu when clicking navigation links
     mobileMenu.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
         isMenuOpen = false;
@@ -99,7 +99,8 @@
 
     // Mobile Submenu Accordions
     document.querySelectorAll('.mobile-toggle').forEach((btn) => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
         const targetId = btn.dataset.target;
         const target = document.getElementById(targetId);
         const chev = btn.querySelector('.chev');
