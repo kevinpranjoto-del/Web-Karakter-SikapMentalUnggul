@@ -1,944 +1,1159 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KPPSM - Lembaga Pengembangan Sikap Mental Positif dengan 20+ tahun pengalaman membimbing ribuan profesional, eksekutif, dan korporat ternama Indonesia.">
-    <meta name="keywords" content="pelatihan mental, sikap mental positif, Tatag Utomo, revolusi mental, SDM corporate, leadership training, executive coaching, kppsm">
-    <meta name="author" content="Tatag Utomo, M.M., M.Si.">
-    <meta name="theme-color" content="#0a2540">
-    
-    <title>KPPSM - Pengembangan Sikap Mental Positif | Tatag Utomo</title>
-    
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Google Fonts: Plus Jakarta Sans & Outfit for ultra-crisp modern executive typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karakter-SikapMentalUnggul.id | KPPSM F.X. Poerwopoespito</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="KPPSM F.X. Poerwopoespito - Revolusi Mental sejak 1992. Pelatihan Karakter, Sikap Mental Unggul, ToABQ, Konseling & Pengembangan SDM untuk Perusahaan, Institusi dan BUMN. 36 Tahun Riset & Pengalaman.">
+  <meta name="keywords" content="pelatihan karakter, sikap mental unggul, revolusi mental, toabq, kppsm, fx poerwopoespito, tatag utomo, training sdm corporate, sdm bumn">
+  <meta name="author" content="KPPSM F.X. Poerwopoespito">
+  <meta name="theme-color" content="#0A2540">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Karakter-SikapMentalUnggul.id | KPPSM F.X. Poerwopoespito">
+  <meta property="og:description" content="Revolusi Mental sejak 1992. Pelatihan Karakter, Sikap Mental Unggul, ToABQ, & Konseling SDM Indonesia.">
+  <meta property="og:image" content="assets/images/foto-seminar.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS Framework CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            hijau: '#2E7D32',
+            hijaugelap: '#1B5E20',
+            emas: '#D4AF37',
+            emasgelap: '#B89428',
+            navy: '#0A2540',
+            navydark: '#061729',
+            merah: '#C62828',
+            hitam: '#1E1E1E',
+            abu: '#F8F9FA',
+            abusedang: '#E9ECEF',
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Modular Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Modular JavaScript (Deferred) -->
+  <script src="assets/js/main.js" defer></script>
 </head>
-<body>
-    <!-- NAVIGATION BAR -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#hero" class="logo" aria-label="KPPSM Beranda">
-                <div class="logo-icon">
-                    <i class="fas fa-brain"></i>
-                </div>
-                <div class="logo-text">
-                    <span class="logo-title">KPPSM</span>
-                    <span class="logo-subtitle">Sikap Mental Positif</span>
-                </div>
-            </a>
+<body class="font-poppins text-hitam bg-white antialiased selection:bg-emas selection:text-navy">
 
-            <!-- Desktop Nav Menu -->
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#hero" class="nav-link active">Beranda</a></li>
-                <li><a href="#tentang-kppsm" class="nav-link">Tentang KPPSM</a></li>
-                <li><a href="#tentang-pendiri" class="nav-link">Tentang Pendiri</a></li>
-                <li><a href="#layanan" class="nav-link">Layanan</a></li>
-                <li><a href="#buku" class="nav-link">Buku Karya</a></li>
-                <li><a href="#galeri" class="nav-link">Galeri</a></li>
-                <li><a href="#testimoni" class="nav-link">Testimoni</a></li>
-                <li><a href="#kontak" class="nav-link">Kontak</a></li>
-            </ul>
-
-            <!-- Header CTA Button -->
-            <div class="nav-actions">
-                <a href="https://wa.me/62818874430?text=Halo%20Pak%20Tatag%2C%20saya%20ingin%20konsultasi%20pelatihan%20sikap%20mental%20KPPSM" target="_blank" class="btn btn-nav-cta">
-                    <i class="fab fa-whatsapp"></i> <span>Konsultasi</span>
-                </a>
-                <button class="hamburger" id="hamburger" aria-label="Buka Menu Navigasi" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+  <!-- ========================================================================= -->
+  <!-- 1. NAVBAR SECTION -->
+  <!-- ========================================================================= -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-navy/95 backdrop-blur-md shadow-lg border-b border-white/10 transition-all duration-300" id="mainNav">
+    <div class="max-w-7xl mx-auto h-[66px] sm:h-[74px] px-4 sm:px-6 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-2.5 shrink-0 group">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-hijau to-emas flex items-center justify-center text-white shadow-md group-hover:scale-105 transition transform">
+          <i class="fas fa-brain text-lg sm:text-xl text-white drop-shadow"></i>
         </div>
-    </nav>
-
-    <!-- Mobile Drawer Overlay -->
-    <div class="nav-overlay" id="nav-overlay"></div>
-
-    <!-- HERO SECTION -->
-    <header class="hero" id="hero">
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
+        <div class="flex flex-col">
+          <span class="text-white font-extrabold text-sm sm:text-base leading-none tracking-wide whitespace-nowrap">
+            Karakter-<span class="text-emas">SikapMentalUnggul</span><span class="text-gray-300 font-normal text-xs">.id</span>
+          </span>
+          <span class="text-[10px] text-gray-300 font-medium tracking-wider uppercase mt-0.5">KPPSM F.X. Poerwopoespito</span>
         </div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <div class="hero-badge">
-                    <span class="badge-dot"></span>
-                    <span>Pioneer Transformasi Sikap Mental Indonesia</span>
-                </div>
-                <h1 class="hero-title">
-                    Ubah Mentalitas. <br>
-                    <span class="gradient-text">Raih Kesuksesan.</span>
-                </h1>
-                <p class="hero-subtitle">
-                    20+ Tahun Membimbing Ribuan Profesional &amp; Eksekutif Mencapai Potensi Mental Maksimal
-                </p>
-                <p class="hero-description">
-                    Dari pengamanan security WTC Jakarta, pemulihan eksekutif dari krisis depresi, hingga peningkatan drastis performa tim sales korporat—kami membuktikan bahwa transformasi sikap mental nyata selalu menghasilkan lonjakan kinerja yang berkelanjutan.
-                </p>
-                <div class="hero-cta">
-                    <a href="https://wa.me/62818874430?text=Halo%20Pak%20Tatag%2C%20saya%20ingin%20konsultasi%20pelatihan%20sikap%20mental" target="_blank" class="btn btn-primary btn-glow">
-                        <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp
-                    </a>
-                    <a href="#layanan" class="btn btn-secondary">
-                        <i class="fas fa-compass"></i> Jelajahi Layanan
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-award"></i></div>
-                        <div class="stat-info">
-                            <h3>20+</h3>
-                            <p>Tahun Pengalaman</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-user-graduate"></i></div>
-                        <div class="stat-info">
-                            <h3>10,000+</h3>
-                            <p>Peserta Terlatih</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-building"></i></div>
-                        <div class="stat-info">
-                            <h3>50+</h3>
-                            <p>Klien Korporat &amp; BUMN</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-image-frame">
-                    <img src="assets/images/tatag-utomo-hero.svg" alt="Tatag Utomo, M.M., M.Si. - Founder KPPSM" class="hero-img" loading="eager">
-                    <div class="hero-floating-card">
-                        <div class="floating-icon"><i class="fas fa-check-circle"></i></div>
-                        <div class="floating-text">
-                            <strong>Metode Psikologi Teruji</strong>
-                            <span>Berbasis Behavioral Science</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="hidden xl:flex items-center gap-1 text-white text-[13.5px] font-medium tracking-wide flex-1 justify-center">
+        <a href="#hero" class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition">Beranda</a>
+
+        <!-- Dropdown: Tentang Kami -->
+        <div class="nav-item">
+          <button class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition flex items-center gap-1.5 focus:outline-none" aria-haspopup="true">
+            Tentang Kami
+            <svg class="w-3.5 h-3.5 shrink-0 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="nav-dropdown">
+            <a href="#asal-materi"><i class="fas fa-microscope w-5 text-hijau text-xs"></i> Asal Materi</a>
+            <a href="#pendiri"><i class="fas fa-user-tie w-5 text-hijau text-xs"></i> Profil Pendiri</a>
+            <a href="#riset"><i class="fas fa-chart-line w-5 text-hijau text-xs"></i> Riset 36 Tahun</a>
+          </div>
         </div>
-    </header>
 
-    <!-- TENTANG KPPSM -->
-    <section class="tentang-kppsm" id="tentang-kppsm">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Profil Lembaga</span>
-                <h2>Siapa KPPSM?</h2>
-                <p class="section-subtitle">Lembaga Terpercaya yang Memahami Akar Tantangan Mentalitas &amp; Produktivitas Anda</p>
-            </div>
-
-            <div class="tentang-content">
-                <div class="tentang-text">
-                    <p class="intro-text">
-                        <strong>KPPSM</strong> (<em>Klinik Pengembangan Psikologi Sikap Mental</em>) adalah lembaga pelatihan dan konsultasi SDM yang berfokus mendalam pada transformasi mentalitas profesional, jajaran manajemen, serta pimpinan organisasi.
-                    </p>
-                    <p class="body-text">
-                        Dengan pengalaman lebih dari dua dekade, kami telah mendampingi ribuan individu dan puluhan entitas bisnis terkemuka—mulai dari BUMN, korporasi swasta multinasional, hingga koperasi mitra—dalam menyelesaikan konflik internal, mengatasi burnout, dan mencetak budaya kerja berkinerja tinggi.
-                    </p>
-
-                    <div class="vision-mission-grid">
-                        <div class="vm-card vision">
-                            <div class="vm-header">
-                                <div class="vm-icon"><i class="fas fa-eye"></i></div>
-                                <h3>Visi Kami</h3>
-                            </div>
-                            <p>Menjadi lembaga terdepan dalam pengembangan sikap mental positif yang melahirkan generasi profesional Indonesia bermental juara, tangguh, berintegritas, dan sejahtera.</p>
-                        </div>
-
-                        <div class="vm-card mission">
-                            <div class="vm-header">
-                                <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
-                                <h3>Misi Kami</h3>
-                            </div>
-                            <ul class="mission-list">
-                                <li><i class="fas fa-check"></i> Memberdayakan SDM melalui pelatihan mental yang terukur dan aplikatif</li>
-                                <li><i class="fas fa-check"></i> Mengikis budaya kerja toksik, menurunkan tingkat stres dan burnout</li>
-                                <li><i class="fas fa-check"></i> Membangun kepemimpinan yang humanis, empatik, dan berwibawa</li>
-                                <li><i class="fas fa-check"></i> Menjadi mitra strategis pertumbuhan bisnis jangka panjang</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tentang-image">
-                    <div class="image-showcase">
-                        <img src="assets/images/wisma-kppsm.svg" alt="Wisma KPPSM Cibubur Indah - Pusat Pelatihan" class="tentang-img" loading="lazy">
-                        <div class="image-caption">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Wisma KPPSM</h4>
-                                <p>Komp. Cibubur Indah 3 Blok F-7, Jakarta Timur</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Nilai-Nilai Inti -->
-            <div class="core-values">
-                <div class="values-header">
-                    <h3>4 Pilar Nilai Inti KPPSM</h3>
-                    <p>Fondasi utama dalam setiap modul pembinaan dan intervensi psikologis kami</p>
-                </div>
-                <div class="values-grid">
-                    <div class="value-card">
-                        <div class="value-icon-box humanis">
-                            <i class="fas fa-hand-holding-heart"></i>
-                        </div>
-                        <h4>Humanis</h4>
-                        <p>Menyentuh sisi kemanusiaan terdalam dengan pendekatan empati, memahami latar belakang dan menghargai keunikan tiap individu.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon-box inovatif">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h4>Inovatif</h4>
-                        <p>Mengadopsi riset psikologi perilaku modern, neuro-leadership, dan studi kasus mutakhir yang aplikatif di dunia kerja nyata.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon-box terbukti">
-                            <i class="fas fa-shield-check"></i>
-                        </div>
-                        <h4>Terbukti &amp; Terukur</h4>
-                        <p>Setiap program dirancang berdasarkan data riil, evaluasi pre-post test objektif, dan rekam jejak keberhasilan 20+ tahun.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon-box kolaboratif">
-                            <i class="fas fa-users-gear"></i>
-                        </div>
-                        <h4>Kolaboratif</h4>
-                        <p>Bekerja berdampingan dengan manajemen dan serikat pekerja untuk menciptakan ekosistem kerja harmonis dan berkelanjutan.</p>
-                    </div>
-                </div>
-            </div>
+        <!-- Dropdown: Metode Pelatihan -->
+        <div class="nav-item">
+          <button class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition flex items-center gap-1.5 focus:outline-none" aria-haspopup="true">
+            Metode Pelatihan
+            <svg class="w-3.5 h-3.5 shrink-0 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="nav-dropdown">
+            <a href="#metode-dialog"><i class="fas fa-comments w-5 text-hijau text-xs"></i> Dialog Partisipatif</a>
+            <a href="#metode-tes"><i class="fas fa-clipboard-check w-5 text-hijau text-xs"></i> Metode Tes (ToABQ)</a>
+            <a href="#metode-konseling"><i class="fas fa-hands-helping w-5 text-hijau text-xs"></i> Metode Konseling</a>
+          </div>
         </div>
-    </section>
 
-    <!-- TENTANG PENDIRI -->
-    <section class="tentang-pendiri" id="tentang-pendiri">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Profil Tokoh</span>
-                <h2>Tentang Pendiri</h2>
-                <p class="section-subtitle">Tatag Utomo, M.M., M.Si. — Praktisi &amp; Pioneer Revolusi Mental Indonesia</p>
-            </div>
-
-            <div class="pendiri-content">
-                <div class="pendiri-image-wrapper">
-                    <div class="pendiri-card-frame">
-                        <img src="assets/images/tatag-utomo-resmi.svg" alt="Tatag Utomo, M.M., M.Si." class="pendiri-img" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="pendiri-text">
-                    <div class="pendiri-header-badge">
-                        <i class="fas fa-certificate"></i> Master Trainer &amp; Behavioral Consultant
-                    </div>
-                    <h3 class="pendiri-heading">Dedikasi Dua Dekade Membangun Karakter Bangsa</h3>
-                    
-                    <p class="pendiri-bio">
-                        <strong>Tatag Utomo</strong> adalah pendiri dan pakar utama KPPSM dengan latar belakang pendidikan ganda: <em>Magister Manajemen (M.M.)</em> dan <em>Magister Sains Psikologi (M.Si.)</em>. Kombinasi keilmuan bisnis dan psikologi ini memberikan perspektif unik yang sangat tajam dalam menyelesaikan disfungsi organisasi.
-                    </p>
-
-                    <p class="pendiri-bio">
-                        Selama lebih dari 20 tahun, beliau telah dipercaya menjadi penasihat strategis oleh jajaran direksi BUMN, konglomerasi nasional, dan organisasi serikat buruh dalam mengelola tensi kerja, memulihkan motivasi karyawan, dan menyelaraskan target bisnis dengan kesejahteraan mental pekerja.
-                    </p>
-
-                    <!-- Area Keahlian Grid -->
-                    <h4 class="sub-section-title"><i class="fas fa-star text-gold"></i> Area Keahlian Utama</h4>
-                    <div class="expertise-grid">
-                        <div class="expertise-item">
-                            <div class="exp-icon"><i class="fas fa-brain"></i></div>
-                            <span>Pengembangan Sikap Mental Positif</span>
-                        </div>
-                        <div class="expertise-item">
-                            <div class="exp-icon"><i class="fas fa-chart-line"></i></div>
-                            <span>Behavioral Assessment &amp; Profiling</span>
-                        </div>
-                        <div class="expertise-item">
-                            <div class="exp-icon"><i class="fas fa-heart-pulse"></i></div>
-                            <span>Manajemen Stres &amp; Burnout Prevention</span>
-                        </div>
-                        <div class="expertise-item">
-                            <div class="exp-icon"><i class="fas fa-crown"></i></div>
-                            <span>Executive Leadership Development</span>
-                        </div>
-                        <div class="expertise-item">
-                            <div class="exp-icon"><i class="fas fa-handshake"></i></div>
-                            <span>Resolusi Konflik &amp; Team Cohesion</span>
-                        </div>
-                        <div class="expertise-item">
-                            <div class="exp-icon"><i class="fas fa-shield-alt"></i></div>
-                            <span>Intervensi Krisis Mental Organisasi</span>
-                        </div>
-                    </div>
-
-                    <!-- Kredibilitas & Pengalaman Klien Korporat -->
-                    <h4 class="sub-section-title"><i class="fas fa-landmark text-gold"></i> Rekam Jejak Solusi Nyata</h4>
-                    <div class="client-case-grid">
-                        <div class="client-case-card">
-                            <div class="case-badge">WTC Jakarta</div>
-                            <p>Mencegah eskalasi demonstrasi personel keamanan melalui komunikasi humanis &amp; de-eskalasi tepat sasaran.</p>
-                        </div>
-                        <div class="client-case-card">
-                            <div class="case-badge">PT Bumitama Gunajaya Agro</div>
-                            <p>Program pemberdayaan etika bisnis dan peningkatan kapasitas SDM ribuan anggota koperasi mitra.</p>
-                        </div>
-                        <div class="client-case-card">
-                            <div class="case-badge">PT Prodia &amp; Kalbe Farma</div>
-                            <p>Membangun jembatan komunikasi harmonis dan hubungan industrial damai berkelanjutan dengan SPSI.</p>
-                        </div>
-                        <div class="client-case-card">
-                            <div class="case-badge">PT Kencana Agro</div>
-                            <p>Menumbuhkan *growth mindset* dan motivasi kerja hingga berhasil mencapai target produksi 1 Juta Ton CPO.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Dropdown: Sifat Pelatihan -->
+        <div class="nav-item">
+          <button class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition flex items-center gap-1.5 focus:outline-none" aria-haspopup="true">
+            Sifat Pelatihan
+            <svg class="w-3.5 h-3.5 shrink-0 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="nav-dropdown">
+            <a href="#sifat-intelektualitatif"><i class="fas fa-lightbulb w-5 text-hijau text-xs"></i> Intelektualitatif</a>
+            <a href="#sifat-tes"><i class="fas fa-tasks w-5 text-hijau text-xs"></i> Sifat Tes Terstandar</a>
+          </div>
         </div>
-    </section>
 
-    <!-- LAYANAN UNGGULAN -->
-    <section class="layanan" id="layanan">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Solusi Korporat</span>
-                <h2>Layanan Unggulan</h2>
-                <p class="section-subtitle">Program Terstruktur &amp; Terintegrasi untuk Transformasi Kinerja SDM Perusahaan Anda</p>
-            </div>
+        <a href="#manajemen" class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition">Pelatihan Manajemen</a>
+        <a href="#buku" class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition">Karya Ilmiah &amp; Buku</a>
+        <a href="#keunggulan" class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition">Keunggulan Kami</a>
+        <a href="#galeri" class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition">Galeri</a>
+        <a href="#kontak" class="px-3 py-2 rounded-lg hover:text-emas hover:bg-white/5 transition">Kontak</a>
+      </div>
 
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="service-card-top">
-                        <span class="service-category">Sales &amp; Management</span>
-                        <div class="service-icon"><i class="fas fa-comments"></i></div>
-                    </div>
-                    <h3>Transformasi Tim Sales &amp; Manajemen</h3>
-                    <p class="service-tagline">"Saat Komunikasi Tersumbat, Target Bisnis Melorot"</p>
-                    <p class="service-description">
-                        Memulihkan sinergi antara divisi sales garis depan dengan jajaran manajemen. Menghilangkan friksi, menurunkan turnover, dan mendongkrak pencapaian kuota penjualan secara konsisten.
-                    </p>
-                    <div class="service-divider"></div>
-                    <ul class="service-benefits">
-                        <li><i class="fas fa-check-circle"></i> Resolusi konflik horizontal &amp; vertikal</li>
-                        <li><i class="fas fa-check-circle"></i> Komunikasi manajerial yang empatik &amp; tegas</li>
-                        <li><i class="fas fa-check-circle"></i> Peningkatan loyalitas &amp; rasa memiliki tim</li>
-                    </ul>
-                    <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20Layanan%20Transformasi%20Tim%20Sales%20%26%20Manajemen" target="_blank" class="service-action">
-                        Konsultasikan Layanan Ini <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+      <!-- Action Button & Mobile Toggle -->
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20program%20pelatihan%20karakter%20dan%20sikap%20mental%20unggul" target="_blank" rel="noopener"
+           class="hidden sm:inline-flex items-center gap-2 btn-emas font-bold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-md whitespace-nowrap">
+          <i class="fab fa-whatsapp text-base"></i>
+          <span>WA Kami</span>
+        </a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button id="hamburgerBtn" class="xl:hidden text-white p-2 rounded-lg hover:bg-white/10 transition focus:outline-none" aria-label="Buka navigasi menu" aria-expanded="false">
+          <svg id="iconOpen" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="iconClose" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
 
-                <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="service-card-top">
-                        <span class="service-category">Crisis &amp; Security</span>
-                        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
-                    </div>
-                    <h3>Krisis Management &amp; Conflict Prevention</h3>
-                    <p class="service-tagline">"Redam Letupan Sebelum Menjadi Krisis Terbuka"</p>
-                    <p class="service-description">
-                        Metode intervensi dini untuk memitigasi potensi aksi mogok kerja, sabotase, atau demonstrasi karyawan melalui dialog psikologis konstruktif dan pemetaan akar kekecewaan.
-                    </p>
-                    <div class="service-divider"></div>
-                    <ul class="service-benefits">
-                        <li><i class="fas fa-check-circle"></i> Deteksi dini tanda-tanda ketidakpuasan</li>
-                        <li><i class="fas fa-check-circle"></i> Protokol de-eskalasi tensi kerja</li>
-                        <li><i class="fas fa-check-circle"></i> Membangun saluran aspirasi yang dipercaya</li>
-                    </ul>
-                    <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20Layanan%20Krisis%20Management%20%26%20Conflict%20Prevention" target="_blank" class="service-action">
-                        Konsultasikan Layanan Ini <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+    <!-- Mobile Drawer Accordion Menu -->
+    <div id="mobileMenu" class="xl:hidden max-h-0 bg-navy/98 border-t border-white/10 backdrop-blur-lg">
+      <div class="px-5 py-4 flex flex-col text-white text-sm max-h-[80vh] overflow-y-auto">
+        <a href="#hero" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Beranda</a>
 
-                <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="service-card-top">
-                        <span class="service-category">Community Empowerment</span>
-                        <div class="service-icon"><i class="fas fa-handshake-angle"></i></div>
-                    </div>
-                    <h3>Pembinaan &amp; Empowerment Koperasi Mitra</h3>
-                    <p class="service-tagline">"Koperasi Mitra yang Sehat Fondasi Rantai Pasok Kuat"</p>
-                    <p class="service-description">
-                        Program edukasi sikap mental mandiri, literasi finansial, etika bisnis, dan tata kelola profesional bagi koperasi mitra perkebunan, manufaktur, maupun logistik korporat.
-                    </p>
-                    <div class="service-divider"></div>
-                    <ul class="service-benefits">
-                        <li><i class="fas fa-check-circle"></i> Peningkatan kapasitas kepemimpinan pengurus</li>
-                        <li><i class="fas fa-check-circle"></i> Budaya transparansi &amp; tanggung jawab</li>
-                        <li><i class="fas fa-check-circle"></i> Kemitraan jangka panjang saling menguntungkan</li>
-                    </ul>
-                    <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20Layanan%20Pembinaan%20Koperasi%20Mitra" target="_blank" class="service-action">
-                        Konsultasikan Layanan Ini <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="service-card">
-                    <div class="service-card-top">
-                        <span class="service-category">Industrial Relations</span>
-                        <div class="service-icon"><i class="fas fa-users-viewfinder"></i></div>
-                    </div>
-                    <h3>Union Relations &amp; Industrial Peace</h3>
-                    <p class="service-tagline">"Harmoni Kerja Kunci Utama Kelancaran Operasional"</p>
-                    <p class="service-description">
-                        Menjembatani kepentingan pimpinan perusahaan dengan serikat buruh (SPSI/organisasi buruh) melalui sudut pandang *mutual benefit*, menjaga iklim investasi dan kenyamanan berkarya.
-                    </p>
-                    <div class="service-divider"></div>
-                    <ul class="service-benefits">
-                        <li><i class="fas fa-check-circle"></i> Perjanjian kerja bersama (PKB) yang kondusif</li>
-                        <li><i class="fas fa-check-circle"></i> Menghilangkan polarisasi manajemen vs buruh</li>
-                        <li><i class="fas fa-check-circle"></i> Stabilitas produktivitas pabrik &amp; fasilitas</li>
-                    </ul>
-                    <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20Layanan%20Union%20Relations%20%26%20Industrial%20Peace" target="_blank" class="service-action">
-                        Konsultasikan Layanan Ini <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="service-card">
-                    <div class="service-card-top">
-                        <span class="service-category">Executive Well-being</span>
-                        <div class="service-icon"><i class="fas fa-heart-pulse"></i></div>
-                    </div>
-                    <h3>Mental Health Crisis Intervention</h3>
-                    <p class="service-tagline">"Pulihkan Pimpinan Eksekutif dari Tekanan Berat"</p>
-                    <p class="service-description">
-                        Konseling privat dan *behavioral therapy coaching* khusus bagi level C-suite, direktur, dan manajer senior yang mengalami sindrom depresi, kecemasan akut, atau sindrom kelelahan mental (*burnout*).
-                    </p>
-                    <div class="service-divider"></div>
-                    <ul class="service-benefits">
-                        <li><i class="fas fa-check-circle"></i> Kerahasiaan 100% terjamin (*confidential*)</li>
-                        <li><i class="fas fa-check-circle"></i> Pendampingan terapi psikologis aplikatif</li>
-                        <li><i class="fas fa-check-circle"></i> Pencegahan risiko fatal &amp; penurunan fokus</li>
-                    </ul>
-                    <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20Layanan%20Executive%20Mental%20Health%20Intervention" target="_blank" class="service-action">
-                        Konsultasikan Layanan Ini <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="service-card">
-                    <div class="service-card-top">
-                        <span class="service-category">Performance Culture</span>
-                        <div class="service-icon"><i class="fas fa-rocket"></i></div>
-                    </div>
-                    <h3>Performance Optimization &amp; Target Achievement</h3>
-                    <p class="service-tagline">"Dobrak Mental Block untuk Menggapai Target Ambisius"</p>
-                    <p class="service-description">
-                        Membangun etos kerja bermental juara dan pantang menyerah. Membantu perusahaan melampaui rekor target produksi melalui rekayasa sikap mental terstruktur dan antusiasme kolektif.
-                    </p>
-                    <div class="service-divider"></div>
-                    <ul class="service-benefits">
-                        <li><i class="fas fa-check-circle"></i> Pergeseran mindset: *fixed* ke *growth*</li>
-                        <li><i class="fas fa-check-circle"></i> Budaya *continuous improvement*</li>
-                        <li><i class="fas fa-check-circle"></i> Pencapaian target ambisius terukur</li>
-                    </ul>
-                    <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20Layanan%20Performance%20Optimization" target="_blank" class="service-action">
-                        Konsultasikan Layanan Ini <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
+        <!-- Mobile Submenu: Tentang Kami -->
+        <button class="mobile-toggle py-3 border-b border-white/10 flex items-center justify-between w-full text-left font-medium hover:text-emas transition" data-target="sub-tentang">
+          <span>Tentang Kami</span>
+          <svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="sub-tentang" class="mobile-sub pl-4 flex flex-col text-gray-300 text-xs sm:text-sm">
+          <a href="#asal-materi" class="py-2.5 hover:text-emas transition">&bull; Asal Materi</a>
+          <a href="#pendiri" class="py-2.5 hover:text-emas transition">&bull; Profil Pendiri</a>
+          <a href="#riset" class="py-2.5 hover:text-emas transition">&bull; Riset 36 Tahun</a>
         </div>
-    </section>
 
-    <!-- BUKU KARYA -->
-    <section class="buku-karya" id="buku">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Literasi Karakter</span>
-                <h2>Buku Karya Tatag Utomo</h2>
-                <p class="section-subtitle">Kumpulan Panduan Transformasi Mentalitas yang Diterbitkan Resmi oleh PT. Grassindo (Kompas Gramedia Group)</p>
+        <!-- Mobile Submenu: Metode Pelatihan -->
+        <button class="mobile-toggle py-3 border-b border-white/10 flex items-center justify-between w-full text-left font-medium hover:text-emas transition" data-target="sub-metode">
+          <span>Metode Pelatihan</span>
+          <svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="sub-metode" class="mobile-sub pl-4 flex flex-col text-gray-300 text-xs sm:text-sm">
+          <a href="#metode-dialog" class="py-2.5 hover:text-emas transition">&bull; Dialog Partisipatif</a>
+          <a href="#metode-tes" class="py-2.5 hover:text-emas transition">&bull; Metode Tes (ToABQ)</a>
+          <a href="#metode-konseling" class="py-2.5 hover:text-emas transition">&bull; Metode Konseling</a>
+        </div>
+
+        <!-- Mobile Submenu: Sifat Pelatihan -->
+        <button class="mobile-toggle py-3 border-b border-white/10 flex items-center justify-between w-full text-left font-medium hover:text-emas transition" data-target="sub-sifat">
+          <span>Sifat Pelatihan</span>
+          <svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="sub-sifat" class="mobile-sub pl-4 flex flex-col text-gray-300 text-xs sm:text-sm">
+          <a href="#sifat-intelektualitatif" class="py-2.5 hover:text-emas transition">&bull; Intelektualitatif</a>
+          <a href="#sifat-tes" class="py-2.5 hover:text-emas transition">&bull; Sifat Tes</a>
+        </div>
+
+        <a href="#manajemen" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Pelatihan Manajemen</a>
+        <a href="#layanan" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Layanan Utama</a>
+        <a href="#buku" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Karya Ilmiah &amp; Buku</a>
+        <a href="#keunggulan" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Keunggulan Kami</a>
+        <a href="#galeri" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Galeri Foto</a>
+        <a href="#pengguna" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Pengguna Jasa</a>
+        <a href="#kontak" class="py-3 border-b border-white/10 font-medium hover:text-emas transition">Kontak</a>
+        
+        <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20konsultasi%20pelatihan%20karakter" target="_blank" rel="noopener" class="btn-emas text-center font-bold text-sm px-4 py-3 rounded-full shadow-lg my-4 flex items-center justify-center gap-2">
+          <i class="fab fa-whatsapp text-lg"></i>
+          <span>Hubungi via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================= -->
+  <!-- 2. HERO HEADER SECTION -->
+  <!-- ========================================================================= -->
+  <header id="hero" class="hero-bg min-h-screen flex items-center pt-28 pb-20 px-5 sm:px-8 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto text-center w-full relative z-10">
+      
+      <!-- Heritage Badge -->
+      <div class="fade-in inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-emas/40 mb-6">
+        <span class="w-2 h-2 rounded-full bg-emas animate-ping"></span>
+        <p class="text-emas tracking-[0.25em] font-semibold text-xs sm:text-sm uppercase">Sejak 1992 &middot; Membangun Karakter Bangsa</p>
+      </div>
+      
+      <!-- Primary Heading -->
+      <h1 class="fade-in text-emas font-black text-5xl sm:text-7xl md:text-8xl leading-tight mb-6 drop-shadow-2xl tracking-tight">
+        REVOLUSI<br class="sm:hidden"> MENTAL
+      </h1>
+      
+      <!-- Tagline Subtitle -->
+      <p class="fade-in text-white text-xl sm:text-3xl md:text-4xl font-bold mb-6 drop-shadow leading-snug">
+        Mengembangkan Karakter Kuat &amp; Sikap Mental Unggul
+      </p>
+      
+      <!-- Metrics Card -->
+      <div class="fade-in bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/15 max-w-3xl mx-auto mb-10 shadow-2xl">
+        <p class="text-gray-100 text-xs sm:text-sm md:text-base font-medium leading-relaxed">
+          <span class="text-emas font-bold">Sejak 1992</span> &nbsp;|&nbsp; 
+          <span class="font-bold text-white">700+</span> Pelatihan &nbsp;|&nbsp; 
+          <span class="font-bold text-white">46.000+</span> Eksekutif &nbsp;|&nbsp; 
+          <span class="font-bold text-white">225+</span> Perusahaan &amp; BUMN &nbsp;|&nbsp; 
+          <span class="text-emas font-bold">36 Tahun Riset</span>
+        </p>
+      </div>
+      
+      <!-- Hero Action Buttons -->
+      <div class="fade-in flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20konsultasi%20pelatihan%20sikap%20mental%20unggul" target="_blank" rel="noopener"
+           class="btn-emas font-bold px-9 py-4 rounded-full text-sm sm:text-base w-full sm:w-auto text-center shadow-xl flex items-center justify-center gap-2">
+          <i class="fab fa-whatsapp text-lg"></i>
+          <span>Konsultasi WhatsApp</span>
+        </a>
+        <a href="#keunggulan"
+           class="btn-outline-emas font-bold px-9 py-4 rounded-full text-sm sm:text-base w-full sm:w-auto text-center backdrop-blur-sm bg-navy/40">
+          Lihat Keunggulan Kami
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- 3. TENTANG KAMI SECTION -->
+  <!-- ========================================================================= -->
+  <section id="tentang" class="py-24 px-5 sm:px-8 bg-white relative">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-in text-center mb-16">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Profil Lembaga</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Tentang Kami</h2>
+        <div class="divider-emas mx-auto mb-8"></div>
+        <p class="text-gray-700 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
+          <span class="font-bold text-navy">KPPSM F.X. Poerwopoespito</span> berdiri sejak
+          <span class="font-bold text-merah">23 Juli 1992</span>, didirikan oleh
+          <span class="font-bold text-navy">Bapak F.X. Oerip</span> di Jakarta. Kami bergerak di bidang
+          Jasa Pelatihan, Pengembangan, Riset, Tes, dan Konseling Karakter, Sikap Mental, dan Perilaku SDM
+          bagi Perusahaan, Institusi, Organisasi, dan BUMN di seluruh Indonesia.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Asal Materi -->
+        <article id="asal-materi" class="fade-in scroll-mt-32 card-hover bg-abu rounded-2xl p-7 sm:p-8 border-t-4 border-emas shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-hijau/10 text-hijau flex items-center justify-center text-xl mb-5">
+              <i class="fas fa-book-open"></i>
             </div>
-
-            <p class="buku-intro">
-                Keempat buku ini lahir dari sari pati riset psikologi terapan dan pengalaman nyata Pak Tatag Utomo mendampingi puluhan ribu profesional. Menjadi referensi wajib bagi para pimpinan perusahaan, praktisi HRD, akademisi, dan orang tua.
+            <h3 class="text-navy font-bold text-xl mb-3">Asal Materi</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Seluruh materi pelatihan KPPSM disusun dari hasil riset dan pengalaman lapangan Bapak F.X. Oerip
+              selama lebih dari tiga dekade dalam mendampingi perusahaan dan institusi membangun karakter serta
+              sikap mental unggul SDM Indonesia &mdash; bukan teori impor, melainkan hasil observasi langsung
+              terhadap perilaku kerja di berbagai industri di Indonesia.
             </p>
+          </div>
+        </article>
 
-            <div class="buku-grid">
-                <!-- Buku 1 -->
-                <div class="buku-card">
-                    <div class="buku-cover-container">
-                        <img src="assets/images/buku-1-mentalitas-profesional.svg" alt="Buku Menggugah Mentalitas Profesional & Pengusaha Indonesia" class="buku-img" loading="lazy">
-                    </div>
-                    <div class="buku-info">
-                        <div class="buku-badge">Buku #1 - Best Seller</div>
-                        <h3>Menggugah Mentalitas Profesional &amp; Pengusaha Indonesia</h3>
-                        <p class="buku-deskripsi">
-                            Panduan komprehensif mengubah pola pikir dari sekadar mentalitas pekerja biasa menjadi mentalitas pengusaha berkarakter unggul, berinisiatif tinggi, dan tangguh menghadapi badai perubahan bisnis.
-                        </p>
-                        <div class="buku-footer">
-                            <span class="buku-penerbit"><i class="fas fa-book-open"></i> PT. Grassindo</span>
-                            <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20memesan%20buku%20Menggugah%20Mentalitas%20Profesional" target="_blank" class="btn-book-action">
-                                <i class="fab fa-whatsapp"></i> Pesan Buku
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Buku 2 -->
-                <div class="buku-card">
-                    <div class="buku-cover-container">
-                        <img src="assets/images/buku-2-health-quotient.svg" alt="Buku Health Quotient untuk Eksekutif" class="buku-img" loading="lazy">
-                    </div>
-                    <div class="buku-info">
-                        <div class="buku-badge">Buku #2 - Executive Guide</div>
-                        <h3>Health Quotient untuk Eksekutif</h3>
-                        <p class="buku-deskripsi">
-                            Karya esensial bagi eksekutif berjam kerja padat. Mengintegrasikan kesehatan fisik (*body*), ketangguhan psikologis (*mind*), dan kedamaian batin (*soul*) dalam prinsip *holistic executive wellness*.
-                        </p>
-                        <div class="buku-footer">
-                            <span class="buku-penerbit"><i class="fas fa-book-open"></i> PT. Grassindo</span>
-                            <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20memesan%20buku%20Health%20Quotient%20untuk%20Eksekutif" target="_blank" class="btn-book-action">
-                                <i class="fab fa-whatsapp"></i> Pesan Buku
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Buku 3 -->
-                <div class="buku-card">
-                    <div class="buku-cover-container">
-                        <img src="assets/images/buku-3-magic-anak.svg" alt="Buku Menanam & Mengasah Magic Anak" class="buku-img" loading="lazy">
-                    </div>
-                    <div class="buku-info">
-                        <div class="buku-badge">Buku #3 - Parenting & Education</div>
-                        <h3>Menanam &amp; Mengasah Magic Anak</h3>
-                        <p class="buku-deskripsi">
-                            Panduan berharga bagi orang tua dan tenaga pendidik untuk mendeteksi bakat terpendam anak, melatih kematangan kecerdasan emosional (EQ), serta membangun mental tangguh sejak usia dini.
-                        </p>
-                        <div class="buku-footer">
-                            <span class="buku-penerbit"><i class="fas fa-book-open"></i> PT. Grassindo</span>
-                            <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20memesan%20buku%20Menanam%20%26%20Mengasah%20Magic%20Anak" target="_blank" class="btn-book-action">
-                                <i class="fab fa-whatsapp"></i> Pesan Buku
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Buku 4 -->
-                <div class="buku-card">
-                    <div class="buku-cover-container">
-                        <img src="assets/images/buku-4-kewenangan.svg" alt="Buku Kewenangan Berpikir, Berucap, Berbuat Perusahaan" class="buku-img" loading="lazy">
-                    </div>
-                    <div class="buku-info">
-                        <div class="buku-badge">Buku #4 - Corporate Culture</div>
-                        <h3>Kewenangan Berpikir, Berucap, Berbuat Perusahaan</h3>
-                        <p class="buku-deskripsi">
-                            Ulasan filosofis dan praktis mengenai batas etika, tanggung jawab moral, dan sinkronisasi antara ucapan dan tindakan di seluruh lini hierarki organisasi modern.
-                        </p>
-                        <div class="buku-footer">
-                            <span class="buku-penerbit"><i class="fas fa-book-open"></i> PT. Grassindo</span>
-                            <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20memesan%20buku%20Kewenangan%20Berpikir%20Berucap%20Berbuat" target="_blank" class="btn-book-action">
-                                <i class="fab fa-whatsapp"></i> Pesan Buku
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <!-- Profil Pendiri Card -->
+        <article class="fade-in card-hover bg-abu rounded-2xl p-7 sm:p-8 border-t-4 border-emas shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-hijau/10 text-hijau flex items-center justify-center text-xl mb-5">
+              <i class="fas fa-user-tie"></i>
             </div>
+            <h3 class="text-navy font-bold text-xl mb-3">Profil Pendiri</h3>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">
+              Bpk. F.X. Oerip, pendiri KPPSM sekaligus penemu metode ToABQ, RIS Motivation, dan konsep Health Quotient Indonesia.
+            </p>
+          </div>
+          <a href="#pendiri" class="text-hijau font-bold text-sm inline-flex items-center gap-1.5 hover:text-emas transition mt-4">
+            <span>Lihat Profil Lengkap</span>
+            <i class="fas fa-arrow-right text-xs"></i>
+          </a>
+        </article>
+
+        <!-- Riset 36 Tahun Card -->
+        <article class="fade-in card-hover bg-abu rounded-2xl p-7 sm:p-8 border-t-4 border-emas shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-hijau/10 text-hijau flex items-center justify-center text-xl mb-5">
+              <i class="fas fa-microscope"></i>
+            </div>
+            <h3 class="text-navy font-bold text-xl mb-3">Riset 36 Tahun</h3>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">
+              Konsistensi riset karakter dan sikap mental sejak 1992 hingga kini, menjadi fondasi ilmiah yang teruji pada seluruh metode pelatihan KPPSM.
+            </p>
+          </div>
+          <a href="#riset" class="text-hijau font-bold text-sm inline-flex items-center gap-1.5 hover:text-emas transition mt-4">
+            <span>Pelajari Riset Ilmiah</span>
+            <i class="fas fa-arrow-right text-xs"></i>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. METODE PELATIHAN SECTION -->
+  <!-- ========================================================================= -->
+  <section id="metode" class="py-24 px-5 sm:px-8 bg-abu border-y border-gray-200/80">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-in text-center mb-16">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Pendekatan Teruji</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Metode Pelatihan</h2>
+        <div class="divider-emas mx-auto"></div>
+        <p class="text-gray-600 text-sm sm:text-base mt-4 max-w-2xl mx-auto">
+          Pendekatan interaktif dan terstandar yang kami gunakan untuk membentuk transformasi sikap mental secara nyata, permanen, dan terukur.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Metode 1: Dialog Partisipatif -->
+        <div id="metode-dialog" class="fade-in scroll-mt-32 card-hover bg-white rounded-2xl shadow-sm border-l-4 border-hijau overflow-hidden card-eq">
+          <button class="accordion-toggle w-full text-left p-6 sm:p-7 flex items-start justify-between gap-3 focus:outline-none" data-target="acc-dialog" aria-expanded="false">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-hijau/10 text-hijau flex items-center justify-center mb-3">
+                <i class="fas fa-comments text-base"></i>
+              </div>
+              <h3 class="text-navy font-bold text-lg mb-1">Dialog Partisipatif</h3>
+              <p class="text-gray-600 text-xs sm:text-sm">Peserta terlibat aktif, bukan sekadar mendengar.</p>
+            </div>
+            <span class="accordion-icon text-emas text-2xl font-bold shrink-0 leading-none mt-1">+</span>
+          </button>
+          <div id="acc-dialog" class="accordion-body px-6 sm:px-7">
+            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-100">
+              Pelatihan dijalankan melalui dialog dua arah antara fasilitator dan peserta, mendorong refleksi
+              diri dan kesadaran perilaku secara langsung, sehingga perubahan sikap mental tumbuh dari
+              kesadaran pribadi peserta, bukan sekadar instruksi searah.
+            </p>
+          </div>
         </div>
-    </section>
 
-    <!-- GALERI KEGIATAN -->
-    <section class="galeri" id="galeri">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Dokumentasi</span>
-                <h2>Galeri Fasilitas &amp; Pelatihan</h2>
-                <p class="section-subtitle">Melihat Suasana Pelatihan, Fasilitas Wisma, dan Momen Transformasi Bersama Klien Kami</p>
+        <!-- Metode 2: Metode Tes (ToABQ) -->
+        <div id="metode-tes" class="fade-in scroll-mt-32 card-hover bg-white rounded-2xl shadow-sm border-l-4 border-hijau overflow-hidden card-eq">
+          <button class="accordion-toggle w-full text-left p-6 sm:p-7 flex items-start justify-between gap-3 focus:outline-none" data-target="acc-tes" aria-expanded="false">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-hijau/10 text-hijau flex items-center justify-center mb-3">
+                <i class="fas fa-clipboard-check text-base"></i>
+              </div>
+              <h3 class="text-navy font-bold text-lg mb-1">Metode Tes</h3>
+              <p class="text-gray-600 text-xs sm:text-sm">Berbasis ToABQ &mdash; terstandar dan terukur.</p>
             </div>
-
-            <div class="gallery-grid">
-                <!-- Gallery 1 -->
-                <div class="gallery-item" data-title="Wisma KPPSM Cibubur Indah">
-                    <img src="assets/images/galeri-wisma.svg" alt="Fasilitas Wisma KPPSM" loading="lazy">
-                    <div class="gallery-info-bar">
-                        <h4>Wisma KPPSM</h4>
-                        <p>Lokasi strategis di Cibubur Indah</p>
-                    </div>
-                    <div class="gallery-hover-btn"><i class="fas fa-magnifying-glass-plus"></i></div>
-                </div>
-
-                <!-- Gallery 2 -->
-                <div class="gallery-item" data-title="Ruang Pelatihan Modern">
-                    <img src="assets/images/galeri-ruang-pelatihan.svg" alt="Ruang Pelatihan Nyaman" loading="lazy">
-                    <div class="gallery-info-bar">
-                        <h4>Ruang Pelatihan Modern</h4>
-                        <p>Kondusif, multimedia &amp; audio visual lengkap</p>
-                    </div>
-                    <div class="gallery-hover-btn"><i class="fas fa-magnifying-glass-plus"></i></div>
-                </div>
-
-                <!-- Gallery 3 -->
-                <div class="gallery-item" data-title="Seminar Motivasi & Leadership">
-                    <img src="assets/images/galeri-seminar.svg" alt="Seminar Tatag Utomo" loading="lazy">
-                    <div class="gallery-info-bar">
-                        <h4>Seminar Motivasi &amp; Leadership</h4>
-                        <p>Ratusan peserta eksekutif dari berbagai sektor</p>
-                    </div>
-                    <div class="gallery-hover-btn"><i class="fas fa-magnifying-glass-plus"></i></div>
-                </div>
-
-                <!-- Gallery 4 -->
-                <div class="gallery-item" data-title="Workshop Revolusi Mental">
-                    <img src="assets/images/galeri-revolusi-mental.svg" alt="Pelatihan Revolusi Mental" loading="lazy">
-                    <div class="gallery-info-bar">
-                        <h4>Workshop Revolusi Mental</h4>
-                        <p>Program intensif pembentukan karakter juara</p>
-                    </div>
-                    <div class="gallery-hover-btn"><i class="fas fa-magnifying-glass-plus"></i></div>
-                </div>
-
-                <!-- Gallery 5 -->
-                <div class="gallery-item" data-title="Assessment & Behaviour Test">
-                    <img src="assets/images/galeri-behaviour-test.svg" alt="Uji Psikometri KPPSM" loading="lazy">
-                    <div class="gallery-info-bar">
-                        <h4>Assessment &amp; Behaviour Test</h4>
-                        <p>Uji psikometri &amp; pemetaan profil sikap mental</p>
-                    </div>
-                    <div class="gallery-hover-btn"><i class="fas fa-magnifying-glass-plus"></i></div>
-                </div>
-
-                <!-- Gallery 6 -->
-                <div class="gallery-item" data-title="Kerjasama Polbangtan Malang & Institusi">
-                    <img src="assets/images/galeri-polbangtan.svg" alt="Kerjasama Polbangtan" loading="lazy">
-                    <div class="gallery-info-bar">
-                        <h4>Kegiatan Polbangtan &amp; Kampus</h4>
-                        <p>Kemitraan pelatihan karakter dengan institusi</p>
-                    </div>
-                    <div class="gallery-hover-btn"><i class="fas fa-magnifying-glass-plus"></i></div>
-                </div>
-            </div>
+            <span class="accordion-icon text-emas text-2xl font-bold shrink-0 leading-none mt-1">+</span>
+          </button>
+          <div id="acc-tes" class="accordion-body px-6 sm:px-7">
+            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-100">
+              Menggunakan <span class="font-semibold text-navy">Test of Aggregate Behaviour Quotient (ToABQ)</span>
+              berdurasi 5,5 jam untuk memetakan sikap mental dan perilaku kerja secara objektif, digunakan
+              untuk kebutuhan rekrutmen, seleksi, dan promosi karyawan.
+            </p>
+          </div>
         </div>
-    </section>
 
-    <!-- TESTIMONI -->
-    <section class="testimoni" id="testimoni">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Bukti Keberhasilan</span>
-                <h2>Cerita Transformasi Klien</h2>
-                <p class="section-subtitle">Dengarkan Pengalaman Nyata Para Pimpinan Perusahaan yang Telah Merasakan Dampak Positif Pendampingan KPPSM</p>
+        <!-- Metode 3: Metode Konseling -->
+        <div id="metode-konseling" class="fade-in scroll-mt-32 card-hover bg-white rounded-2xl shadow-sm border-l-4 border-hijau overflow-hidden card-eq">
+          <button class="accordion-toggle w-full text-left p-6 sm:p-7 flex items-start justify-between gap-3 focus:outline-none" data-target="acc-konseling" aria-expanded="false">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-hijau/10 text-hijau flex items-center justify-center mb-3">
+                <i class="fas fa-heart text-base"></i>
+              </div>
+              <h3 class="text-navy font-bold text-lg mb-1">Metode Konseling</h3>
+              <p class="text-gray-600 text-xs sm:text-sm">Pendampingan personal secara bertahap.</p>
             </div>
-
-            <!-- Dynamic API Testimonial Container -->
-            <div class="testimoni-container" id="testimoni-container">
-                <div class="loading">
-                    <i class="fas fa-circle-notch fa-spin"></i>
-                    <p>Memuat ulasan testimoni...</p>
-                </div>
-            </div>
-
-            <!-- Carousel Controls -->
-            <div class="testimoni-controls" id="testimoni-controls">
-                <button class="btn btn-control" id="prev-testimoni" aria-label="Testimoni Sebelumnya">
-                    <i class="fas fa-chevron-left"></i> Sebelumnya
-                </button>
-                <button class="btn btn-control" id="next-testimoni" aria-label="Testimoni Selanjutnya">
-                    Selanjutnya <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-
-            <!-- Fallback Static Testimonial Cards -->
-            <div class="static-testimonials" id="static-testimonials">
-                <!-- Card 1 -->
-                <div class="testimoni-card">
-                    <div class="testimoni-top">
-                        <div class="testimoni-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
-                    </div>
-                    <p class="testimoni-text">
-                        "Pelatihan dari KPPSM benar-benar mengubah cara saya memimpin tim. Dari yang tadinya authoritarian, sekarang saya lebih humanis namun tetap achieve target. Tim jadi jauh lebih solid dan produktif."
-                    </p>
-                    <div class="testimoni-author">
-                        <div class="author-avatar">EW</div>
-                        <div class="author-info">
-                            <h4>Eka Wijaya</h4>
-                            <p>HRD Director, PT Kaji</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="testimoni-card">
-                    <div class="testimoni-top">
-                        <div class="testimoni-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
-                    </div>
-                    <p class="testimoni-text">
-                        "Pak Tatag membantu saya keluar dari depresi dan tekanan kerja berat. Tidak hanya teori, terapi dan mindset coaching-nya sangat praktikal dan langsung memulihkan stabilitas emosional saya."
-                    </p>
-                    <div class="testimoni-author">
-                        <div class="author-avatar">BS</div>
-                        <div class="author-info">
-                            <h4>Budi Santoso</h4>
-                            <p>General Manager, PT Prodia</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="testimoni-card">
-                    <div class="testimoni-top">
-                        <div class="testimoni-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
-                    </div>
-                    <p class="testimoni-text">
-                        "Program KPPSM untuk tim sales kami menghasilkan lonjakan performa 85% dalam 3 bulan. Mindset tim berubah dari yang tadinya terbebani target menjadi antusias dan bermental juara."
-                    </p>
-                    <div class="testimoni-author">
-                        <div class="author-avatar">SH</div>
-                        <div class="author-info">
-                            <h4>Sri Handayani</h4>
-                            <p>Sales Manager, PT Bumitama Gunajaya</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <span class="accordion-icon text-emas text-2xl font-bold shrink-0 leading-none mt-1">+</span>
+          </button>
+          <div id="acc-konseling" class="accordion-body px-6 sm:px-7">
+            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-100">
+              <span class="font-semibold text-navy">Mental Health Counselling</span> dilakukan selama 2 jam per sesi,
+              sebanyak 5 sesi, guna membantu individu mengatasi hambatan psikologis yang memengaruhi kinerja
+              dan sikap mental di tempat kerja.
+            </p>
+          </div>
         </div>
-    </section>
 
-    <!-- KONTAK & KONSULTASI -->
-    <section class="kontak" id="kontak">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag light-tag">Hubungi Kami</span>
-                <h2>Siap untuk Transformasi Mentalitas?</h2>
-                <p class="section-subtitle">Konsultasi Awal Bebas Biaya. Pak Tatag Utomo &amp; Tim Siap Mendiskusikan Kebutuhan Spesifik Organisasi Anda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. SIFAT PELATIHAN SECTION -->
+  <!-- ========================================================================= -->
+  <section id="sifat" class="py-24 px-5 sm:px-8 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="fade-in text-center mb-16">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Karakteristik Program</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Sifat Pelatihan</h2>
+        <div class="divider-emas mx-auto"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Sifat 1: Intelektualitatif -->
+        <div id="sifat-intelektualitatif" class="fade-in scroll-mt-32 card-hover bg-abu rounded-2xl shadow-sm border-l-4 border-emas overflow-hidden card-eq">
+          <button class="accordion-toggle w-full text-left p-6 sm:p-8 flex items-start justify-between gap-3 focus:outline-none" data-target="acc-intelek" aria-expanded="false">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-emas/15 text-emasgelap flex items-center justify-center mb-3">
+                <i class="fas fa-brain text-base"></i>
+              </div>
+              <h3 class="text-navy font-bold text-lg sm:text-xl mb-1">Intelektualitatif</h3>
+              <p class="text-gray-600 text-xs sm:text-sm">Perubahan dimulai dari pemahaman, bukan paksaan.</p>
             </div>
-
-            <div class="kontak-content">
-                <!-- Kontak Info Column -->
-                <div class="kontak-info-card">
-                    <h3>Saluran Komunikasi Resmi</h3>
-                    <p class="kontak-desc">Silakan hubungi kami melalui saluran berikut untuk respon cepat dari staf representatif kami:</p>
-
-                    <div class="kontak-item">
-                        <div class="kontak-icon"><i class="fas fa-location-dot"></i></div>
-                        <div class="kontak-details">
-                            <h4>Alamat Wisma KPPSM</h4>
-                            <p>Wisma KPPSM, Komp. Cibubur Indah 3 Blok F-7, Jakarta Timur, DKI Jakarta</p>
-                        </div>
-                    </div>
-
-                    <div class="kontak-item">
-                        <div class="kontak-icon"><i class="fab fa-whatsapp"></i></div>
-                        <div class="kontak-details">
-                            <h4>WhatsApp Langsung</h4>
-                            <div class="wa-links">
-                                <a href="https://wa.me/62818874430" target="_blank" class="contact-action-link">
-                                    <i class="fab fa-whatsapp"></i> 0818.874.430 (Pak Tatag)
-                                </a>
-                                <a href="https://wa.me/6281315210388" target="_blank" class="contact-action-link">
-                                    <i class="fab fa-whatsapp"></i> 0813.1521.0388 (Admin KPPSM)
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="kontak-item">
-                        <div class="kontak-icon"><i class="fas fa-envelope"></i></div>
-                        <div class="kontak-details">
-                            <h4>Email Korespondensi</h4>
-                            <div class="email-links">
-                                <a href="mailto:tatag@kppsm.com" class="contact-action-link">tatag@kppsm.com</a>
-                                <a href="mailto:info@kppsm.com" class="contact-action-link">info@kppsm.com</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="kontak-social">
-                        <h4>Media Sosial Resmi</h4>
-                        <div class="social-links">
-                            <a href="https://facebook.com/TatagMotivator" target="_blank" aria-label="Facebook Tatag Motivator" title="Facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://instagram.com/kppsm_revolusimental" target="_blank" aria-label="Instagram KPPSM" title="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://tiktok.com/@TatagMotivator" target="_blank" aria-label="TikTok Tatag Motivator" title="TikTok">
-                                <i class="fab fa-tiktok"></i>
-                            </a>
-                            <a href="https://twitter.com/tatagkppsm" target="_blank" aria-label="Twitter X Tatag KPPSM" title="Twitter / X">
-                                <i class="fab fa-x-twitter"></i>
-                            </a>
-                            <a href="https://youtube.com/@kppsm" target="_blank" aria-label="YouTube KPPSM" title="YouTube">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Interactive Contact Form -->
-                <div class="kontak-form-wrapper">
-                    <h3>Kirim Formulir Permintaan Konsultasi</h3>
-                    <p class="form-subtext">Isi formulir singkat ini dan kami akan menyiapkan rekomendasi solusi awal:</p>
-                    
-                    <form id="kontak-form" class="kontak-form" novalidate>
-                        <div class="form-group">
-                            <label for="nama">Nama Lengkap <span class="req-star">*</span></label>
-                            <div class="input-with-icon">
-                                <i class="fas fa-user"></i>
-                                <input type="text" id="nama" name="nama" required placeholder="Contoh: Budi Pratama, S.E.">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Alamat Email Kerja <span class="req-star">*</span></label>
-                            <div class="input-with-icon">
-                                <i class="fas fa-envelope"></i>
-                                <input type="email" id="email" name="email" required placeholder="nama@perusahaan.com">
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="telepon">No. Telepon / WhatsApp <span class="req-star">*</span></label>
-                                <div class="input-with-icon">
-                                    <i class="fab fa-whatsapp"></i>
-                                    <input type="tel" id="telepon" name="telepon" required placeholder="08xxxxxxxxxx">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="perusahaan">Nama Perusahaan / Organisasi</label>
-                                <div class="input-with-icon">
-                                    <i class="fas fa-building"></i>
-                                    <input type="text" id="perusahaan" name="perusahaan" placeholder="PT / Instansi / Koperasi">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="pesan">Tantangan SDM / Topik Pelatihan yang Dibutuhkan <span class="req-star">*</span></label>
-                            <textarea id="pesan" name="pesan" rows="4" required placeholder="Ceritakan situasi tim, kendala komunikasi, atau target yang ingin dicapai..."></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-submit">
-                            <i class="fas fa-paper-plane"></i> Kirim Permintaan Sekarang
-                        </button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Google Maps Embed Container -->
-            <div class="kontak-map-card">
-                <div class="map-header">
-                    <i class="fas fa-map-location-dot"></i>
-                    <span>Lokasi Wisma Pelatihan KPPSM</span>
-                </div>
-                <div class="kontak-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.1763784918237!2d106.90150247587002!3d-6.371239962322359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec3d5b0d625b%3A0xc3cf9700dc6b2b73!2sCibubur%20Indah%203!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
-                            width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Peta Lokasi Wisma KPPSM">
-                    </iframe>
-                </div>
-            </div>
+            <span class="accordion-icon text-emas text-2xl font-bold shrink-0 leading-none mt-1">+</span>
+          </button>
+          <div id="acc-intelek" class="accordion-body px-6 sm:px-8">
+            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-200">
+              Pelatihan bersifat intelektualitatif &mdash; mengedepankan pemahaman kognitif dan penalaran
+              logis peserta sebagai dasar sebelum terjadinya perubahan sikap dan perilaku yang menetap.
+            </p>
+          </div>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section brand-col">
-                    <div class="footer-logo">
-                        <div class="footer-icon"><i class="fas fa-brain"></i></div>
-                        <h3>KPPSM</h3>
-                    </div>
-                    <p class="footer-bio">
-                        Lembaga Pengembangan Psikologi Sikap Mental terdepan di Indonesia. Didedikasikan untuk membentuk karakter tangguh, kepemimpinan humanis, dan produktivitas SDM berkelanjutan.
-                    </p>
-                    <div class="footer-social-links">
-                        <a href="https://facebook.com/TatagMotivator" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://instagram.com/kppsm_revolusimental" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://tiktok.com/@TatagMotivator" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://youtube.com/@kppsm" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Navigasi Cepat</h4>
-                    <ul class="footer-links">
-                        <li><a href="#hero"><i class="fas fa-chevron-right"></i> Beranda</a></li>
-                        <li><a href="#tentang-kppsm"><i class="fas fa-chevron-right"></i> Tentang KPPSM</a></li>
-                        <li><a href="#tentang-pendiri"><i class="fas fa-chevron-right"></i> Profil Pendiri</a></li>
-                        <li><a href="#layanan"><i class="fas fa-chevron-right"></i> Layanan Unggulan</a></li>
-                        <li><a href="#buku"><i class="fas fa-chevron-right"></i> Buku Karya</a></li>
-                        <li><a href="#galeri"><i class="fas fa-chevron-right"></i> Galeri Kegiatan</a></li>
-                        <li><a href="docs/api-docs.html" target="_blank"><i class="fas fa-code"></i> API Docs (OpenAPI 3.0)</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Layanan Populer</h4>
-                    <ul class="footer-links">
-                        <li><a href="#layanan"><i class="fas fa-chevron-right"></i> Transformasi Tim Sales</a></li>
-                        <li><a href="#layanan"><i class="fas fa-chevron-right"></i> Resolusi Krisis &amp; Demo</a></li>
-                        <li><a href="#layanan"><i class="fas fa-chevron-right"></i> Pembinaan Koperasi Mitra</a></li>
-                        <li><a href="#layanan"><i class="fas fa-chevron-right"></i> Industrial Peace (SPSI)</a></li>
-                        <li><a href="#layanan"><i class="fas fa-chevron-right"></i> Konseling Eksekutif</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section contact-col">
-                    <h4>Kontak Cepat</h4>
-                    <p><i class="fas fa-location-dot"></i> Komp. Cibubur Indah 3 Blok F-7, Jakarta Timur</p>
-                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/62818874430" target="_blank">0818.874.430 (Pak Tatag)</a></p>
-                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6281315210388" target="_blank">0813.1521.0388 (Admin)</a></p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:tatag@kppsm.com">tatag@kppsm.com</a></p>
-                </div>
+        <!-- Sifat 2: Sifat Tes -->
+        <div id="sifat-tes" class="fade-in scroll-mt-32 card-hover bg-abu rounded-2xl shadow-sm border-l-4 border-emas overflow-hidden card-eq">
+          <button class="accordion-toggle w-full text-left p-6 sm:p-8 flex items-start justify-between gap-3 focus:outline-none" data-target="acc-sifattes" aria-expanded="false">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-emas/15 text-emasgelap flex items-center justify-center mb-3">
+                <i class="fas fa-shield-alt text-base"></i>
+              </div>
+              <h3 class="text-navy font-bold text-lg sm:text-xl mb-1">Sifat Tes</h3>
+              <p class="text-gray-600 text-xs sm:text-sm">Objektif, terstandar, dan dapat dipertanggungjawabkan.</p>
             </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 KPPSM - Klinik Pengembangan Psikologi Sikap Mental. Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
-            </div>
+            <span class="accordion-icon text-emas text-2xl font-bold shrink-0 leading-none mt-1">+</span>
+          </button>
+          <div id="acc-sifattes" class="accordion-body px-6 sm:px-8">
+            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-200">
+              Alat tes yang digunakan bersifat terstandar dan objektif, sehingga hasilnya dapat
+              dipertanggungjawabkan sebagai dasar pengambilan keputusan rekrutmen, seleksi, maupun promosi.
+            </p>
+          </div>
         </div>
-    </footer>
 
-    <!-- Floating WhatsApp Widget -->
-    <a href="https://wa.me/62818874430?text=Halo%20Pak%20Tatag%2C%20saya%20ingin%20konsultasi%20pelatihan%20sikap%20mental%20KPPSM" 
-       target="_blank" 
-       class="floating-wa" 
-       id="floating-wa"
-       aria-label="Konsultasi Langsung via WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-        <span class="floating-wa-badge">Konsultasi Gratis</span>
-    </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- JAVASCRIPT -->
-    <script src="assets/js/script.js"></script>
+  <!-- ========================================================================= -->
+  <!-- 6. PELATIHAN MANAJEMEN SECTION -->
+  <!-- ========================================================================= -->
+  <section id="manajemen" class="py-24 px-5 sm:px-8 bg-abu border-y border-gray-200/80">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-in text-center mb-16">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Bidang Keahlian</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Pelatihan Manajemen</h2>
+        <div class="divider-emas mx-auto"></div>
+        <p class="text-gray-600 text-sm sm:text-base mt-4 max-w-xl mx-auto">
+          Modul pelatihan manajemen spesifik untuk menunjang kompetensi teknis dan manajerial organisasi.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
+        <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center">
+          <i class="fas fa-check-double text-2xl text-hijau mb-3"></i>
+          <p class="font-bold text-navy text-sm sm:text-base">QMS</p>
+          <span class="text-[11px] text-gray-500 mt-1">Quality Management System</span>
+        </div>
+        
+        <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center">
+          <i class="fas fa-bullhorn text-2xl text-hijau mb-3"></i>
+          <p class="font-bold text-navy text-sm sm:text-base">Marketing</p>
+          <span class="text-[11px] text-gray-500 mt-1">Strategi Pemasaran Terarah</span>
+        </div>
+        
+        <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center">
+          <i class="fas fa-chart-line text-2xl text-hijau mb-3"></i>
+          <p class="font-bold text-navy text-sm sm:text-base">Salesmanship</p>
+          <span class="text-[11px] text-gray-500 mt-1">Mentalitas Juara Penjualan</span>
+        </div>
+        
+        <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center">
+          <i class="fas fa-user-friends text-2xl text-hijau mb-3"></i>
+          <p class="font-bold text-navy text-sm sm:text-base">Supervisory Skill</p>
+          <span class="text-[11px] text-gray-500 mt-1">Keterampilan Pengawasan</span>
+        </div>
+        
+        <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center">
+          <i class="fas fa-crown text-2xl text-hijau mb-3"></i>
+          <p class="font-bold text-navy text-sm sm:text-base">Leadership</p>
+          <span class="text-[11px] text-gray-500 mt-1">Kepemimpinan Visioner</span>
+        </div>
+        
+        <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center">
+          <i class="fas fa-campground text-2xl text-hijau mb-3"></i>
+          <p class="font-bold text-navy text-sm sm:text-base">Outbound</p>
+          <span class="text-[11px] text-gray-500 mt-1">Team Building &amp; Sinergi</span>
+        </div>
+        
+        <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center col-span-2 sm:col-span-1 md:col-span-2">
+          <i class="fas fa-graduation-cap text-2xl text-hijau mb-3"></i>
+          <p class="font-bold text-navy text-sm sm:text-base">LDK SMP/SMA</p>
+          <span class="text-[11px] text-gray-500 mt-1">Latihan Dasar Kepemimpinan Sekolah</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. LAYANAN UTAMA SECTION -->
+  <!-- ========================================================================= -->
+  <section id="layanan" class="py-24 px-5 sm:px-8 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-in text-center mb-16">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Solusi Kami</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Layanan Kami</h2>
+        <div class="divider-emas mx-auto"></div>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <!-- Layanan A -->
+        <article class="fade-in card-hover bg-abu rounded-2xl p-8 sm:p-9 shadow-sm border-l-4 border-emas">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="w-10 h-10 rounded-full bg-emas/20 text-navy font-black flex items-center justify-center">A</span>
+            <h3 class="text-hijau font-bold text-xl sm:text-2xl">Pelatihan Utama</h3>
+          </div>
+          <ul class="text-gray-700 text-sm sm:text-base space-y-2.5 leading-relaxed pl-2">
+            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-hijau text-sm"></i> <span class="font-semibold text-navy">Karakter Positif</span> &mdash; 2 Hari</li>
+            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-hijau text-sm"></i> <span class="font-semibold text-navy">RIS Motivation</span> &mdash; 1 Hari</li>
+            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-hijau text-sm"></i> <span class="font-semibold text-navy">Health Quotient</span> &mdash; 1 Hari</li>
+          </ul>
+        </article>
+
+        <!-- Layanan B -->
+        <article class="fade-in card-hover bg-abu rounded-2xl p-8 sm:p-9 shadow-sm border-l-4 border-emas">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="w-10 h-10 rounded-full bg-emas/20 text-navy font-black flex items-center justify-center">B</span>
+            <h3 class="text-hijau font-bold text-xl sm:text-2xl">Tes ToABQ</h3>
+          </div>
+          <p class="text-gray-700 text-sm sm:text-base leading-relaxed pl-2">
+            <span class="font-bold text-navy">Test of Aggregate Behaviour Quotient</span> &mdash; durasi 5,5 jam,
+            digunakan untuk <span class="font-semibold">Rekrutmen, Seleksi, dan Promosi karyawan</span> secara komprehensif.
+          </p>
+        </article>
+
+        <!-- Layanan C -->
+        <article class="fade-in card-hover bg-abu rounded-2xl p-8 sm:p-9 shadow-sm border-l-4 border-emas">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="w-10 h-10 rounded-full bg-emas/20 text-navy font-black flex items-center justify-center">C</span>
+            <h3 class="text-hijau font-bold text-xl sm:text-2xl">Konseling</h3>
+          </div>
+          <p class="text-gray-700 text-sm sm:text-base leading-relaxed pl-2">
+            <span class="font-bold text-navy">Mental Health Counselling</span> &mdash; 2 jam per sesi, sebanyak 5 sesi intensif untuk mengatasi hambatan mental &amp; emosional kerja.
+          </p>
+        </article>
+
+        <!-- Layanan D -->
+        <article class="fade-in card-hover bg-abu rounded-2xl p-8 sm:p-9 shadow-sm border-l-4 border-emas">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="w-10 h-10 rounded-full bg-emas/20 text-navy font-black flex items-center justify-center">D</span>
+            <h3 class="text-hijau font-bold text-xl sm:text-2xl">Tailor Made</h3>
+          </div>
+          <p class="text-gray-700 text-sm sm:text-base leading-relaxed pl-2">
+            Seminar &frac12; Hari, Leadership, Salesmanship, Outbound, LDK, dan Character Building yang dirancang khusus sesuai kebutuhan spesifik perusahaan Anda.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. KARYA ILMIAH & BUKU SECTION -->
+  <!-- ========================================================================= -->
+  <section id="buku" class="py-24 px-5 sm:px-8 bg-abu border-t border-gray-200/80">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-in text-center mb-16">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Publikasi Nasional &amp; Riset</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Karya Ilmiah &amp; Buku</h2>
+        <div class="divider-emas mx-auto mb-4"></div>
+        <p class="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
+          Karya literatur dan instrumen asesmen orisinal karya pendiri dan pakar KPPSM yang telah diterbitkan oleh penerbit nasional serta dibaca puluhan ribu profesional.
+        </p>
+      </div>
+
+      <!-- Book Covers Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+        
+        <!-- Buku 1 -->
+        <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+          <div class="h-56 bg-gray-100 overflow-hidden relative group">
+            <img src="assets/images/buku-mentalitas-profesional.jpg" alt="Buku Menggugah Mentalitas Profesional" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <span class="absolute top-2.5 right-2.5 bg-emas text-navy text-[10px] font-bold px-2 py-0.5 rounded shadow">Grasindo</span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="text-navy font-bold text-sm line-clamp-2">Menggugah Mentalitas Profesional</h4>
+              <p class="text-gray-500 text-xs mt-1">F.X. Oerip &amp; Tatag Utomo</p>
+            </div>
+            <p class="text-hijau text-[11px] font-semibold mt-3">PT. GRASINDO</p>
+          </div>
+        </div>
+
+        <!-- Buku 2 -->
+        <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+          <div class="h-56 bg-gray-100 overflow-hidden relative group">
+            <img src="assets/images/buku-health-quotient.jpg" alt="Buku Health Quotient" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <span class="absolute top-2.5 right-2.5 bg-emas text-navy text-[10px] font-bold px-2 py-0.5 rounded shadow">Grasindo</span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="text-navy font-bold text-sm line-clamp-2">Health Quotient untuk Eksekutif</h4>
+              <p class="text-gray-500 text-xs mt-1">drg. T.A. Tatag Utomo, M.M.</p>
+            </div>
+            <p class="text-hijau text-[11px] font-semibold mt-3">PT. GRASINDO</p>
+          </div>
+        </div>
+
+        <!-- Buku 3 -->
+        <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+          <div class="h-56 bg-gray-100 overflow-hidden relative group">
+            <img src="assets/images/buku-krisis-manusia.jpg" alt="Buku Mengatasi Krisis Manusia di Perusahaan" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <span class="absolute top-2.5 right-2.5 bg-emas text-navy text-[10px] font-bold px-2 py-0.5 rounded shadow">Grasindo</span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="text-navy font-bold text-sm line-clamp-2">Mengatasi Krisis Manusia</h4>
+              <p class="text-gray-500 text-xs mt-1">F.X. Oerip &amp; Tatag Utomo</p>
+            </div>
+            <p class="text-hijau text-[11px] font-semibold mt-3">PT. GRASINDO</p>
+          </div>
+        </div>
+
+        <!-- Buku 4 -->
+        <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+          <div class="h-56 bg-gray-100 overflow-hidden relative group">
+            <img src="assets/images/buku-krisis-anak.jpg" alt="Buku Mencegah dan Mengatasi Krisis Anak" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <span class="absolute top-2.5 right-2.5 bg-emas text-navy text-[10px] font-bold px-2 py-0.5 rounded shadow">Grasindo</span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="text-navy font-bold text-sm line-clamp-2">Mencegah &amp; Mengatasi Krisis Anak</h4>
+              <p class="text-gray-500 text-xs mt-1">T.A. Tatag Utomo</p>
+            </div>
+            <p class="text-hijau text-[11px] font-semibold mt-3">PT. GRASINDO</p>
+          </div>
+        </div>
+
+        <!-- Buku 5 -->
+        <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+          <div class="h-56 bg-gray-100 overflow-hidden relative group">
+            <img src="assets/images/buku-renungan-karyawan.jpg" alt="Renungan Sikap Mental Karyawan Perusahaan" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="text-navy font-bold text-sm line-clamp-2">Renungan Sikap Mental Karyawan</h4>
+              <p class="text-gray-500 text-xs mt-1">T.A. Tatag Utomo</p>
+            </div>
+            <p class="text-hijau text-[11px] font-semibold mt-3">KPPSM Publishing</p>
+          </div>
+        </div>
+
+        <!-- Buku 6 -->
+        <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+          <div class="h-56 bg-gray-100 overflow-hidden relative group">
+            <img src="assets/images/buku-renungan-orang-tua.jpg" alt="133 Renungan Perilaku Bijak Orang Tua" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="text-navy font-bold text-sm line-clamp-2">133 Renungan Bijak Orang Tua</h4>
+              <p class="text-gray-500 text-xs mt-1">Monika S. &amp; Tatag Utomo</p>
+            </div>
+            <p class="text-hijau text-[11px] font-semibold mt-3">Keluarga &amp; Parenting</p>
+          </div>
+        </div>
+
+        <!-- Buku 7 -->
+        <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+          <div class="h-56 bg-gray-100 overflow-hidden relative group">
+            <img src="assets/images/buku-inspirator-revolusi-mental.jpg" alt="Inspirator Training Revolusi Mental" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="text-navy font-bold text-sm line-clamp-2">Inspirator Revolusi Mental</h4>
+              <p class="text-gray-500 text-xs mt-1">Agustin Maria EMMI RATIH</p>
+            </div>
+            <p class="text-hijau text-[11px] font-semibold mt-3">Biografi &amp; Inspirasi</p>
+          </div>
+        </div>
+
+        <!-- Modul ASM & Riset -->
+        <div class="fade-in card-hover bg-navy rounded-2xl overflow-hidden shadow-sm border border-white/10 flex flex-col">
+          <div class="h-56 bg-gradient-to-tr from-navy to-hijau flex flex-col items-center justify-center p-4 text-center">
+            <i class="fas fa-certificate text-3xl text-emas mb-2"></i>
+            <span class="text-emas font-bold text-base leading-tight">ASM &mdash; Assessment Sikap Mental</span>
+            <span class="text-xs text-gray-200 mt-2">Instrumen Riset Terstandar</span>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="text-white font-bold text-sm">Modul Riset &amp; ToABQ</h4>
+              <p class="text-gray-300 text-xs mt-1">Penemu: F.X. Oerip</p>
+            </div>
+            <p class="text-emas text-[11px] font-semibold mt-3">KPPSM Research</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Summary Box -->
+      <div class="fade-in bg-white rounded-2xl p-6 sm:p-8 shadow-sm border-l-4 border-hijau max-w-3xl mx-auto text-center">
+        <p class="text-gray-800 text-sm sm:text-base leading-relaxed">
+          Penemu <span class="font-bold text-hijau">ToABQ</span>,
+          <span class="font-bold text-hijau">RIS Motivation</span>, dan
+          <span class="font-bold text-hijau">Health Quotient</span>.
+          Katalog lengkap karya ilmiah dan buku pelatihan tersedia bagi korporasi atas permintaan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 9. KEUNGGULAN KAMI (TABS) SECTION -->
+  <!-- ========================================================================= -->
+  <section id="keunggulan" class="py-24 px-5 sm:px-8 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-in text-center mb-12">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Mengapa Memilih Kami</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Keunggulan Kami</h2>
+        <div class="divider-emas mx-auto"></div>
+      </div>
+
+      <!-- Tab Navigation Buttons: Desktop -->
+      <div class="fade-in hidden sm:flex items-center justify-center gap-4 mb-12">
+        <button class="tab-btn active font-bold text-sm px-8 py-3.5 rounded-full shadow-sm transition" data-tab="fasilitas" onclick="switchTab('fasilitas')">
+          <i class="fas fa-building mr-2"></i> Fasilitas &amp; Aset
+        </button>
+        <button class="tab-btn font-bold text-sm px-8 py-3.5 rounded-full shadow-sm transition" data-tab="dampak" onclick="switchTab('dampak')">
+          <i class="fas fa-award mr-2"></i> Bukti Nyata Dampak
+        </button>
+      </div>
+
+      <!-- Tab Dropdown: Mobile -->
+      <div class="fade-in sm:hidden mb-8">
+        <select id="tabSelect" onchange="switchTab(this.value)" class="w-full border-2 border-hijau rounded-xl px-4 py-3 text-sm font-bold text-navy bg-white focus:outline-none shadow-sm">
+          <option value="fasilitas">🏢 Fasilitas &amp; Aset</option>
+          <option value="dampak">🏆 Bukti Nyata Dampak</option>
+        </select>
+      </div>
+
+      <!-- Tab 1 Panel: Fasilitas & Aset -->
+      <div id="tab-fasilitas" class="tab-panel active">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-microphone-alt text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base">Seminar Nasional</p>
+            <span class="text-xs text-gray-500 mt-1">Ratusan Event</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-book text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base">Buku PT. GRASSINDO</p>
+            <span class="text-xs text-gray-500 mt-1">Terbitan Resmi</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-chalkboard-teacher text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base">Ruang Pelatihan</p>
+            <span class="text-xs text-gray-500 mt-1">Nyaman &amp; Eksklusif</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-city text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base">Gedung Wisma KPPSM</p>
+            <span class="text-xs text-gray-500 mt-1">Cibubur Indah 3</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-user-check text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base">Profil Pendiri</p>
+            <span class="text-xs text-gray-500 mt-1">F.X. Poerwopoespito</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-star text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base">Testimoni Korporat</p>
+            <span class="text-xs text-gray-500 mt-1">225+ Perusahaan</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-history text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base">Riset 36 Tahun</p>
+            <span class="text-xs text-gray-500 mt-1">Konsisten Sejak 1992</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-award text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base">Sertifikat ASM</p>
+            <span class="text-xs text-gray-500 mt-1">Asesmen Sikap Mental</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2 Panel: Bukti Nyata Dampak -->
+      <div id="tab-dampak" class="tab-panel">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
+            <span class="text-3xl mb-2">📈</span>
+            <p class="text-hijau font-black text-3xl mb-1">+15%</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Pulp &amp; Paper</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Membantu tercapainya peningkatan EBITDA di PT Indah Kiat.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
+            <span class="text-3xl mb-2">📉</span>
+            <p class="text-hijau font-black text-3xl mb-1">13% &rarr; 1,5%</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Manufaktur / FMCG</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Menurunkan tingkat reject produksi secara signifikan di PT Meiji.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
+            <span class="text-3xl mb-2">🤝</span>
+            <p class="text-hijau font-black text-3xl mb-1">0 Insiden</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Manufaktur &amp; Serikat</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Berhasil mencegah terjadinya unjuk rasa karyawan melalui dialog mental.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
+            <span class="text-3xl mb-2">💹</span>
+            <p class="text-hijau font-black text-3xl mb-1">+20%</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Penjualan &amp; Retail</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Meningkatkan penjualan melalui pelatihan Salesmanship &amp; Militan.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
+            <span class="text-3xl mb-2">🏆</span>
+            <p class="text-hijau font-black text-3xl mb-1">36 Tahun</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Riset &amp; Pengembangan</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Konsistensi riset karakter dan sikap mental sejak 1992.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
+            <span class="text-3xl mb-2">👥</span>
+            <p class="text-hijau font-black text-3xl mb-1">46.000+</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Eksekutif Terlatih</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Dipercaya oleh eksekutif dari berbagai sektor industri di Indonesia.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
+            <span class="text-3xl mb-2">🏢</span>
+            <p class="text-hijau font-black text-3xl mb-1">225+</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Perusahaan &amp; BUMN</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Menjadi mitra pengembangan SDM institusi dan korporasi nasional.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
+            <span class="text-3xl mb-2">📚</span>
+            <p class="text-hijau font-black text-3xl mb-1">700+</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Sesi Pelatihan</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Terlaksana secara konsisten di berbagai pelosok nusantara.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 10. GALERI FOTO KEGIATAN & FASILITAS -->
+  <!-- ========================================================================= -->
+  <section id="galeri" class="py-24 px-5 sm:px-8 bg-abu border-y border-gray-200/80">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-in text-center mb-16">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Dokumentasi Lapangan</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Galeri Kegiatan &amp; Fasilitas</h2>
+        <div class="divider-emas mx-auto mb-4"></div>
+        <p class="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
+          Dokumentasi nyata kegiatan pelatihan karakter, seminar eksekutif, dan fasilitas kantor KPPSM.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Galeri 1 -->
+        <div class="fade-in card-hover rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100 flex flex-col">
+          <div class="h-60 overflow-hidden relative group">
+            <img src="assets/images/foto-seminar.jpg" alt="Training Revolusi Mental PT Sorini Towa Berlian Corporindo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Training Revolusi Mental STBC</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-navy text-base mb-1">Pelatihan Revolusi Mental</h4>
+            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">PT Sorini Towa Berlian Corporindo (STBC)</p>
+          </div>
+        </div>
+
+        <!-- Galeri 2 -->
+        <div class="fade-in card-hover rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100 flex flex-col">
+          <div class="h-60 overflow-hidden relative group">
+            <img src="assets/images/foto-ruangan.jpg" alt="Ruang Pelatihan KPPSM Cibubur" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Ruang Pelatihan Nyaman &amp; Terstandar</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-navy text-base mb-1">Ruang Pelatihan Internal</h4>
+            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Wisma KPPSM Cibubur, Jakarta Timur</p>
+          </div>
+        </div>
+
+        <!-- Galeri 3 -->
+        <div class="fade-in card-hover rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100 flex flex-col">
+          <div class="h-60 overflow-hidden relative group">
+            <img src="assets/images/foto-gedung.jpg" alt="Gedung Wisma Kantor KPPSM Cibubur" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Kantor Pusat KPPSM</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-navy text-base mb-1">Gedung Wisma KPPSM</h4>
+            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Komp. Cibubur Indah 3 Blok F-7 Jaktim</p>
+          </div>
+        </div>
+
+        <!-- Galeri 4 -->
+        <div class="fade-in card-hover rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100 flex flex-col">
+          <div class="h-60 overflow-hidden relative group">
+            <img src="assets/images/seminar-fajarpaper.jpg" alt="Behaviour Test Eksekutif PT Fajar Surya Wisesa Tbk" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Test ToABQ &amp; Behaviour Eksekutif</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-navy text-base mb-1">Behaviour Test Eksekutif</h4>
+            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">PT Fajar Surya Wisesa, Tbk (FajarPaper)</p>
+          </div>
+        </div>
+
+        <!-- Galeri 5 -->
+        <div class="fade-in card-hover rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100 flex flex-col">
+          <div class="h-60 overflow-hidden relative group">
+            <img src="assets/images/seminar-rsud-kemayoran.jpg" alt="Hospitality Pelayanan Prima RSUD Kemayoran di Bandung" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+              <span class="text-white text-xs font-semibold">The Green Forest Resort Bandung</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-navy text-base mb-1">Hospitality Karakter Prima</h4>
+            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">RSUD Kemayoran (The Green Forest Bandung)</p>
+          </div>
+        </div>
+
+        <!-- Galeri 6 -->
+        <div class="fade-in card-hover rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100 flex flex-col">
+          <div class="h-60 overflow-hidden relative group">
+            <img src="assets/images/seminar-polbangtan.jpg" alt="Pelatihan di Polbangtan Malang" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Pelatihan SDM Institusi Pertanian</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-bold text-navy text-base mb-1">Pengembangan SDM Pertanian</h4>
+            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Polbangtan Malang, Jawa Timur</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 11. PROFIL PENDIRI SECTION -->
+  <!-- ========================================================================= -->
+  <section id="pendiri" class="py-24 px-5 sm:px-8 bg-white scroll-mt-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="fade-in">
+        <div class="relative inline-block mb-8">
+          <img src="assets/images/foto-pendiri.jpg" alt="Bpk. F.X. Oerip Poerwopoespito" class="w-44 h-44 sm:w-52 sm:h-52 rounded-full mx-auto border-4 border-emas object-cover shadow-2xl" loading="lazy">
+          <div class="absolute -bottom-2 right-4 bg-hijau text-white text-[11px] font-bold px-3 py-1 rounded-full shadow border-2 border-white">
+            Founder
+          </div>
+        </div>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-4xl mb-1">Bpk. F.X. Oerip</h2>
+        <p class="text-merah font-bold text-base sm:text-lg mb-6">Founder KPPSM (1992)</p>
+        
+        <div class="bg-abu rounded-2xl p-6 sm:p-8 text-left max-w-2xl mx-auto shadow-sm border border-gray-100">
+          <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">
+            Mendirikan KPPSM pada tanggal <span class="font-bold text-navy">23 Juli 1992</span> di Jakarta dengan
+            visi mengembangkan karakter dan sikap mental unggul bagi seluruh SDM Indonesia.
+          </p>
+          <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">
+            Selama lebih dari tiga dekade, beliau bersama para fasilitator senior seperti <span class="font-semibold text-navy">drg. T.A. Tatag Utomo, M.M.</span> telah membina puluhan ribu eksekutif, ratusan perusahaan swasta multinasional, serta BUMN melalui pendekatan riset, pelatihan interaktif, dan konseling yang berorientasi pada <span class="font-bold text-merah">Revolusi Mental</span>.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2 border-t border-gray-200 text-xs font-semibold text-hijau">
+            <span class="bg-hijau/10 px-3 py-1 rounded-full">Penemu ToABQ</span>
+            <span class="bg-hijau/10 px-3 py-1 rounded-full">Penemu RIS Motivation</span>
+            <span class="bg-hijau/10 px-3 py-1 rounded-full">Penulis Buku Nasional</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 12. RISET 36 TAHUN SECTION -->
+  <!-- ========================================================================= -->
+  <section id="riset" class="py-24 px-5 sm:px-8 bg-navy text-white scroll-mt-20 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <div class="fade-in">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Landasan Ilmiah</span>
+        <h2 class="text-emas font-extrabold text-3xl sm:text-5xl mb-4">Riset 36 Tahun</h2>
+        <div class="divider-emas mx-auto mb-8"></div>
+        
+        <p class="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-10">
+          Sejak 1992, KPPSM secara konsisten melakukan riset terhadap karakter, sikap mental, dan perilaku
+          kerja SDM di berbagai sektor industri Indonesia. Riset ini menjadi dasar pengembangan <span class="text-emas font-bold">ToABQ</span>, <span class="text-emas font-bold">RIS Motivation</span>, dan <span class="text-emas font-bold">Health Quotient</span> &mdash; serta terus diperbarui melalui pengalaman lapangan dari
+          ratusan perusahaan dan puluhan ribu eksekutif yang telah dilatih.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto text-left">
+          <div class="bg-white/5 backdrop-blur-sm p-5 rounded-xl border border-white/10">
+            <i class="fas fa-vial text-emas text-xl mb-2"></i>
+            <h4 class="font-bold text-white text-sm mb-1">Riset Empiris</h4>
+            <p class="text-gray-300 text-xs leading-relaxed">Berangkat dari observasi langsung realitas dinamika dunia kerja Indonesia.</p>
+          </div>
+          <div class="bg-white/5 backdrop-blur-sm p-5 rounded-xl border border-white/10">
+            <i class="fas fa-sync-alt text-emas text-xl mb-2"></i>
+            <h4 class="font-bold text-white text-sm mb-1">Terus Diperbarui</h4>
+            <p class="text-gray-300 text-xs leading-relaxed">Menyesuaikan perubahan zaman, transformasi digital, dan profil generasi kerja.</p>
+          </div>
+          <div class="bg-white/5 backdrop-blur-sm p-5 rounded-xl border border-white/10">
+            <i class="fas fa-check-circle text-emas text-xl mb-2"></i>
+            <h4 class="font-bold text-white text-sm mb-1">Terstandarisasi</h4>
+            <p class="text-gray-300 text-xs leading-relaxed">Digunakan sebagai acuan seleksi, asesmen, dan promosi level manajerial &amp; direksi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 13. PENGGUNA JASA SECTION -->
+  <!-- ========================================================================= -->
+  <section id="pengguna" class="py-24 px-6 sm:px-10 bg-gradient-to-r from-hijaugelap via-hijau to-hijaugelap text-white relative">
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <div class="fade-in">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Track Record Klien</span>
+        <h2 class="text-white font-extrabold text-3xl sm:text-5xl mb-4">Pengguna Jasa Kami</h2>
+        <div class="divider-emas mx-auto mb-10"></div>
+        
+        <p class="text-white text-2xl sm:text-4xl md:text-5xl font-black leading-snug break-words drop-shadow">
+          Dipercaya <span class="text-emas">225+ Perusahaan</span>
+          <br class="hidden sm:block">
+          &amp; <span class="text-emas">46.000+ Eksekutif</span>
+        </p>
+        
+        <p class="text-gray-100 text-sm sm:text-base mt-6 max-w-2xl mx-auto leading-relaxed">
+          Perusahaan swasta nasional, multinasional, institusi pendidikan, rumah sakit, hingga BUMN di seluruh pelosok nusantara telah mempercayakan
+          pengembangan karakter dan sikap mental unggul SDM mereka kepada KPPSM.
+        </p>
+
+        <div class="mt-10 flex flex-wrap justify-center items-center gap-3 text-xs sm:text-sm font-semibold text-navy">
+          <span class="bg-white px-4 py-2 rounded-full shadow">PT Indah Kiat Pulp &amp; Paper</span>
+          <span class="bg-white px-4 py-2 rounded-full shadow">PT Meiji Indonesia</span>
+          <span class="bg-white px-4 py-2 rounded-full shadow">PT Fajar Surya Wisesa Tbk</span>
+          <span class="bg-white px-4 py-2 rounded-full shadow">PT Sorini Towa Berlian</span>
+          <span class="bg-white px-4 py-2 rounded-full shadow">RSUD Kemayoran</span>
+          <span class="bg-white px-4 py-2 rounded-full shadow">Polbangtan Malang</span>
+          <span class="bg-white px-4 py-2 rounded-full shadow">BUMN &amp; Instansi Pemerintah</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 14. KONTAK & HUBUNGI KAMI SECTION -->
+  <!-- ========================================================================= -->
+  <section id="kontak" class="py-24 px-5 sm:px-8 bg-navy text-white relative">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="fade-in">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Mari Berkolaborasi</span>
+        <h2 class="font-extrabold text-3xl sm:text-5xl mb-4">Hubungi Kami</h2>
+        <div class="divider-emas mx-auto mb-12"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-left max-w-3xl mx-auto mb-12">
+          <!-- Alamat -->
+          <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+            <div class="w-10 h-10 rounded-lg bg-emas/20 text-emas flex items-center justify-center mb-3">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <p class="text-emas font-bold text-xs uppercase tracking-wider mb-1">Alamat Kantor</p>
+            <p class="text-sm sm:text-base font-semibold">Wisma KPPSM</p>
+            <p class="text-xs text-gray-300 mt-1">Komp. Cibubur Indah 3 Blok F-7, Jakarta Timur</p>
+          </div>
+
+          <!-- Telepon / WhatsApp -->
+          <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+            <div class="w-10 h-10 rounded-lg bg-emas/20 text-emas flex items-center justify-center mb-3">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <p class="text-emas font-bold text-xs uppercase tracking-wider mb-1">WhatsApp &amp; Telepon</p>
+            <p class="text-sm sm:text-base font-bold text-white"><a href="https://wa.me/62818874430" class="hover:text-emas transition">0818.874.430</a></p>
+            <p class="text-sm sm:text-base font-bold text-white"><a href="https://wa.me/6281315210388" class="hover:text-emas transition">0813.1521.0388</a></p>
+          </div>
+
+          <!-- Email -->
+          <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+            <div class="w-10 h-10 rounded-lg bg-emas/20 text-emas flex items-center justify-center mb-3">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <p class="text-emas font-bold text-xs uppercase tracking-wider mb-1">Email Resmi</p>
+            <p class="text-sm sm:text-base font-bold text-white"><a href="mailto:tatag@kppsm.com" class="hover:text-emas transition">tatag@kppsm.com</a></p>
+            <p class="text-xs text-gray-300 mt-1">Respon cepat untuk proposal in-house training</p>
+          </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="mb-12 bg-white/5 p-6 rounded-2xl border border-white/10 max-w-3xl mx-auto">
+          <p class="text-emas font-bold text-xs uppercase tracking-widest mb-4">Ikuti Media Sosial Kami</p>
+          <div class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-xs sm:text-sm text-gray-200">
+            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition"><i class="fab fa-facebook text-blue-400"></i> PengembanganSikapMentalPositif</a>
+            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition"><i class="fab fa-tiktok text-white"></i> @TatagMotivator SDM</a>
+            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition"><i class="fab fa-instagram text-pink-400"></i> @Kppsm_revolusimental</a>
+            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition"><i class="fab fa-x-twitter text-gray-300"></i> @tatagkppsm</a>
+            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition"><i class="fab fa-youtube text-red-500"></i> Kppsm Video</a>
+          </div>
+        </div>
+
+        <!-- Big CTA Button -->
+        <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20berdiskusi%20mengenai%20kebutuhan%20pelatihan%20di%20perusahaan%20kami" target="_blank" rel="noopener"
+           class="btn-emas inline-flex items-center gap-2 font-bold px-10 py-4 rounded-full text-sm sm:text-base shadow-2xl">
+          <i class="fab fa-whatsapp text-xl"></i>
+          <span>Chat via WhatsApp Sekarang</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 15. FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="bg-hitam text-gray-400 py-10 px-5 sm:px-8 border-t border-white/10 text-center">
+    <div class="max-w-4xl mx-auto flex flex-col items-center justify-center gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 rounded-lg bg-hijau flex items-center justify-center text-white text-xs">
+          <i class="fas fa-brain"></i>
+        </div>
+        <span class="text-white font-bold text-sm">KPPSM F.X. Poerwopoespito</span>
+      </div>
+      <p class="text-xs sm:text-sm text-gray-400">
+        &copy; 2026 <span class="text-gray-200 font-medium">Karakter-SikapMentalUnggul.id</span>. All rights reserved. &middot; Wisma KPPSM Cibubur, Jakarta Timur.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- 16. FLOATING WHATSAPP BUTTON -->
+  <!-- ========================================================================= -->
+  <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20konsultasi%20pelatihan%20sikap%20mental%20unggul" target="_blank" rel="noopener" aria-label="WhatsApp Konsultasi Cepat"
+     class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition transform floating-wa-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
 </body>
 </html>
