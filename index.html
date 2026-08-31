@@ -7,9 +7,9 @@
   
   <!-- SEO & Social Meta Tags -->
   <meta name="description" content="KPPSM F.X. Poerwopoespito - Revolusi Mental sejak 1992. Pelatihan Karakter, Sikap Mental Unggul, ToABQ, Konseling & Pengembangan SDM untuk Perusahaan, Institusi dan BUMN. 36 Tahun Riset & Pengalaman.">
-  <meta name="keywords" content="pelatihan karakter, sikap mental unggul, revolusi mental, toabq, kppsm, fx poerwopoespito, tatag utomo, training sdm corporate, sdm bumn">
+  <meta name="keywords" content="pelatihan karakter, sikap mental unggul, revolusi mental, toabq, kppsm, fx poerwopoespito, tatag utomo, training sdm corporate, sdm bumn, pengalaman training kppsm">
   <meta name="author" content="KPPSM F.X. Poerwopoespito">
-  <meta name="theme-color" content="#0A2540">
+  <meta name="theme-color" content="#1E40AF">
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Karakter-SikapMentalUnggul.id | KPPSM F.X. Poerwopoespito">
@@ -36,6 +36,8 @@
             hijaugelap: '#1B5E20',
             emas: '#D4AF37',
             emasgelap: '#B89428',
+            birunav: '#1E40AF',
+            birunavdark: '#1E3A8A',
             navy: '#0A2540',
             navydark: '#061729',
             merah: '#C62828',
@@ -54,15 +56,18 @@
   <!-- Modular Stylesheet -->
   <link rel="stylesheet" href="assets/css/styles.css">
 
+  <!-- Training Data (711 Records from Official PDF Archive) -->
+  <script src="assets/js/training-data.js"></script>
+
   <!-- Modular JavaScript Controller -->
   <script src="assets/js/main.js" defer></script>
 </head>
 <body class="font-poppins text-hitam bg-white antialiased selection:bg-emas selection:text-navy">
 
   <!-- ========================================================================= -->
-  <!-- 1. NAVBAR SECTION -->
+  <!-- 1. NAVBAR SECTION (BACKGROUND BIRU #1E40AF) -->
   <!-- ========================================================================= -->
-  <nav class="fixed top-0 left-0 w-full z-50 bg-navy/95 backdrop-blur-md shadow-md border-b border-white/10" id="mainNav">
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#1E40AF] backdrop-blur-md shadow-md border-b border-white/15" id="mainNav">
     <div class="max-w-7xl mx-auto h-[64px] sm:h-[72px] px-4 sm:px-6 flex items-center justify-between gap-3">
       
       <!-- Brand Logo -->
@@ -72,13 +77,13 @@
         </div>
         <div class="flex flex-col">
           <span class="text-white font-extrabold text-[13px] sm:text-sm md:text-base leading-none tracking-tight whitespace-nowrap">
-            Karakter-<span class="text-emas">SikapMentalUnggul</span><span class="text-gray-300 font-normal text-xs">.id</span>
+            Karakter-<span class="text-emas">SikapMentalUnggul</span><span class="text-blue-100 font-normal text-xs">.id</span>
           </span>
-          <span class="text-[9.5px] text-gray-300 font-medium tracking-wider uppercase mt-0.5 whitespace-nowrap">KPPSM F.X. Poerwopoespito</span>
+          <span class="text-[9.5px] text-blue-100 font-medium tracking-wider uppercase mt-0.5 whitespace-nowrap">KPPSM F.X. Poerwopoespito</span>
         </div>
       </a>
 
-      <!-- Desktop Navigation Menu (Crisp & Non-Wrapping) -->
+      <!-- Desktop Navigation Menu -->
       <div class="hidden lg:flex items-center gap-0.5 xl:gap-1 text-white text-xs xl:text-[13px] font-medium tracking-wide flex-1 justify-center">
         <a href="#hero" class="nav-link-item">Beranda</a>
 
@@ -113,14 +118,26 @@
         <a href="#keunggulan" class="nav-link-item">Keunggulan</a>
         <a href="#galeri" class="nav-link-item">Galeri</a>
         <a href="#testimoni" class="nav-link-item">Testimoni</a>
+        <a href="#pengalaman" class="nav-link-item text-emas font-semibold"><i class="fas fa-history text-xs mr-1"></i> Pengalaman Training</a>
         <a href="#pengguna" class="nav-link-item">Pengguna Jasa</a>
         <a href="#kontak" class="nav-link-item">Kontak</a>
       </div>
 
-      <!-- Action Button & Hamburger Toggle -->
-      <div class="flex items-center gap-2.5 shrink-0">
+      <!-- Action Buttons & Controls -->
+      <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+        
+        <!-- Menu Login Owner Button -->
+        <button id="navOwnerLoginBtn" onclick="openOwnerLoginModal()" type="button"
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 sm:py-2 rounded-full text-xs font-semibold bg-white/10 hover:bg-emas hover:text-navy text-white transition border border-white/20 shadow-sm"
+                title="Masuk sebagai Owner untuk edit konten, teks, foto, &amp; data training">
+          <i class="fas fa-lock text-xs text-emas"></i>
+          <span class="hidden sm:inline">Login Owner</span>
+          <span class="sm:hidden">Owner</span>
+        </button>
+
+        <!-- WhatsApp Button -->
         <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20program%20pelatihan%20karakter%20dan%20sikap%20mental%20unggul" target="_blank" rel="noopener"
-           class="hidden sm:inline-flex items-center gap-1.5 btn-emas text-xs sm:text-sm px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow whitespace-nowrap">
+           class="hidden sm:inline-flex items-center gap-1.5 btn-emas text-xs sm:text-sm px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full shadow whitespace-nowrap">
           <i class="fab fa-whatsapp text-sm sm:text-base"></i>
           <span>WA Kami</span>
         </a>
@@ -133,8 +150,8 @@
       </div>
     </div>
 
-    <!-- Mobile Navigation Drawer -->
-    <div id="mobileMenu" class="lg:hidden bg-navy border-t border-white/10">
+    <!-- Mobile Navigation Drawer (Background Biru Gelap) -->
+    <div id="mobileMenu" class="lg:hidden bg-[#1E3A8A] border-t border-white/15">
       <div class="px-5 py-3 flex flex-col text-white text-sm max-h-[80vh] overflow-y-auto">
         <a href="#hero" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Beranda</a>
 
@@ -143,7 +160,7 @@
           <span>Tentang Kami</span>
           <svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
-        <div id="sub-tentang" class="mobile-sub py-1 space-y-1 text-gray-300 text-xs sm:text-sm">
+        <div id="sub-tentang" class="mobile-sub py-1 space-y-1 text-blue-100 text-xs sm:text-sm">
           <a href="#asal-materi" class="py-1.5 hover:text-emas transition">&bull; Asal Materi</a>
           <a href="#pendiri" class="py-1.5 hover:text-emas transition">&bull; Profil Pendiri</a>
           <a href="#riset" class="py-1.5 hover:text-emas transition">&bull; Riset 36 Tahun</a>
@@ -154,7 +171,7 @@
           <span>Pelatihan &amp; Layanan</span>
           <svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
-        <div id="sub-pelatihan" class="mobile-sub py-1 space-y-1 text-gray-300 text-xs sm:text-sm">
+        <div id="sub-pelatihan" class="mobile-sub py-1 space-y-1 text-blue-100 text-xs sm:text-sm">
           <a href="#layanan" class="py-1.5 hover:text-emas transition">&bull; Layanan Utama (A-D)</a>
           <a href="#metode" class="py-1.5 hover:text-emas transition">&bull; Metode Pelatihan</a>
           <a href="#sifat" class="py-1.5 hover:text-emas transition">&bull; Sifat Pelatihan</a>
@@ -165,13 +182,21 @@
         <a href="#keunggulan" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Keunggulan Kami</a>
         <a href="#galeri" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Galeri Foto</a>
         <a href="#testimoni" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Testimoni Klien</a>
+        <a href="#pengalaman" class="py-2.5 border-b border-white/10 font-semibold text-emas hover:text-white transition"><i class="fas fa-history text-xs mr-1"></i> Data Pengalaman Training</a>
         <a href="#pengguna" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Pengguna Jasa</a>
         <a href="#kontak" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Kontak</a>
         
-        <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20konsultasi%20pelatihan%20karakter" target="_blank" rel="noopener" class="btn-emas text-center font-bold text-xs sm:text-sm px-4 py-2.5 rounded-full shadow my-3 flex items-center justify-center gap-2">
-          <i class="fab fa-whatsapp text-base"></i>
-          <span>Hubungi via WhatsApp</span>
-        </a>
+        <div class="flex flex-col gap-2.5 my-4">
+          <button onclick="openOwnerLoginModal()" type="button" class="w-full text-center font-bold text-xs sm:text-sm px-4 py-2.5 rounded-full bg-white/15 text-white border border-white/20 flex items-center justify-center gap-2">
+            <i class="fas fa-lock text-emas"></i>
+            <span>Menu Login Owner</span>
+          </button>
+          
+          <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20konsultasi%20pelatihan%20karakter" target="_blank" rel="noopener" class="btn-emas text-center font-bold text-xs sm:text-sm px-4 py-2.5 rounded-full shadow flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp text-base"></i>
+            <span>Hubungi via WhatsApp</span>
+          </a>
+        </div>
       </div>
     </div>
   </nav>
@@ -180,31 +205,39 @@
   <!-- 2. HERO HEADER SECTION -->
   <!-- ========================================================================= -->
   <header id="hero" class="hero-bg min-h-screen flex items-center pt-28 pb-20 px-5 sm:px-8 relative overflow-hidden">
+    
+    <!-- Hero Photo Owner Controls Overlay (Active in Edit Mode) -->
+    <div id="heroImgControls">
+      <button class="ow-img-upload-btn text-navy font-bold" onclick="document.getElementById('heroPhotoInput').click()"><i class="fas fa-camera"></i> Ganti Background</button>
+      <button class="ow-img-delete-btn" onclick="ownerResetHeroPhoto()"><i class="fas fa-undo"></i> Reset</button>
+    </div>
+    <input type="file" id="heroPhotoInput" accept="image/*" style="display:none" onchange="ownerUploadHeroPhoto(event)">
+
     <div class="max-w-5xl mx-auto text-center w-full relative z-10">
       
       <!-- Heritage Badge -->
       <div class="fade-in inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-emas/40 mb-6">
         <span class="w-2 h-2 rounded-full bg-emas animate-ping"></span>
-        <p class="text-emas tracking-[0.25em] font-semibold text-xs sm:text-sm uppercase">Sejak 1992 &middot; Membangun Karakter Bangsa</p>
+        <p class="text-emas tracking-[0.25em] font-semibold text-xs sm:text-sm uppercase" data-owner-text="hero_badge">Sejak 1992 &middot; Membangun Karakter Bangsa</p>
       </div>
       
       <!-- Primary Heading -->
-      <h1 class="fade-in text-emas font-black text-5xl sm:text-7xl md:text-8xl leading-tight mb-6 drop-shadow-2xl tracking-tight">
+      <h1 class="fade-in text-emas font-black text-5xl sm:text-7xl md:text-8xl leading-tight mb-6 drop-shadow-2xl tracking-tight" data-owner-text="hero_title">
         REVOLUSI<br class="sm:hidden"> MENTAL
       </h1>
       
       <!-- Tagline Subtitle -->
-      <p class="fade-in text-white text-xl sm:text-3xl md:text-4xl font-bold mb-6 drop-shadow leading-snug">
+      <p class="fade-in text-white text-xl sm:text-3xl md:text-4xl font-bold mb-6 drop-shadow leading-snug" data-owner-text="hero_subtitle">
         Mengembangkan Karakter Kuat &amp; Sikap Mental Unggul
       </p>
       
       <!-- Metrics Card -->
       <div class="fade-in bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/15 max-w-3xl mx-auto mb-10 shadow-2xl">
-        <p class="text-gray-100 text-xs sm:text-sm md:text-base font-medium leading-relaxed">
+        <p class="text-gray-100 text-xs sm:text-sm md:text-base font-medium leading-relaxed" data-owner-text="hero_metrics">
           <span class="text-emas font-bold">Sejak 1992</span> &nbsp;|&nbsp; 
-          <span class="font-bold text-white">700+</span> Pelatihan &nbsp;|&nbsp; 
+          <span class="font-bold text-white">711+</span> Pelatihan &nbsp;|&nbsp; 
           <span class="font-bold text-white">46.000+</span> Eksekutif &nbsp;|&nbsp; 
-          <span class="font-bold text-white">225+</span> Perusahaan &amp; BUMN &nbsp;|&nbsp; 
+          <span class="font-bold text-white">239+</span> Perusahaan &amp; BUMN &nbsp;|&nbsp; 
           <span class="text-emas font-bold">36 Tahun Riset</span>
         </p>
       </div>
@@ -216,9 +249,9 @@
           <i class="fab fa-whatsapp text-lg"></i>
           <span>Konsultasi WhatsApp</span>
         </a>
-        <a href="#keunggulan"
+        <a href="#pengalaman"
            class="btn-outline-emas font-bold px-8 sm:px-9 py-3.5 sm:py-4 rounded-full text-sm sm:text-base w-full sm:w-auto text-center backdrop-blur-sm bg-navy/40">
-          Lihat Keunggulan Kami
+          <i class="fas fa-history text-xs mr-1.5"></i> Lihat 711 Data Training
         </a>
       </div>
     </div>
@@ -230,10 +263,10 @@
   <section id="tentang" class="py-24 px-5 sm:px-8 bg-white relative">
     <div class="max-w-6xl mx-auto">
       <div class="fade-in text-center mb-16">
-        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Profil Lembaga</span>
-        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Tentang Kami</h2>
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="about_tag">Profil Lembaga</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="about_heading">Tentang Kami</h2>
         <div class="divider-emas mx-auto mb-8"></div>
-        <p class="text-gray-700 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
+        <p class="text-gray-700 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto" data-owner-text="about_desc">
           <span class="font-bold text-navy">KPPSM F.X. Poerwopoespito</span> berdiri sejak
           <span class="font-bold text-merah">23 Juli 1992</span>, didirikan oleh
           <span class="font-bold text-navy">Bapak F.X. Oerip</span> di Jakarta. Kami bergerak di bidang
@@ -249,8 +282,8 @@
             <div class="w-12 h-12 rounded-xl bg-hijau/10 text-hijau flex items-center justify-center text-xl mb-5">
               <i class="fas fa-book-open"></i>
             </div>
-            <h3 class="text-navy font-bold text-xl mb-3">Asal Materi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
+            <h3 class="text-navy font-bold text-xl mb-3" data-owner-text="materi_title">Asal Materi</h3>
+            <p class="text-gray-700 text-sm leading-relaxed" data-owner-text="materi_desc">
               Seluruh materi pelatihan KPPSM disusun dari hasil riset dan pengalaman lapangan Bapak F.X. Oerip
               selama lebih dari tiga dekade dalam mendampingi perusahaan dan institusi membangun karakter serta
               sikap mental unggul SDM Indonesia &mdash; bukan teori impor, melainkan hasil observasi langsung
@@ -265,8 +298,8 @@
             <div class="w-12 h-12 rounded-xl bg-hijau/10 text-hijau flex items-center justify-center text-xl mb-5">
               <i class="fas fa-user-tie"></i>
             </div>
-            <h3 class="text-navy font-bold text-xl mb-3">Profil Pendiri</h3>
-            <p class="text-gray-700 text-sm leading-relaxed mb-4">
+            <h3 class="text-navy font-bold text-xl mb-3" data-owner-text="founder_card_title">Profil Pendiri</h3>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4" data-owner-text="founder_card_desc">
               Bpk. F.X. Oerip, pendiri KPPSM sekaligus penemu metode ToABQ, RIS Motivation, dan konsep Health Quotient Indonesia.
             </p>
           </div>
@@ -282,8 +315,8 @@
             <div class="w-12 h-12 rounded-xl bg-hijau/10 text-hijau flex items-center justify-center text-xl mb-5">
               <i class="fas fa-microscope"></i>
             </div>
-            <h3 class="text-navy font-bold text-xl mb-3">Riset 36 Tahun</h3>
-            <p class="text-gray-700 text-sm leading-relaxed mb-4">
+            <h3 class="text-navy font-bold text-xl mb-3" data-owner-text="riset_card_title">Riset 36 Tahun</h3>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4" data-owner-text="riset_card_desc">
               Konsistensi riset karakter dan sikap mental sejak 1992 hingga kini, menjadi fondasi ilmiah yang teruji pada seluruh metode pelatihan KPPSM.
             </p>
           </div>
@@ -302,10 +335,10 @@
   <section id="metode" class="py-24 px-5 sm:px-8 bg-abu border-y border-gray-200/80">
     <div class="max-w-6xl mx-auto">
       <div class="fade-in text-center mb-16">
-        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Pendekatan Teruji</span>
-        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Metode Pelatihan</h2>
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="metode_tag">Pendekatan Teruji</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="metode_heading">Metode Pelatihan</h2>
         <div class="divider-emas mx-auto"></div>
-        <p class="text-gray-600 text-sm sm:text-base mt-4 max-w-2xl mx-auto">
+        <p class="text-gray-600 text-sm sm:text-base mt-4 max-w-2xl mx-auto" data-owner-text="metode_lead">
           Pendekatan interaktif dan terstandar yang kami gunakan untuk membentuk transformasi sikap mental secara nyata, permanen, dan terukur.
         </p>
       </div>
@@ -319,13 +352,13 @@
               <div class="w-10 h-10 rounded-lg bg-hijau/10 text-hijau flex items-center justify-center mb-3">
                 <i class="fas fa-comments text-base"></i>
               </div>
-              <h3 class="text-navy font-bold text-lg mb-1">Dialog Partisipatif</h3>
-              <p class="text-gray-600 text-xs sm:text-sm">Peserta terlibat aktif, bukan sekadar mendengar.</p>
+              <h3 class="text-navy font-bold text-lg mb-1" data-owner-text="metode_dialog_title">Dialog Partisipatif</h3>
+              <p class="text-gray-600 text-xs sm:text-sm" data-owner-text="metode_dialog_sub">Peserta terlibat aktif, bukan sekadar mendengar.</p>
             </div>
             <span class="accordion-icon text-emas text-2xl font-bold shrink-0 leading-none mt-1">+</span>
           </button>
           <div id="acc-dialog" class="accordion-body px-6 sm:px-7">
-            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-100">
+            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-100" data-owner-text="metode_dialog_content">
               Pelatihan dijalankan melalui dialog dua arah antara fasilitator dan peserta, mendorong refleksi
               diri dan kesadaran perilaku secara langsung, sehingga perubahan sikap mental tumbuh dari
               kesadaran pribadi peserta, bukan sekadar instruksi searah.
@@ -340,13 +373,13 @@
               <div class="w-10 h-10 rounded-lg bg-hijau/10 text-hijau flex items-center justify-center mb-3">
                 <i class="fas fa-clipboard-check text-base"></i>
               </div>
-              <h3 class="text-navy font-bold text-lg mb-1">Metode Tes</h3>
-              <p class="text-gray-600 text-xs sm:text-sm">Berbasis ToABQ &mdash; terstandar dan terukur.</p>
+              <h3 class="text-navy font-bold text-lg mb-1" data-owner-text="metode_tes_title">Metode Tes</h3>
+              <p class="text-gray-600 text-xs sm:text-sm" data-owner-text="metode_tes_sub">Berbasis ToABQ &mdash; terstandar dan terukur.</p>
             </div>
             <span class="accordion-icon text-emas text-2xl font-bold shrink-0 leading-none mt-1">+</span>
           </button>
           <div id="acc-tes" class="accordion-body px-6 sm:px-7">
-            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-100">
+            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-100" data-owner-text="metode_tes_content">
               Menggunakan <span class="font-semibold text-navy">Test of Aggregate Behaviour Quotient (ToABQ)</span>
               berdurasi 5,5 jam untuk memetakan sikap mental dan perilaku kerja secara objektif, digunakan
               untuk kebutuhan rekrutmen, seleksi, dan promosi karyawan.
@@ -361,13 +394,13 @@
               <div class="w-10 h-10 rounded-lg bg-hijau/10 text-hijau flex items-center justify-center mb-3">
                 <i class="fas fa-heart text-base"></i>
               </div>
-              <h3 class="text-navy font-bold text-lg mb-1">Metode Konseling</h3>
-              <p class="text-gray-600 text-xs sm:text-sm">Pendampingan personal secara bertahap.</p>
+              <h3 class="text-navy font-bold text-lg mb-1" data-owner-text="metode_konseling_title">Metode Konseling</h3>
+              <p class="text-gray-600 text-xs sm:text-sm" data-owner-text="metode_konseling_sub">Pendampingan personal secara bertahap.</p>
             </div>
             <span class="accordion-icon text-emas text-2xl font-bold shrink-0 leading-none mt-1">+</span>
           </button>
           <div id="acc-konseling" class="accordion-body px-6 sm:px-7">
-            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-100">
+            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-100" data-owner-text="metode_konseling_content">
               <span class="font-semibold text-navy">Mental Health Counselling</span> dilakukan selama 2 jam per sesi,
               sebanyak 5 sesi, guna membantu individu mengatasi hambatan psikologis yang memengaruhi kinerja
               dan sikap mental di tempat kerja.
@@ -385,8 +418,8 @@
   <section id="sifat" class="py-24 px-5 sm:px-8 bg-white">
     <div class="max-w-4xl mx-auto">
       <div class="fade-in text-center mb-16">
-        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Karakteristik Program</span>
-        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Sifat Pelatihan</h2>
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="sifat_tag">Karakteristik Program</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="sifat_heading">Sifat Pelatihan</h2>
         <div class="divider-emas mx-auto"></div>
       </div>
 
@@ -399,13 +432,13 @@
               <div class="w-10 h-10 rounded-lg bg-emas/15 text-emasgelap flex items-center justify-center mb-3">
                 <i class="fas fa-brain text-base"></i>
               </div>
-              <h3 class="text-navy font-bold text-lg sm:text-xl mb-1">Intelektualitatif</h3>
-              <p class="text-gray-600 text-xs sm:text-sm">Perubahan dimulai dari pemahaman, bukan paksaan.</p>
+              <h3 class="text-navy font-bold text-lg sm:text-xl mb-1" data-owner-text="sifat_intelek_title">Intelektualitatif</h3>
+              <p class="text-gray-600 text-xs sm:text-sm" data-owner-text="sifat_intelek_sub">Perubahan dimulai dari pemahaman, bukan paksaan.</p>
             </div>
             <span class="accordion-icon text-emas text-2xl font-bold shrink-0 leading-none mt-1">+</span>
           </button>
           <div id="acc-intelek" class="accordion-body px-6 sm:px-8">
-            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-200">
+            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-200" data-owner-text="sifat_intelek_content">
               Pelatihan bersifat intelektualitatif &mdash; mengedepankan pemahaman kognitif dan penalaran
               logis peserta sebagai dasar sebelum terjadinya perubahan sikap dan perilaku yang menetap.
             </p>
@@ -419,13 +452,13 @@
               <div class="w-10 h-10 rounded-lg bg-emas/15 text-emasgelap flex items-center justify-center mb-3">
                 <i class="fas fa-shield-alt text-base"></i>
               </div>
-              <h3 class="text-navy font-bold text-lg sm:text-xl mb-1">Sifat Tes</h3>
-              <p class="text-gray-600 text-xs sm:text-sm">Objektif, terstandar, dan dapat dipertanggungjawabkan.</p>
+              <h3 class="text-navy font-bold text-lg sm:text-xl mb-1" data-owner-text="sifat_tes_title">Sifat Tes</h3>
+              <p class="text-gray-600 text-xs sm:text-sm" data-owner-text="sifat_tes_sub">Objektif, terstandar, dan dapat dipertanggungjawabkan.</p>
             </div>
             <span class="accordion-icon text-emas text-2xl font-bold shrink-0 leading-none mt-1">+</span>
           </button>
           <div id="acc-sifattes" class="accordion-body px-6 sm:px-8">
-            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-200">
+            <p class="text-gray-700 text-sm leading-relaxed pb-6 pt-2 border-t border-gray-200" data-owner-text="sifat_tes_content">
               Alat tes yang digunakan bersifat terstandar dan objektif, sehingga hasilnya dapat
               dipertanggungjawabkan sebagai dasar pengambilan keputusan rekrutmen, seleksi, maupun promosi.
             </p>
@@ -442,10 +475,10 @@
   <section id="manajemen" class="py-24 px-5 sm:px-8 bg-abu border-y border-gray-200/80">
     <div class="max-w-6xl mx-auto">
       <div class="fade-in text-center mb-16">
-        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Bidang Keahlian</span>
-        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Pelatihan Manajemen</h2>
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="mgmt_tag">Bidang Keahlian</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="mgmt_heading">Pelatihan Manajemen</h2>
         <div class="divider-emas mx-auto"></div>
-        <p class="text-gray-600 text-sm sm:text-base mt-4 max-w-xl mx-auto">
+        <p class="text-gray-600 text-sm sm:text-base mt-4 max-w-xl mx-auto" data-owner-text="mgmt_desc">
           Modul pelatihan manajemen spesifik untuk menunjang kompetensi teknis dan manajerial organisasi.
         </p>
       </div>
@@ -453,43 +486,43 @@
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
         <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center">
           <i class="fas fa-check-double text-2xl text-hijau mb-3"></i>
-          <p class="font-bold text-navy text-sm sm:text-base">QMS</p>
+          <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="mod_qms">QMS</p>
           <span class="text-[11px] text-gray-500 mt-1">Quality Management System</span>
         </div>
         
         <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center">
           <i class="fas fa-bullhorn text-2xl text-hijau mb-3"></i>
-          <p class="font-bold text-navy text-sm sm:text-base">Marketing</p>
+          <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="mod_mkt">Marketing</p>
           <span class="text-[11px] text-gray-500 mt-1">Strategi Pemasaran Terarah</span>
         </div>
         
         <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center">
           <i class="fas fa-chart-line text-2xl text-hijau mb-3"></i>
-          <p class="font-bold text-navy text-sm sm:text-base">Salesmanship</p>
+          <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="mod_sales">Salesmanship</p>
           <span class="text-[11px] text-gray-500 mt-1">Mentalitas Juara Penjualan</span>
         </div>
         
         <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center">
           <i class="fas fa-user-friends text-2xl text-hijau mb-3"></i>
-          <p class="font-bold text-navy text-sm sm:text-base">Supervisory Skill</p>
+          <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="mod_spv">Supervisory Skill</p>
           <span class="text-[11px] text-gray-500 mt-1">Keterampilan Pengawasan</span>
         </div>
         
         <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center">
           <i class="fas fa-crown text-2xl text-hijau mb-3"></i>
-          <p class="font-bold text-navy text-sm sm:text-base">Leadership</p>
+          <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="mod_lead">Leadership</p>
           <span class="text-[11px] text-gray-500 mt-1">Kepemimpinan Visioner</span>
         </div>
         
         <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center">
           <i class="fas fa-campground text-2xl text-hijau mb-3"></i>
-          <p class="font-bold text-navy text-sm sm:text-base">Outbound</p>
+          <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="mod_outbound">Outbound</p>
           <span class="text-[11px] text-gray-500 mt-1">Team Building &amp; Sinergi</span>
         </div>
         
         <div class="fade-in card-hover bg-white rounded-2xl p-6 text-center shadow-sm border-t-4 border-hijau flex flex-col items-center justify-center col-span-2 sm:col-span-1 md:col-span-2">
           <i class="fas fa-graduation-cap text-2xl text-hijau mb-3"></i>
-          <p class="font-bold text-navy text-sm sm:text-base">LDK SMP/SMA</p>
+          <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="mod_ldk">LDK SMP/SMA</p>
           <span class="text-[11px] text-gray-500 mt-1">Latihan Dasar Kepemimpinan Sekolah</span>
         </div>
       </div>
@@ -502,8 +535,8 @@
   <section id="layanan" class="py-24 px-5 sm:px-8 bg-white">
     <div class="max-w-6xl mx-auto">
       <div class="fade-in text-center mb-16">
-        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Solusi Kami</span>
-        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Layanan Kami</h2>
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="layanan_tag">Solusi Kami</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="layanan_heading">Layanan Kami</h2>
         <div class="divider-emas mx-auto"></div>
       </div>
       
@@ -512,9 +545,9 @@
         <article class="fade-in card-hover bg-abu rounded-2xl p-8 sm:p-9 shadow-sm border-l-4 border-emas">
           <div class="flex items-center gap-3 mb-4">
             <span class="w-10 h-10 rounded-full bg-emas/20 text-navy font-black flex items-center justify-center">A</span>
-            <h3 class="text-hijau font-bold text-xl sm:text-2xl">Pelatihan Utama</h3>
+            <h3 class="text-hijau font-bold text-xl sm:text-2xl" data-owner-text="lay_a_title">Pelatihan Utama</h3>
           </div>
-          <ul class="text-gray-700 text-sm sm:text-base space-y-2.5 leading-relaxed pl-2">
+          <ul class="text-gray-700 text-sm sm:text-base space-y-2.5 leading-relaxed pl-2" data-owner-text="lay_a_list">
             <li class="flex items-center gap-2"><i class="fas fa-check-circle text-hijau text-sm"></i> <span class="font-semibold text-navy">Karakter Positif</span> &mdash; 2 Hari</li>
             <li class="flex items-center gap-2"><i class="fas fa-check-circle text-hijau text-sm"></i> <span class="font-semibold text-navy">RIS Motivation</span> &mdash; 1 Hari</li>
             <li class="flex items-center gap-2"><i class="fas fa-check-circle text-hijau text-sm"></i> <span class="font-semibold text-navy">Health Quotient</span> &mdash; 1 Hari</li>
@@ -525,9 +558,9 @@
         <article class="fade-in card-hover bg-abu rounded-2xl p-8 sm:p-9 shadow-sm border-l-4 border-emas">
           <div class="flex items-center gap-3 mb-4">
             <span class="w-10 h-10 rounded-full bg-emas/20 text-navy font-black flex items-center justify-center">B</span>
-            <h3 class="text-hijau font-bold text-xl sm:text-2xl">Tes ToABQ</h3>
+            <h3 class="text-hijau font-bold text-xl sm:text-2xl" data-owner-text="lay_b_title">Tes ToABQ</h3>
           </div>
-          <p class="text-gray-700 text-sm sm:text-base leading-relaxed pl-2">
+          <p class="text-gray-700 text-sm sm:text-base leading-relaxed pl-2" data-owner-text="lay_b_desc">
             <span class="font-bold text-navy">Test of Aggregate Behaviour Quotient</span> &mdash; durasi 5,5 jam,
             digunakan untuk <span class="font-semibold">Rekrutmen, Seleksi, dan Promosi karyawan</span> secara komprehensif.
           </p>
@@ -537,9 +570,9 @@
         <article class="fade-in card-hover bg-abu rounded-2xl p-8 sm:p-9 shadow-sm border-l-4 border-emas">
           <div class="flex items-center gap-3 mb-4">
             <span class="w-10 h-10 rounded-full bg-emas/20 text-navy font-black flex items-center justify-center">C</span>
-            <h3 class="text-hijau font-bold text-xl sm:text-2xl">Konseling</h3>
+            <h3 class="text-hijau font-bold text-xl sm:text-2xl" data-owner-text="lay_c_title">Konseling</h3>
           </div>
-          <p class="text-gray-700 text-sm sm:text-base leading-relaxed pl-2">
+          <p class="text-gray-700 text-sm sm:text-base leading-relaxed pl-2" data-owner-text="lay_c_desc">
             <span class="font-bold text-navy">Mental Health Counselling</span> &mdash; 2 jam per sesi, sebanyak 5 sesi intensif untuk mengatasi hambatan mental &amp; emosional kerja.
           </p>
         </article>
@@ -548,9 +581,9 @@
         <article class="fade-in card-hover bg-abu rounded-2xl p-8 sm:p-9 shadow-sm border-l-4 border-emas">
           <div class="flex items-center gap-3 mb-4">
             <span class="w-10 h-10 rounded-full bg-emas/20 text-navy font-black flex items-center justify-center">D</span>
-            <h3 class="text-hijau font-bold text-xl sm:text-2xl">Tailor Made</h3>
+            <h3 class="text-hijau font-bold text-xl sm:text-2xl" data-owner-text="lay_d_title">Tailor Made</h3>
           </div>
-          <p class="text-gray-700 text-sm sm:text-base leading-relaxed pl-2">
+          <p class="text-gray-700 text-sm sm:text-base leading-relaxed pl-2" data-owner-text="lay_d_desc">
             Seminar &frac12; Hari, Leadership, Salesmanship, Outbound, LDK, dan Character Building yang dirancang khusus sesuai kebutuhan spesifik perusahaan Anda.
           </p>
         </article>
@@ -564,10 +597,10 @@
   <section id="buku" class="py-24 px-5 sm:px-8 bg-abu border-t border-gray-200/80">
     <div class="max-w-6xl mx-auto">
       <div class="fade-in text-center mb-16">
-        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Publikasi Nasional &amp; Riset</span>
-        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Karya Ilmiah &amp; Buku</h2>
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="buku_tag">Publikasi Nasional &amp; Riset</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="buku_heading">Karya Ilmiah &amp; Buku</h2>
         <div class="divider-emas mx-auto mb-4"></div>
-        <p class="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
+        <p class="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto" data-owner-text="buku_lead">
           Karya literatur dan instrumen asesmen orisinal karya pendiri dan pakar KPPSM yang telah diterbitkan oleh penerbit nasional serta dibaca puluhan ribu profesional.
         </p>
       </div>
@@ -578,13 +611,13 @@
         <!-- Buku 1 -->
         <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
           <div class="h-56 bg-gray-100 overflow-hidden relative group">
-            <img src="assets/images/buku-mentalitas-profesional.jpg" alt="Buku Menggugah Mentalitas Profesional" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="assets/images/buku-mentalitas-profesional.jpg" alt="Buku Menggugah Mentalitas Profesional" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" data-owner-img="book1">
             <span class="absolute top-2.5 right-2.5 bg-emas text-navy text-[10px] font-bold px-2 py-0.5 rounded shadow">Grasindo</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
-              <h4 class="text-navy font-bold text-sm line-clamp-2">Menggugah Mentalitas Profesional</h4>
-              <p class="text-gray-500 text-xs mt-1">F.X. Oerip &amp; Tatag Utomo</p>
+              <h4 class="text-navy font-bold text-sm line-clamp-2" data-owner-text="book1_title">Menggugah Mentalitas Profesional</h4>
+              <p class="text-gray-500 text-xs mt-1" data-owner-text="book1_author">F.X. Oerip &amp; Tatag Utomo</p>
             </div>
             <p class="text-hijau text-[11px] font-semibold mt-3">PT. GRASINDO</p>
           </div>
@@ -593,13 +626,13 @@
         <!-- Buku 2 -->
         <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
           <div class="h-56 bg-gray-100 overflow-hidden relative group">
-            <img src="assets/images/buku-health-quotient.jpg" alt="Buku Health Quotient" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="assets/images/buku-health-quotient.jpg" alt="Buku Health Quotient" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" data-owner-img="book2">
             <span class="absolute top-2.5 right-2.5 bg-emas text-navy text-[10px] font-bold px-2 py-0.5 rounded shadow">Grasindo</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
-              <h4 class="text-navy font-bold text-sm line-clamp-2">Health Quotient untuk Eksekutif</h4>
-              <p class="text-gray-500 text-xs mt-1">drg. T.A. Tatag Utomo, M.M.</p>
+              <h4 class="text-navy font-bold text-sm line-clamp-2" data-owner-text="book2_title">Health Quotient untuk Eksekutif</h4>
+              <p class="text-gray-500 text-xs mt-1" data-owner-text="book2_author">drg. T.A. Tatag Utomo, M.M.</p>
             </div>
             <p class="text-hijau text-[11px] font-semibold mt-3">PT. GRASINDO</p>
           </div>
@@ -608,13 +641,13 @@
         <!-- Buku 3 -->
         <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
           <div class="h-56 bg-gray-100 overflow-hidden relative group">
-            <img src="assets/images/buku-krisis-manusia.jpg" alt="Buku Mengatasi Krisis Manusia di Perusahaan" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="assets/images/buku-krisis-manusia.jpg" alt="Buku Mengatasi Krisis Manusia di Perusahaan" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" data-owner-img="book3">
             <span class="absolute top-2.5 right-2.5 bg-emas text-navy text-[10px] font-bold px-2 py-0.5 rounded shadow">Grasindo</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
-              <h4 class="text-navy font-bold text-sm line-clamp-2">Mengatasi Krisis Manusia</h4>
-              <p class="text-gray-500 text-xs mt-1">F.X. Oerip &amp; Tatag Utomo</p>
+              <h4 class="text-navy font-bold text-sm line-clamp-2" data-owner-text="book3_title">Mengatasi Krisis Manusia</h4>
+              <p class="text-gray-500 text-xs mt-1" data-owner-text="book3_author">F.X. Oerip &amp; Tatag Utomo</p>
             </div>
             <p class="text-hijau text-[11px] font-semibold mt-3">PT. GRASINDO</p>
           </div>
@@ -623,13 +656,13 @@
         <!-- Buku 4 -->
         <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
           <div class="h-56 bg-gray-100 overflow-hidden relative group">
-            <img src="assets/images/buku-krisis-anak.jpg" alt="Buku Mencegah dan Mengatasi Krisis Anak" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="assets/images/buku-krisis-anak.jpg" alt="Buku Mencegah dan Mengatasi Krisis Anak" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" data-owner-img="book4">
             <span class="absolute top-2.5 right-2.5 bg-emas text-navy text-[10px] font-bold px-2 py-0.5 rounded shadow">Grasindo</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
-              <h4 class="text-navy font-bold text-sm line-clamp-2">Mencegah &amp; Mengatasi Krisis Anak</h4>
-              <p class="text-gray-500 text-xs mt-1">T.A. Tatag Utomo</p>
+              <h4 class="text-navy font-bold text-sm line-clamp-2" data-owner-text="book4_title">Mencegah &amp; Mengatasi Krisis Anak</h4>
+              <p class="text-gray-500 text-xs mt-1" data-owner-text="book4_author">T.A. Tatag Utomo</p>
             </div>
             <p class="text-hijau text-[11px] font-semibold mt-3">PT. GRASINDO</p>
           </div>
@@ -638,12 +671,12 @@
         <!-- Buku 5 -->
         <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
           <div class="h-56 bg-gray-100 overflow-hidden relative group">
-            <img src="assets/images/buku-renungan-karyawan.jpg" alt="Renungan Sikap Mental Karyawan Perusahaan" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="assets/images/buku-renungan-karyawan.jpg" alt="Renungan Sikap Mental Karyawan Perusahaan" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" data-owner-img="book5">
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
-              <h4 class="text-navy font-bold text-sm line-clamp-2">Renungan Sikap Mental Karyawan</h4>
-              <p class="text-gray-500 text-xs mt-1">T.A. Tatag Utomo</p>
+              <h4 class="text-navy font-bold text-sm line-clamp-2" data-owner-text="book5_title">Renungan Sikap Mental Karyawan</h4>
+              <p class="text-gray-500 text-xs mt-1" data-owner-text="book5_author">T.A. Tatag Utomo</p>
             </div>
             <p class="text-hijau text-[11px] font-semibold mt-3">KPPSM Publishing</p>
           </div>
@@ -652,12 +685,12 @@
         <!-- Buku 6 -->
         <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
           <div class="h-56 bg-gray-100 overflow-hidden relative group">
-            <img src="assets/images/buku-renungan-orang-tua.jpg" alt="133 Renungan Perilaku Bijak Orang Tua" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="assets/images/buku-renungan-orang-tua.jpg" alt="133 Renungan Perilaku Bijak Orang Tua" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" data-owner-img="book6">
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
-              <h4 class="text-navy font-bold text-sm line-clamp-2">133 Renungan Bijak Orang Tua</h4>
-              <p class="text-gray-500 text-xs mt-1">Monika S. &amp; Tatag Utomo</p>
+              <h4 class="text-navy font-bold text-sm line-clamp-2" data-owner-text="book6_title">133 Renungan Bijak Orang Tua</h4>
+              <p class="text-gray-500 text-xs mt-1" data-owner-text="book6_author">Monika S. &amp; Tatag Utomo</p>
             </div>
             <p class="text-hijau text-[11px] font-semibold mt-3">Keluarga &amp; Parenting</p>
           </div>
@@ -666,12 +699,12 @@
         <!-- Buku 7 -->
         <div class="fade-in card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
           <div class="h-56 bg-gray-100 overflow-hidden relative group">
-            <img src="assets/images/buku-inspirator-revolusi-mental.jpg" alt="Inspirator Training Revolusi Mental" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="assets/images/buku-inspirator-revolusi-mental.jpg" alt="Inspirator Training Revolusi Mental" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" data-owner-img="book7">
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
-              <h4 class="text-navy font-bold text-sm line-clamp-2">Inspirator Revolusi Mental</h4>
-              <p class="text-gray-500 text-xs mt-1">Agustin Maria EMMI RATIH</p>
+              <h4 class="text-navy font-bold text-sm line-clamp-2" data-owner-text="book7_title">Inspirator Revolusi Mental</h4>
+              <p class="text-gray-500 text-xs mt-1" data-owner-text="book7_author">Agustin Maria EMMI RATIH</p>
             </div>
             <p class="text-hijau text-[11px] font-semibold mt-3">Biografi &amp; Inspirasi</p>
           </div>
@@ -681,12 +714,12 @@
         <div class="fade-in card-hover bg-navy rounded-2xl overflow-hidden shadow-sm border border-white/10 flex flex-col">
           <div class="h-56 bg-gradient-to-tr from-navy to-hijau flex flex-col items-center justify-center p-4 text-center">
             <i class="fas fa-certificate text-3xl text-emas mb-2"></i>
-            <span class="text-emas font-bold text-base leading-tight">ASM &mdash; Assessment Sikap Mental</span>
-            <span class="text-xs text-gray-200 mt-2">Instrumen Riset Terstandar</span>
+            <span class="text-emas font-bold text-base leading-tight" data-owner-text="asm_mod_title">ASM &mdash; Assessment Sikap Mental</span>
+            <span class="text-xs text-gray-200 mt-2" data-owner-text="asm_mod_sub">Instrumen Riset Terstandar</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
-              <h4 class="text-white font-bold text-sm">Modul Riset &amp; ToABQ</h4>
+              <h4 class="text-white font-bold text-sm" data-owner-text="asm_mod_footer">Modul Riset &amp; ToABQ</h4>
               <p class="text-gray-300 text-xs mt-1">Penemu: F.X. Oerip</p>
             </div>
             <p class="text-emas text-[11px] font-semibold mt-3">KPPSM Research</p>
@@ -697,7 +730,7 @@
 
       <!-- Summary Box -->
       <div class="fade-in bg-white rounded-2xl p-6 sm:p-8 shadow-sm border-l-4 border-hijau max-w-3xl mx-auto text-center">
-        <p class="text-gray-800 text-sm sm:text-base leading-relaxed">
+        <p class="text-gray-800 text-sm sm:text-base leading-relaxed" data-owner-text="buku_summary">
           Penemu <span class="font-bold text-hijau">ToABQ</span>,
           <span class="font-bold text-hijau">RIS Motivation</span>, dan
           <span class="font-bold text-hijau">Health Quotient</span>.
@@ -713,8 +746,8 @@
   <section id="keunggulan" class="py-24 px-5 sm:px-8 bg-white">
     <div class="max-w-6xl mx-auto">
       <div class="fade-in text-center mb-12">
-        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Mengapa Memilih Kami</span>
-        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Keunggulan Kami</h2>
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="keunggulan_tag">Mengapa Memilih Kami</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="keunggulan_heading">Keunggulan Kami</h2>
         <div class="divider-emas mx-auto"></div>
       </div>
 
@@ -741,42 +774,42 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
             <i class="fas fa-microphone-alt text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base">Seminar Nasional</p>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_1_title">Seminar Nasional</p>
             <span class="text-xs text-gray-500 mt-1">Ratusan Event</span>
           </div>
           <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
             <i class="fas fa-book text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base">Buku PT. GRASSINDO</p>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_2_title">Buku PT. GRASSINDO</p>
             <span class="text-xs text-gray-500 mt-1">Terbitan Resmi</span>
           </div>
           <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
             <i class="fas fa-chalkboard-teacher text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base">Ruang Pelatihan</p>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_3_title">Ruang Pelatihan</p>
             <span class="text-xs text-gray-500 mt-1">Nyaman &amp; Eksklusif</span>
           </div>
           <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
             <i class="fas fa-city text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base">Gedung Wisma KPPSM</p>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_4_title">Gedung Wisma KPPSM</p>
             <span class="text-xs text-gray-500 mt-1">Cibubur Indah 3</span>
           </div>
           <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
             <i class="fas fa-user-check text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base">Profil Pendiri</p>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_5_title">Profil Pendiri</p>
             <span class="text-xs text-gray-500 mt-1">F.X. Poerwopoespito</span>
           </div>
           <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
             <i class="fas fa-star text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base">Testimoni Korporat</p>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_6_title">Testimoni Korporat</p>
             <span class="text-xs text-gray-500 mt-1">225+ Perusahaan</span>
           </div>
           <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
             <i class="fas fa-history text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base">Riset 36 Tahun</p>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_7_title">Riset 36 Tahun</p>
             <span class="text-xs text-gray-500 mt-1">Konsisten Sejak 1992</span>
           </div>
           <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
             <i class="fas fa-award text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base">Sertifikat ASM</p>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_8_title">Sertifikat ASM</p>
             <span class="text-xs text-gray-500 mt-1">Asesmen Sikap Mental</span>
           </div>
         </div>
@@ -787,51 +820,51 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
             <span class="text-3xl mb-2">📈</span>
-            <p class="text-hijau font-black text-3xl mb-1">+15%</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Pulp &amp; Paper</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Membantu tercapainya peningkatan EBITDA di PT Indah Kiat.</p>
+            <p class="text-hijau font-black text-3xl mb-1" data-owner-text="dampak_1_val">+15%</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_1_ind">Pulp &amp; Paper</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_1_desc">Membantu tercapainya peningkatan EBITDA di PT Indah Kiat.</p>
           </div>
           <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
             <span class="text-3xl mb-2">📉</span>
-            <p class="text-hijau font-black text-3xl mb-1">13% &rarr; 1,5%</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Manufaktur / FMCG</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Menurunkan tingkat reject produksi secara signifikan di PT Meiji.</p>
+            <p class="text-hijau font-black text-3xl mb-1" data-owner-text="dampak_2_val">13% &rarr; 1,5%</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_2_ind">Manufaktur / FMCG</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_2_desc">Menurunkan tingkat reject produksi secara signifikan di PT Meiji.</p>
           </div>
           <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
             <span class="text-3xl mb-2">🤝</span>
-            <p class="text-hijau font-black text-3xl mb-1">0 Insiden</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Manufaktur &amp; Serikat</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Berhasil mencegah terjadinya unjuk rasa karyawan melalui dialog mental.</p>
+            <p class="text-hijau font-black text-3xl mb-1" data-owner-text="dampak_3_val">0 Insiden</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_3_ind">Manufaktur &amp; Serikat</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_3_desc">Berhasil mencegah terjadinya unjuk rasa karyawan melalui dialog mental.</p>
           </div>
           <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
             <span class="text-3xl mb-2">💹</span>
-            <p class="text-hijau font-black text-3xl mb-1">+20%</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Penjualan &amp; Retail</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Meningkatkan penjualan melalui pelatihan Salesmanship &amp; Militan.</p>
+            <p class="text-hijau font-black text-3xl mb-1" data-owner-text="dampak_4_val">+20%</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_4_ind">Penjualan &amp; Retail</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_4_desc">Meningkatkan penjualan melalui pelatihan Salesmanship &amp; Militan.</p>
           </div>
           <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
             <span class="text-3xl mb-2">🏆</span>
-            <p class="text-hijau font-black text-3xl mb-1">36 Tahun</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Riset &amp; Pengembangan</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Konsistensi riset karakter dan sikap mental sejak 1992.</p>
+            <p class="text-hijau font-black text-3xl mb-1" data-owner-text="dampak_5_val">36 Tahun</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_5_ind">Riset &amp; Pengembangan</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_5_desc">Konsistensi riset karakter dan sikap mental sejak 1992.</p>
           </div>
           <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
             <span class="text-3xl mb-2">👥</span>
-            <p class="text-hijau font-black text-3xl mb-1">46.000+</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Eksekutif Terlatih</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Dipercaya oleh eksekutif dari berbagai sektor industri di Indonesia.</p>
+            <p class="text-hijau font-black text-3xl mb-1" data-owner-text="dampak_6_val">46.000+</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_6_ind">Eksekutif Terlatih</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_6_desc">Dipercaya oleh eksekutif dari berbagai sektor industri di Indonesia.</p>
           </div>
           <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
             <span class="text-3xl mb-2">🏢</span>
-            <p class="text-hijau font-black text-3xl mb-1">225+</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Perusahaan &amp; BUMN</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Menjadi mitra pengembangan SDM institusi dan korporasi nasional.</p>
+            <p class="text-hijau font-black text-3xl mb-1" data-owner-text="dampak_7_val">239+</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_7_ind">Perusahaan &amp; BUMN</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_7_desc">Menjadi mitra pengembangan SDM institusi dan korporasi nasional.</p>
           </div>
           <div class="fade-in card-hover card-eq-dampak bg-abu rounded-2xl p-6 border-t-4 border-hijau flex flex-col shadow-sm">
             <span class="text-3xl mb-2">📚</span>
-            <p class="text-hijau font-black text-3xl mb-1">700+</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2">Sesi Pelatihan</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed">Terlaksana secara konsisten di berbagai pelosok nusantara.</p>
+            <p class="text-hijau font-black text-3xl mb-1" data-owner-text="dampak_8_val">711+</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_8_ind">Sesi Pelatihan</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_8_desc">Terlaksana secara konsisten di berbagai pelosok nusantara.</p>
           </div>
         </div>
       </div>
@@ -844,10 +877,10 @@
   <section id="galeri" class="py-24 px-5 sm:px-8 bg-abu border-y border-gray-200/80">
     <div class="max-w-6xl mx-auto">
       <div class="fade-in text-center mb-16">
-        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Dokumentasi Lapangan</span>
-        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Galeri Kegiatan &amp; Fasilitas</h2>
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="galeri_tag">Dokumentasi Lapangan</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="galeri_heading">Galeri Kegiatan &amp; Fasilitas</h2>
         <div class="divider-emas mx-auto mb-4"></div>
-        <p class="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
+        <p class="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto" data-owner-text="galeri_lead">
           Dokumentasi nyata kegiatan pelatihan karakter, seminar eksekutif, dan fasilitas kantor KPPSM.
         </p>
       </div>
@@ -857,84 +890,84 @@
         <!-- Galeri 1 -->
         <div class="fade-in card-hover rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100 flex flex-col">
           <div class="h-60 overflow-hidden relative group">
-            <img src="assets/images/foto-seminar.jpg" alt="Training Revolusi Mental PT Sorini Towa Berlian Corporindo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+            <img src="assets/images/foto-seminar.jpg" alt="Training Revolusi Mental PT Sorini Towa Berlian Corporindo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" data-owner-img="galeri_1">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
               <span class="text-white text-xs font-semibold">Training Revolusi Mental STBC</span>
             </div>
           </div>
           <div class="p-5">
-            <h4 class="font-bold text-navy text-base mb-1">Pelatihan Revolusi Mental</h4>
-            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">PT Sorini Towa Berlian Corporindo (STBC)</p>
+            <h4 class="font-bold text-navy text-base mb-1" data-owner-text="gal_1_title">Pelatihan Revolusi Mental</h4>
+            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed" data-owner-text="gal_1_desc">PT Sorini Towa Berlian Corporindo (STBC)</p>
           </div>
         </div>
 
         <!-- Galeri 2 -->
         <div class="fade-in card-hover rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100 flex flex-col">
           <div class="h-60 overflow-hidden relative group">
-            <img src="assets/images/foto-ruangan.jpg" alt="Ruang Pelatihan KPPSM Cibubur" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+            <img src="assets/images/foto-ruangan.jpg" alt="Ruang Pelatihan KPPSM Cibubur" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" data-owner-img="galeri_2">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
               <span class="text-white text-xs font-semibold">Ruang Pelatihan Nyaman &amp; Terstandar</span>
             </div>
           </div>
           <div class="p-5">
-            <h4 class="font-bold text-navy text-base mb-1">Ruang Pelatihan Internal</h4>
-            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Wisma KPPSM Cibubur, Jakarta Timur</p>
+            <h4 class="font-bold text-navy text-base mb-1" data-owner-text="gal_2_title">Ruang Pelatihan Internal</h4>
+            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed" data-owner-text="gal_2_desc">Wisma KPPSM Cibubur, Jakarta Timur</p>
           </div>
         </div>
 
         <!-- Galeri 3 -->
         <div class="fade-in card-hover rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100 flex flex-col">
           <div class="h-60 overflow-hidden relative group">
-            <img src="assets/images/foto-gedung.jpg" alt="Gedung Wisma Kantor KPPSM Cibubur" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+            <img src="assets/images/foto-gedung.jpg" alt="Gedung Wisma Kantor KPPSM Cibubur" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" data-owner-img="galeri_3">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
               <span class="text-white text-xs font-semibold">Kantor Pusat KPPSM</span>
             </div>
           </div>
           <div class="p-5">
-            <h4 class="font-bold text-navy text-base mb-1">Gedung Wisma KPPSM</h4>
-            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Komp. Cibubur Indah 3 Blok F-7 Jaktim</p>
+            <h4 class="font-bold text-navy text-base mb-1" data-owner-text="gal_3_title">Gedung Wisma KPPSM</h4>
+            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed" data-owner-text="gal_3_desc">Komp. Cibubur Indah 3 Blok F-7 Jaktim</p>
           </div>
         </div>
 
         <!-- Galeri 4 -->
         <div class="fade-in card-hover rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100 flex flex-col">
           <div class="h-60 overflow-hidden relative group">
-            <img src="assets/images/seminar-fajarpaper.jpg" alt="Behaviour Test Eksekutif PT Fajar Surya Wisesa Tbk" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+            <img src="assets/images/seminar-fajarpaper.jpg" alt="Behaviour Test Eksekutif PT Fajar Surya Wisesa Tbk" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" data-owner-img="galeri_4">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
               <span class="text-white text-xs font-semibold">Test ToABQ &amp; Behaviour Eksekutif</span>
             </div>
           </div>
           <div class="p-5">
-            <h4 class="font-bold text-navy text-base mb-1">Behaviour Test Eksekutif</h4>
-            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">PT Fajar Surya Wisesa, Tbk (FajarPaper)</p>
+            <h4 class="font-bold text-navy text-base mb-1" data-owner-text="gal_4_title">Behaviour Test Eksekutif</h4>
+            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed" data-owner-text="gal_4_desc">PT Fajar Surya Wisesa, Tbk (FajarPaper)</p>
           </div>
         </div>
 
         <!-- Galeri 5 -->
         <div class="fade-in card-hover rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100 flex flex-col">
           <div class="h-60 overflow-hidden relative group">
-            <img src="assets/images/seminar-rsud-kemayoran.jpg" alt="Hospitality Pelayanan Prima RSUD Kemayoran di Bandung" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+            <img src="assets/images/seminar-rsud-kemayoran.jpg" alt="Hospitality Pelayanan Prima RSUD Kemayoran di Bandung" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" data-owner-img="galeri_5">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
               <span class="text-white text-xs font-semibold">The Green Forest Resort Bandung</span>
             </div>
           </div>
           <div class="p-5">
-            <h4 class="font-bold text-navy text-base mb-1">Hospitality Karakter Prima</h4>
-            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">RSUD Kemayoran (The Green Forest Bandung)</p>
+            <h4 class="font-bold text-navy text-base mb-1" data-owner-text="gal_5_title">Hospitality Karakter Prima</h4>
+            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed" data-owner-text="gal_5_desc">RSUD Kemayoran (The Green Forest Bandung)</p>
           </div>
         </div>
 
         <!-- Galeri 6 -->
         <div class="fade-in card-hover rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100 flex flex-col">
           <div class="h-60 overflow-hidden relative group">
-            <img src="assets/images/seminar-polbangtan.jpg" alt="Pelatihan di Polbangtan Malang" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+            <img src="assets/images/seminar-polbangtan.jpg" alt="Pelatihan di Polbangtan Malang" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" data-owner-img="galeri_6">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
               <span class="text-white text-xs font-semibold">Pelatihan SDM Institusi Pertanian</span>
             </div>
           </div>
           <div class="p-5">
-            <h4 class="font-bold text-navy text-base mb-1">Pengembangan SDM Pertanian</h4>
-            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Polbangtan Malang, Jawa Timur</p>
+            <h4 class="font-bold text-navy text-base mb-1" data-owner-text="gal_6_title">Pengembangan SDM Pertanian</h4>
+            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed" data-owner-text="gal_6_desc">Polbangtan Malang, Jawa Timur</p>
           </div>
         </div>
 
@@ -943,15 +976,181 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 11. TESTIMONI KLIEN & EKSEKUTIF SECTION -->
+  <!-- 11. DATA PENGALAMAN TRAINING (711 DATA DARI PDF - INTERAKTIF & SEARCHABLE) -->
   <!-- ========================================================================= -->
-  <section id="testimoni" class="py-24 px-5 sm:px-8 bg-white border-t border-gray-200/80 scroll-mt-20">
+  <section id="pengalaman" class="py-24 px-5 sm:px-8 bg-white scroll-mt-20 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Heading -->
+      <div class="fade-in text-center mb-14">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="tlog_badge">Rekam Jejak 1992 &ndash; 2025</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="tlog_heading">Data Pengalaman Training</h2>
+        <div class="divider-emas mx-auto mb-6"></div>
+        <p class="text-gray-700 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto" data-owner-text="tlog_lead">
+          Arsip resmi rangkuman <span class="font-bold text-navy">711 sesi pelatihan</span>, seminar, asesmen perilaku (Behaviour Test), dan follow-up di <span class="font-bold text-navy">239 Perusahaan, BUMN, Organisasi, dan Institusi Nasional</span> selama lebih dari tiga dekade sejak 1992.
+        </p>
+      </div>
+
+      <!-- Ringkasan Angka Rekam Jejak -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-12">
+        <div class="fade-in card-hover bg-abu rounded-2xl p-6 text-center border-t-4 border-emas shadow-sm">
+          <p class="text-hijau font-black text-3xl sm:text-4xl mb-1" data-owner-text="stat_training_count">711+</p>
+          <p class="text-navy font-bold text-xs sm:text-sm" data-owner-text="stat_training_label">Sesi Pelatihan Terlaksana</p>
+          <span class="text-[11px] text-gray-500 mt-1 block">Tercatat dalam dokumen resmi</span>
+        </div>
+        <div class="fade-in card-hover bg-abu rounded-2xl p-6 text-center border-t-4 border-emas shadow-sm">
+          <p class="text-hijau font-black text-3xl sm:text-4xl mb-1" data-owner-text="stat_client_count">239+</p>
+          <p class="text-navy font-bold text-xs sm:text-sm" data-owner-text="stat_client_label">Perusahaan &amp; BUMN Mitra</p>
+          <span class="text-[11px] text-gray-500 mt-1 block">Korporasi swasta, BUMN &amp; instansi</span>
+        </div>
+        <div class="fade-in card-hover bg-abu rounded-2xl p-6 text-center border-t-4 border-emas shadow-sm">
+          <p class="text-hijau font-black text-3xl sm:text-4xl mb-1" data-owner-text="stat_exec_count">46.000+</p>
+          <p class="text-navy font-bold text-xs sm:text-sm" data-owner-text="stat_exec_label">Eksekutif Terlatih</p>
+          <span class="text-[11px] text-gray-500 mt-1 block">Dari level pelaksana s/d direksi</span>
+        </div>
+        <div class="fade-in card-hover bg-abu rounded-2xl p-6 text-center border-t-4 border-emas shadow-sm">
+          <p class="text-hijau font-black text-3xl sm:text-4xl mb-1" data-owner-text="stat_years_count">36 Tahun</p>
+          <p class="text-navy font-bold text-xs sm:text-sm" data-owner-text="stat_years_label">Riset &amp; Konsistensi (1992&ndash;2025)</p>
+          <span class="text-[11px] text-gray-500 mt-1 block">Dedikasi karakter bangsa</span>
+        </div>
+      </div>
+
+      <!-- Controls: Real-time Search & Multi-Filters -->
+      <div class="fade-in bg-abu rounded-2xl p-5 sm:p-6 border border-gray-200/80 mb-6 shadow-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3.5 items-center">
+          
+          <!-- Search Bar -->
+          <div class="lg:col-span-5 relative">
+            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
+              <i class="fas fa-search text-sm"></i>
+            </div>
+            <input type="text" id="trainingSearchInput" placeholder="Cari perusahaan, kota, level peserta, atau kegiatan..."
+                   class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-hijau focus:border-hijau bg-white">
+          </div>
+
+          <!-- Filter Tahun -->
+          <div class="lg:col-span-3">
+            <select id="trainingYearFilter"
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 text-xs sm:text-sm font-medium text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-hijau focus:border-hijau">
+              <option value="all">Semua Tahun (1992 - 2025)</option>
+            </select>
+          </div>
+
+          <!-- Filter Jenis Kegiatan -->
+          <div class="lg:col-span-2">
+            <select id="trainingTypeFilter"
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 text-xs sm:text-sm font-medium text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-hijau focus:border-hijau">
+              <option value="all">Semua Jenis</option>
+            </select>
+          </div>
+
+          <!-- Per Page Selector -->
+          <div class="lg:col-span-2 flex items-center gap-2">
+            <select id="trainingPerPageSelect"
+                    class="w-full px-3 py-2.5 rounded-xl border border-gray-300 text-xs sm:text-sm font-medium text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-hijau focus:border-hijau">
+              <option value="20">20 / hal</option>
+              <option value="50">50 / hal</option>
+              <option value="100">100 / hal</option>
+              <option value="all">Tampilkan Semua (711)</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Live Filter Status & Owner Add Row Action -->
+        <div class="flex flex-wrap items-center justify-between gap-3 mt-4 pt-3.5 border-t border-gray-200 text-xs">
+          <p class="text-gray-600 font-medium" id="trainingCounterText">
+            Memuat arsip data pelatihan...
+          </p>
+
+          <button id="ownerAddTrainingRowBtn" onclick="ownerAddTrainingRow()" type="button"
+                  class="btn-emas text-xs font-bold px-4 py-2 rounded-full shadow items-center gap-1.5">
+            <i class="fas fa-plus"></i>
+            <span>Tambah Baris Training Baru</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Data Table Responsive Card -->
+      <div class="fade-in bg-white rounded-2xl shadow-sm border border-gray-200/80 overflow-hidden mb-6">
+        <div class="overflow-x-auto max-h-[640px] overflow-y-auto">
+          <table class="w-full border-collapse text-left text-xs sm:text-sm min-w-[850px]" id="trainingLogTable">
+            <thead class="sticky top-0 z-20 bg-navy text-white shadow">
+              <tr>
+                <th class="px-3 sm:px-4 py-3.5 font-bold text-center w-12">No.</th>
+                <th class="px-3 sm:px-4 py-3.5 font-bold w-20">Tahun</th>
+                <th class="px-3 sm:px-4 py-3.5 font-bold w-32">Bulan &amp; Tgl</th>
+                <th class="px-3 sm:px-4 py-3.5 font-bold w-36">Kota</th>
+                <th class="px-3 sm:px-4 py-3.5 font-bold">Perusahaan / Institusi</th>
+                <th class="px-3 sm:px-4 py-3.5 font-bold">Peserta</th>
+                <th class="px-3 sm:px-4 py-3.5 font-bold w-32">Kegiatan</th>
+                <th class="px-3 sm:px-4 py-3.5 font-bold w-28">Keterangan</th>
+                <th class="px-2 py-3.5 w-10 text-center"></th>
+              </tr>
+            </thead>
+            <tbody id="trainingLogBody" class="divide-y divide-gray-200 text-gray-800">
+              <!-- Rows injected dynamically by assets/js/main.js from window.KPPSM_TRAINING_DATA -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Pagination Controls -->
+      <div class="fade-in flex flex-wrap items-center justify-between gap-4 bg-abu p-4 rounded-2xl border border-gray-200/80 mb-10">
+        <button id="trainingPrevBtn" type="button" class="pagination-btn px-4 font-bold text-xs sm:text-sm flex items-center gap-1.5">
+          <i class="fas fa-chevron-left text-xs"></i>
+          <span>Sebelumnya</span>
+        </button>
+
+        <div id="trainingPaginationPages" class="flex flex-wrap items-center justify-center gap-1.5">
+          <!-- Page number buttons injected dynamically -->
+        </div>
+
+        <button id="trainingNextBtn" type="button" class="pagination-btn px-4 font-bold text-xs sm:text-sm flex items-center gap-1.5">
+          <span>Berikutnya</span>
+          <i class="fas fa-chevron-right text-xs"></i>
+        </button>
+      </div>
+
+      <!-- Singkatan & Catatan Kaki Resmi (Dari Halaman 15 Dokumen PDF) -->
+      <div class="fade-in bg-abu rounded-2xl p-6 sm:p-7 border-l-4 border-hijau text-xs sm:text-sm leading-relaxed text-gray-700 shadow-sm">
+        <h4 class="font-bold text-navy text-sm sm:text-base mb-3 flex items-center gap-2">
+          <i class="fas fa-info-circle text-hijau"></i>
+          <span>Daftar Singkatan Nama Perusahaan &amp; Catatan Sejarah KPPSM:</span>
+        </h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-1.5 text-xs text-gray-600 mb-4 font-medium">
+          <p>&bull; <strong class="text-navy">PT AKM</strong> = Alamraya Kencana Mas</p>
+          <p>&bull; <strong class="text-navy">PT AIK</strong> = Agro Inti KencanaMas</p>
+          <p>&bull; <strong class="text-navy">PT SKL</strong> = Sawit Kaltim Lestari</p>
+          <p>&bull; <strong class="text-navy">PT AEK</strong> = Agri Eastborneo Kencana</p>
+          <p>&bull; <strong class="text-navy">PT ATK</strong> = Agrojaya Tirta Kencana</p>
+          <p>&bull; <strong class="text-navy">PT BWS</strong> = Buana WiraSubur Sakti</p>
+          <p>&bull; <strong class="text-navy">PT STN</strong> = Sawit Tiara Nusantara</p>
+          <p>&bull; <strong class="text-navy">PT LIL</strong> = Loka Indah Lestari</p>
+          <p>&bull; <strong class="text-navy">PT WMP</strong> = Wira Mas Permai</p>
+          <p>&bull; <strong class="text-navy">PT DSP</strong> = Delta Subur Permai</p>
+          <p>&bull; <strong class="text-navy">PT SCEM</strong> = Sawindo Cemerlang</p>
+          <p>&bull; <strong class="text-navy">PT SWK</strong> = Sawindo Kencana</p>
+        </div>
+        <p class="pt-3 border-t border-gray-200 text-gray-500 italic text-[11px] sm:text-xs">
+          <strong>Total 711 kali pelatihan</strong>, Seminar dan Behaviour Test di 239 Perusahaan, BUMN, Organisasi dan Institusi besar. <br>
+          <em>Catatan: KPPSM F.X. Oerip S. Poerwopoespito didirikan pada tanggal 23 Juli 1992 di Jakarta.</em>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 12. TESTIMONI KLIEN & EKSEKUTIF SECTION -->
+  <!-- ========================================================================= -->
+  <section id="testimoni" class="py-24 px-5 sm:px-8 bg-abu border-t border-gray-200/80 scroll-mt-20">
     <div class="max-w-6xl mx-auto">
       <div class="fade-in text-center mb-12">
-        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Kata Mereka Tentang Kami</span>
-        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4">Testimoni Klien &amp; Eksekutif</h2>
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="testi_tag">Kata Mereka Tentang Kami</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="testi_heading">Testimoni Klien &amp; Eksekutif</h2>
         <div class="divider-emas mx-auto mb-4"></div>
-        <p class="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
+        <p class="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto" data-owner-text="testi_lead">
           Pengalaman nyata para direktur, pimpinan divisi HR, manajer, dan kepala institusi setelah mengikuti program pelatihan dan revolusi mental KPPSM.
         </p>
       </div>
@@ -976,7 +1175,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         
         <!-- Testimoni 1: PT Maharupa Gatra -->
-        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Executive">
+        <div class="testi-card fade-in bg-white rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Executive">
           <div>
             <div class="flex items-center justify-between mb-4">
               <div class="flex text-emas text-xs gap-1">
@@ -984,7 +1183,7 @@
               </div>
               <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
             </div>
-            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6" data-owner-text="testi_1_quote">
               &ldquo;Selama hidup sudah ratusan pelatihan dan seminar yang saya ikuti, termasuk dari luar negeri. Namun KPPSM saya nilai adalah yang paling bagus dan OK, karena materinya padat, penceramahnya berpengalaman, gayanya hidup dan tidak membosankan.&rdquo;
             </p>
           </div>
@@ -993,15 +1192,15 @@
               IM
             </div>
             <div>
-              <h4 class="text-navy font-bold text-sm leading-tight">Iwan Mahatirta</h4>
-              <p class="text-gray-500 text-xs mt-0.5">Direktur Utama</p>
-              <p class="text-hijau font-semibold text-xs">PT Maharupa Gatra (MG Sports &amp; Music)</p>
+              <h4 class="text-navy font-bold text-sm leading-tight" data-owner-text="testi_1_name">Iwan Mahatirta</h4>
+              <p class="text-gray-500 text-xs mt-0.5" data-owner-text="testi_1_job">Direktur Utama</p>
+              <p class="text-hijau font-semibold text-xs" data-owner-text="testi_1_comp">PT Maharupa Gatra (MG Sports &amp; Music)</p>
             </div>
           </div>
         </div>
 
         <!-- Testimoni 2: PT Meiji Indonesian Pharmaceutical -->
-        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Executive">
+        <div class="testi-card fade-in bg-white rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Executive">
           <div>
             <div class="flex items-center justify-between mb-4">
               <div class="flex text-emas text-xs gap-1">
@@ -1009,7 +1208,7 @@
               </div>
               <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
             </div>
-            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6" data-owner-text="testi_2_quote">
               &ldquo;KPPSM memang luar biasa, dengan memberi contoh kecil tetapi bernilai besar yang membedakan dengan lembaga lain. Sikap teladan, disiplin dan profesional itu bukan basa-basi.&rdquo;
             </p>
           </div>
@@ -1018,15 +1217,15 @@
               AR
             </div>
             <div>
-              <h4 class="text-navy font-bold text-sm leading-tight">Artomo</h4>
-              <p class="text-gray-500 text-xs mt-0.5">Direktur</p>
-              <p class="text-hijau font-semibold text-xs">PT Meiji Indonesian Pharmaceutical</p>
+              <h4 class="text-navy font-bold text-sm leading-tight" data-owner-text="testi_2_name">Artomo</h4>
+              <p class="text-gray-500 text-xs mt-0.5" data-owner-text="testi_2_job">Direktur</p>
+              <p class="text-hijau font-semibold text-xs" data-owner-text="testi_2_comp">PT Meiji Indonesian Pharmaceutical</p>
             </div>
           </div>
         </div>
 
         <!-- Testimoni 3: PT Enseval Putra Megatrading Tbk -->
-        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Executive">
+        <div class="testi-card fade-in bg-white rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Executive">
           <div>
             <div class="flex items-center justify-between mb-4">
               <div class="flex text-emas text-xs gap-1">
@@ -1034,7 +1233,7 @@
               </div>
               <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
             </div>
-            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6" data-owner-text="testi_3_quote">
               &ldquo;KPPSM tampil beda dari pelatihan lain: materinya sangat sederhana, membumi, mudah dicerna, mudah diterapkan, sesuai kebutuhan karyawan Indonesia dan hasilnya cepat dirasakan, terutama berkaitan dengan produktivitas perusahaan.&rdquo;
             </p>
           </div>
@@ -1043,15 +1242,15 @@
               HW
             </div>
             <div>
-              <h4 class="text-navy font-bold text-sm leading-tight">Herman Widjaja</h4>
-              <p class="text-gray-500 text-xs mt-0.5">Director in Charge MDD &amp; EC</p>
-              <p class="text-hijau font-semibold text-xs">PT Enseval Putra Megatrading, Tbk</p>
+              <h4 class="text-navy font-bold text-sm leading-tight" data-owner-text="testi_3_name">Herman Widjaja</h4>
+              <p class="text-gray-500 text-xs mt-0.5" data-owner-text="testi_3_job">Director in Charge MDD &amp; EC</p>
+              <p class="text-hijau font-semibold text-xs" data-owner-text="testi_3_comp">PT Enseval Putra Megatrading, Tbk</p>
             </div>
           </div>
         </div>
 
         <!-- Testimoni 4: PT Bumitama Gunajaya Agro -->
-        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Corporate">
+        <div class="testi-card fade-in bg-white rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Corporate">
           <div>
             <div class="flex items-center justify-between mb-4">
               <div class="flex text-emas text-xs gap-1">
@@ -1059,7 +1258,7 @@
               </div>
               <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
             </div>
-            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6" data-owner-text="testi_4_quote">
               &ldquo;Materi sangat positif dan me-remind kita kembali kepada fitrah kita sebagai manusia yang pada dasarnya punya hati, etika dan adab. KPPSM hadir dan tepat sekali pada saat negara kita krisis moral dan mental.&rdquo;
             </p>
           </div>
@@ -1068,15 +1267,15 @@
               II
             </div>
             <div>
-              <h4 class="text-navy font-bold text-sm leading-tight">Iswandi Ilyas</h4>
-              <p class="text-gray-500 text-xs mt-0.5">Partnership Dept. Head</p>
-              <p class="text-hijau font-semibold text-xs">PT Bumitama Gunajaya Agro</p>
+              <h4 class="text-navy font-bold text-sm leading-tight" data-owner-text="testi_4_name">Iswandi Ilyas</h4>
+              <p class="text-gray-500 text-xs mt-0.5" data-owner-text="testi_4_job">Partnership Dept. Head</p>
+              <p class="text-hijau font-semibold text-xs" data-owner-text="testi_4_comp">PT Bumitama Gunajaya Agro</p>
             </div>
           </div>
         </div>
 
         <!-- Testimoni 5: PT Lucky Indah Keramik -->
-        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Corporate">
+        <div class="testi-card fade-in bg-white rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Corporate">
           <div>
             <div class="flex items-center justify-between mb-4">
               <div class="flex text-emas text-xs gap-1">
@@ -1084,7 +1283,7 @@
               </div>
               <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
             </div>
-            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6" data-owner-text="testi_5_quote">
               &ldquo;Ilmu adalah milik orang yang mau belajar. Kemajuan adalah milik orang yang mau berubah. Pak Oerip dan Pak Tatag telah mengajarkan keduanya dan kemajuan mulai kami rasakan di PT Lucky Indah Keramik.&rdquo;
             </p>
           </div>
@@ -1093,15 +1292,15 @@
               JD
             </div>
             <div>
-              <h4 class="text-navy font-bold text-sm leading-tight">Junus Danie</h4>
-              <p class="text-gray-500 text-xs mt-0.5">Manajer HR, GA dan Perijinan</p>
-              <p class="text-hijau font-semibold text-xs">PT Lucky Indah Keramik</p>
+              <h4 class="text-navy font-bold text-sm leading-tight" data-owner-text="testi_5_name">Junus Danie</h4>
+              <p class="text-gray-500 text-xs mt-0.5" data-owner-text="testi_5_job">Manajer HR, GA dan Perijinan</p>
+              <p class="text-hijau font-semibold text-xs" data-owner-text="testi_5_comp">PT Lucky Indah Keramik</p>
             </div>
           </div>
         </div>
 
         <!-- Testimoni 6: PT Kalla Lines -->
-        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Executive">
+        <div class="testi-card fade-in bg-white rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Executive">
           <div>
             <div class="flex items-center justify-between mb-4">
               <div class="flex text-emas text-xs gap-1">
@@ -1109,7 +1308,7 @@
               </div>
               <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
             </div>
-            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6" data-owner-text="testi_6_quote">
               &ldquo;KPPSM beda. Programnya bukan hanya bermanfaat bagi pribadi, keluarga dan perusahaan, tetapi juga bangsa. Langkah kecil KPPSM ini akan saya ikuti dan saya yakin 1000 langkah kecil akan membuat langkah besar.&rdquo;
             </p>
           </div>
@@ -1118,15 +1317,15 @@
               DW
             </div>
             <div>
-              <h4 class="text-navy font-bold text-sm leading-tight">Djati Adi Wicaksono</h4>
-              <p class="text-gray-500 text-xs mt-0.5">Direktur IT Business Unit</p>
-              <p class="text-hijau font-semibold text-xs">PT Kalla Lines</p>
+              <h4 class="text-navy font-bold text-sm leading-tight" data-owner-text="testi_6_name">Djati Adi Wicaksono</h4>
+              <p class="text-gray-500 text-xs mt-0.5" data-owner-text="testi_6_job">Direktur IT Business Unit</p>
+              <p class="text-hijau font-semibold text-xs" data-owner-text="testi_6_comp">PT Kalla Lines</p>
             </div>
           </div>
         </div>
 
         <!-- Testimoni 7: Hoka-hoka Bento Wisma BRI II -->
-        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Partner">
+        <div class="testi-card fade-in bg-white rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Partner">
           <div>
             <div class="flex items-center justify-between mb-4">
               <div class="flex text-emas text-xs gap-1">
@@ -1134,7 +1333,7 @@
               </div>
               <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
             </div>
-            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6" data-owner-text="testi_7_quote">
               &ldquo;Setelah mengikuti Pelatihan Pengembangan Sikap Mental dari KPPSM serta menyelenggarakan renungan seminggu sekali, sikap saya berubah. Sekarang saya berusaha mengerti kebijakan perusahaan dan meningkatkan omset perusahaan.&rdquo;
             </p>
           </div>
@@ -1143,15 +1342,15 @@
               DW
             </div>
             <div>
-              <h4 class="text-navy font-bold text-sm leading-tight">Dirga Wahana</h4>
-              <p class="text-gray-500 text-xs mt-0.5">Store Supervisor</p>
-              <p class="text-hijau font-semibold text-xs">Hoka-hoka Bento Wisma BRI II</p>
+              <h4 class="text-navy font-bold text-sm leading-tight" data-owner-text="testi_7_name">Dirga Wahana</h4>
+              <p class="text-gray-500 text-xs mt-0.5" data-owner-text="testi_7_job">Store Supervisor</p>
+              <p class="text-hijau font-semibold text-xs" data-owner-text="testi_7_comp">Hoka-hoka Bento Wisma BRI II</p>
             </div>
           </div>
         </div>
 
         <!-- Testimoni 8: SDN Kragilan 06 Serang -->
-        <div class="testi-card fade-in bg-abu rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Partner">
+        <div class="testi-card fade-in bg-white rounded-2xl p-7 border border-gray-200/70 shadow-sm flex flex-col justify-between" data-category="Partner">
           <div>
             <div class="flex items-center justify-between mb-4">
               <div class="flex text-emas text-xs gap-1">
@@ -1159,7 +1358,7 @@
               </div>
               <i class="fas fa-quote-right text-emas/40 text-2xl"></i>
             </div>
-            <p class="text-gray-700 text-sm leading-relaxed italic mb-6">
+            <p class="text-gray-700 text-sm leading-relaxed italic mb-6" data-owner-text="testi_8_quote">
               &ldquo;Pelatihan Revolusi Mental sangat bermanfaat bukan hanya buat saya sebagai pendidik, namun juga buat anak didik. Di dunia pendidikan, karakter seorang guru adalah pondasi untuk dicontoh dan ditiru oleh peserta didik.&rdquo;
             </p>
           </div>
@@ -1168,9 +1367,9 @@
               RS
             </div>
             <div>
-              <h4 class="text-navy font-bold text-sm leading-tight">Rasidi, S.Pd</h4>
-              <p class="text-gray-500 text-xs mt-0.5">Kepala Sekolah</p>
-              <p class="text-hijau font-semibold text-xs">SDN Kragilan 06 Serang</p>
+              <h4 class="text-navy font-bold text-sm leading-tight" data-owner-text="testi_8_name">Rasidi, S.Pd</h4>
+              <p class="text-gray-500 text-xs mt-0.5" data-owner-text="testi_8_job">Kepala Sekolah</p>
+              <p class="text-hijau font-semibold text-xs" data-owner-text="testi_8_comp">SDN Kragilan 06 Serang</p>
             </div>
           </div>
         </div>
@@ -1180,26 +1379,26 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 12. PROFIL PENDIRI SECTION -->
+  <!-- 13. PROFIL PENDIRI SECTION -->
   <!-- ========================================================================= -->
   <section id="pendiri" class="py-24 px-5 sm:px-8 bg-white scroll-mt-20">
     <div class="max-w-4xl mx-auto text-center">
       <div class="fade-in">
         <div class="relative inline-block mb-8">
-          <img src="assets/images/foto-pendiri.jpg" alt="Bpk. F.X. Oerip Poerwopoespito" class="w-44 h-44 sm:w-52 sm:h-52 rounded-full mx-auto border-4 border-emas object-cover shadow-2xl" loading="lazy">
+          <img src="assets/images/foto-pendiri.jpg" alt="Bpk. F.X. Oerip Poerwopoespito" class="w-44 h-44 sm:w-52 sm:h-52 rounded-full mx-auto border-4 border-emas object-cover shadow-2xl" loading="lazy" data-owner-img="founder_photo">
           <div class="absolute -bottom-2 right-4 bg-hijau text-white text-[11px] font-bold px-3 py-1 rounded-full shadow border-2 border-white">
             Founder
           </div>
         </div>
-        <h2 class="text-hijau font-extrabold text-3xl sm:text-4xl mb-1">Bpk. F.X. Oerip</h2>
-        <p class="text-merah font-bold text-base sm:text-lg mb-6">Founder KPPSM (1992)</p>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-4xl mb-1" data-owner-text="founder_name">Bpk. F.X. Oerip</h2>
+        <p class="text-merah font-bold text-base sm:text-lg mb-6" data-owner-text="founder_title">Founder KPPSM (1992)</p>
         
         <div class="bg-abu rounded-2xl p-6 sm:p-8 text-left max-w-2xl mx-auto shadow-sm border border-gray-100">
-          <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">
+          <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-4" data-owner-text="founder_bio_1">
             Mendirikan KPPSM pada tanggal <span class="font-bold text-navy">23 Juli 1992</span> di Jakarta dengan
             visi mengembangkan karakter dan sikap mental unggul bagi seluruh SDM Indonesia.
           </p>
-          <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">
+          <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-4" data-owner-text="founder_bio_2">
             Selama lebih dari tiga dekade, beliau bersama para fasilitator senior seperti <span class="font-semibold text-navy">drg. T.A. Tatag Utomo, M.M.</span> telah membina puluhan ribu eksekutif, ratusan perusahaan swasta multinasional, serta BUMN melalui pendekatan riset, pelatihan interaktif, dan konseling yang berorientasi pada <span class="font-bold text-merah">Revolusi Mental</span>.
           </p>
           <div class="flex flex-wrap gap-2 pt-2 border-t border-gray-200 text-xs font-semibold text-hijau">
@@ -1213,16 +1412,16 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 13. RISET 36 TAHUN SECTION -->
+  <!-- 14. RISET 36 TAHUN SECTION -->
   <!-- ========================================================================= -->
   <section id="riset" class="py-24 px-5 sm:px-8 bg-navy text-white scroll-mt-20 relative overflow-hidden">
     <div class="max-w-4xl mx-auto text-center relative z-10">
       <div class="fade-in">
-        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Landasan Ilmiah</span>
-        <h2 class="text-emas font-extrabold text-3xl sm:text-5xl mb-4">Riset 36 Tahun</h2>
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="riset_tag">Landasan Ilmiah</span>
+        <h2 class="text-emas font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="riset_heading">Riset 36 Tahun</h2>
         <div class="divider-emas mx-auto mb-8"></div>
         
-        <p class="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-10">
+        <p class="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-10" data-owner-text="riset_lead">
           Sejak 1992, KPPSM secara konsisten melakukan riset terhadap karakter, sikap mental, dan perilaku
           kerja SDM di berbagai sektor industri Indonesia. Riset ini menjadi dasar pengembangan <span class="text-emas font-bold">ToABQ</span>, <span class="text-emas font-bold">RIS Motivation</span>, dan <span class="text-emas font-bold">Health Quotient</span> &mdash; serta terus diperbarui melalui pengalaman lapangan dari
           ratusan perusahaan dan puluhan ribu eksekutif yang telah dilatih.
@@ -1231,18 +1430,18 @@
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto text-left">
           <div class="bg-white/5 backdrop-blur-sm p-5 rounded-xl border border-white/10">
             <i class="fas fa-vial text-emas text-xl mb-2"></i>
-            <h4 class="font-bold text-white text-sm mb-1">Riset Empiris</h4>
-            <p class="text-gray-300 text-xs leading-relaxed">Berangkat dari observasi langsung realitas dinamika dunia kerja Indonesia.</p>
+            <h4 class="font-bold text-white text-sm mb-1" data-owner-text="riset_p1_title">Riset Empiris</h4>
+            <p class="text-gray-300 text-xs leading-relaxed" data-owner-text="riset_p1_desc">Berangkat dari observasi langsung realitas dinamika dunia kerja Indonesia.</p>
           </div>
           <div class="bg-white/5 backdrop-blur-sm p-5 rounded-xl border border-white/10">
             <i class="fas fa-sync-alt text-emas text-xl mb-2"></i>
-            <h4 class="font-bold text-white text-sm mb-1">Terus Diperbarui</h4>
-            <p class="text-gray-300 text-xs leading-relaxed">Menyesuaikan perubahan zaman, transformasi digital, dan profil generasi kerja.</p>
+            <h4 class="font-bold text-white text-sm mb-1" data-owner-text="riset_p2_title">Terus Diperbarui</h4>
+            <p class="text-gray-300 text-xs leading-relaxed" data-owner-text="riset_p2_desc">Menyesuaikan perubahan zaman, transformasi digital, dan profil generasi kerja.</p>
           </div>
           <div class="bg-white/5 backdrop-blur-sm p-5 rounded-xl border border-white/10">
             <i class="fas fa-check-circle text-emas text-xl mb-2"></i>
-            <h4 class="font-bold text-white text-sm mb-1">Terstandarisasi</h4>
-            <p class="text-gray-300 text-xs leading-relaxed">Digunakan sebagai acuan seleksi, asesmen, dan promosi level manajerial &amp; direksi.</p>
+            <h4 class="font-bold text-white text-sm mb-1" data-owner-text="riset_p3_title">Terstandarisasi</h4>
+            <p class="text-gray-300 text-xs leading-relaxed" data-owner-text="riset_p3_desc">Digunakan sebagai acuan seleksi, asesmen, dan promosi level manajerial &amp; direksi.</p>
           </div>
         </div>
       </div>
@@ -1250,22 +1449,22 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 14. PENGGUNA JASA SECTION -->
+  <!-- 15. PENGGUNA JASA SECTION -->
   <!-- ========================================================================= -->
   <section id="pengguna" class="py-24 px-6 sm:px-10 bg-gradient-to-r from-hijaugelap via-hijau to-hijaugelap text-white relative">
     <div class="max-w-4xl mx-auto text-center relative z-10">
       <div class="fade-in">
-        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Track Record Klien</span>
-        <h2 class="text-white font-extrabold text-3xl sm:text-5xl mb-4">Pengguna Jasa Kami</h2>
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="pengguna_tag">Track Record Klien</span>
+        <h2 class="text-white font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="pengguna_heading">Pengguna Jasa Kami</h2>
         <div class="divider-emas mx-auto mb-10"></div>
         
-        <p class="text-white text-2xl sm:text-4xl md:text-5xl font-black leading-snug break-words drop-shadow">
-          Dipercaya <span class="text-emas">225+ Perusahaan</span>
+        <p class="text-white text-2xl sm:text-4xl md:text-5xl font-black leading-snug break-words drop-shadow" data-owner-text="pengguna_highlight">
+          Dipercaya <span class="text-emas">239+ Perusahaan</span>
           <br class="hidden sm:block">
           &amp; <span class="text-emas">46.000+ Eksekutif</span>
         </p>
         
-        <p class="text-gray-100 text-sm sm:text-base mt-6 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-gray-100 text-sm sm:text-base mt-6 max-w-2xl mx-auto leading-relaxed" data-owner-text="pengguna_lead">
           Perusahaan swasta nasional, multinasional, institusi pendidikan, rumah sakit, hingga BUMN di seluruh pelosok nusantara telah mempercayakan
           pengembangan karakter dan sikap mental unggul SDM mereka kepada KPPSM.
         </p>
@@ -1284,13 +1483,13 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 15. KONTAK & HUBUNGI KAMI SECTION -->
+  <!-- 16. KONTAK & HUBUNGI KAMI SECTION -->
   <!-- ========================================================================= -->
   <section id="kontak" class="py-24 px-5 sm:px-8 bg-navy text-white relative">
     <div class="max-w-4xl mx-auto text-center">
       <div class="fade-in">
-        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block">Mari Berkolaborasi</span>
-        <h2 class="font-extrabold text-3xl sm:text-5xl mb-4">Hubungi Kami</h2>
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="kontak_tag">Mari Berkolaborasi</span>
+        <h2 class="font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="kontak_heading">Hubungi Kami</h2>
         <div class="divider-emas mx-auto mb-12"></div>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-left max-w-3xl mx-auto mb-12">
@@ -1299,9 +1498,9 @@
             <div class="w-10 h-10 rounded-lg bg-emas/20 text-emas flex items-center justify-center mb-3">
               <i class="fas fa-map-marker-alt"></i>
             </div>
-            <p class="text-emas font-bold text-xs uppercase tracking-wider mb-1">Alamat Kantor</p>
-            <p class="text-sm sm:text-base font-semibold">Wisma KPPSM</p>
-            <p class="text-xs text-gray-300 mt-1">Komp. Cibubur Indah 3 Blok F-7, Jakarta Timur</p>
+            <p class="text-emas font-bold text-xs uppercase tracking-wider mb-1" data-owner-text="kontak_alamat_title">Alamat Kantor</p>
+            <p class="text-sm sm:text-base font-semibold" data-owner-text="kontak_alamat_name">Wisma KPPSM</p>
+            <p class="text-xs text-gray-300 mt-1" data-owner-text="kontak_alamat_detail">Komp. Cibubur Indah 3 Blok F-7, Jakarta Timur</p>
           </div>
 
           <!-- Telepon / WhatsApp -->
@@ -1309,9 +1508,9 @@
             <div class="w-10 h-10 rounded-lg bg-emas/20 text-emas flex items-center justify-center mb-3">
               <i class="fab fa-whatsapp"></i>
             </div>
-            <p class="text-emas font-bold text-xs uppercase tracking-wider mb-1">WhatsApp &amp; Telepon</p>
-            <p class="text-sm sm:text-base font-bold text-white"><a href="https://wa.me/62818874430" class="hover:text-emas transition">0818.874.430</a></p>
-            <p class="text-sm sm:text-base font-bold text-white"><a href="https://wa.me/6281315210388" class="hover:text-emas transition">0813.1521.0388</a></p>
+            <p class="text-emas font-bold text-xs uppercase tracking-wider mb-1" data-owner-text="kontak_wa_title">WhatsApp &amp; Telepon</p>
+            <p class="text-sm sm:text-base font-bold text-white"><a href="https://wa.me/62818874430" class="hover:text-emas transition" data-owner-text="kontak_wa_1">0818.874.430</a></p>
+            <p class="text-sm sm:text-base font-bold text-white"><a href="https://wa.me/6281315210388" class="hover:text-emas transition" data-owner-text="kontak_wa_2">0813.1521.0388</a></p>
           </div>
 
           <!-- Email -->
@@ -1319,21 +1518,21 @@
             <div class="w-10 h-10 rounded-lg bg-emas/20 text-emas flex items-center justify-center mb-3">
               <i class="fas fa-envelope"></i>
             </div>
-            <p class="text-emas font-bold text-xs uppercase tracking-wider mb-1">Email Resmi</p>
-            <p class="text-sm sm:text-base font-bold text-white"><a href="mailto:tatag@kppsm.com" class="hover:text-emas transition">tatag@kppsm.com</a></p>
+            <p class="text-emas font-bold text-xs uppercase tracking-wider mb-1" data-owner-text="kontak_email_title">Email Resmi</p>
+            <p class="text-sm sm:text-base font-bold text-white"><a href="mailto:tatag@kppsm.com" class="hover:text-emas transition" data-owner-text="kontak_email_val">tatag@kppsm.com</a></p>
             <p class="text-xs text-gray-300 mt-1">Respon cepat untuk proposal in-house training</p>
           </div>
         </div>
 
         <!-- Social Media Links -->
         <div class="mb-12 bg-white/5 p-6 rounded-2xl border border-white/10 max-w-3xl mx-auto">
-          <p class="text-emas font-bold text-xs uppercase tracking-widest mb-4">Ikuti Media Sosial Kami</p>
+          <p class="text-emas font-bold text-xs uppercase tracking-widest mb-4" data-owner-text="kontak_sosmed_title">Ikuti Media Sosial Kami</p>
           <div class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-xs sm:text-sm text-gray-200">
-            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition"><i class="fab fa-facebook text-blue-400"></i> PengembanganSikapMentalPositif</a>
-            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition"><i class="fab fa-tiktok text-white"></i> @TatagMotivator SDM</a>
-            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition"><i class="fab fa-instagram text-pink-400"></i> @Kppsm_revolusimental</a>
-            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition"><i class="fab fa-x-twitter text-gray-300"></i> @tatagkppsm</a>
-            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition"><i class="fab fa-youtube text-red-500"></i> Kppsm Video</a>
+            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition" data-owner-text="sosmed_fb"><i class="fab fa-facebook text-blue-400"></i> PengembanganSikapMentalPositif</a>
+            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition" data-owner-text="sosmed_tt"><i class="fab fa-tiktok text-white"></i> @TatagMotivator SDM</a>
+            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition" data-owner-text="sosmed_ig"><i class="fab fa-instagram text-pink-400"></i> @Kppsm_revolusimental</a>
+            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition" data-owner-text="sosmed_x"><i class="fab fa-x-twitter text-gray-300"></i> @tatagkppsm</a>
+            <a href="#" class="inline-flex items-center gap-1.5 hover:text-emas transition" data-owner-text="sosmed_yt"><i class="fab fa-youtube text-red-500"></i> Kppsm Video</a>
           </div>
         </div>
 
@@ -1348,7 +1547,7 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 16. FOOTER -->
+  <!-- 17. FOOTER -->
   <!-- ========================================================================= -->
   <footer class="bg-hitam text-gray-400 py-10 px-5 sm:px-8 border-t border-white/10 text-center">
     <div class="max-w-4xl mx-auto flex flex-col items-center justify-center gap-4">
@@ -1358,19 +1557,84 @@
         </div>
         <span class="text-white font-bold text-sm">KPPSM F.X. Poerwopoespito</span>
       </div>
-      <p class="text-xs sm:text-sm text-gray-400">
+      <p class="text-xs sm:text-sm text-gray-400" data-owner-text="footer_copy">
         &copy; 2026 <span class="text-gray-200 font-medium">Karakter-SikapMentalUnggul.id</span>. All rights reserved. &middot; Wisma KPPSM Cibubur, Jakarta Timur.
       </p>
     </div>
   </footer>
 
   <!-- ========================================================================= -->
-  <!-- 17. FLOATING WHATSAPP BUTTON -->
+  <!-- 18. FLOATING WHATSAPP & OWNER LOCK BUTTONS -->
   <!-- ========================================================================= -->
+  <!-- Floating WhatsApp (Bottom Right) -->
   <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20ingin%20konsultasi%20pelatihan%20sikap%20mental%20unggul" target="_blank" rel="noopener" aria-label="WhatsApp Konsultasi Cepat"
      class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition transform floating-wa-btn">
     <i class="fab fa-whatsapp"></i>
   </a>
+
+  <!-- Floating Lock Button (Bottom Left) -->
+  <div id="ownerLockBtn" onclick="ownerHandleLockClick()" title="Masuk sebagai Owner">
+    <i class="fas fa-lock"></i>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 19. OWNER BOTTOM TOOLBAR & LOGIN MODAL -->
+  <!-- ========================================================================= -->
+  <!-- Owner Toolbar -->
+  <div id="ownerToolbar">
+    <span class="ob-status"><i class="fas fa-user-shield"></i> Mode Owner</span>
+    <button class="ob-btn-edit" id="ownerEditToggleBtn" onclick="ownerToggleEditMode()"><i class="fas fa-pencil-alt"></i> <span>Mode Edit: OFF</span></button>
+    <button class="ob-btn-save" onclick="ownerSaveChanges()"><i class="fas fa-save"></i> <span>Simpan Perubahan</span></button>
+    <button class="ob-btn-add" onclick="ownerAddTrainingRow()"><i class="fas fa-plus"></i> <span>Tambah Training</span></button>
+    <button class="ob-btn-reset" onclick="ownerResetAll()"><i class="fas fa-undo"></i> <span>Reset ke Asli</span></button>
+    <button class="ob-btn-logout" onclick="ownerLogout()"><i class="fas fa-sign-out-alt"></i> <span>Keluar</span></button>
+  </div>
+
+  <!-- Owner Toast Notification -->
+  <div class="ow-toast" id="ownerToast"></div>
+
+  <!-- Owner Login Modal -->
+  <div id="ownerLoginModal">
+    <div class="bg-navy border-2 border-emas rounded-3xl p-7 sm:p-8 max-w-md w-full shadow-2xl relative text-white">
+      <button onclick="closeOwnerLoginModal()" type="button" class="absolute top-5 right-5 text-gray-400 hover:text-white text-xl focus:outline-none">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="text-center mb-6">
+        <div class="w-14 h-14 rounded-2xl bg-emas/20 text-emas flex items-center justify-center text-2xl mx-auto mb-3">
+          <i class="fas fa-user-lock"></i>
+        </div>
+        <h3 class="font-extrabold text-xl sm:text-2xl text-white">Login Panel Owner</h3>
+        <p class="text-gray-300 text-xs sm:text-sm mt-1.5 leading-relaxed">
+          Masukkan kata sandi owner untuk mengaktifkan fitur edit teks, hapus teks, ganti foto, dan kelola data training.
+        </p>
+      </div>
+
+      <form onsubmit="submitOwnerLogin(event)" class="space-y-4">
+        <div>
+          <label for="ownerPasswordInput" class="block text-xs font-semibold text-emas uppercase tracking-wider mb-1.5">Kata Sandi Owner</label>
+          <div class="relative">
+            <input type="password" id="ownerPasswordInput" placeholder="Masukkan password owner..." required
+                   class="w-full px-4 py-3 rounded-xl border border-white/20 bg-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emas focus:border-emas text-sm">
+          </div>
+          <p id="ownerLoginError" class="text-red-400 text-xs mt-1.5 hidden font-medium"></p>
+        </div>
+
+        <div class="pt-2 flex items-center gap-3">
+          <button type="button" onclick="closeOwnerLoginModal()" class="w-1/2 py-3 rounded-xl font-bold text-xs sm:text-sm bg-white/10 hover:bg-white/20 text-gray-200 transition">
+            Batal
+          </button>
+          <button type="submit" class="w-1/2 py-3 rounded-xl font-bold text-xs sm:text-sm btn-emas text-navy shadow-lg transition">
+            Masuk Owner
+          </button>
+        </div>
+      </form>
+
+      <div class="mt-6 pt-4 border-t border-white/10 text-center">
+        <p class="text-[11px] text-gray-400">Default password: <code class="text-emas font-mono font-bold">kppsm1992</code></p>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
