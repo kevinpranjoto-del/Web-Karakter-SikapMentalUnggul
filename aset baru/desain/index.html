@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karakter-SikapMentalUnggul.id | KPPSM F.X. Poerwopoespito</title>
+<meta name="description" content="KPPSM F.X. Poerwopoespito - Revolusi Mental sejak 1992. Pelatihan Karakter, Sikap Mental Unggul, ToABQ, Konseling & Pengembangan SDM untuk Perusahaan, Institusi dan BUMN. 36 Tahun Riset & Pengalaman.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          hijau: '#2E7D32',
+          hijaugelap: '#1B5E20',
+          emas: '#D4AF37',
+          navy: '#0A2540',
+          merah: '#C62828',
+          hitam: '#212121',
+          abu: '#F5F5F5',
+        },
+        fontFamily: {
+          poppins: ['Poppins', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Poppins', sans-serif; }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hero-bg {
+    background-image: linear-gradient(135deg, #7EC8F2 0%, #2E6DA4 45%, #0A2540 100%);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .btn-emas {
+    background-color: #D4AF37;
+    color: #0A2540;
+    transition: all 0.3s ease;
+  }
+  .btn-emas:hover {
+    background-color: #c19d2e;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(212,175,55,0.3);
+  }
+
+  .btn-outline-emas {
+    border: 2px solid #D4AF37;
+    color: #D4AF37;
+    transition: all 0.3s ease;
+  }
+  .btn-outline-emas:hover {
+    background-color: #D4AF37;
+    color: #0A2540;
+  }
+
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+  }
+
+  ::selection {
+    background-color: #D4AF37;
+    color: #0A2540;
+  }
+
+  .divider-emas {
+    width: 70px;
+    height: 4px;
+    background-color: #D4AF37;
+  }
+
+  /* ===== NAVBAR DROPDOWN (DESKTOP) ===== */
+  .nav-item { position: relative; }
+  .nav-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 260px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all 0.2s ease;
+    z-index: 60;
+  }
+  .nav-item:hover .nav-dropdown,
+  .nav-item:focus-within .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .nav-dropdown a {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: #0A2540;
+    font-size: 13.5px;
+    font-weight: 500;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .nav-dropdown a:hover {
+    background: #F5F5F5;
+    color: #2E7D32;
+  }
+
+  /* ===== MOBILE MENU ===== */
+  #mobileMenu { transition: max-height 0.35s ease; overflow: hidden; }
+  .mobile-sub { transition: max-height 0.3s ease; overflow: hidden; max-height: 0; }
+  .mobile-sub.open { max-height: 500px; }
+  .chev { transition: transform 0.25s ease; }
+  .chev.rot { transform: rotate(180deg); }
+
+  /* ===== TABS: KEUNGGULAN KAMI ===== */
+  .tab-btn {
+    transition: all 0.25s ease;
+  }
+  .tab-btn.active {
+    background-color: #2E7D32;
+    color: #ffffff;
+    box-shadow: 0 8px 18px rgba(46,125,50,0.28);
+  }
+  .tab-btn:not(.active) {
+    background-color: #ffffff;
+    color: #0A2540;
+  }
+  .tab-panel { display: none; }
+  .tab-panel.active {
+    display: block;
+    animation: fadeInTab 0.5s ease;
+  }
+  @keyframes fadeInTab {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Equal height cards */
+  .card-eq { min-height: 168px; }
+  .card-eq-dampak { min-height: 190px; }
+
+  /* Accordion */
+  .accordion-body { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+  .accordion-body.open { max-height: 400px; }
+  .accordion-icon { transition: transform 0.3s ease; }
+  .accordion-icon.open { transform: rotate(45deg); }
+</style>
+</head>
+<body class="font-poppins text-hitam antialiased">
+
+<!-- ============ NAVBAR ============ -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-navy shadow-lg">
+  <div class="max-w-7xl mx-auto h-[64px] sm:h-[70px] px-4 sm:px-6 flex items-center justify-between gap-4">
+    <a href="#hero" class="flex items-center shrink-0">
+      <span class="text-white font-bold text-[13px] sm:text-base leading-none tracking-wide whitespace-nowrap">
+        Karakter-<span class="text-emas">SikapMentalUnggul.id</span>
+      </span>
+    </a>
+
+    <!-- DESKTOP MENU -->
+    <div class="hidden lg:flex items-center gap-0.5 text-white text-[12.5px] xl:text-[13px] font-medium tracking-wide flex-1 justify-center min-w-0">
+      <a href="#hero" class="px-2 lg:px-2.5 py-2 rounded whitespace-nowrap hover:text-emas transition">Beranda</a>
+
+      <div class="nav-item">
+        <button class="px-2 lg:px-2.5 py-2 rounded whitespace-nowrap hover:text-emas transition flex items-center gap-1">
+          Tentang Kami
+          <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="#asal-materi">Asal Materi</a>
+          <a href="#pendiri">Profil Pendiri</a>
+          <a href="#riset">Riset 36 Tahun</a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <button class="px-2 lg:px-2.5 py-2 rounded whitespace-nowrap hover:text-emas transition flex items-center gap-1">
+          Metode Pelatihan
+          <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="#metode-dialog">Dialog Partisipatif</a>
+          <a href="#metode-tes">Metode Tes</a>
+          <a href="#metode-konseling">Metode Konseling</a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <button class="px-2 lg:px-2.5 py-2 rounded whitespace-nowrap hover:text-emas transition flex items-center gap-1">
+          Sifat Pelatihan
+          <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="#sifat-intelektualitatif">Intelektualitatif</a>
+          <a href="#sifat-tes">Sifat Tes</a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <button class="px-2 lg:px-2.5 py-2 rounded whitespace-nowrap hover:text-emas transition flex items-center gap-1">
+          Karya &amp; Prestasi
+          <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="#buku">Karya Ilmiah &amp; Buku</a>
+          <a href="#keunggulan">Keunggulan Kami</a>
+          <a href="#pengguna">Pengguna Jasa</a>
+          <a href="#pengalaman">Data Pengalaman Training</a>
+        </div>
+      </div>
+
+      <a href="#kontak" class="px-2 lg:px-2.5 py-2 rounded whitespace-nowrap hover:text-emas transition">Kontak</a>
+    </div>
+
+    <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+      <a href="https://wa.me/62818874430" target="_blank" rel="noopener"
+         class="hidden sm:inline-block btn-emas font-semibold text-xs sm:text-sm px-4 sm:px-6 py-2 sm:py-2.5 rounded-full shadow-md whitespace-nowrap">
+        WA Kami
+      </a>
+      <!-- HAMBURGER -->
+      <button id="hamburgerBtn" class="lg:hidden text-white p-2" aria-label="Buka menu">
+        <svg id="iconOpen" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="iconClose" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="lg:hidden max-h-0 bg-navy border-t border-white/10">
+    <div class="px-5 py-3 flex flex-col text-white text-sm">
+      <a href="#hero" class="py-3 border-b border-white/10">Beranda</a>
+
+      <button class="mobile-toggle py-3 border-b border-white/10 flex items-center justify-between w-full text-left" data-target="sub-tentang">
+        Tentang Kami
+        <svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div id="sub-tentang" class="mobile-sub pl-4 flex flex-col text-gray-200">
+        <a href="#asal-materi" class="py-2.5">&bull; Asal Materi</a>
+        <a href="#pendiri" class="py-2.5">&bull; Profil Pendiri</a>
+        <a href="#riset" class="py-2.5">&bull; Riset 36 Tahun</a>
+      </div>
+
+      <button class="mobile-toggle py-3 border-b border-white/10 flex items-center justify-between w-full text-left" data-target="sub-metode">
+        Metode Pelatihan
+        <svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div id="sub-metode" class="mobile-sub pl-4 flex flex-col text-gray-200">
+        <a href="#metode-dialog" class="py-2.5">&bull; Dialog Partisipatif</a>
+        <a href="#metode-tes" class="py-2.5">&bull; Metode Tes</a>
+        <a href="#metode-konseling" class="py-2.5">&bull; Metode Konseling</a>
+      </div>
+
+      <button class="mobile-toggle py-3 border-b border-white/10 flex items-center justify-between w-full text-left" data-target="sub-sifat">
+        Sifat Pelatihan
+        <svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div id="sub-sifat" class="mobile-sub pl-4 flex flex-col text-gray-200">
+        <a href="#sifat-intelektualitatif" class="py-2.5">&bull; Intelektualitatif</a>
+        <a href="#sifat-tes" class="py-2.5">&bull; Sifat Tes</a>
+      </div>
+
+      <button class="mobile-toggle py-3 border-b border-white/10 flex items-center justify-between w-full text-left" data-target="sub-karya">
+        Karya &amp; Prestasi
+        <svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div id="sub-karya" class="mobile-sub pl-4 flex flex-col text-gray-200">
+        <a href="#buku" class="py-2.5">&bull; Karya Ilmiah &amp; Buku</a>
+        <a href="#keunggulan" class="py-2.5">&bull; Keunggulan Kami</a>
+        <a href="#pengguna" class="py-2.5">&bull; Pengguna Jasa</a>
+        <a href="#pengalaman" class="py-2.5">&bull; Data Pengalaman Training</a>
+      </div>
+
+      <a href="#kontak" class="py-3 border-b border-white/10">Kontak</a>
+      <a href="https://wa.me/62818874430" target="_blank" rel="noopener" class="btn-emas text-center font-semibold text-sm px-4 py-2.5 rounded-full shadow-md my-4">WA Kami</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ============ HERO ============ -->
+<section id="hero" class="hero-bg min-h-screen flex items-center pt-24 pb-16 px-5 sm:px-8">
+  <div class="max-w-5xl mx-auto text-center w-full">
+    <p class="fade-in text-emas tracking-[0.3em] font-medium text-xs sm:text-sm mb-4 uppercase" data-owner-text="t26">Sejak 1992 &middot; Membangun Karakter Bangsa</p>
+    <h1 class="fade-in text-emas font-black text-5xl sm:text-6xl md:text-8xl leading-none mb-6 drop-shadow-lg" data-owner-text="t1">
+      REVOLUSI<br class="sm:hidden"> MENTAL
+    </h1>
+    <p class="fade-in text-white text-lg sm:text-2xl md:text-3xl font-semibold mb-6" data-owner-text="t27">
+      Mengembangkan Karakter Kuat &amp; Sikap Mental Unggul
+    </p>
+    <p class="fade-in text-gray-200 text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed" data-owner-text="t28">
+      Sejak 1992 &nbsp;|&nbsp; 700+ Pelatihan &nbsp;|&nbsp; 46.000+ Eksekutif &nbsp;|&nbsp; 225+ Perusahaan &amp; BUMN &nbsp;|&nbsp; 36 Tahun Riset
+    </p>
+    <div class="fade-in flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="https://wa.me/62818874430" target="_blank" rel="noopener"
+         class="btn-emas font-bold px-8 py-3.5 rounded-full text-sm sm:text-base w-full sm:w-auto text-center shadow-xl">
+        Konsultasi WA
+      </a>
+      <a href="#keunggulan"
+         class="btn-outline-emas font-bold px-8 py-3.5 rounded-full text-sm sm:text-base w-full sm:w-auto text-center">
+        Lihat Keunggulan Kami
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TENTANG KAMI ============ -->
+<section id="tentang" class="py-20 px-5 sm:px-8 bg-white">
+  <div class="max-w-5xl mx-auto">
+    <div class="fade-in text-center mb-14">
+      <h2 class="text-hijau font-extrabold text-3xl sm:text-4xl mb-3" data-owner-text="t2">Tentang Kami</h2>
+      <div class="divider-emas mx-auto mb-8"></div>
+      <p class="text-gray-700 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto" data-owner-text="t29">
+        <span class="font-semibold text-hitam" data-owner-text="t107">KPPSM F.X. Poerwopoespito</span> berdiri sejak
+        <span class="font-semibold text-merah" data-owner-text="t108">23 Juli 1992</span>, didirikan oleh
+        <span class="font-semibold text-hitam" data-owner-text="t109">Bapak F.X. Oerip</span> di Jakarta. Kami bergerak di bidang
+        Jasa Pelatihan, Pengembangan, Riset, Tes, dan Konseling Karakter, Sikap Mental, dan Perilaku SDM
+        bagi Perusahaan, Institusi, Organisasi, dan BUMN di seluruh Indonesia.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div id="asal-materi" class="fade-in scroll-mt-28 bg-abu rounded-xl p-6 sm:p-7 border-t-4 border-emas">
+        <h3 class="text-navy font-bold text-lg mb-2" data-owner-text="t14">Asal Materi</h3>
+        <p class="text-gray-700 text-sm leading-relaxed" data-owner-text="t30">
+          Seluruh materi pelatihan KPPSM disusun dari hasil riset dan pengalaman lapangan Bapak F.X. Oerip
+          selama lebih dari tiga dekade dalam mendampingi perusahaan dan institusi membangun karakter serta
+          sikap mental unggul SDM Indonesia &mdash; bukan teori impor, melainkan hasil observasi langsung
+          terhadap perilaku kerja di berbagai industri di Indonesia.
+        </p>
+      </div>
+
+      <div class="fade-in bg-abu rounded-xl p-6 sm:p-7 border-t-4 border-emas">
+        <h3 class="text-navy font-bold text-lg mb-2" data-owner-text="t15">Profil Pendiri</h3>
+        <p class="text-gray-700 text-sm leading-relaxed mb-3" data-owner-text="t31">
+          Bpk. F.X. Oerip, pendiri KPPSM sekaligus penemu ToABQ, RIS Motivation, dan Health Quotient.
+        </p>
+        <a href="#pendiri" class="text-hijau font-semibold text-sm hover:text-emas transition">Selengkapnya &rarr;</a>
+      </div>
+
+      <div class="fade-in bg-abu rounded-xl p-6 sm:p-7 border-t-4 border-emas">
+        <h3 class="text-navy font-bold text-lg mb-2" data-owner-text="t16">Riset 36 Tahun</h3>
+        <p class="text-gray-700 text-sm leading-relaxed mb-3" data-owner-text="t32">
+          Konsistensi riset karakter dan sikap mental sejak 1992 hingga kini, menjadi fondasi seluruh metode
+          pelatihan KPPSM.
+        </p>
+        <a href="#riset" class="text-hijau font-semibold text-sm hover:text-emas transition">Selengkapnya &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ METODE PELATIHAN ============ -->
+<section id="metode" class="py-20 px-5 sm:px-8 bg-abu">
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-in text-center mb-14">
+      <h2 class="text-hijau font-extrabold text-3xl sm:text-4xl mb-3" data-owner-text="t3">Metode Pelatihan</h2>
+      <div class="divider-emas mx-auto"></div>
+      <p class="text-gray-600 text-sm sm:text-base mt-4 max-w-2xl mx-auto" data-owner-text="t33">Pendekatan yang kami gunakan untuk membentuk perubahan sikap mental secara nyata dan terukur.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1: Dialog Partisipatif -->
+      <div id="metode-dialog" class="fade-in scroll-mt-28 card-hover bg-white rounded-xl shadow-sm border-l-4 border-hijau overflow-hidden card-eq">
+        <button class="accordion-toggle w-full text-left p-6 sm:p-7 flex items-start justify-between gap-3" data-target="acc-dialog">
+          <div>
+            <h3 class="text-navy font-bold text-lg mb-1" data-owner-text="t17">Dialog Partisipatif</h3>
+            <p class="text-gray-600 text-sm" data-owner-text="t34">Peserta terlibat aktif, bukan sekadar mendengar.</p>
+          </div>
+          <span class="accordion-icon text-emas text-2xl font-bold shrink-0">+</span>
+        </button>
+        <div id="acc-dialog" class="accordion-body px-6 sm:px-7">
+          <p class="text-gray-700 text-sm leading-relaxed pb-6" data-owner-text="t35">
+            Pelatihan dijalankan melalui dialog dua arah antara fasilitator dan peserta, mendorong refleksi
+            diri dan kesadaran perilaku secara langsung, sehingga perubahan sikap mental tumbuh dari
+            kesadaran pribadi peserta, bukan sekadar instruksi searah.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2: Metode Tes -->
+      <div id="metode-tes" class="fade-in scroll-mt-28 card-hover bg-white rounded-xl shadow-sm border-l-4 border-hijau overflow-hidden card-eq">
+        <button class="accordion-toggle w-full text-left p-6 sm:p-7 flex items-start justify-between gap-3" data-target="acc-tes">
+          <div>
+            <h3 class="text-navy font-bold text-lg mb-1" data-owner-text="t18">Metode Tes</h3>
+            <p class="text-gray-600 text-sm" data-owner-text="t36">Berbasis ToABQ &mdash; terstandar dan terukur.</p>
+          </div>
+          <span class="accordion-icon text-emas text-2xl font-bold shrink-0">+</span>
+        </button>
+        <div id="acc-tes" class="accordion-body px-6 sm:px-7">
+          <p class="text-gray-700 text-sm leading-relaxed pb-6" data-owner-text="t37">
+            Menggunakan <span class="font-semibold" data-owner-text="t110">Test of Aggregate Behaviour Quotient (ToABQ)</span>
+            berdurasi 5,5 jam untuk memetakan sikap mental dan perilaku kerja secara objektif, digunakan
+            untuk kebutuhan rekrutmen, seleksi, dan promosi karyawan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3: Metode Konseling -->
+      <div id="metode-konseling" class="fade-in scroll-mt-28 card-hover bg-white rounded-xl shadow-sm border-l-4 border-hijau overflow-hidden card-eq">
+        <button class="accordion-toggle w-full text-left p-6 sm:p-7 flex items-start justify-between gap-3" data-target="acc-konseling">
+          <div>
+            <h3 class="text-navy font-bold text-lg mb-1" data-owner-text="t19">Metode Konseling</h3>
+            <p class="text-gray-600 text-sm" data-owner-text="t38">Pendampingan personal secara bertahap.</p>
+          </div>
+          <span class="accordion-icon text-emas text-2xl font-bold shrink-0">+</span>
+        </button>
+        <div id="acc-konseling" class="accordion-body px-6 sm:px-7">
+          <p class="text-gray-700 text-sm leading-relaxed pb-6" data-owner-text="t39">
+            <span class="font-semibold" data-owner-text="t111">Mental Health Counselling</span> dilakukan selama 2 jam per sesi,
+            sebanyak 5 sesi, guna membantu individu mengatasi hambatan psikologis yang memengaruhi kinerja
+            dan sikap mental di tempat kerja.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIFAT PELATIHAN ============ -->
+<section id="sifat" class="py-20 px-5 sm:px-8 bg-white">
+  <div class="max-w-4xl mx-auto">
+    <div class="fade-in text-center mb-14">
+      <h2 class="text-hijau font-extrabold text-3xl sm:text-4xl mb-3" data-owner-text="t4">Sifat Pelatihan</h2>
+      <div class="divider-emas mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div id="sifat-intelektualitatif" class="fade-in scroll-mt-28 card-hover bg-abu rounded-xl shadow-sm border-l-4 border-emas overflow-hidden card-eq">
+        <button class="accordion-toggle w-full text-left p-6 sm:p-7 flex items-start justify-between gap-3" data-target="acc-intelek">
+          <div>
+            <h3 class="text-navy font-bold text-lg mb-1" data-owner-text="t20">Intelektualitatif</h3>
+            <p class="text-gray-600 text-sm" data-owner-text="t40">Perubahan dimulai dari pemahaman, bukan paksaan.</p>
+          </div>
+          <span class="accordion-icon text-emas text-2xl font-bold shrink-0">+</span>
+        </button>
+        <div id="acc-intelek" class="accordion-body px-6 sm:px-7">
+          <p class="text-gray-700 text-sm leading-relaxed pb-6" data-owner-text="t41">
+            Pelatihan bersifat intelektualitatif &mdash; mengedepankan pemahaman kognitif dan penalaran
+            logis peserta sebagai dasar sebelum terjadinya perubahan sikap dan perilaku yang menetap.
+          </p>
+        </div>
+      </div>
+
+      <div id="sifat-tes" class="fade-in scroll-mt-28 card-hover bg-abu rounded-xl shadow-sm border-l-4 border-emas overflow-hidden card-eq">
+        <button class="accordion-toggle w-full text-left p-6 sm:p-7 flex items-start justify-between gap-3" data-target="acc-sifattes">
+          <div>
+            <h3 class="text-navy font-bold text-lg mb-1" data-owner-text="t21">Sifat Tes</h3>
+            <p class="text-gray-600 text-sm" data-owner-text="t42">Objektif, terstandar, dan dapat dipertanggungjawabkan.</p>
+          </div>
+          <span class="accordion-icon text-emas text-2xl font-bold shrink-0">+</span>
+        </button>
+        <div id="acc-sifattes" class="accordion-body px-6 sm:px-7">
+          <p class="text-gray-700 text-sm leading-relaxed pb-6" data-owner-text="t43">
+            Alat tes yang digunakan bersifat terstandar dan objektif, sehingga hasilnya dapat
+            dipertanggungjawabkan sebagai dasar pengambilan keputusan rekrutmen, seleksi, maupun promosi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAYANAN (EXISTING - TIDAK DIHAPUS) ============ -->
+<section id="layanan" class="py-20 px-5 sm:px-8 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-in text-center mb-14">
+      <h2 class="text-hijau font-extrabold text-3xl sm:text-4xl mb-3" data-owner-text="t6">Layanan Kami</h2>
+      <div class="divider-emas mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+      <div class="fade-in card-hover bg-abu rounded-xl p-7 sm:p-8 shadow-sm border-l-4 border-emas">
+        <h3 class="text-hijau font-bold text-lg sm:text-xl mb-3" data-owner-text="t22">A. Pelatihan Utama</h3>
+        <ul class="text-gray-700 text-sm sm:text-base space-y-2 leading-relaxed">
+          <li>&bull; Karakter Positif &mdash; 2 Hari</li>
+          <li>&bull; RIS Motivation &mdash; 1 Hari</li>
+          <li>&bull; Health Quotient &mdash; 1 Hari</li>
+        </ul>
+      </div>
+
+      <div class="fade-in card-hover bg-abu rounded-xl p-7 sm:p-8 shadow-sm border-l-4 border-emas">
+        <h3 class="text-hijau font-bold text-lg sm:text-xl mb-3" data-owner-text="t23">B. Tes ToABQ</h3>
+        <p class="text-gray-700 text-sm sm:text-base leading-relaxed" data-owner-text="t51">
+          <span class="font-semibold" data-owner-text="t112">Test of Aggregate Behaviour Quotient</span> &mdash; durasi 5,5 jam,
+          digunakan untuk Rekrutmen, Seleksi, dan Promosi karyawan.
+        </p>
+      </div>
+
+      <div class="fade-in card-hover bg-abu rounded-xl p-7 sm:p-8 shadow-sm border-l-4 border-emas">
+        <h3 class="text-hijau font-bold text-lg sm:text-xl mb-3" data-owner-text="t24">C. Konseling</h3>
+        <p class="text-gray-700 text-sm sm:text-base leading-relaxed" data-owner-text="t52">
+          <span class="font-semibold" data-owner-text="t113">Mental Health Counselling</span> &mdash; 2 jam per sesi, sebanyak 5 sesi.
+        </p>
+      </div>
+
+      <div class="fade-in card-hover bg-abu rounded-xl p-7 sm:p-8 shadow-sm border-l-4 border-emas">
+        <h3 class="text-hijau font-bold text-lg sm:text-xl mb-3" data-owner-text="t25">D. Tailor Made</h3>
+        <p class="text-gray-700 text-sm sm:text-base leading-relaxed" data-owner-text="t53">
+          Seminar &frac12; Hari, Leadership, Salesmanship, Outbound, LDK, dan Character Building sesuai kebutuhan.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ KARYA ILMIAH & BUKU ============ -->
+<section id="buku" class="py-20 px-5 sm:px-8 bg-abu">
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-in text-center mb-14">
+      <h2 class="text-hijau font-extrabold text-3xl sm:text-4xl mb-3" data-owner-text="t7">Karya Ilmiah &amp; Buku</h2>
+      <div class="divider-emas mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6 mb-10">
+      <div class="fade-in card-hover bg-white rounded-xl overflow-hidden shadow-sm card-eq">
+        <div class="h-40 bg-hijau flex items-center justify-center p-3">
+          <span class="text-emas font-bold text-base text-center" data-owner-text="t114">Menggugah Mentalitas Profesional</span>
+        </div>
+        <div class="p-4"><p class="text-gray-600 text-xs" data-owner-text="t54">Diterbitkan oleh PT. GRASSINDO</p></div>
+      </div>
+      <div class="fade-in card-hover bg-white rounded-xl overflow-hidden shadow-sm card-eq">
+        <div class="h-40 bg-hijau flex items-center justify-center p-3">
+          <span class="text-emas font-bold text-base text-center" data-owner-text="t115">Health Quotient</span>
+        </div>
+        <div class="p-4"><p class="text-gray-600 text-xs" data-owner-text="t55">Diterbitkan oleh PT. GRASSINDO</p></div>
+      </div>
+      <div class="fade-in card-hover bg-white rounded-xl overflow-hidden shadow-sm card-eq">
+        <div class="h-40 bg-hijau flex items-center justify-center p-3">
+          <span class="text-emas font-bold text-base text-center" data-owner-text="t116">Just One Habit</span>
+        </div>
+        <div class="p-4"><p class="text-gray-600 text-xs" data-owner-text="t56">Diterbitkan oleh PT. GRASSINDO</p></div>
+      </div>
+      <div class="fade-in card-hover bg-navy rounded-xl overflow-hidden shadow-sm card-eq">
+        <div class="h-40 flex items-center justify-center p-3">
+          <span class="text-emas font-bold text-base text-center" data-owner-text="t117">ASM &mdash; Assessment Sikap Mental</span>
+        </div>
+        <div class="p-4"><p class="text-gray-300 text-xs" data-owner-text="t57">Instrumen riset &amp; pemetaan sikap mental</p></div>
+      </div>
+      <div class="fade-in card-hover bg-navy rounded-xl overflow-hidden shadow-sm card-eq">
+        <div class="h-40 flex items-center justify-center p-3">
+          <span class="text-emas font-bold text-base text-center" data-owner-text="t118">RIS Motivation</span>
+        </div>
+        <div class="p-4"><p class="text-gray-300 text-xs" data-owner-text="t58">Modul motivasi hasil riset internal</p></div>
+      </div>
+      <div class="fade-in card-hover bg-navy rounded-xl overflow-hidden shadow-sm card-eq">
+        <div class="h-40 flex items-center justify-center p-3">
+          <span class="text-emas font-bold text-base text-center" data-owner-text="t119">Teknik Presentasi Brillian</span>
+        </div>
+        <div class="p-4"><p class="text-gray-300 text-xs" data-owner-text="t59">Modul pengembangan kemampuan presentasi</p></div>
+      </div>
+    </div>
+    <p class="fade-in text-center text-gray-700 text-sm sm:text-base max-w-2xl mx-auto" data-owner-text="t60">
+      Penemu <span class="font-semibold text-hijau" data-owner-text="t120">ToABQ</span>,
+      <span class="font-semibold text-hijau" data-owner-text="t121"> RIS Motivation</span>, dan
+      <span class="font-semibold text-hijau" data-owner-text="t122"> Health Quotient</span>.
+      Katalog lengkap karya ilmiah dan buku tersedia atas permintaan.
+    </p>
+  </div>
+</section>
+
+<!-- ============ KEUNGGULAN KAMI (UPGRADE + TABS) ============ -->
+<section id="keunggulan" class="py-20 px-5 sm:px-8 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-in text-center mb-10">
+      <h2 class="text-hijau font-extrabold text-3xl sm:text-4xl mb-3" data-owner-text="t8">Keunggulan Kami</h2>
+      <div class="divider-emas mx-auto"></div>
+    </div>
+
+    <!-- TAB BUTTONS: DESKTOP/TABLET -->
+    <div class="fade-in hidden sm:flex items-center justify-center gap-3 mb-10">
+      <button class="tab-btn active font-semibold text-sm px-6 py-3 rounded-full shadow-sm" data-tab="fasilitas" onclick="switchTab('fasilitas')">Fasilitas &amp; Aset</button>
+      <button class="tab-btn font-semibold text-sm px-6 py-3 rounded-full shadow-sm" data-tab="dampak" onclick="switchTab('dampak')">Bukti Nyata Dampak</button>
+    </div>
+
+    <!-- TAB DROPDOWN: MOBILE -->
+    <div class="fade-in sm:hidden mb-8">
+      <select id="tabSelect" onchange="switchTab(this.value)" class="w-full border-2 border-hijau rounded-full px-5 py-3 text-sm font-semibold text-navy bg-white focus:outline-none">
+        <option value="fasilitas">Fasilitas &amp; Aset</option>
+        <option value="dampak">Bukti Nyata Dampak</option>
+      </select>
+    </div>
+
+    <!-- TAB 1: FASILITAS & ASET -->
+    <div id="tab-fasilitas" class="tab-panel active">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="fade-in card-hover card-eq bg-abu rounded-lg p-5 sm:p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center">
+          <p class="font-semibold text-navy text-sm sm:text-base" data-owner-text="t61">Seminar Nasional</p>
+        </div>
+        <div class="fade-in card-hover card-eq bg-abu rounded-lg p-5 sm:p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center">
+          <p class="font-semibold text-navy text-sm sm:text-base" data-owner-text="t62">Buku PT. GRASSINDO</p>
+        </div>
+        <div class="fade-in card-hover card-eq bg-abu rounded-lg p-5 sm:p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center">
+          <p class="font-semibold text-navy text-sm sm:text-base" data-owner-text="t63">Ruang Pelatihan</p>
+        </div>
+        <div class="fade-in card-hover card-eq bg-abu rounded-lg p-5 sm:p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center">
+          <p class="font-semibold text-navy text-sm sm:text-base" data-owner-text="t64">Gedung Kantor</p>
+        </div>
+        <div class="fade-in card-hover card-eq bg-abu rounded-lg p-5 sm:p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center">
+          <p class="font-semibold text-navy text-sm sm:text-base" data-owner-text="t65">Profil Pendiri</p>
+        </div>
+        <div class="fade-in card-hover card-eq bg-abu rounded-lg p-5 sm:p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center">
+          <p class="font-semibold text-navy text-sm sm:text-base" data-owner-text="t66">Testimoni</p>
+        </div>
+        <div class="fade-in card-hover card-eq bg-abu rounded-lg p-5 sm:p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center">
+          <p class="font-semibold text-navy text-sm sm:text-base" data-owner-text="t67">Riset 36 Tahun</p>
+        </div>
+        <div class="fade-in card-hover card-eq bg-abu rounded-lg p-5 sm:p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center">
+          <p class="font-semibold text-navy text-sm sm:text-base" data-owner-text="t68">Sertifikat ASM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: BUKTI NYATA DAMPAK -->
+    <div id="tab-dampak" class="tab-panel">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="fade-in card-hover card-eq-dampak bg-abu rounded-xl p-6 border-t-4 border-hijau flex flex-col">
+          <span class="text-3xl mb-3">📈</span>
+          <p class="text-hijau font-extrabold text-2xl mb-1" data-owner-text="t69">+15%</p>
+          <p class="text-emas font-semibold text-xs uppercase tracking-wide mb-2" data-owner-text="t70">Industri: Pulp &amp; Paper</p>
+          <p class="text-gray-700 text-sm leading-relaxed" data-owner-text="t71">Membantu tercapainya peningkatan EBITDA di PT Indah Kiat.</p>
+        </div>
+        <div class="fade-in card-hover card-eq-dampak bg-abu rounded-xl p-6 border-t-4 border-hijau flex flex-col">
+          <span class="text-3xl mb-3">📉</span>
+          <p class="text-hijau font-extrabold text-2xl mb-1" data-owner-text="t72">13% &rarr; 1,5%</p>
+          <p class="text-emas font-semibold text-xs uppercase tracking-wide mb-2" data-owner-text="t73">Industri: Manufaktur / FMCG</p>
+          <p class="text-gray-700 text-sm leading-relaxed" data-owner-text="t74">Menurunkan tingkat reject produksi secara signifikan di PT Meiji.</p>
+        </div>
+        <div class="fade-in card-hover card-eq-dampak bg-abu rounded-xl p-6 border-t-4 border-hijau flex flex-col">
+          <span class="text-3xl mb-3">🤝</span>
+          <p class="text-hijau font-extrabold text-2xl mb-1" data-owner-text="t75">0 Insiden</p>
+          <p class="text-emas font-semibold text-xs uppercase tracking-wide mb-2" data-owner-text="t76">Industri: Manufaktur</p>
+          <p class="text-gray-700 text-sm leading-relaxed" data-owner-text="t77">Berhasil mencegah terjadinya unjuk rasa karyawan.</p>
+        </div>
+        <div class="fade-in card-hover card-eq-dampak bg-abu rounded-xl p-6 border-t-4 border-hijau flex flex-col">
+          <span class="text-3xl mb-3">💹</span>
+          <p class="text-hijau font-extrabold text-2xl mb-1" data-owner-text="t78">+20%</p>
+          <p class="text-emas font-semibold text-xs uppercase tracking-wide mb-2" data-owner-text="t79">Industri: Penjualan &amp; Retail</p>
+          <p class="text-gray-700 text-sm leading-relaxed" data-owner-text="t80">Meningkatkan penjualan melalui pelatihan Salesmanship.</p>
+        </div>
+        <div class="fade-in card-hover card-eq-dampak bg-abu rounded-xl p-6 border-t-4 border-hijau flex flex-col">
+          <span class="text-3xl mb-3">🏆</span>
+          <p class="text-hijau font-extrabold text-2xl mb-1" data-owner-text="t81">36 Tahun</p>
+          <p class="text-emas font-semibold text-xs uppercase tracking-wide mb-2" data-owner-text="t82">Riset &amp; Pengembangan</p>
+          <p class="text-gray-700 text-sm leading-relaxed" data-owner-text="t83">Konsistensi riset karakter dan sikap mental sejak 1992.</p>
+        </div>
+        <div class="fade-in card-hover card-eq-dampak bg-abu rounded-xl p-6 border-t-4 border-hijau flex flex-col">
+          <span class="text-3xl mb-3">👥</span>
+          <p class="text-hijau font-extrabold text-2xl mb-1" data-owner-text="t84">46.000+</p>
+          <p class="text-emas font-semibold text-xs uppercase tracking-wide mb-2" data-owner-text="t85">Eksekutif Terlatih</p>
+          <p class="text-gray-700 text-sm leading-relaxed" data-owner-text="t86">Dipercaya oleh eksekutif dari berbagai sektor industri di Indonesia.</p>
+        </div>
+        <div class="fade-in card-hover card-eq-dampak bg-abu rounded-xl p-6 border-t-4 border-hijau flex flex-col">
+          <span class="text-3xl mb-3">🏢</span>
+          <p class="text-hijau font-extrabold text-2xl mb-1" data-owner-text="t87">225+</p>
+          <p class="text-emas font-semibold text-xs uppercase tracking-wide mb-2" data-owner-text="t88">Perusahaan &amp; BUMN</p>
+          <p class="text-gray-700 text-sm leading-relaxed" data-owner-text="t89">Menjadi mitra pengembangan SDM perusahaan dan institusi nasional.</p>
+        </div>
+        <div class="fade-in card-hover card-eq-dampak bg-abu rounded-xl p-6 border-t-4 border-hijau flex flex-col">
+          <span class="text-3xl mb-3">📚</span>
+          <p class="text-hijau font-extrabold text-2xl mb-1" data-owner-text="t90">700+</p>
+          <p class="text-emas font-semibold text-xs uppercase tracking-wide mb-2" data-owner-text="t91">Sesi Pelatihan</p>
+          <p class="text-gray-700 text-sm leading-relaxed" data-owner-text="t92">Terlaksana secara konsisten di berbagai sektor industri.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERI (EXISTING) ============ -->
+<section id="galeri" class="py-20 px-5 sm:px-8 bg-abu">
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-in text-center mb-14">
+      <h2 class="text-hijau font-extrabold text-3xl sm:text-4xl mb-3" data-owner-text="t9">Galeri</h2>
+      <div class="divider-emas mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div class="fade-in card-hover rounded-xl overflow-hidden shadow-sm bg-white">
+        <img src="foto-seminar.jpg" alt="Foto Seminar KPPSM" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x450/2E7D32/D4AF37?text=Foto+Seminar';" data-owner-img="i1">
+      </div>
+      <div class="fade-in card-hover rounded-xl overflow-hidden shadow-sm bg-white">
+        <img src="foto-ruangan.jpg" alt="Foto Ruang Pelatihan KPPSM" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x450/2E7D32/D4AF37?text=Ruang+Pelatihan';" data-owner-img="i2">
+      </div>
+      <div class="fade-in card-hover rounded-xl overflow-hidden shadow-sm bg-white">
+        <img src="foto-gedung.jpg" alt="Foto Gedung Kantor KPPSM" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x450/2E7D32/D4AF37?text=Gedung+Kantor';" data-owner-img="i3">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROFIL PENDIRI (EXISTING) ============ -->
+<section id="pendiri" class="py-20 px-5 sm:px-8 bg-white scroll-mt-20">
+  <div class="max-w-3xl mx-auto text-center">
+    <div class="fade-in">
+      <img src="foto-pendiri.jpg" alt="Bpk. F.X. Oerip" class="w-40 h-40 sm:w-48 sm:h-48 rounded-full mx-auto border-4 border-emas object-cover shadow-lg mb-6" onerror="this.onerror=null;this.src='https://placehold.co/300x300/2E7D32/D4AF37?text=F.X.+Oerip';" data-owner-img="i4">
+      <h2 class="text-hijau font-extrabold text-2xl sm:text-3xl mb-1" data-owner-text="t10">Bpk. F.X. Oerip</h2>
+      <p class="text-merah font-semibold text-sm sm:text-base mb-5" data-owner-text="t93">Founder KPPSM</p>
+      <p class="text-gray-700 text-sm sm:text-base leading-relaxed max-w-xl mx-auto" data-owner-text="t94">
+        Mendirikan KPPSM pada tanggal <span class="font-semibold" data-owner-text="t123">23 Juli 1992</span> di Jakarta dengan
+        visi mengembangkan karakter dan sikap mental unggul bagi SDM Indonesia. Selama lebih dari tiga
+        dekade, beliau telah membina ribuan eksekutif dan ratusan perusahaan serta BUMN melalui riset,
+        pelatihan, dan konseling yang berorientasi pada Revolusi Mental.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RISET 36 TAHUN (BARU) ============ -->
+<section id="riset" class="py-20 px-5 sm:px-8 bg-navy scroll-mt-20">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="fade-in">
+      <h2 class="text-emas font-extrabold text-3xl sm:text-4xl mb-3" data-owner-text="t11">Riset 36 Tahun</h2>
+      <div class="divider-emas mx-auto mb-8"></div>
+      <p class="text-gray-200 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto" data-owner-text="t95">
+        Sejak 1992, KPPSM secara konsisten melakukan riset terhadap karakter, sikap mental, dan perilaku
+        kerja SDM di berbagai sektor industri Indonesia. Riset ini menjadi dasar pengembangan ToABQ, RIS
+        Motivation, dan Health Quotient &mdash; serta terus diperbarui melalui pengalaman lapangan dari
+        ratusan perusahaan dan puluhan ribu eksekutif yang telah dilatih.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PENGGUNA JASA (BARU) ============ -->
+<section id="pengguna" class="py-20 px-6 sm:px-10 bg-hijau">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="fade-in">
+      <h2 class="text-white font-extrabold text-3xl sm:text-4xl mb-3" data-owner-text="t12">Pengguna Jasa</h2>
+      <div class="divider-emas mx-auto mb-10"></div>
+      <p class="text-white text-2xl sm:text-3xl md:text-4xl font-bold leading-snug break-words" data-owner-text="t96">
+        Dipercaya <span class="text-emas" data-owner-text="t124">225+ Perusahaan</span>
+        <br class="hidden sm:block">
+        &amp; <span class="text-emas" data-owner-text="t125">46.000+ Eksekutif</span>
+      </p>
+      <p class="text-gray-100 text-sm sm:text-base mt-6 max-w-xl mx-auto" data-owner-text="t97">
+        Perusahaan swasta, institusi, organisasi, hingga BUMN di seluruh Indonesia telah mempercayakan
+        pengembangan karakter dan sikap mental unggul SDM mereka kepada KPPSM.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DATA PENGALAMAN TRAINING (BARU) ============ -->
+<section id="pengalaman" class="py-20 px-5 sm:px-8 bg-white scroll-mt-20">
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-in text-center mb-14">
+      <h2 class="text-hijau font-extrabold text-3xl sm:text-4xl mb-3" data-owner-text="t200">Data Pengalaman Training</h2>
+      <div class="divider-emas mx-auto mb-6"></div>
+      <p class="text-gray-700 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto" data-owner-text="t201">
+        Rangkuman pengalaman KPPSM dalam menyelenggarakan pelatihan karakter dan sikap mental unggul
+        di berbagai sektor industri selama lebih dari tiga dekade.
+      </p>
+    </div>
+
+    <!-- RINGKASAN ANGKA -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mb-14">
+      <div class="fade-in card-hover bg-abu rounded-xl p-6 text-center border-t-4 border-emas">
+        <p class="text-hijau font-extrabold text-2xl sm:text-3xl mb-1" data-owner-text="t202">700+</p>
+        <p class="text-gray-700 text-xs sm:text-sm font-medium" data-owner-text="t203">Sesi Pelatihan Terlaksana</p>
+      </div>
+      <div class="fade-in card-hover bg-abu rounded-xl p-6 text-center border-t-4 border-emas">
+        <p class="text-hijau font-extrabold text-2xl sm:text-3xl mb-1" data-owner-text="t204">225+</p>
+        <p class="text-gray-700 text-xs sm:text-sm font-medium" data-owner-text="t205">Perusahaan &amp; BUMN Mitra</p>
+      </div>
+      <div class="fade-in card-hover bg-abu rounded-xl p-6 text-center border-t-4 border-emas">
+        <p class="text-hijau font-extrabold text-2xl sm:text-3xl mb-1" data-owner-text="t206">46.000+</p>
+        <p class="text-gray-700 text-xs sm:text-sm font-medium" data-owner-text="t207">Eksekutif Terlatih</p>
+      </div>
+      <div class="fade-in card-hover bg-abu rounded-xl p-6 text-center border-t-4 border-emas">
+        <p class="text-hijau font-extrabold text-2xl sm:text-3xl mb-1" data-owner-text="t208">36 Tahun</p>
+        <p class="text-gray-700 text-xs sm:text-sm font-medium" data-owner-text="t209">Riset &amp; Pengalaman Sejak 1992</p>
+      </div>
+    </div>
+
+    <!-- TABEL LOG DATA TRAINING -->
+    <div class="fade-in overflow-x-auto">
+      <table class="w-full border-collapse text-sm sm:text-base min-w-[820px]" id="trainingLogTable">
+        <thead>
+          <tr class="bg-navy text-white">
+            <th class="text-left font-semibold px-3 sm:px-4 py-3 rounded-tl-lg">Tahun</th>
+            <th class="text-left font-semibold px-3 sm:px-4 py-3">Bulan</th>
+            <th class="text-left font-semibold px-3 sm:px-4 py-3">Tanggal</th>
+            <th class="text-left font-semibold px-3 sm:px-4 py-3">Kota</th>
+            <th class="text-left font-semibold px-3 sm:px-4 py-3">Perusahaan</th>
+            <th class="text-left font-semibold px-3 sm:px-4 py-3">Peserta</th>
+            <th class="text-left font-semibold px-3 sm:px-4 py-3">Training / Follow Up</th>
+            <th class="px-2 py-3 rounded-tr-lg"></th>
+          </tr>
+        </thead>
+        <tbody id="trainingLogBody" class="text-gray-700">
+          <tr class="border-b border-gray-200 bg-abu">
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">2026</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">Januari</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">15</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">Jakarta</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">Contoh Perusahaan A</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">30</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">Training</td>
+            <td class="px-2 py-3 text-center"><button type="button" class="tlog-row-delete" onclick="ownerDeleteTrainingRow(this)">🗑</button></td>
+          </tr>
+          <tr class="border-b border-gray-200 bg-white">
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">2026</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">Maret</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">3</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">Surabaya</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">Contoh Perusahaan B</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">18</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">Follow Up</td>
+            <td class="px-2 py-3 text-center"><button type="button" class="tlog-row-delete" onclick="ownerDeleteTrainingRow(this)">🗑</button></td>
+          </tr>
+          <tr class="border-b border-gray-200 bg-abu">
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">2026</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">Juni</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">22</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">Bandung</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">Contoh Perusahaan C</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">42</td>
+            <td class="owner-cell px-3 sm:px-4 py-3" contenteditable="false">Training</td>
+            <td class="px-2 py-3 text-center"><button type="button" class="tlog-row-delete" onclick="ownerDeleteTrainingRow(this)">🗑</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="fade-in text-center mt-6" id="addTrainingRowWrap">
+      <button type="button" onclick="ownerAddTrainingRow()" class="btn-emas font-semibold text-sm px-6 py-2.5 rounded-full shadow-md">
+        + Tambah Data Training
+      </button>
+    </div>
+
+    <p class="fade-in text-center text-gray-500 text-xs sm:text-sm mt-6" data-owner-text="t225">
+      Baris di atas adalah contoh format data. Login sebagai owner untuk mengedit, menghapus, atau menambah data training sesuai kondisi sebenarnya.
+    </p>
+  </div>
+</section>
+
+<!-- ============ KONTAK (UPGRADE) ============ -->
+<section id="kontak" class="py-20 px-5 sm:px-8 bg-navy text-white">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="fade-in">
+      <h2 class="font-extrabold text-3xl sm:text-4xl mb-3" data-owner-text="t13">Hubungi Kami</h2>
+      <div class="divider-emas mx-auto mb-10"></div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-left max-w-3xl mx-auto mb-10">
+        <div>
+          <p class="text-emas font-semibold text-sm uppercase tracking-wide mb-2" data-owner-text="t98">Alamat</p>
+          <p class="text-sm sm:text-base leading-relaxed" data-owner-text="t99">Wisma KPPSM</p>
+        </div>
+        <div>
+          <p class="text-emas font-semibold text-sm uppercase tracking-wide mb-2" data-owner-text="t100">WhatsApp</p>
+          <p class="text-sm sm:text-base" data-owner-text="t101">0818.874.430</p>
+          <p class="text-sm sm:text-base" data-owner-text="t102">0813.1521.0388</p>
+        </div>
+        <div>
+          <p class="text-emas font-semibold text-sm uppercase tracking-wide mb-2" data-owner-text="t103">Email</p>
+          <p class="text-sm sm:text-base" data-owner-text="t104">tatag@kppsm.com</p>
+        </div>
+      </div>
+
+      <div class="mb-10">
+        <p class="text-emas font-semibold text-sm uppercase tracking-wide mb-3" data-owner-text="t105">Media Sosial</p>
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm sm:text-base text-gray-100">
+          <span data-owner-text="t126">Facebook: PengembanganSikapMentalPositif</span>
+          <span data-owner-text="t127">TikTok: @TatagMotivator SDM</span>
+          <span data-owner-text="t128">Instagram: @Kppsm_revolusimental</span>
+          <span data-owner-text="t129">X: @tatagkppsm</span>
+          <span data-owner-text="t130">YouTube: Kppsm Video</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/62818874430" target="_blank" rel="noopener"
+         class="btn-emas inline-block font-bold px-8 py-3.5 rounded-full text-sm sm:text-base shadow-xl">
+        Chat via WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-hitam text-gray-300 py-8 px-5 sm:px-8 text-center">
+  <p class="text-xs sm:text-sm" data-owner-text="t106">&copy; 2026 Karakter-SikapMentalUnggul.id</p>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('show'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Mobile hamburger
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const iconOpen = document.getElementById('iconOpen');
+    const iconClose = document.getElementById('iconClose');
+    let menuOpen = false;
+    hamburgerBtn.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      mobileMenu.style.maxHeight = menuOpen ? mobileMenu.scrollHeight + 'px' : '0px';
+      iconOpen.classList.toggle('hidden', menuOpen);
+      iconClose.classList.toggle('hidden', !menuOpen);
+    });
+    // Close mobile menu when a link is clicked
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        menuOpen = false;
+        mobileMenu.style.maxHeight = '0px';
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+      });
+    });
+
+    // Mobile submenu accordion
+    document.querySelectorAll('.mobile-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = document.getElementById(btn.dataset.target);
+        const chev = btn.querySelector('.chev');
+        target.classList.toggle('open');
+        chev.classList.toggle('rot');
+        // Recalculate outer menu height so nothing gets clipped
+        setTimeout(() => {
+          if (mobileMenu.style.maxHeight !== '0px') {
+            mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+          }
+        }, 50);
+      });
+    });
+
+    // Accordion (Metode & Sifat Pelatihan)
+    document.querySelectorAll('.accordion-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const body = document.getElementById(btn.dataset.target);
+        const icon = btn.querySelector('.accordion-icon');
+        body.classList.toggle('open');
+        icon.classList.toggle('open');
+      });
+    });
+  });
+
+  // Tabs: Keunggulan Kami
+  function switchTab(tab) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById('tab-' + tab).classList.add('active');
+
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.tab === tab);
+    });
+
+    const sel = document.getElementById('tabSelect');
+    if (sel) sel.value = tab;
+  }
+</script>
+
+
+<!-- ============ OWNER EDIT SYSTEM ============ -->
+<style>
+  /* Tombol kunci owner (pojok kanan bawah) */
+  #ownerLockBtn {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 200;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #0A2540;
+    color: #D4AF37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    cursor: pointer;
+    border: 2px solid #D4AF37;
+    transition: transform 0.2s ease;
+  }
+  #ownerLockBtn:hover { transform: scale(1.08); }
+  #ownerLockBtn.logged-in { background: #2E7D32; }
+
+  /* Toolbar owner */
+  #ownerToolbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 199;
+    background: #0A2540;
+    border-top: 3px solid #D4AF37;
+    padding: 10px 14px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    box-shadow: 0 -8px 20px rgba(0,0,0,0.25);
+  }
+  #ownerToolbar.show { display: flex; }
+  #ownerToolbar .ob-status {
+    color: #D4AF37;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 8px;
+    white-space: nowrap;
+  }
+  #ownerToolbar button {
+    font-family: inherit;
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  .ob-btn-edit { background: #D4AF37; color: #0A2540; }
+  .ob-btn-edit.active { background: #C62828; color: #fff; }
+  .ob-btn-save { background: #2E7D32; color: #fff; }
+  .ob-btn-reset { background: transparent; color: #ff8a8a; border: 1.5px solid #C62828 !important; }
+  .ob-btn-logout { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.4) !important; }
+
+  /* Mode edit: highlight elemen teks yang bisa diedit */
+  body.owner-edit-mode [data-owner-text] {
+    outline: 1.5px dashed rgba(212,175,55,0.7);
+    outline-offset: 3px;
+    border-radius: 4px;
+    position: relative;
+    cursor: text;
+  }
+  body.owner-edit-mode [data-owner-text]:hover {
+    outline: 1.5px dashed #D4AF37;
+    background: rgba(212,175,55,0.08);
+  }
+  body.owner-edit-mode [data-owner-text]:focus {
+    outline: 2px solid #2E7D32;
+    background: rgba(46,125,50,0.08);
+  }
+
+  .ow-del-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 22px;
+    height: 22px;
+    background: #C62828;
+    color: #fff;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 50;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  }
+  body.owner-edit-mode [data-owner-text]:hover .ow-del-btn {
+    display: flex;
+  }
+
+  /* Kontrol foto saat mode edit */
+  .ow-img-wrap { position: relative; display: inline-block; width: 100%; }
+  .ow-img-controls {
+    position: absolute;
+    inset: 0;
+    background: rgba(10,37,64,0.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  body.owner-edit-mode .ow-img-wrap:hover .ow-img-controls {
+    display: flex;
+    opacity: 1;
+  }
+  .ow-img-controls button {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+  }
+  .ow-img-upload-btn { background: #D4AF37; color: #0A2540; }
+  .ow-img-delete-btn { background: #C62828; color: #fff; }
+
+  /* Kontrol foto latar hero */
+  #heroPhotoControls {
+    position: fixed;
+    display: none;
+  }
+  body.owner-edit-mode #heroImgControls {
+    display: flex;
+  }
+  #heroImgControls {
+    position: absolute;
+    inset: 0;
+    background: rgba(10,37,64,0.35);
+    display: none;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 90px 16px 0 0;
+    gap: 8px;
+    z-index: 5;
+  }
+  #heroImgControls button {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+  }
+
+  body.owner-edit-mode #hero { position: relative; }
+
+  /* Tabel Data Pengalaman Training */
+  body.owner-edit-mode .owner-cell {
+    outline: 1.5px dashed rgba(212,175,55,0.7);
+    outline-offset: -2px;
+    cursor: text;
+  }
+  body.owner-edit-mode .owner-cell:hover {
+    background: rgba(212,175,55,0.08);
+  }
+  body.owner-edit-mode .owner-cell:focus {
+    outline: 2px solid #2E7D32;
+    background: rgba(46,125,50,0.08);
+  }
+  .tlog-row-delete {
+    display: none;
+    background: #C62828;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 9px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  body.owner-edit-mode .tlog-row-delete { display: inline-flex; align-items: center; justify-content: center; }
+  #addTrainingRowWrap { display: none; }
+  body.owner-edit-mode #addTrainingRowWrap { display: block; }
+
+  .ow-toast {
+    position: fixed;
+    top: 84px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    background: #2E7D32;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    z-index: 300;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  .ow-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  @media (max-width: 640px) {
+    #ownerToolbar { justify-content: flex-start; overflow-x: auto; }
+  }
+</style>
+
+<!-- Overlay kontrol foto hero (background) -->
+<div id="heroImgControls">
+  <button class="ow-img-upload-btn" onclick="document.getElementById('heroPhotoInput').click()">📷 Ganti Foto Latar</button>
+  <button class="ow-img-delete-btn" onclick="ownerResetHeroPhoto()">🗑️ Reset Latar</button>
+</div>
+<input type="file" id="heroPhotoInput" accept="image/*" style="display:none" onchange="ownerUploadHeroPhoto(event)">
+
+<!-- Tombol kunci owner -->
+<div id="ownerLockBtn" onclick="ownerHandleLockClick()" title="Masuk sebagai Owner">🔒</div>
+
+<!-- Toolbar owner -->
+<div id="ownerToolbar">
+  <span class="ob-status" id="ownerStatusText">Mode Owner</span>
+  <button class="ob-btn-edit" id="ownerEditToggleBtn" onclick="ownerToggleEditMode()">✏️ Mode Edit: OFF</button>
+  <button class="ob-btn-save" onclick="ownerSaveChanges()">💾 Simpan Perubahan</button>
+  <button class="ob-btn-reset" onclick="ownerResetAll()">↺ Reset ke Asli</button>
+  <button class="ob-btn-logout" onclick="ownerLogout()">Keluar</button>
+</div>
+
+<div class="ow-toast" id="ownerToast"></div>
+
+<script>
+(function () {
+  // ============================================================
+  // GANTI PASSWORD OWNER DI SINI (huruf/angka bebas)
+  // ============================================================
+  var OWNER_PASSWORD = 'kppsm1992';
+
+  var STORAGE_KEY = 'kppsm_owner_edits_v1';
+  var isOwner = false;
+  var editMode = false;
+
+  function toast(msg) {
+    var t = document.getElementById('ownerToast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(function () { t.classList.remove('show'); }, 2200);
+  }
+
+  // ---------- LOGIN OWNER ----------
+  function ownerHandleLockClick() {
+    if (isOwner) return; // sudah login, tombol toolbar yang dipakai
+    var pw = prompt('Masukkan Password Owner untuk mode edit:');
+    if (pw === null) return;
+    if (pw === OWNER_PASSWORD) {
+      isOwner = true;
+      document.getElementById('ownerLockBtn').classList.add('logged-in');
+      document.getElementById('ownerLockBtn').textContent = '🔓';
+      document.getElementById('ownerToolbar').classList.add('show');
+      toast('Login berhasil. Selamat datang, Owner!');
+    } else {
+      alert('Password salah.');
+    }
+  }
+  window.ownerHandleLockClick = ownerHandleLockClick;
+
+  function ownerLogout() {
+    isOwner = false;
+    editMode = false;
+    document.body.classList.remove('owner-edit-mode');
+    document.getElementById('ownerLockBtn').classList.remove('logged-in');
+    document.getElementById('ownerLockBtn').textContent = '🔒';
+    document.getElementById('ownerToolbar').classList.remove('show');
+    document.getElementById('ownerEditToggleBtn').textContent = '✏️ Mode Edit: OFF';
+    document.getElementById('ownerEditToggleBtn').classList.remove('active');
+    setContentEditable(false);
+    toast('Anda telah keluar dari mode owner.');
+  }
+  window.ownerLogout = ownerLogout;
+
+  // ---------- MODE EDIT ----------
+  function setContentEditable(on) {
+    document.querySelectorAll('[data-owner-text]').forEach(function (el) {
+      el.setAttribute('contenteditable', on ? 'true' : 'false');
+    });
+    document.querySelectorAll('.owner-cell').forEach(function (el) {
+      el.setAttribute('contenteditable', on ? 'true' : 'false');
+    });
+  }
+
+  function ownerToggleEditMode() {
+    if (!isOwner) return;
+    editMode = !editMode;
+    document.body.classList.toggle('owner-edit-mode', editMode);
+    setContentEditable(editMode);
+    var btn = document.getElementById('ownerEditToggleBtn');
+    btn.textContent = editMode ? '✏️ Mode Edit: ON' : '✏️ Mode Edit: OFF';
+    btn.classList.toggle('active', editMode);
+    toast(editMode ? 'Mode edit aktif. Klik teks untuk mengubah, atau × untuk menghapus.' : 'Mode edit nonaktif.');
+  }
+  window.ownerToggleEditMode = ownerToggleEditMode;
+
+  // ---------- TOMBOL HAPUS TEKS ----------
+  function addDeleteButtons() {
+    document.querySelectorAll('[data-owner-text]').forEach(function (el) {
+      if (el.querySelector(':scope > .ow-del-btn')) return;
+      var btn = document.createElement('span');
+      btn.className = 'ow-del-btn';
+      btn.textContent = '×';
+      btn.title = 'Hapus teks ini';
+      btn.contentEditable = 'false';
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        if (confirm('Hapus teks ini secara permanen dari halaman?')) {
+          el.setAttribute('data-owner-deleted', '1');
+          el.style.display = 'none';
+        }
+      });
+      el.appendChild(btn);
+    });
+  }
+
+  // ---------- KONTROL FOTO ----------
+  function wireImageControls() {
+    document.querySelectorAll('[data-owner-img]').forEach(function (img) {
+      if (img.closest('.ow-img-wrap')) return; // sudah dibungkus
+      var wrap = document.createElement('span');
+      wrap.className = 'ow-img-wrap';
+      img.parentNode.insertBefore(wrap, img);
+      wrap.appendChild(img);
+
+      var controls = document.createElement('div');
+      controls.className = 'ow-img-controls';
+
+      var uploadBtn = document.createElement('button');
+      uploadBtn.className = 'ow-img-upload-btn';
+      uploadBtn.type = 'button';
+      uploadBtn.textContent = '📷 Ganti Foto';
+
+      var fileInput = document.createElement('input');
+      fileInput.type = 'file';
+      fileInput.accept = 'image/*';
+      fileInput.style.display = 'none';
+
+      uploadBtn.addEventListener('click', function () { fileInput.click(); });
+      fileInput.addEventListener('change', function (e) {
+        var file = e.target.files[0];
+        if (!file) return;
+        var reader = new FileReader();
+        reader.onload = function (ev) {
+          img.src = ev.target.result;
+          toast('Foto berhasil diganti. Jangan lupa klik "Simpan Perubahan".');
+        };
+        reader.readAsDataURL(file);
+      });
+
+      var deleteBtn = document.createElement('button');
+      deleteBtn.className = 'ow-img-delete-btn';
+      deleteBtn.type = 'button';
+      deleteBtn.textContent = '🗑️ Hapus Foto';
+      deleteBtn.addEventListener('click', function () {
+        if (confirm('Hapus foto ini? Foto akan diganti dengan kotak placeholder.')) {
+          img.src = 'https://placehold.co/600x450/2E7D32/D4AF37?text=Foto+Dihapus';
+          toast('Foto dihapus. Jangan lupa klik "Simpan Perubahan".');
+        }
+      });
+
+      controls.appendChild(uploadBtn);
+      controls.appendChild(deleteBtn);
+      wrap.appendChild(controls);
+      wrap.appendChild(fileInput);
+    });
+  }
+
+  // ---------- FOTO LATAR HERO ----------
+  function ownerUploadHeroPhoto(e) {
+    var file = e.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function (ev) {
+      var hero = document.getElementById('hero');
+      hero.style.backgroundImage = 'linear-gradient(rgba(10,37,64,0.92), rgba(46,125,50,0.88)), url(' + "'" + ev.target.result + "'" + ')';
+      toast('Foto latar hero diganti. Jangan lupa klik "Simpan Perubahan".');
+    };
+    reader.readAsDataURL(file);
+  }
+  window.ownerUploadHeroPhoto = ownerUploadHeroPhoto;
+
+  function ownerResetHeroPhoto() {
+    if (!confirm('Kembalikan foto latar hero ke default?')) return;
+    var hero = document.getElementById('hero');
+    hero.style.backgroundImage = '';
+    toast('Foto latar hero dikembalikan ke default. Jangan lupa klik "Simpan Perubahan".');
+  }
+  window.ownerResetHeroPhoto = ownerResetHeroPhoto;
+
+  // ---------- TABEL DATA PENGALAMAN TRAINING ----------
+  function buildTrainingRowHTML(values) {
+    values = values && values.length === 7 ? values : ['', '', '', '', '', '', ''];
+    var count = document.querySelectorAll('#trainingLogBody tr').length;
+    var zebra = (count % 2 === 0) ? 'bg-abu' : 'bg-white';
+    var ce = editMode ? 'true' : 'false';
+    var tds = values.map(function (v) {
+      return '<td class="owner-cell px-3 sm:px-4 py-3" contenteditable="' + ce + '">' + v + '</td>';
+    }).join('');
+    return '<tr class="border-b border-gray-200 ' + zebra + '">' + tds +
+      '<td class="px-2 py-3 text-center"><button type="button" class="tlog-row-delete" onclick="ownerDeleteTrainingRow(this)">🗑</button></td></tr>';
+  }
+
+  function ownerAddTrainingRow() {
+    if (!isOwner) return;
+    var tbody = document.getElementById('trainingLogBody');
+    if (!tbody) return;
+    var wrap = document.createElement('tbody');
+    wrap.innerHTML = buildTrainingRowHTML(['', '', '', '', '', '', 'Training']);
+    var newRow = wrap.firstElementChild;
+    tbody.appendChild(newRow);
+    var firstCell = newRow.querySelector('.owner-cell');
+    if (firstCell) firstCell.focus();
+    toast('Baris data training baru ditambahkan. Isi datanya lalu klik "Simpan Perubahan".');
+  }
+  window.ownerAddTrainingRow = ownerAddTrainingRow;
+
+  function ownerDeleteTrainingRow(btn) {
+    if (!confirm('Hapus data training baris ini secara permanen?')) return;
+    var tr = btn.closest('tr');
+    if (tr) tr.remove();
+    toast('Baris dihapus. Jangan lupa klik "Simpan Perubahan".');
+  }
+  window.ownerDeleteTrainingRow = ownerDeleteTrainingRow;
+
+  // ---------- SIMPAN / MUAT PERUBAHAN ----------
+  function ownerSaveChanges() {
+    if (!isOwner) return;
+    var data = { texts: {}, deleted: {}, images: {}, heroImage: null };
+
+    document.querySelectorAll('[data-owner-text]').forEach(function (el) {
+      var id = el.getAttribute('data-owner-text');
+      if (el.getAttribute('data-owner-deleted') === '1') {
+        data.deleted[id] = true;
+      } else {
+        var clone = el.cloneNode(true);
+        var delBtn = clone.querySelector('.ow-del-btn');
+        if (delBtn) delBtn.remove();
+        data.texts[id] = clone.innerHTML.trim();
+      }
+    });
+
+    document.querySelectorAll('[data-owner-img]').forEach(function (img) {
+      var id = img.getAttribute('data-owner-img');
+      data.images[id] = img.getAttribute('src');
+    });
+
+    var hero = document.getElementById('hero');
+    if (hero.style.backgroundImage) {
+      data.heroImage = hero.style.backgroundImage;
+    }
+
+    var trainingRows = [];
+    document.querySelectorAll('#trainingLogBody tr').forEach(function (tr) {
+      var cells = Array.prototype.slice.call(tr.querySelectorAll('td.owner-cell')).map(function (td) {
+        return td.innerHTML.trim();
+      });
+      trainingRows.push(cells);
+    });
+    data.trainingRows = trainingRows;
+
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      toast('✅ Perubahan berhasil disimpan di browser ini.');
+    } catch (err) {
+      alert('Gagal menyimpan perubahan (mungkin foto terlalu besar). Coba gunakan foto berukuran lebih kecil.');
+    }
+  }
+  window.ownerSaveChanges = ownerSaveChanges;
+
+  function applyStoredChanges() {
+    var raw;
+    try { raw = localStorage.getItem(STORAGE_KEY); } catch (err) { raw = null; }
+    if (!raw) return;
+    var data;
+    try { data = JSON.parse(raw); } catch (err) { return; }
+
+    if (data.texts) {
+      Object.keys(data.texts).forEach(function (id) {
+        var el = document.querySelector('[data-owner-text="' + id + '"]');
+        if (el) el.innerHTML = data.texts[id];
+      });
+    }
+    if (data.deleted) {
+      Object.keys(data.deleted).forEach(function (id) {
+        var el = document.querySelector('[data-owner-text="' + id + '"]');
+        if (el) { el.setAttribute('data-owner-deleted', '1'); el.style.display = 'none'; }
+      });
+    }
+    if (data.images) {
+      Object.keys(data.images).forEach(function (id) {
+        var img = document.querySelector('[data-owner-img="' + id + '"]');
+        if (img && data.images[id]) img.src = data.images[id];
+      });
+    }
+    if (data.heroImage) {
+      document.getElementById('hero').style.backgroundImage = data.heroImage;
+    }
+    if (data.trainingRows && data.trainingRows.length) {
+      var tbody = document.getElementById('trainingLogBody');
+      if (tbody) {
+        tbody.innerHTML = '';
+        data.trainingRows.forEach(function (cells) {
+          var wrap = document.createElement('tbody');
+          wrap.innerHTML = buildTrainingRowHTML(cells);
+          tbody.appendChild(wrap.firstElementChild);
+        });
+      }
+    }
+  }
+
+  function ownerResetAll() {
+    if (!isOwner) return;
+    if (!confirm('Kembalikan SELURUH teks dan foto ke versi asli? Perubahan yang tersimpan akan dihapus.')) return;
+    try { localStorage.removeItem(STORAGE_KEY); } catch (err) {}
+    toast('Direset. Memuat ulang halaman...');
+    setTimeout(function () { location.reload(); }, 700);
+  }
+  window.ownerResetAll = ownerResetAll;
+
+  document.addEventListener('DOMContentLoaded', function () {
+    applyStoredChanges();
+    addDeleteButtons();
+    wireImageControls();
+  });
+})();
+</script>
+
+</body>
+</html>
