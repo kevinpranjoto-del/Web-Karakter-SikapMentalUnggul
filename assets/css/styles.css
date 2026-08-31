@@ -173,16 +173,19 @@ body {
 
 .nav-link-item {
   white-space: nowrap;
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 500;
-  padding: 8px 12px;
+  padding: 8px 14px;
   border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   transition: color var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .nav-link-item:hover {
   color: var(--color-emas);
-  background-color: rgba(255, 255, 255, 0.14);
+  background-color: rgba(255, 255, 255, 0.16);
 }
 
 .nav-item {
@@ -194,7 +197,7 @@ body {
   top: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%) translateY(8px);
-  min-width: 250px;
+  min-width: 270px;
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 20px 45px rgba(10, 37, 64, 0.22);
@@ -216,18 +219,17 @@ body {
 .nav-dropdown a {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 9px 12px;
-  border-radius: 8px;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
   color: var(--color-navy);
   font-size: 13px;
   font-weight: 500;
-  white-space: nowrap;
-  transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+  transition: all var(--transition-fast);
 }
 
 .nav-dropdown a:hover {
-  background-color: var(--color-hijau-light);
+  background-color: rgba(212, 175, 55, 0.12);
   color: var(--color-hijau);
   transform: translateX(4px);
 }
