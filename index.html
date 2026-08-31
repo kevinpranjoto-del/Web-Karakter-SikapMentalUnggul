@@ -65,26 +65,26 @@
 <body class="font-poppins text-hitam bg-white antialiased selection:bg-emas selection:text-navy">
 
   <!-- ========================================================================= -->
-  <!-- 1. NAVBAR SECTION (BACKGROUND BIRU #1E40AF) -->
+  <!-- 1. NAVBAR SECTION (BACKGROUND BIRU #1E40AF - CLEAN & RESPONSIVE) -->
   <!-- ========================================================================= -->
-  <nav class="fixed top-0 left-0 w-full z-50 bg-[#1E40AF] backdrop-blur-md shadow-md border-b border-white/15" id="mainNav">
-    <div class="max-w-7xl mx-auto h-[64px] sm:h-[72px] px-4 sm:px-6 flex items-center justify-between gap-3">
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#1E40AF] backdrop-blur-md shadow-lg border-b border-white/15" id="mainNav">
+    <div class="max-w-7xl mx-auto h-[68px] sm:h-[72px] px-4 sm:px-6 flex items-center justify-between gap-3 lg:gap-4">
       
       <!-- Brand Logo -->
       <a href="#hero" class="flex items-center gap-2.5 shrink-0 group">
-        <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-gradient-to-tr from-hijau to-emas flex items-center justify-center text-white shadow group-hover:scale-105 transition transform">
-          <i class="fas fa-brain text-sm sm:text-base text-white"></i>
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-hijau to-emas flex items-center justify-center text-white shadow-md group-hover:scale-105 transition transform">
+          <i class="fas fa-brain text-base text-white"></i>
         </div>
         <div class="flex flex-col">
-          <span class="text-white font-extrabold text-[13px] sm:text-sm md:text-base leading-none tracking-tight whitespace-nowrap">
-            Karakter-<span class="text-emas">SikapMentalUnggul</span><span class="text-blue-100 font-normal text-xs">.id</span>
+          <span class="text-white font-extrabold text-[13.5px] sm:text-[15px] leading-tight tracking-tight whitespace-nowrap">
+            Karakter-<span class="text-emas">SikapMentalUnggul</span><span class="text-blue-200 font-normal text-xs">.id</span>
           </span>
-          <span class="text-[9.5px] text-blue-100 font-medium tracking-wider uppercase mt-0.5 whitespace-nowrap">KPPSM F.X. Poerwopoespito</span>
+          <span class="text-[9.5px] text-blue-200 font-medium tracking-wider uppercase whitespace-nowrap">KPPSM F.X. Poerwopoespito</span>
         </div>
       </a>
 
-      <!-- Desktop Navigation Menu -->
-      <div class="hidden lg:flex items-center gap-0.5 xl:gap-1 text-white text-xs xl:text-[13px] font-medium tracking-wide flex-1 justify-center">
+      <!-- Desktop Navigation Menu (Clean 6-Item Layout with Sleek Dropdowns) -->
+      <div class="hidden lg:flex items-center gap-1 xl:gap-1.5 text-white text-[13px] font-medium tracking-wide flex-1 justify-center max-w-3xl">
         <a href="#hero" class="nav-link-item">Beranda</a>
 
         <!-- Dropdown: Tentang Kami -->
@@ -97,6 +97,7 @@
             <a href="#asal-materi"><i class="fas fa-microscope w-4 text-hijau text-xs"></i> Asal Materi</a>
             <a href="#pendiri"><i class="fas fa-user-tie w-4 text-hijau text-xs"></i> Profil Pendiri</a>
             <a href="#riset"><i class="fas fa-chart-line w-4 text-hijau text-xs"></i> Riset 36 Tahun</a>
+            <a href="#pengguna"><i class="fas fa-users w-4 text-hijau text-xs"></i> Pengguna Jasa</a>
           </div>
         </div>
 
@@ -114,30 +115,44 @@
           </div>
         </div>
 
-        <a href="#buku" class="nav-link-item">Karya &amp; Buku</a>
-        <a href="#keunggulan" class="nav-link-item">Keunggulan</a>
-        <a href="#galeri" class="nav-link-item">Galeri</a>
-        <a href="#testimoni" class="nav-link-item">Testimoni</a>
-        <a href="#pengalaman" class="nav-link-item text-emas font-semibold"><i class="fas fa-history text-xs mr-1"></i> Pengalaman Training</a>
-        <a href="#pengguna" class="nav-link-item">Pengguna Jasa</a>
+        <!-- Dropdown: Karya & Prestasi -->
+        <div class="nav-item">
+          <button class="nav-link-item flex items-center gap-1 focus:outline-none" aria-haspopup="true">
+            <span>Karya &amp; Prestasi</span>
+            <svg class="w-3 h-3 shrink-0 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="nav-dropdown">
+            <a href="#buku"><i class="fas fa-book w-4 text-hijau text-xs"></i> Karya Ilmiah &amp; Buku</a>
+            <a href="#keunggulan"><i class="fas fa-award w-4 text-hijau text-xs"></i> Keunggulan &amp; Dampak</a>
+            <a href="#galeri"><i class="fas fa-images w-4 text-hijau text-xs"></i> Galeri Foto Kegiatan</a>
+            <a href="#testimoni"><i class="fas fa-comment-dots w-4 text-hijau text-xs"></i> Testimoni Klien</a>
+          </div>
+        </div>
+
+        <!-- Direct Shortcut: Pengalaman Training (711 Data) -->
+        <a href="#pengalaman" class="nav-link-item text-emas hover:text-white font-semibold flex items-center gap-1">
+          <i class="fas fa-history text-xs"></i>
+          <span>Pengalaman Training</span>
+        </a>
+
         <a href="#kontak" class="nav-link-item">Kontak</a>
       </div>
 
-      <!-- Action Buttons & Controls -->
+      <!-- Action Buttons & Controls (Well Spaced, Never Overflowing) -->
       <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
         
         <!-- Menu Login Owner Button -->
         <button id="navOwnerLoginBtn" onclick="openOwnerLoginModal()" type="button"
-                class="inline-flex items-center gap-1.5 px-3 py-1.5 sm:py-2 rounded-full text-xs font-semibold bg-white/10 hover:bg-emas hover:text-navy text-white transition border border-white/20 shadow-sm"
+                class="inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-full text-xs font-semibold bg-white/10 hover:bg-emas hover:text-navy text-white transition border border-white/20 shadow-sm"
                 title="Masuk sebagai Owner untuk edit konten, teks, foto, &amp; data training">
           <i class="fas fa-lock text-xs text-emas"></i>
-          <span class="hidden sm:inline">Login Owner</span>
-          <span class="sm:hidden">Owner</span>
+          <span class="hidden xl:inline">Login Owner</span>
+          <span class="xl:hidden">Owner</span>
         </button>
 
         <!-- WhatsApp Button -->
         <a href="https://wa.me/62818874430?text=Halo%20KPPSM%2C%20saya%20tertarik%20dengan%20program%20pelatihan%20karakter%20dan%20sikap%20mental%20unggul" target="_blank" rel="noopener"
-           class="hidden sm:inline-flex items-center gap-1.5 btn-emas text-xs sm:text-sm px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full shadow whitespace-nowrap">
+           class="hidden sm:inline-flex items-center gap-1.5 btn-emas text-xs sm:text-sm px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full shadow whitespace-nowrap">
           <i class="fab fa-whatsapp text-sm sm:text-base"></i>
           <span>WA Kami</span>
         </a>
@@ -164,6 +179,7 @@
           <a href="#asal-materi" class="py-1.5 hover:text-emas transition">&bull; Asal Materi</a>
           <a href="#pendiri" class="py-1.5 hover:text-emas transition">&bull; Profil Pendiri</a>
           <a href="#riset" class="py-1.5 hover:text-emas transition">&bull; Riset 36 Tahun</a>
+          <a href="#pengguna" class="py-1.5 hover:text-emas transition">&bull; Pengguna Jasa</a>
         </div>
 
         <!-- Mobile Submenu: Pelatihan & Layanan -->
@@ -178,12 +194,19 @@
           <a href="#manajemen" class="py-1.5 hover:text-emas transition">&bull; Pelatihan Manajemen</a>
         </div>
 
-        <a href="#buku" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Karya &amp; Buku</a>
-        <a href="#keunggulan" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Keunggulan Kami</a>
-        <a href="#galeri" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Galeri Foto</a>
-        <a href="#testimoni" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Testimoni Klien</a>
-        <a href="#pengalaman" class="py-2.5 border-b border-white/10 font-semibold text-emas hover:text-white transition"><i class="fas fa-history text-xs mr-1"></i> Data Pengalaman Training</a>
-        <a href="#pengguna" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Pengguna Jasa</a>
+        <!-- Mobile Submenu: Karya & Prestasi -->
+        <button class="mobile-toggle py-2.5 border-b border-white/10 flex items-center justify-between w-full text-left font-medium hover:text-emas transition" data-target="sub-karya">
+          <span>Karya &amp; Prestasi</span>
+          <svg class="chev w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="sub-karya" class="mobile-sub py-1 space-y-1 text-blue-100 text-xs sm:text-sm">
+          <a href="#buku" class="py-1.5 hover:text-emas transition">&bull; Karya Ilmiah &amp; Buku</a>
+          <a href="#keunggulan" class="py-1.5 hover:text-emas transition">&bull; Keunggulan &amp; Dampak</a>
+          <a href="#galeri" class="py-1.5 hover:text-emas transition">&bull; Galeri Foto</a>
+          <a href="#testimoni" class="py-1.5 hover:text-emas transition">&bull; Testimoni Klien</a>
+        </div>
+
+        <a href="#pengalaman" class="py-2.5 border-b border-white/10 font-semibold text-emas hover:text-white transition"><i class="fas fa-history text-xs mr-1"></i> Data Pengalaman Training (711 Data)</a>
         <a href="#kontak" class="py-2.5 border-b border-white/10 font-medium hover:text-emas transition">Kontak</a>
         
         <div class="flex flex-col gap-2.5 my-4">
