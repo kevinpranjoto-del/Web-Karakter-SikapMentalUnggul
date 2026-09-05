@@ -75,6 +75,52 @@ describe('KPPSM Website & Media Assets Test Suite', () => {
     });
   });
 
+  // 4. Content Revisions Verification (Batch 1 & 2)
+  test('Verify all revised content, books, methods, emails, and testimonial layout', async () => {
+    const res = await request(app).get('/');
+    expect(res.status).toBe(200);
+
+    // Layanan Kami
+    expect(res.text).toContain('ToABQ (Test of Aggregate Behaviour Quotient)');
+    expect(res.text).toContain('Jasa Konseling Karakter, Mental dan Perilaku (Mental Health Counselling)');
+    expect(res.text).toContain('Jasa Pelayanan Pelatihan Lain (Tailor Made)');
+
+    // Metode Pelatihan
+    expect(res.text).toContain('Yaitu dialog/diskusi antara fasilitator dan peserta pelatihan');
+    expect(res.text).toContain('Kombinasi wawancara, pengisian kuesioner, neuroresponse test, problem breakdown');
+    expect(res.text).toContain('Kombinasi multiple choice, essai, wawancara dan visualisasi');
+
+    // Sifat Pelatihan
+    expect(res.text).toContain('Fasilitator tidak bertindak sebagai penguasa yang memerintah (imperatif)');
+    expect(res.text).toContain('Menilai Kematangan Berperilaku secara Agregat, yang terutama ditujukan untuk mendapatkan karyawan dengan Produktifitas yang Tinggi');
+
+    // Asal Materi & Profil Pendiri
+    expect(res.text).toContain('konsep asli dari Putera Bangsa Indonesia');
+    expect(res.text).toContain('drg. T.A. Tatag Utomo, MM., ASM');
+    expect(res.text).toContain('sebagai direktur pendidikannya telah membina');
+
+    // CTA Button to #pengalaman
+    expect(res.text).toContain('href="#pengalaman"');
+    expect(res.text).toContain('Lihat Data Pengalaman Training (711 Arsip Resmi)');
+
+    // 7 Books exact cover titles
+    expect(res.text).toContain('Menggugah Mentalitas Profesional &amp; Pengusaha Indonesia');
+    expect(res.text).toContain('Health Quotient: Cerdas Kesehatan untuk Eksekutif');
+    expect(res.text).toContain('Mengatasi Krisis Manusia di Perusahaan');
+    expect(res.text).toContain('Mencegah &amp; Mengatasi Krisis Anak Melalui Pengembangan Sikap Mental Orang Tua');
+    expect(res.text).toContain('Renungan Sikap Mental Karyawan Perusahaan');
+    expect(res.text).toContain('133 Renungan Perilaku Bijak Orang Tua dalam Mendidik Anak');
+    expect(res.text).toContain('Inspirator Training Revolusi Mental');
+
+    // Email
+    expect(res.text).toContain('tatag.kppsm@gmail.com');
+
+    // Testimoni layout & container
+    expect(res.text).toContain('id="testiPartnerContainer"');
+    expect(res.text).toContain('Dirga Wahana');
+    expect(res.text).toContain('Rasidi, S.Pd');
+  });
+
   afterAll(async () => {
     if (app.pool) {
       try {

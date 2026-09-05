@@ -203,6 +203,15 @@
           card.style.display = 'none';
         }
       });
+
+      const partnerContainer = document.getElementById('testiPartnerContainer');
+      if (partnerContainer) {
+        if (category === 'all' || category === 'Partner') {
+          partnerContainer.style.display = 'block';
+        } else {
+          partnerContainer.style.display = 'none';
+        }
+      }
     };
   }
 
