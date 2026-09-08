@@ -85,10 +85,11 @@ describe('KPPSM Website & Media Assets Test Suite', () => {
     expect(res.text).toContain('Jasa Konseling Karakter, Mental dan Perilaku (Mental Health Counselling)');
     expect(res.text).toContain('Jasa Pelayanan Pelatihan Lain (Tailor Made)');
 
-    // Metode Pelatihan
-    expect(res.text).toContain('Yaitu dialog/diskusi antara fasilitator dan peserta pelatihan');
-    expect(res.text).toContain('Kombinasi wawancara, pengisian kuesioner, neuroresponse test, problem breakdown');
-    expect(res.text).toContain('Kombinasi multiple choice, essai, wawancara dan visualisasi');
+    // Metode Dari KPPSM
+    expect(res.text).toContain('Metode Dari KPPSM');
+    expect(res.text).toContain('Karakter Positif');
+    expect(res.text).toContain('Pelatihan RIS Motivation');
+    expect(res.text).toContain('Pelatihan Health Quotient');
 
     // Sifat Pelatihan
     expect(res.text).toContain('Fasilitator tidak bertindak sebagai penguasa yang memerintah (imperatif)');
