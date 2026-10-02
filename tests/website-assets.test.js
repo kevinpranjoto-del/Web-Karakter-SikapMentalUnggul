@@ -120,6 +120,26 @@ describe('KPPSM Website & Media Assets Test Suite', () => {
     expect(res.text).toContain('id="testiPartnerContainer"');
     expect(res.text).toContain('Dirga Wahana');
     expect(res.text).toContain('Rasidi, S.Pd');
+    expect(res.text).toContain('Ign. Sumarya, SJ');
+    expect(res.text).toContain('Friyandito');
+
+    // 14 Karya Ilmiah
+    expect(res.text).toContain('14 Karya Ilmiah &amp; Inovasi Orisinal KPPSM');
+    expect(res.text).toContain('ReSSCaP');
+
+    // 12 Bukti Nyata Dampak
+    expect(res.text).toContain('EBITDA sebesar 15%');
+    expect(res.text).toContain('PT Indah Kiat Pulp and Paper, Tbk.');
+    expect(res.text).toContain('PT Meiji Indonesia');
+    expect(res.text).toContain('PT Jakarta Land');
+    expect(res.text).toContain('PT Dunkindo Lestari');
+    expect(res.text).toContain('980.000 ton CPO');
+
+    // Section Trainer Kami
+    expect(res.text).toContain('id="trainer"');
+    expect(res.text).toContain('F.X. Oerip S. Poerwopoespito, ASM');
+    expect(res.text).toContain('Diki Permana, SE');
+    expect(res.text).toContain('Albertus Widiarto, SE., MM');
   });
 
   afterAll(async () => {
