@@ -125,7 +125,7 @@
           <div class="nav-dropdown">
             <a href="#pengalaman" class="bg-blue-50/80 text-navy font-semibold"><i class="fas fa-history w-5 text-emas text-xs"></i> <span>Pengalaman Training (711 Data)</span></a>
             <a href="#buku"><i class="fas fa-book w-5 text-hijau text-xs"></i> <span>Karya Ilmiah &amp; Buku</span></a>
-            <a href="#keunggulan"><i class="fas fa-award w-5 text-hijau text-xs"></i> <span>Keunggulan &amp; Dampak</span></a>
+            <a href="#keunggulan"><i class="fas fa-award w-5 text-hijau text-xs"></i> <span>Mengapa Memilih Kami</span></a>
             <a href="#galeri"><i class="fas fa-images w-5 text-hijau text-xs"></i> <span>Galeri Foto Kegiatan</span></a>
             <a href="#testimoni"><i class="fas fa-comment-dots w-5 text-hijau text-xs"></i> <span>Testimoni Klien</span></a>
           </div>
@@ -198,7 +198,7 @@
         <div id="sub-karya" class="mobile-sub py-1 space-y-1 text-blue-100 text-xs sm:text-sm">
           <a href="#pengalaman" class="py-1.5 font-bold text-emas hover:text-white transition">&bull; Pengalaman Training (711 Data)</a>
           <a href="#buku" class="py-1.5 hover:text-emas transition">&bull; Karya Ilmiah &amp; Buku</a>
-          <a href="#keunggulan" class="py-1.5 hover:text-emas transition">&bull; Keunggulan &amp; Dampak</a>
+          <a href="#keunggulan" class="py-1.5 hover:text-emas transition">&bull; Mengapa Memilih Kami</a>
           <a href="#galeri" class="py-1.5 hover:text-emas transition">&bull; Galeri Foto</a>
           <a href="#testimoni" class="py-1.5 hover:text-emas transition">&bull; Testimoni Klien</a>
         </div>
@@ -293,6 +293,16 @@
         </p>
       </div>
 
+      <!-- Blok Jenis Usaha -->
+      <div class="fade-in max-w-4xl mx-auto mt-2 mb-14 bg-gradient-to-r from-abu via-white to-abu border border-emas/40 rounded-2xl p-6 sm:p-8 text-center shadow-xs">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-1.5 block">Bidang Usaha</span>
+        <h3 class="text-navy font-extrabold text-2xl sm:text-3xl mb-3" data-owner-text="jenis_usaha_heading">Jenis Usaha</h3>
+        <div class="w-16 h-1 bg-emas rounded-full mx-auto mb-4"></div>
+        <p class="text-gray-800 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto font-medium" data-owner-text="jenis_usaha_desc">
+          Jasa Pelatihan, Pengembangan, Riset, Tes dan Konseling untuk masalah Karakter, Sikap Mental dan Perilaku SDM Perusahaan, Institusi, Organisasi dan BUMN.
+        </p>
+      </div>
+
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Asal Materi -->
         <article id="asal-materi" class="fade-in scroll-mt-32 card-hover bg-abu rounded-2xl p-6 sm:p-7 border-t-4 border-emas shadow-sm flex flex-col justify-between">
@@ -362,7 +372,192 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 4. METODE DARI KPPSM SECTION -->
+  <!-- 4. MENGAPA MEMILIH KAMI (KEUNGGULAN & BUKTI NYATA DAMPAK) SECTION -->
+  <!-- ========================================================================= -->
+  <section id="keunggulan" class="py-24 px-5 sm:px-8 bg-white border-b border-gray-200/80">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-in text-center mb-12">
+        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="keunggulan_tag">Alasan Memilih KPPSM</span>
+        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-3" data-owner-text="keunggulan_heading">Mengapa Memilih Kami</h2>
+        <div class="divider-emas mx-auto mb-4"></div>
+        <p class="text-navy font-bold text-base sm:text-xl max-w-3xl mx-auto leading-relaxed" data-owner-text="keunggulan_subheading">
+          Contoh Hasil Nyata Pelatihan, Pendampingan, Konsultasi dan Konseling KPPSM
+        </p>
+        <p class="text-gray-600 text-xs sm:text-sm max-w-2xl mx-auto mt-2">
+          Dampak nyata dan terukur yang dirasakan langsung oleh mitra perusahaan, institusi, dan BUMN di seluruh Indonesia.
+        </p>
+      </div>
+
+      <!-- Tab Navigation Buttons: Desktop -->
+      <div class="fade-in hidden sm:flex items-center justify-center gap-4 mb-12">
+        <button class="tab-btn active font-bold text-sm px-8 py-3.5 rounded-full shadow-sm transition" data-tab="dampak" onclick="switchTab('dampak')">
+          <i class="fas fa-award mr-2"></i> Bukti Nyata Dampak (12 Hasil Nyata)
+        </button>
+        <button class="tab-btn font-bold text-sm px-8 py-3.5 rounded-full shadow-sm transition" data-tab="fasilitas" onclick="switchTab('fasilitas')">
+          <i class="fas fa-building mr-2"></i> Fasilitas &amp; Aset
+        </button>
+      </div>
+
+      <!-- Tab Dropdown: Mobile -->
+      <div class="fade-in sm:hidden mb-8">
+        <select id="tabSelect" onchange="switchTab(this.value)" class="w-full border-2 border-hijau rounded-xl px-4 py-3 text-sm font-bold text-navy bg-white focus:outline-none shadow-sm">
+          <option value="dampak" selected>🏆 Bukti Nyata Dampak (12 Hasil Nyata)</option>
+          <option value="fasilitas">🏢 Fasilitas &amp; Aset</option>
+        </select>
+      </div>
+
+      <!-- Tab 1 Panel: Bukti Nyata Dampak (Active by Default) -->
+      <div id="tab-dampak" class="tab-panel active">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-hijau/10 text-hijau flex items-center justify-center mb-3 text-base shadow-xs">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_1_val">+15% EBITDA</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_1_ind">PT Indah Kiat Pulp and Paper, Tbk.</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_1_desc">Membantu tercapainya EBITDA sebesar 15% PT Indah Kiat Pulp and Paper, Tbk.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-hijau flex items-center justify-center mb-3 text-base shadow-xs">
+              <i class="fas fa-arrow-trend-down"></i>
+            </div>
+            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_2_val">13% &rarr; &plusmn;1,5%</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_2_ind">PT Meiji Indonesia</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_2_desc">Berkurangnya "reject" dari 13% menjadi +/- 1,5% dari PT Meiji Indonesia.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-blue-50 text-birunav flex items-center justify-center mb-3 text-base shadow-xs">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_3_val">Cegah Demo</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_3_ind">PT Jakarta Land &amp; PT King Photo Studio</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_3_desc">Mencegah Unjuk Rasa di PT Jakarta Land dan PT King Photo Studio.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center mb-3 text-base shadow-xs">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_4_val">+20% Penjualan</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_4_ind">PT Dunkindo Lestari (Dunkin' Donuts)</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_4_desc">Meningkatnya penjualan 20 % di PT Dunkindo Lestari (menurut penuturan pimpinan).</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-yellow-50 text-emasgelap flex items-center justify-center mb-3 text-base shadow-xs">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_5_val">Tender Sempurna</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_5_ind">PT Furindo Kencana</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_5_desc">Membantu PT Furindo Kencana melaksanakan dengan sempurna proyek tender khusus di Metro Departmen Store di sebuah Mal besar di Jakarta.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center mb-3 text-base shadow-xs">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_6_val">Harmonisasi Tim</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_6_ind">PT Kaji Inova Media</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_6_desc">Membuat hubungan antara team sales dan manajemen PT Kaji Inova Media yang sebelumnya memburuk, lewat pelatihan dan diskusi Tripartit.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-700 flex items-center justify-center mb-3 text-base shadow-xs">
+              <i class="fas fa-building"></i>
+            </div>
+            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_7_val">Cegah Demo</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_7_ind">Pengelola Gedung WTC Jakarta</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_7_desc">Mencegah rencana Demonstrasi karyawan security perusahaan pengelola gedung WTC Jakarta.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-green-50 text-hijau flex items-center justify-center mb-3 text-base shadow-xs">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_8_val">Sinergi 3 Pihak</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_8_ind">PT Bumitama Gunajaya Agro</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_8_desc">Membantu membuat hubungan baik antara karyawan, petani plasma dan Koperasi binaan perusahaan dari PT Bumitama Gunajaya Agro.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center mb-3 text-base shadow-xs">
+              <i class="fas fa-scale-balanced"></i>
+            </div>
+            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_9_val">SPSI &amp; Manajemen</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_9_ind">PT Prodia, PT Kalbe Farma, PT Sampoerna Agro</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_9_desc">Membantu membuat hubungan yang baik antara SPSI dan manajemen perusahaan di PT Prodia Laboratories, PT Kalbe Farma, Tbk dan PT Sampoerna Agro Lestari.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center mb-3 text-base shadow-xs">
+              <i class="fas fa-heart-pulse"></i>
+            </div>
+            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_10_val">Penyelamatan Jiwa</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_10_ind">Konseling Eksekutif Depresi</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_10_desc">Membantu mencegah tindakan bunuh diri beberapa eksekutif perusahaan yang mengalami depresi.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-700 flex items-center justify-center mb-3 text-base shadow-xs">
+              <i class="fas fa-comments"></i>
+            </div>
+            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_11_val">Dialog Tripartit</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_11_ind">PT Kaji Inova &amp; PT Galic Artabahari</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_11_desc">Membantu diskusi Tripartit antara Manajemen-Karyawan untuk penyelesaian masalah di PT Kaji Inova Media dan PT Galic Artabahari.</p>
+          </div>
+          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-hijau flex items-center justify-center mb-3 text-base shadow-xs">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_12_val">980.000 Ton CPO</p>
+            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_12_ind">PT Kencana Agri (Tahun 2025)</p>
+            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_12_desc">Membantu upaya pencapaian 1 juta ton produksi CPO PT Kencana Agri tahun 2025 (riil pencapaiannya: 980.000 ton CPO).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2 Panel: Fasilitas & Aset -->
+      <div id="tab-fasilitas" class="tab-panel">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-microphone-alt text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_1_title">Seminar Nasional</p>
+            <span class="text-xs text-gray-500 mt-1">Ratusan Event</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-book text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_2_title">Buku PT. GRASSINDO</p>
+            <span class="text-xs text-gray-500 mt-1">Terbitan Resmi</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-chalkboard-teacher text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_3_title">Ruang Pelatihan</p>
+            <span class="text-xs text-gray-500 mt-1">Nyaman &amp; Eksklusif</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-city text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_4_title">Gedung Wisma KPPSM</p>
+            <span class="text-xs text-gray-500 mt-1">Cibubur Indah 3</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-user-check text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_5_title">Profil Pendiri</p>
+            <span class="text-xs text-gray-500 mt-1">F.X. Poerwopoespito</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-star text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_6_title">Testimoni Korporat</p>
+            <span class="text-xs text-gray-500 mt-1">225+ Perusahaan</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-history text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_7_title">Riset 36 Tahun</p>
+            <span class="text-xs text-gray-500 mt-1">Konsisten Sejak 1992</span>
+          </div>
+          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
+            <i class="fas fa-award text-2xl text-hijau mb-3"></i>
+            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_8_title">Sertifikat ASM</p>
+            <span class="text-xs text-gray-500 mt-1">Asesmen Sikap Mental</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. METODE DARI KPPSM SECTION -->
   <!-- ========================================================================= -->
   <section id="metode" class="py-24 px-5 sm:px-8 bg-abu border-y border-gray-200/80">
     <div class="max-w-6xl mx-auto">
@@ -557,7 +752,7 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 5. SIFAT PELATIHAN SECTION -->
+  <!-- 6. SIFAT PELATIHAN SECTION -->
   <!-- ========================================================================= -->
   <section id="sifat" class="py-24 px-5 sm:px-8 bg-white">
     <div class="max-w-4xl mx-auto">
@@ -612,7 +807,7 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 6. PELATIHAN MANAJEMEN SECTION -->
+  <!-- 7. PELATIHAN MANAJEMEN SECTION -->
   <!-- ========================================================================= -->
   <section id="manajemen" class="py-24 px-5 sm:px-8 bg-abu border-y border-gray-200/80">
     <div class="max-w-6xl mx-auto">
@@ -690,7 +885,7 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 7. LAYANAN UTAMA SECTION -->
+  <!-- 8. LAYANAN UTAMA SECTION -->
   <!-- ========================================================================= -->
   <section id="layanan" class="py-24 px-5 sm:px-8 bg-white">
     <div class="max-w-6xl mx-auto">
@@ -752,7 +947,7 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 8. KARYA ILMIAH & BUKU SECTION -->
+  <!-- 9. KARYA ILMIAH & BUKU SECTION -->
   <!-- ========================================================================= -->
   <section id="buku" class="py-24 px-5 sm:px-8 bg-abu border-t border-gray-200/80">
     <div class="max-w-6xl mx-auto">
@@ -968,190 +1163,6 @@
           <span class="font-bold text-hijau">Health Quotient</span>.
           Katalog lengkap karya ilmiah dan buku pelatihan tersedia bagi korporasi atas permintaan.
         </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 9. KEUNGGULAN KAMI (TABS) SECTION -->
-  <!-- ========================================================================= -->
-  <section id="keunggulan" class="py-24 px-5 sm:px-8 bg-white">
-    <div class="max-w-6xl mx-auto">
-      <div class="fade-in text-center mb-12">
-        <span class="text-emas font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 block" data-owner-text="keunggulan_tag">Mengapa Memilih Kami</span>
-        <h2 class="text-hijau font-extrabold text-3xl sm:text-5xl mb-4" data-owner-text="keunggulan_heading">Hasil Nyata Pelatihan Pendampingan, Konsultasi Dan Konseling KPPSM</h2>
-        <div class="divider-emas mx-auto"></div>
-      </div>
-
-      <!-- Tab Navigation Buttons: Desktop -->
-      <div class="fade-in hidden sm:flex items-center justify-center gap-4 mb-12">
-        <button class="tab-btn active font-bold text-sm px-8 py-3.5 rounded-full shadow-sm transition" data-tab="fasilitas" onclick="switchTab('fasilitas')">
-          <i class="fas fa-building mr-2"></i> Fasilitas &amp; Aset
-        </button>
-        <button class="tab-btn font-bold text-sm px-8 py-3.5 rounded-full shadow-sm transition" data-tab="dampak" onclick="switchTab('dampak')">
-          <i class="fas fa-award mr-2"></i> Bukti Nyata Dampak
-        </button>
-      </div>
-
-      <!-- Tab Dropdown: Mobile -->
-      <div class="fade-in sm:hidden mb-8">
-        <select id="tabSelect" onchange="switchTab(this.value)" class="w-full border-2 border-hijau rounded-xl px-4 py-3 text-sm font-bold text-navy bg-white focus:outline-none shadow-sm">
-          <option value="fasilitas">🏢 Fasilitas &amp; Aset</option>
-          <option value="dampak">🏆 Bukti Nyata Dampak</option>
-        </select>
-      </div>
-
-      <!-- Tab 1 Panel: Fasilitas & Aset -->
-      <div id="tab-fasilitas" class="tab-panel active">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
-            <i class="fas fa-microphone-alt text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_1_title">Seminar Nasional</p>
-            <span class="text-xs text-gray-500 mt-1">Ratusan Event</span>
-          </div>
-          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
-            <i class="fas fa-book text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_2_title">Buku PT. GRASSINDO</p>
-            <span class="text-xs text-gray-500 mt-1">Terbitan Resmi</span>
-          </div>
-          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
-            <i class="fas fa-chalkboard-teacher text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_3_title">Ruang Pelatihan</p>
-            <span class="text-xs text-gray-500 mt-1">Nyaman &amp; Eksklusif</span>
-          </div>
-          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
-            <i class="fas fa-city text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_4_title">Gedung Wisma KPPSM</p>
-            <span class="text-xs text-gray-500 mt-1">Cibubur Indah 3</span>
-          </div>
-          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
-            <i class="fas fa-user-check text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_5_title">Profil Pendiri</p>
-            <span class="text-xs text-gray-500 mt-1">F.X. Poerwopoespito</span>
-          </div>
-          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
-            <i class="fas fa-star text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_6_title">Testimoni Korporat</p>
-            <span class="text-xs text-gray-500 mt-1">225+ Perusahaan</span>
-          </div>
-          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
-            <i class="fas fa-history text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_7_title">Riset 36 Tahun</p>
-            <span class="text-xs text-gray-500 mt-1">Konsisten Sejak 1992</span>
-          </div>
-          <div class="fade-in card-hover card-eq bg-abu rounded-2xl p-6 text-center border-t-4 border-emas flex flex-col items-center justify-center shadow-sm">
-            <i class="fas fa-award text-2xl text-hijau mb-3"></i>
-            <p class="font-bold text-navy text-sm sm:text-base" data-owner-text="fasilitas_8_title">Sertifikat ASM</p>
-            <span class="text-xs text-gray-500 mt-1">Asesmen Sikap Mental</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tab 2 Panel: Bukti Nyata Dampak -->
-      <div id="tab-dampak" class="tab-panel">
-        <div class="mb-6 text-center">
-          <p class="text-xs uppercase tracking-widest text-emas font-bold mb-1">Hasil Nyata</p>
-          <h3 class="text-lg sm:text-xl font-bold text-navy">Contoh Hasil Nyata Pelatihan, Pendampingan, Konsultasi &amp; Konseling KPPSM</h3>
-          <p class="text-xs sm:text-sm text-gray-500 max-w-2xl mx-auto mt-1">Dampak nyata dan terukur yang dirasakan langsung oleh mitra perusahaan dan institusi di Indonesia.</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-hijau/10 text-hijau flex items-center justify-center mb-3 text-base shadow-xs">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_1_val">+15% EBITDA</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_1_ind">PT Indah Kiat Pulp and Paper, Tbk.</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_1_desc">Membantu tercapainya peningkatan EBITDA sebesar 15% melalui pelatihan karakter dan sikap mental karyawan.</p>
-          </div>
-          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-hijau flex items-center justify-center mb-3 text-base shadow-xs">
-              <i class="fas fa-arrow-trend-down"></i>
-            </div>
-            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_2_val">13% &rarr; &plusmn;1,5%</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_2_ind">PT Meiji Indonesia</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_2_desc">Berkurangnya tingkat "reject" produksi secara drastis dari 13% menjadi &plusmn; 1,5% di industri farmasi.</p>
-          </div>
-          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-blue-50 text-birunav flex items-center justify-center mb-3 text-base shadow-xs">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_3_val">0 Unjuk Rasa</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_3_ind">PT Jakarta Land &amp; PT King Photo Studio</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_3_desc">Berhasil mencegah unjuk rasa karyawan melalui pembinaan sikap mental dan dialog partisipatif yang konstruktif.</p>
-          </div>
-          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center mb-3 text-base shadow-xs">
-              <i class="fas fa-bullseye"></i>
-            </div>
-            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_4_val">+20% Penjualan</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_4_ind">PT Dunkindo Lestari (Dunkin' Donuts)</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_4_desc">Meningkatnya omzet penjualan hingga 20% (penuturan pimpinan) melalui pelatihan Salesmanship &amp; militansi mental.</p>
-          </div>
-          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-yellow-50 text-emasgelap flex items-center justify-center mb-3 text-base shadow-xs">
-              <i class="fas fa-trophy"></i>
-            </div>
-            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_5_val">Tender Sempurna</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_5_ind">PT Furindo Kencana</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_5_desc">Membantu melaksanakan dengan sempurna proyek tender khusus di Metro Department Store Mal besar di Jakarta.</p>
-          </div>
-          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center mb-3 text-base shadow-xs">
-              <i class="fas fa-handshake"></i>
-            </div>
-            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_6_val">Harmonisasi Tim</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_6_ind">PT Kaji Inova Media</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_6_desc">Memulihkan hubungan kerja antara tim sales dan manajemen yang sebelumnya memburuk lewat pelatihan &amp; diskusi Tripartit.</p>
-          </div>
-          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-700 flex items-center justify-center mb-3 text-base shadow-xs">
-              <i class="fas fa-building"></i>
-            </div>
-            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_7_val">Cegah Demo</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_7_ind">Pengelola Gedung WTC Jakarta</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_7_desc">Mencegah rencana demonstrasi karyawan security perusahaan pengelola gedung World Trade Center (WTC) Jakarta.</p>
-          </div>
-          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-green-50 text-hijau flex items-center justify-center mb-3 text-base shadow-xs">
-              <i class="fas fa-leaf"></i>
-            </div>
-            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_8_val">Sinergi 3 Pihak</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_8_ind">PT Bumitama Gunajaya Agro</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_8_desc">Membantu membangun hubungan baik antara karyawan, petani plasma, dan Koperasi binaan perusahaan perkebunan.</p>
-          </div>
-          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center mb-3 text-base shadow-xs">
-              <i class="fas fa-scale-balanced"></i>
-            </div>
-            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_9_val">SPSI &amp; Manajemen</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_9_ind">PT Prodia, PT Kalbe Farma, PT Sampoerna Agro</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_9_desc">Membantu menciptakan iklim kemitraan kerja yang kondusif dan harmonis antara SPSI dan jajaran manajemen perusahaan.</p>
-          </div>
-          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center mb-3 text-base shadow-xs">
-              <i class="fas fa-heart-pulse"></i>
-            </div>
-            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_10_val">Penyelamatan Jiwa</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_10_ind">Konseling Eksekutif Depresi</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_10_desc">Membantu konseling intensif dan mencegah tindakan fatal/bunuh diri beberapa eksekutif perusahaan yang mengalami depresi berat.</p>
-          </div>
-          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-700 flex items-center justify-center mb-3 text-base shadow-xs">
-              <i class="fas fa-comments"></i>
-            </div>
-            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_11_val">Dialog Tripartit</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_11_ind">PT Kaji Inova &amp; PT Galic Artabahari</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_11_desc">Membantu mediasi dan diskusi Tripartit Manajemen-Karyawan untuk penyelesaian konflik industrial secara bermartabat.</p>
-          </div>
-          <div class="fade-in card-hover card-eq-dampak bg-white rounded-2xl p-6 border-t-4 border-hijau border-x border-b border-gray-200/70 hover:border-hijau/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-hijau flex items-center justify-center mb-3 text-base shadow-xs">
-              <i class="fas fa-seedling"></i>
-            </div>
-            <p class="text-hijau font-black text-2xl mb-1" data-owner-text="dampak_12_val">980.000 Ton CPO</p>
-            <p class="text-emasgelap font-bold text-xs uppercase tracking-wider mb-2" data-owner-text="dampak_12_ind">PT Kencana Agri (Tahun 2025)</p>
-            <p class="text-gray-700 text-xs sm:text-sm leading-relaxed" data-owner-text="dampak_12_desc">Mendukung upaya pencapaian target 1 juta ton produksi CPO tahun 2025 dengan riil pencapaian mencapai 980.000 ton CPO.</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>

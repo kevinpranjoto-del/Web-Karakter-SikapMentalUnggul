@@ -140,6 +140,12 @@ describe('KPPSM Website & Media Assets Test Suite', () => {
     expect(res.text).toContain('F.X. Oerip S. Poerwopoespito, ASM');
     expect(res.text).toContain('Diki Permana, SE');
     expect(res.text).toContain('Albertus Widiarto, SE., MM');
+
+    // Jenis Usaha & Mengapa Memilih Kami
+    expect(res.text).toContain('data-owner-text="jenis_usaha_heading">Jenis Usaha');
+    expect(res.text).toContain('Jasa Pelatihan, Pengembangan, Riset, Tes dan Konseling untuk masalah Karakter, Sikap Mental dan Perilaku SDM Perusahaan, Institusi, Organisasi dan BUMN.');
+    expect(res.text).toContain('Mengapa Memilih Kami');
+    expect(res.text).toContain('Contoh Hasil Nyata Pelatihan, Pendampingan, Konsultasi dan Konseling KPPSM');
   });
 
   afterAll(async () => {
